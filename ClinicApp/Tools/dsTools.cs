@@ -4,6 +4,10 @@
 
     partial class dsTools
     {
+        partial class dtShowPharmacyLocDataTable
+        {
+        }
+
         partial class dtShowAnalysisDataTable
         {
         }

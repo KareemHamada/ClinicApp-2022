@@ -1,4 +1,6 @@
 ﻿using ClinicApp.Classes;
+using ClinicApp.Tools;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -148,6 +150,50 @@ namespace ClinicApp.Forms.Locations.Doctors
                     "or DoctorsLocations.address like '%" + text + "%' " +
                     "or DoctorsLocations.phone like '%" + text + "%' " +
                     "or Governments.name like '%" + text + "%')");
+            }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            if (dgvLoading.Rows.Count > 0)
+            {
+                dsTools tbl = new dsTools();
+                for (int i = 0; i < dgvLoading.Rows.Count; i++)
+                {
+                    DataRow dro = tbl.Tables["dtShowDoctorsLoc"].NewRow();
+                    dro["name"] = dgvLoading[4, i].Value;
+                    dro["specialization"] = dgvLoading[3, i].Value;
+                    dro["government"] = dgvLoading[2, i].Value;
+                    dro["address"] = dgvLoading[1, i].Value;
+                    dro["phone"] = dgvLoading[0, i].Value;
+
+                    tbl.Tables["dtShowDoctorsLoc"].Rows.Add(dro);
+                }
+
+                FormReports rptForm = new FormReports();
+                rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportFormShowDoctorsLoc.rdlc";
+                rptForm.mainReport.LocalReport.DataSources.Clear();
+                rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowDoctorsLoc"]));
+
+                if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
+                {
+                    LocalReport report = new LocalReport();
+                    string path = Application.StartupPath + @"\Reports\ReportFormShowDoctorsLoc.rdlc";
+                    report.ReportPath = path;
+                    report.DataSources.Clear();
+                    report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowDoctorsLoc"]));
+
+                    PrintersClass.PrintToPrinter(report);
+                }
+                else if (bool.Parse(declarations.systemOptions["showBeforePrint"].ToString()))
+                {
+                    rptForm.ShowDialog();
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("لا يوجد عناصر لعرضها");
             }
         }
     }
