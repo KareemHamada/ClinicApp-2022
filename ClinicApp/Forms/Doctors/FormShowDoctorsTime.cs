@@ -194,7 +194,22 @@ namespace ClinicApp.Forms.Doctors
 
         private void FormShowDoctorsTime_Load(object sender, EventArgs e)
         {
-            loadTable("select DoctorDates.id,DoctorDates.saturday,DoctorDates.sunday,DoctorDates.monday,DoctorDates.tuesday,DoctorDates.wednesday,DoctorDates.thursday,DoctorDates.friday,DoctorDates.notes,Doctors.name as doctor,Specializations.name as specialization,Clinics.name as clinic from DoctorDates,Clinics,Specializations,Doctors where DoctorDates.doctorId = Doctors.id and Doctors.clinicsId = Clinics.id and Doctors.specializationId = Specializations.id");
+            loadTable("select DoctorDates.id," +
+                "DoctorDates.saturday," +
+                "DoctorDates.sunday," +
+                "DoctorDates.monday," +
+                "DoctorDates.tuesday," +
+                "DoctorDates.wednesday," +
+                "DoctorDates.thursday," +
+                "DoctorDates.friday," +
+                "DoctorDates.notes," +
+                "Doctors.name as doctor," +
+                "Specializations.name as specialization," +
+                "Clinics.name as clinic " +
+                "from DoctorDates,Clinics,Specializations,Doctors " +
+                "where DoctorDates.doctorId = Doctors.id" +
+                " and Doctors.clinicsId = Clinics.id" +
+                " and Doctors.specializationId = Specializations.id");
 
             txtHidden = new TextBox();
             txtHidden.Visible = false;

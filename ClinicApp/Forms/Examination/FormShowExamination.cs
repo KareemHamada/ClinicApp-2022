@@ -113,5 +113,7 @@ namespace ClinicApp.Forms.Examination
                 frm.Show();
             }
         }
+
+        
     }
 }

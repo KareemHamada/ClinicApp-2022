@@ -47,6 +47,8 @@ namespace ClinicApp.Forms
             this.المرضيToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddPatient = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowPatient = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnVisitingPatient = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnPatientPerception = new System.Windows.Forms.ToolStripMenuItem();
             this.الحجوزاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddReservations = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowReservations = new System.Windows.Forms.ToolStripMenuItem();
@@ -275,7 +277,9 @@ namespace ClinicApp.Forms
             // 
             this.المرضيToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnAddPatient,
-            this.btnShowPatient});
+            this.btnShowPatient,
+            this.btnVisitingPatient,
+            this.btnPatientPerception});
             this.المرضيToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("المرضيToolStripMenuItem.Image")));
             this.المرضيToolStripMenuItem.Name = "المرضيToolStripMenuItem";
             this.المرضيToolStripMenuItem.Size = new System.Drawing.Size(98, 39);
@@ -285,7 +289,7 @@ namespace ClinicApp.Forms
             // 
             this.btnAddPatient.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPatient.Image")));
             this.btnAddPatient.Name = "btnAddPatient";
-            this.btnAddPatient.Size = new System.Drawing.Size(241, 40);
+            this.btnAddPatient.Size = new System.Drawing.Size(303, 40);
             this.btnAddPatient.Text = "اضافة مريض جديد";
             this.btnAddPatient.Click += new System.EventHandler(this.btnAddPatient_Click);
             // 
@@ -293,9 +297,25 @@ namespace ClinicApp.Forms
             // 
             this.btnShowPatient.Image = ((System.Drawing.Image)(resources.GetObject("btnShowPatient.Image")));
             this.btnShowPatient.Name = "btnShowPatient";
-            this.btnShowPatient.Size = new System.Drawing.Size(241, 40);
+            this.btnShowPatient.Size = new System.Drawing.Size(303, 40);
             this.btnShowPatient.Text = "عرض المرضي";
             this.btnShowPatient.Click += new System.EventHandler(this.btnShowPatient_Click);
+            // 
+            // btnVisitingPatient
+            // 
+            this.btnVisitingPatient.Image = global::ClinicApp.Properties.Resources.information;
+            this.btnVisitingPatient.Name = "btnVisitingPatient";
+            this.btnVisitingPatient.Size = new System.Drawing.Size(303, 40);
+            this.btnVisitingPatient.Text = "زيارات المريض";
+            this.btnVisitingPatient.Click += new System.EventHandler(this.btnVisitingPatient_Click);
+            // 
+            // btnPatientPerception
+            // 
+            this.btnPatientPerception.Image = global::ClinicApp.Properties.Resources.notes3;
+            this.btnPatientPerception.Name = "btnPatientPerception";
+            this.btnPatientPerception.Size = new System.Drawing.Size(303, 40);
+            this.btnPatientPerception.Text = "الروشتات العلاجية للمريض";
+            this.btnPatientPerception.Click += new System.EventHandler(this.btnPatientPerception_Click);
             // 
             // الحجوزاتToolStripMenuItem
             // 
@@ -684,7 +704,7 @@ namespace ClinicApp.Forms
             this.btnShowDrugs});
             this.الادويةToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("الادويةToolStripMenuItem.Image")));
             this.الادويةToolStripMenuItem.Name = "الادويةToolStripMenuItem";
-            this.الادويةToolStripMenuItem.Size = new System.Drawing.Size(224, 40);
+            this.الادويةToolStripMenuItem.Size = new System.Drawing.Size(206, 40);
             this.الادويةToolStripMenuItem.Text = "الادوية";
             // 
             // btnAddDrug
@@ -710,7 +730,7 @@ namespace ClinicApp.Forms
             this.btnShowMedicineUnits});
             this.وحداتالدواءToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.syringe;
             this.وحداتالدواءToolStripMenuItem.Name = "وحداتالدواءToolStripMenuItem";
-            this.وحداتالدواءToolStripMenuItem.Size = new System.Drawing.Size(224, 40);
+            this.وحداتالدواءToolStripMenuItem.Size = new System.Drawing.Size(206, 40);
             this.وحداتالدواءToolStripMenuItem.Text = "وحدات الدواء";
             // 
             // btnAddMedicineUnit
@@ -734,7 +754,7 @@ namespace ClinicApp.Forms
             // الجرعةToolStripMenuItem
             // 
             this.الجرعةToolStripMenuItem.Name = "الجرعةToolStripMenuItem";
-            this.الجرعةToolStripMenuItem.Size = new System.Drawing.Size(224, 40);
+            this.الجرعةToolStripMenuItem.Size = new System.Drawing.Size(146, 40);
             this.الجرعةToolStripMenuItem.Text = "الجرعة";
             // 
             // الجرعاتToolStripMenuItem
@@ -744,7 +764,7 @@ namespace ClinicApp.Forms
             this.btnShowDosages});
             this.الجرعاتToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.syringe__1_;
             this.الجرعاتToolStripMenuItem.Name = "الجرعاتToolStripMenuItem";
-            this.الجرعاتToolStripMenuItem.Size = new System.Drawing.Size(224, 40);
+            this.الجرعاتToolStripMenuItem.Size = new System.Drawing.Size(206, 40);
             this.الجرعاتToolStripMenuItem.Text = "الجرعات";
             // 
             // btnAddDosage
@@ -766,7 +786,7 @@ namespace ClinicApp.Forms
             // الوقتToolStripMenuItem
             // 
             this.الوقتToolStripMenuItem.Name = "الوقتToolStripMenuItem";
-            this.الوقتToolStripMenuItem.Size = new System.Drawing.Size(224, 40);
+            this.الوقتToolStripMenuItem.Size = new System.Drawing.Size(206, 40);
             this.الوقتToolStripMenuItem.Text = "الوقت";
             // 
             // الامراضToolStripMenuItem
@@ -983,6 +1003,7 @@ namespace ClinicApp.Forms
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormMain";
+            this.ShowIcon = false;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -1089,5 +1110,7 @@ namespace ClinicApp.Forms
         private System.Windows.Forms.ToolStripMenuItem btnAddToSmartAssistant;
         private System.Windows.Forms.ToolStripMenuItem btnShowSmartAssistant;
         private System.Windows.Forms.ToolStripMenuItem btnPrintingSettings;
+        private System.Windows.Forms.ToolStripMenuItem btnVisitingPatient;
+        private System.Windows.Forms.ToolStripMenuItem btnPatientPerception;
     }
 }

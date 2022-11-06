@@ -309,11 +309,23 @@
     <Compile Include="Forms\patients\FormPatient.Designer.cs">
       <DependentUpon>FormPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\patients\FormPatientPrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\patients\FormPatientPrescription.Designer.cs">
+      <DependentUpon>FormPatientPrescription.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\patients\FormShowPatient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\patients\FormShowPatient.Designer.cs">
       <DependentUpon>FormShowPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\patients\FormVisitingPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\patients\FormVisitingPatient.Designer.cs">
+      <DependentUpon>FormVisitingPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Reservations\FormAddReservations.cs">
       <SubType>Form</SubType>
@@ -548,6 +560,12 @@
     <EmbeddedResource Include="Forms\Expenses\FormShowExpensesTypes.resx">
       <DependentUpon>FormShowExpensesTypes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\patients\FormPatientPrescription.resx">
+      <DependentUpon>FormPatientPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\patients\FormVisitingPatient.resx">
+      <DependentUpon>FormVisitingPatient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportExpensesTypes.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -733,6 +751,7 @@
     <EmbeddedResource Include="Reports\ReportFormShowRaysLoc.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowSpecializations.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowSymptoms.rdlc" />
+    <EmbeddedResource Include="Reports\ReportFormVisitingPatient.rdlc" />
     <None Include="ClinicApp_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -992,6 +1011,8 @@
     <None Include="Resources\facebook.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\information.png" />
+    <None Include="Resources\notes3.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

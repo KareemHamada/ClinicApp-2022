@@ -406,5 +406,17 @@ namespace ClinicApp.Forms
             FormPrintingSettings frm = new FormPrintingSettings();
             frm.Show();
         }
+
+        private void btnVisitingPatient_Click(object sender, EventArgs e)
+        {
+            FormVisitingPatient frm = new FormVisitingPatient();
+            frm.Show();
+        }
+
+        private void btnPatientPerception_Click(object sender, EventArgs e)
+        {
+            FormPatientPrescription frm = new FormPatientPrescription();
+            frm.Show();
+        }
     }
 }

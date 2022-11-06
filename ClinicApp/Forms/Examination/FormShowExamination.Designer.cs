@@ -105,9 +105,9 @@ namespace ClinicApp.Forms.Examination
             this.btnShowExaminationDetails,
             this.btnUpdate,
             this.btnPrint});
-            this.toolStrip1.Location = new System.Drawing.Point(323, 632);
+            this.toolStrip1.Location = new System.Drawing.Point(342, 632);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(506, 71);
+            this.toolStrip1.Size = new System.Drawing.Size(467, 71);
             this.toolStrip1.TabIndex = 26;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -427,6 +427,7 @@ namespace ClinicApp.Forms.Examination
             this.comboClinic.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboClinic.Size = new System.Drawing.Size(216, 44);
             this.comboClinic.TabIndex = 63;
+          
             // 
             // comboDoctor
             // 

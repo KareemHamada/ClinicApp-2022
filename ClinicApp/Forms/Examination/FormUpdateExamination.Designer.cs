@@ -152,6 +152,10 @@ namespace ClinicApp.Forms.Examination
             this.DiseasesPage = new System.Windows.Forms.TabPage();
             this.pnlDiseases = new System.Windows.Forms.TableLayoutPanel();
             this.dgvDiseases = new System.Windows.Forms.DataGridView();
+            this.notess = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Disease = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiseasesID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -164,6 +168,10 @@ namespace ClinicApp.Forms.Examination
             this.SymptomsPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvSymptoms = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -195,6 +203,13 @@ namespace ClinicApp.Forms.Examination
             this.PrescriptionPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvPrescription = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dosage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.medicineunit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeMedicine = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idMedicine = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.label35 = new System.Windows.Forms.Label();
@@ -220,6 +235,10 @@ namespace ClinicApp.Forms.Examination
             this.AnalysisPage = new System.Windows.Forms.TabPage();
             this.tlpAnalysis = new System.Windows.Forms.TableLayoutPanel();
             this.dgvAnalysis = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idAnalysis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.label41 = new System.Windows.Forms.Label();
@@ -242,6 +261,10 @@ namespace ClinicApp.Forms.Examination
             this.raysPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvRays = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.raysId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.label45 = new System.Windows.Forms.Label();
@@ -264,6 +287,10 @@ namespace ClinicApp.Forms.Examination
             this.foodPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel38 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvFood = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel39 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.label49 = new System.Windows.Forms.Label();
@@ -276,6 +303,10 @@ namespace ClinicApp.Forms.Examination
             this.contrastingMedicinePage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvContrastingMedicines = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn7 = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.label52 = new System.Windows.Forms.Label();
@@ -287,37 +318,6 @@ namespace ClinicApp.Forms.Examination
             this.comboContrastingMedicines = new System.Windows.Forms.ComboBox();
             this.smartAssistantPage = new System.Windows.Forms.TabPage();
             this.printingPage = new System.Windows.Forms.TabPage();
-            this.notess = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Disease = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiseasesID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dosage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.medicineunit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeMedicine = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idMedicine = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idAnalysis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.raysId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn6 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn7 = new System.Windows.Forms.DataGridViewImageColumn();
             this.tlpContainer.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -1375,7 +1375,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.45238F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.54762F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
             this.tableLayoutPanel11.Controls.Add(this.label17, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.label18, 1, 1);
             this.tableLayoutPanel11.Controls.Add(this.label19, 1, 2);
@@ -1420,7 +1420,7 @@ namespace ClinicApp.Forms.Examination
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(993, 11);
+            this.label17.Location = new System.Drawing.Point(992, 11);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(105, 44);
             this.label17.TabIndex = 9;
@@ -1432,7 +1432,7 @@ namespace ClinicApp.Forms.Examination
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(1007, 77);
+            this.label18.Location = new System.Drawing.Point(1006, 77);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(77, 44);
             this.label18.TabIndex = 12;
@@ -1444,7 +1444,7 @@ namespace ClinicApp.Forms.Examination
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(980, 143);
+            this.label19.Location = new System.Drawing.Point(979, 143);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(131, 44);
             this.label19.TabIndex = 13;
@@ -1456,7 +1456,7 @@ namespace ClinicApp.Forms.Examination
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(985, 209);
+            this.label20.Location = new System.Drawing.Point(984, 209);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(122, 44);
             this.label20.TabIndex = 30;
@@ -1472,7 +1472,7 @@ namespace ClinicApp.Forms.Examination
             this.txtBodyTemperature.Location = new System.Drawing.Point(3, 210);
             this.txtBodyTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBodyTemperature.Name = "txtBodyTemperature";
-            this.txtBodyTemperature.Size = new System.Drawing.Size(914, 41);
+            this.txtBodyTemperature.Size = new System.Drawing.Size(913, 41);
             this.txtBodyTemperature.TabIndex = 37;
             this.txtBodyTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1485,7 +1485,7 @@ namespace ClinicApp.Forms.Examination
             this.txtSugar.Location = new System.Drawing.Point(3, 276);
             this.txtSugar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSugar.Name = "txtSugar";
-            this.txtSugar.Size = new System.Drawing.Size(914, 41);
+            this.txtSugar.Size = new System.Drawing.Size(913, 41);
             this.txtSugar.TabIndex = 38;
             this.txtSugar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1498,7 +1498,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationPreviousOperations.Location = new System.Drawing.Point(3, 409);
             this.txtExaminationPreviousOperations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtExaminationPreviousOperations.Name = "txtExaminationPreviousOperations";
-            this.txtExaminationPreviousOperations.Size = new System.Drawing.Size(914, 41);
+            this.txtExaminationPreviousOperations.Size = new System.Drawing.Size(913, 41);
             this.txtExaminationPreviousOperations.TabIndex = 40;
             this.txtExaminationPreviousOperations.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1511,7 +1511,7 @@ namespace ClinicApp.Forms.Examination
             this.txtBloodPressure.Location = new System.Drawing.Point(3, 12);
             this.txtBloodPressure.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBloodPressure.Name = "txtBloodPressure";
-            this.txtBloodPressure.Size = new System.Drawing.Size(914, 41);
+            this.txtBloodPressure.Size = new System.Drawing.Size(913, 41);
             this.txtBloodPressure.TabIndex = 14;
             this.txtBloodPressure.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1520,7 +1520,7 @@ namespace ClinicApp.Forms.Examination
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(1010, 275);
+            this.label21.Location = new System.Drawing.Point(1009, 275);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(72, 44);
             this.label21.TabIndex = 32;
@@ -1532,7 +1532,7 @@ namespace ClinicApp.Forms.Examination
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(1013, 341);
+            this.label22.Location = new System.Drawing.Point(1012, 341);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(65, 44);
             this.label22.TabIndex = 33;
@@ -1544,7 +1544,7 @@ namespace ClinicApp.Forms.Examination
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(976, 408);
+            this.label23.Location = new System.Drawing.Point(975, 408);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(139, 44);
             this.label23.TabIndex = 34;
@@ -1556,7 +1556,7 @@ namespace ClinicApp.Forms.Examination
             this.txtHeartBeats.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHeartBeats.Location = new System.Drawing.Point(3, 144);
             this.txtHeartBeats.Name = "txtHeartBeats";
-            this.txtHeartBeats.Size = new System.Drawing.Size(914, 42);
+            this.txtHeartBeats.Size = new System.Drawing.Size(913, 42);
             this.txtHeartBeats.TabIndex = 50;
             this.txtHeartBeats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1565,7 +1565,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationWeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtExaminationWeight.Location = new System.Drawing.Point(3, 342);
             this.txtExaminationWeight.Name = "txtExaminationWeight";
-            this.txtExaminationWeight.Size = new System.Drawing.Size(914, 42);
+            this.txtExaminationWeight.Size = new System.Drawing.Size(913, 42);
             this.txtExaminationWeight.TabIndex = 51;
             this.txtExaminationWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1574,7 +1574,7 @@ namespace ClinicApp.Forms.Examination
             this.txtBreathing.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBreathing.Location = new System.Drawing.Point(3, 78);
             this.txtBreathing.Name = "txtBreathing";
-            this.txtBreathing.Size = new System.Drawing.Size(914, 42);
+            this.txtBreathing.Size = new System.Drawing.Size(913, 42);
             this.txtBreathing.TabIndex = 52;
             this.txtBreathing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1583,10 +1583,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox4.BackgroundImage = global::ClinicApp.Properties.Resources.blood;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Location = new System.Drawing.Point(1175, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(1174, 2);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(127, 62);
+            this.pictureBox4.Size = new System.Drawing.Size(128, 62);
             this.pictureBox4.TabIndex = 53;
             this.pictureBox4.TabStop = false;
             // 
@@ -1595,10 +1595,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox5.BackgroundImage = global::ClinicApp.Properties.Resources.breathing;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Location = new System.Drawing.Point(1175, 68);
+            this.pictureBox5.Location = new System.Drawing.Point(1174, 68);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(127, 62);
+            this.pictureBox5.Size = new System.Drawing.Size(128, 62);
             this.pictureBox5.TabIndex = 54;
             this.pictureBox5.TabStop = false;
             // 
@@ -1607,10 +1607,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox6.BackgroundImage = global::ClinicApp.Properties.Resources.pulse;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Location = new System.Drawing.Point(1175, 134);
+            this.pictureBox6.Location = new System.Drawing.Point(1174, 134);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(127, 62);
+            this.pictureBox6.Size = new System.Drawing.Size(128, 62);
             this.pictureBox6.TabIndex = 55;
             this.pictureBox6.TabStop = false;
             // 
@@ -1619,10 +1619,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox7.BackgroundImage = global::ClinicApp.Properties.Resources.thermometer;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Location = new System.Drawing.Point(1175, 200);
+            this.pictureBox7.Location = new System.Drawing.Point(1174, 200);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(127, 62);
+            this.pictureBox7.Size = new System.Drawing.Size(128, 62);
             this.pictureBox7.TabIndex = 56;
             this.pictureBox7.TabStop = false;
             // 
@@ -1631,10 +1631,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox8.BackgroundImage = global::ClinicApp.Properties.Resources.sugar_cube;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Location = new System.Drawing.Point(1175, 266);
+            this.pictureBox8.Location = new System.Drawing.Point(1174, 266);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(127, 62);
+            this.pictureBox8.Size = new System.Drawing.Size(128, 62);
             this.pictureBox8.TabIndex = 57;
             this.pictureBox8.TabStop = false;
             // 
@@ -1643,10 +1643,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox9.BackgroundImage = global::ClinicApp.Properties.Resources.weight;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Location = new System.Drawing.Point(1175, 332);
+            this.pictureBox9.Location = new System.Drawing.Point(1174, 332);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(127, 62);
+            this.pictureBox9.Size = new System.Drawing.Size(128, 62);
             this.pictureBox9.TabIndex = 58;
             this.pictureBox9.TabStop = false;
             // 
@@ -1655,10 +1655,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox10.BackgroundImage = global::ClinicApp.Properties.Resources.anesthesia;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Location = new System.Drawing.Point(1175, 398);
+            this.pictureBox10.Location = new System.Drawing.Point(1174, 398);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(127, 64);
+            this.pictureBox10.Size = new System.Drawing.Size(128, 64);
             this.pictureBox10.TabIndex = 59;
             this.pictureBox10.TabStop = false;
             // 
@@ -1734,6 +1734,35 @@ namespace ClinicApp.Forms.Examination
             this.dgvDiseases.TabIndex = 20;
             this.dgvDiseases.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiseases_CellDoubleClick);
             // 
+            // notess
+            // 
+            this.notess.HeaderText = "ملاحظات";
+            this.notess.MinimumWidth = 6;
+            this.notess.Name = "notess";
+            this.notess.ReadOnly = true;
+            // 
+            // Disease
+            // 
+            this.Disease.HeaderText = "المرض";
+            this.Disease.MinimumWidth = 6;
+            this.Disease.Name = "Disease";
+            this.Disease.ReadOnly = true;
+            // 
+            // DiseasesID
+            // 
+            this.DiseasesID.HeaderText = "id";
+            this.DiseasesID.MinimumWidth = 6;
+            this.DiseasesID.Name = "DiseasesID";
+            this.DiseasesID.ReadOnly = true;
+            // 
+            // delete
+            // 
+            this.delete.HeaderText = "";
+            this.delete.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.delete.MinimumWidth = 6;
+            this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
+            // 
             // tableLayoutPanel10
             // 
             this.tableLayoutPanel10.ColumnCount = 2;
@@ -1779,7 +1808,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel12.ColumnCount = 3;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.65011F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.34989F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPanel12.Controls.Add(this.label26, 0, 1);
             this.tableLayoutPanel12.Controls.Add(this.label25, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.txtNotesDiseases, 1, 1);
@@ -1819,9 +1848,9 @@ namespace ClinicApp.Forms.Examination
             // txtNotesDiseases
             // 
             this.txtNotesDiseases.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNotesDiseases.Location = new System.Drawing.Point(240, 57);
+            this.txtNotesDiseases.Location = new System.Drawing.Point(241, 57);
             this.txtNotesDiseases.Name = "txtNotesDiseases";
-            this.txtNotesDiseases.Size = new System.Drawing.Size(814, 42);
+            this.txtNotesDiseases.Size = new System.Drawing.Size(813, 42);
             this.txtNotesDiseases.TabIndex = 19;
             // 
             // btnAddDiseases
@@ -1829,7 +1858,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddDiseases.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddDiseases.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddDiseases.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddDiseases.Location = new System.Drawing.Point(42, 3);
+            this.btnAddDiseases.Location = new System.Drawing.Point(43, 3);
             this.btnAddDiseases.Name = "btnAddDiseases";
             this.btnAddDiseases.Size = new System.Drawing.Size(153, 48);
             this.btnAddDiseases.TabIndex = 20;
@@ -1844,9 +1873,9 @@ namespace ClinicApp.Forms.Examination
             this.comboDiseases.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboDiseases.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboDiseases.FormattingEnabled = true;
-            this.comboDiseases.Location = new System.Drawing.Point(240, 5);
+            this.comboDiseases.Location = new System.Drawing.Point(241, 14);
             this.comboDiseases.Name = "comboDiseases";
-            this.comboDiseases.Size = new System.Drawing.Size(814, 43);
+            this.comboDiseases.Size = new System.Drawing.Size(813, 43);
             this.comboDiseases.TabIndex = 21;
             // 
             // SymptomsPage
@@ -1921,6 +1950,35 @@ namespace ClinicApp.Forms.Examination
             this.dgvSymptoms.TabIndex = 20;
             this.dgvSymptoms.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSymptoms_CellDoubleClick);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "ملاحظات";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "العرض";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "id";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn2.MinimumWidth = 6;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
+            // 
             // tableLayoutPanel14
             // 
             this.tableLayoutPanel14.ColumnCount = 2;
@@ -1966,7 +2024,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel15.ColumnCount = 3;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.65011F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.34989F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPanel15.Controls.Add(this.label28, 0, 1);
             this.tableLayoutPanel15.Controls.Add(this.label29, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.txtSymptomsNotes, 1, 1);
@@ -2007,9 +2065,9 @@ namespace ClinicApp.Forms.Examination
             // 
             this.txtSymptomsNotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSymptomsNotes.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSymptomsNotes.Location = new System.Drawing.Point(240, 57);
+            this.txtSymptomsNotes.Location = new System.Drawing.Point(241, 57);
             this.txtSymptomsNotes.Name = "txtSymptomsNotes";
-            this.txtSymptomsNotes.Size = new System.Drawing.Size(814, 42);
+            this.txtSymptomsNotes.Size = new System.Drawing.Size(813, 42);
             this.txtSymptomsNotes.TabIndex = 19;
             // 
             // btnAddSymptoms
@@ -2017,7 +2075,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddSymptoms.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddSymptoms.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddSymptoms.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddSymptoms.Location = new System.Drawing.Point(42, 3);
+            this.btnAddSymptoms.Location = new System.Drawing.Point(43, 3);
             this.btnAddSymptoms.Name = "btnAddSymptoms";
             this.btnAddSymptoms.Size = new System.Drawing.Size(153, 48);
             this.btnAddSymptoms.TabIndex = 20;
@@ -2033,9 +2091,9 @@ namespace ClinicApp.Forms.Examination
             this.ComboSymptoms.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.ComboSymptoms.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboSymptoms.FormattingEnabled = true;
-            this.ComboSymptoms.Location = new System.Drawing.Point(240, 5);
+            this.ComboSymptoms.Location = new System.Drawing.Point(241, 5);
             this.ComboSymptoms.Name = "ComboSymptoms";
-            this.ComboSymptoms.Size = new System.Drawing.Size(814, 43);
+            this.ComboSymptoms.Size = new System.Drawing.Size(813, 43);
             this.ComboSymptoms.TabIndex = 21;
             // 
             // ExaminationPage
@@ -2126,7 +2184,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel18.ColumnCount = 3;
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.45238F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.54762F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
             this.tableLayoutPanel18.Controls.Add(this.label31, 1, 0);
             this.tableLayoutPanel18.Controls.Add(this.label32, 1, 1);
             this.tableLayoutPanel18.Controls.Add(this.label33, 1, 2);
@@ -2159,7 +2217,7 @@ namespace ClinicApp.Forms.Examination
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(981, 2);
+            this.label31.Location = new System.Drawing.Point(980, 2);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(130, 44);
             this.label31.TabIndex = 9;
@@ -2171,7 +2229,7 @@ namespace ClinicApp.Forms.Examination
             this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(966, 118);
+            this.label32.Location = new System.Drawing.Point(965, 118);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(159, 44);
             this.label32.TabIndex = 12;
@@ -2183,7 +2241,7 @@ namespace ClinicApp.Forms.Examination
             this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(980, 267);
+            this.label33.Location = new System.Drawing.Point(979, 267);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(131, 44);
             this.label33.TabIndex = 13;
@@ -2195,7 +2253,7 @@ namespace ClinicApp.Forms.Examination
             this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(957, 383);
+            this.label34.Location = new System.Drawing.Point(956, 383);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(177, 44);
             this.label34.TabIndex = 30;
@@ -2213,7 +2271,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationNotes.Multiline = true;
             this.txtExaminationNotes.Name = "txtExaminationNotes";
             this.txtExaminationNotes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtExaminationNotes.Size = new System.Drawing.Size(914, 78);
+            this.txtExaminationNotes.Size = new System.Drawing.Size(913, 78);
             this.txtExaminationNotes.TabIndex = 37;
             this.txtExaminationNotes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2224,7 +2282,7 @@ namespace ClinicApp.Forms.Examination
             this.txtDoctorAdvice.Multiline = true;
             this.txtDoctorAdvice.Name = "txtDoctorAdvice";
             this.txtDoctorAdvice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtDoctorAdvice.Size = new System.Drawing.Size(914, 88);
+            this.txtDoctorAdvice.Size = new System.Drawing.Size(913, 88);
             this.txtDoctorAdvice.TabIndex = 50;
             this.txtDoctorAdvice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2235,7 +2293,7 @@ namespace ClinicApp.Forms.Examination
             this.txtDoctorExamination.Multiline = true;
             this.txtDoctorExamination.Name = "txtDoctorExamination";
             this.txtDoctorExamination.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtDoctorExamination.Size = new System.Drawing.Size(914, 143);
+            this.txtDoctorExamination.Size = new System.Drawing.Size(913, 143);
             this.txtDoctorExamination.TabIndex = 52;
             this.txtDoctorExamination.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2244,10 +2302,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox14.BackgroundImage = global::ClinicApp.Properties.Resources.booking1;
             this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox14.Location = new System.Drawing.Point(1175, 2);
+            this.pictureBox14.Location = new System.Drawing.Point(1174, 2);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(127, 45);
+            this.pictureBox14.Size = new System.Drawing.Size(128, 45);
             this.pictureBox14.TabIndex = 53;
             this.pictureBox14.TabStop = false;
             // 
@@ -2256,10 +2314,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox15.BackgroundImage = global::ClinicApp.Properties.Resources.profile1;
             this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox15.Location = new System.Drawing.Point(1175, 51);
+            this.pictureBox15.Location = new System.Drawing.Point(1174, 51);
             this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(127, 178);
+            this.pictureBox15.Size = new System.Drawing.Size(128, 178);
             this.pictureBox15.TabIndex = 54;
             this.pictureBox15.TabStop = false;
             // 
@@ -2268,10 +2326,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox16.BackgroundImage = global::ClinicApp.Properties.Resources.advice2;
             this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox16.Location = new System.Drawing.Point(1175, 233);
+            this.pictureBox16.Location = new System.Drawing.Point(1174, 233);
             this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(127, 112);
+            this.pictureBox16.Size = new System.Drawing.Size(128, 112);
             this.pictureBox16.TabIndex = 55;
             this.pictureBox16.TabStop = false;
             // 
@@ -2280,10 +2338,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox17.BackgroundImage = global::ClinicApp.Properties.Resources.notes2;
             this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox17.Location = new System.Drawing.Point(1175, 349);
+            this.pictureBox17.Location = new System.Drawing.Point(1174, 349);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(127, 113);
+            this.pictureBox17.Size = new System.Drawing.Size(128, 113);
             this.pictureBox17.TabIndex = 56;
             this.pictureBox17.TabStop = false;
             // 
@@ -2295,7 +2353,7 @@ namespace ClinicApp.Forms.Examination
             this.dateExamination.Name = "dateExamination";
             this.dateExamination.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dateExamination.RightToLeftLayout = true;
-            this.dateExamination.Size = new System.Drawing.Size(914, 42);
+            this.dateExamination.Size = new System.Drawing.Size(913, 42);
             this.dateExamination.TabIndex = 57;
             // 
             // PrescriptionPage
@@ -2372,6 +2430,56 @@ namespace ClinicApp.Forms.Examination
             this.dgvPrescription.Size = new System.Drawing.Size(1311, 262);
             this.dgvPrescription.TabIndex = 20;
             this.dgvPrescription.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrescription_CellDoubleClick);
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "ملاحظات";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dosage
+            // 
+            this.dosage.HeaderText = "جرعة الدواء";
+            this.dosage.MinimumWidth = 6;
+            this.dosage.Name = "dosage";
+            this.dosage.ReadOnly = true;
+            // 
+            // medicineunit
+            // 
+            this.medicineunit.HeaderText = "وحدة الدواء";
+            this.medicineunit.MinimumWidth = 6;
+            this.medicineunit.Name = "medicineunit";
+            this.medicineunit.ReadOnly = true;
+            // 
+            // timeMedicine
+            // 
+            this.timeMedicine.HeaderText = "عدد مرات اخذ الدواء";
+            this.timeMedicine.MinimumWidth = 6;
+            this.timeMedicine.Name = "timeMedicine";
+            this.timeMedicine.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "اسم الدواء";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // idMedicine
+            // 
+            this.idMedicine.HeaderText = "id";
+            this.idMedicine.MinimumWidth = 6;
+            this.idMedicine.Name = "idMedicine";
+            this.idMedicine.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn3.MinimumWidth = 6;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.ReadOnly = true;
             // 
             // tableLayoutPanel20
             // 
@@ -2455,7 +2563,7 @@ namespace ClinicApp.Forms.Examination
             this.comboMedicine.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboMedicine.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboMedicine.FormattingEnabled = true;
-            this.comboMedicine.Location = new System.Drawing.Point(3, 5);
+            this.comboMedicine.Location = new System.Drawing.Point(3, 14);
             this.comboMedicine.Name = "comboMedicine";
             this.comboMedicine.Size = new System.Drawing.Size(962, 43);
             this.comboMedicine.TabIndex = 25;
@@ -2539,7 +2647,7 @@ namespace ClinicApp.Forms.Examination
             this.comboTimeTakeMedicine.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboTimeTakeMedicine.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboTimeTakeMedicine.FormattingEnabled = true;
-            this.comboTimeTakeMedicine.Location = new System.Drawing.Point(946, 5);
+            this.comboTimeTakeMedicine.Location = new System.Drawing.Point(946, 14);
             this.comboTimeTakeMedicine.Name = "comboTimeTakeMedicine";
             this.comboTimeTakeMedicine.Size = new System.Drawing.Size(181, 43);
             this.comboTimeTakeMedicine.TabIndex = 22;
@@ -2597,7 +2705,7 @@ namespace ClinicApp.Forms.Examination
             this.comboMedicineUnit.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboMedicineUnit.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboMedicineUnit.FormattingEnabled = true;
-            this.comboMedicineUnit.Location = new System.Drawing.Point(570, 5);
+            this.comboMedicineUnit.Location = new System.Drawing.Point(570, 14);
             this.comboMedicineUnit.Name = "comboMedicineUnit";
             this.comboMedicineUnit.Size = new System.Drawing.Size(182, 43);
             this.comboMedicineUnit.TabIndex = 23;
@@ -2608,7 +2716,7 @@ namespace ClinicApp.Forms.Examination
             this.comboDosages.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboDosages.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboDosages.FormattingEnabled = true;
-            this.comboDosages.Location = new System.Drawing.Point(194, 5);
+            this.comboDosages.Location = new System.Drawing.Point(194, 14);
             this.comboDosages.Name = "comboDosages";
             this.comboDosages.Size = new System.Drawing.Size(182, 43);
             this.comboDosages.TabIndex = 24;
@@ -2746,6 +2854,35 @@ namespace ClinicApp.Forms.Examination
             this.dgvAnalysis.TabIndex = 20;
             this.dgvAnalysis.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAnalysis_CellDoubleClick);
             // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "ملاحظات";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "اسم التحليل";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // idAnalysis
+            // 
+            this.idAnalysis.HeaderText = "id";
+            this.idAnalysis.MinimumWidth = 6;
+            this.idAnalysis.Name = "idAnalysis";
+            this.idAnalysis.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn4
+            // 
+            this.dataGridViewImageColumn4.HeaderText = "";
+            this.dataGridViewImageColumn4.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn4.MinimumWidth = 6;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.ReadOnly = true;
+            // 
             // tableLayoutPanel26
             // 
             this.tableLayoutPanel26.ColumnCount = 2;
@@ -2869,7 +3006,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.58314F));
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.47541F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 209F));
+            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 210F));
             this.tableLayoutPanel28.Controls.Add(this.label42, 0, 0);
             this.tableLayoutPanel28.Controls.Add(this.comboAnalysis, 1, 0);
             this.tableLayoutPanel28.Controls.Add(this.btnAddAnalysis, 3, 0);
@@ -2900,9 +3037,9 @@ namespace ClinicApp.Forms.Examination
             this.comboAnalysis.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboAnalysis.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboAnalysis.FormattingEnabled = true;
-            this.comboAnalysis.Location = new System.Drawing.Point(340, 5);
+            this.comboAnalysis.Location = new System.Drawing.Point(341, 14);
             this.comboAnalysis.Name = "comboAnalysis";
-            this.comboAnalysis.Size = new System.Drawing.Size(698, 43);
+            this.comboAnalysis.Size = new System.Drawing.Size(697, 43);
             this.comboAnalysis.TabIndex = 25;
             // 
             // btnAddAnalysis
@@ -2910,7 +3047,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddAnalysis.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddAnalysis.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddAnalysis.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddAnalysis.Location = new System.Drawing.Point(29, 3);
+            this.btnAddAnalysis.Location = new System.Drawing.Point(30, 3);
             this.btnAddAnalysis.Name = "btnAddAnalysis";
             this.btnAddAnalysis.Size = new System.Drawing.Size(153, 47);
             this.btnAddAnalysis.TabIndex = 24;
@@ -2924,7 +3061,7 @@ namespace ClinicApp.Forms.Examination
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.Location = new System.Drawing.Point(223, 3);
+            this.button3.Location = new System.Drawing.Point(225, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(101, 47);
             this.button3.TabIndex = 26;
@@ -3075,6 +3212,35 @@ namespace ClinicApp.Forms.Examination
             this.dgvRays.TabIndex = 20;
             this.dgvRays.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRays_CellDoubleClick);
             // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "ملاحظات";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "اسم الاشعة";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // raysId
+            // 
+            this.raysId.HeaderText = "id";
+            this.raysId.MinimumWidth = 6;
+            this.raysId.Name = "raysId";
+            this.raysId.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn5
+            // 
+            this.dataGridViewImageColumn5.HeaderText = "";
+            this.dataGridViewImageColumn5.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn5.MinimumWidth = 6;
+            this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
+            this.dataGridViewImageColumn5.ReadOnly = true;
+            // 
             // tableLayoutPanel32
             // 
             this.tableLayoutPanel32.ColumnCount = 2;
@@ -3198,7 +3364,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.58314F));
             this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.47541F));
-            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 209F));
+            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 210F));
             this.tableLayoutPanel35.Controls.Add(this.label46, 0, 0);
             this.tableLayoutPanel35.Controls.Add(this.comboRays, 1, 0);
             this.tableLayoutPanel35.Controls.Add(this.btnAddRays, 3, 0);
@@ -3229,9 +3395,9 @@ namespace ClinicApp.Forms.Examination
             this.comboRays.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboRays.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboRays.FormattingEnabled = true;
-            this.comboRays.Location = new System.Drawing.Point(340, 5);
+            this.comboRays.Location = new System.Drawing.Point(341, 14);
             this.comboRays.Name = "comboRays";
-            this.comboRays.Size = new System.Drawing.Size(698, 43);
+            this.comboRays.Size = new System.Drawing.Size(697, 43);
             this.comboRays.TabIndex = 25;
             // 
             // btnAddRays
@@ -3239,7 +3405,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddRays.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddRays.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddRays.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddRays.Location = new System.Drawing.Point(29, 3);
+            this.btnAddRays.Location = new System.Drawing.Point(30, 3);
             this.btnAddRays.Name = "btnAddRays";
             this.btnAddRays.Size = new System.Drawing.Size(153, 47);
             this.btnAddRays.TabIndex = 24;
@@ -3253,7 +3419,7 @@ namespace ClinicApp.Forms.Examination
             this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button7.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.Location = new System.Drawing.Point(223, 3);
+            this.button7.Location = new System.Drawing.Point(225, 3);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(101, 47);
             this.button7.TabIndex = 26;
@@ -3404,6 +3570,35 @@ namespace ClinicApp.Forms.Examination
             this.dgvFood.TabIndex = 20;
             this.dgvFood.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFood_CellDoubleClick);
             // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "ملاحظات";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "الاكل";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "id";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn6
+            // 
+            this.dataGridViewImageColumn6.HeaderText = "";
+            this.dataGridViewImageColumn6.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn6.MinimumWidth = 6;
+            this.dataGridViewImageColumn6.Name = "dataGridViewImageColumn6";
+            this.dataGridViewImageColumn6.ReadOnly = true;
+            // 
             // tableLayoutPanel39
             // 
             this.tableLayoutPanel39.ColumnCount = 2;
@@ -3449,7 +3644,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel40.ColumnCount = 3;
             this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.65011F));
             this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.34989F));
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
+            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPanel40.Controls.Add(this.label50, 0, 1);
             this.tableLayoutPanel40.Controls.Add(this.label51, 0, 0);
             this.tableLayoutPanel40.Controls.Add(this.txtFoodNotes, 1, 1);
@@ -3489,9 +3684,9 @@ namespace ClinicApp.Forms.Examination
             // txtFoodNotes
             // 
             this.txtFoodNotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFoodNotes.Location = new System.Drawing.Point(240, 57);
+            this.txtFoodNotes.Location = new System.Drawing.Point(241, 57);
             this.txtFoodNotes.Name = "txtFoodNotes";
-            this.txtFoodNotes.Size = new System.Drawing.Size(814, 42);
+            this.txtFoodNotes.Size = new System.Drawing.Size(813, 42);
             this.txtFoodNotes.TabIndex = 19;
             // 
             // btnAddFood
@@ -3499,7 +3694,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddFood.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddFood.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddFood.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddFood.Location = new System.Drawing.Point(42, 3);
+            this.btnAddFood.Location = new System.Drawing.Point(43, 3);
             this.btnAddFood.Name = "btnAddFood";
             this.btnAddFood.Size = new System.Drawing.Size(153, 48);
             this.btnAddFood.TabIndex = 20;
@@ -3514,9 +3709,9 @@ namespace ClinicApp.Forms.Examination
             this.comboFood.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboFood.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboFood.FormattingEnabled = true;
-            this.comboFood.Location = new System.Drawing.Point(240, 5);
+            this.comboFood.Location = new System.Drawing.Point(241, 14);
             this.comboFood.Name = "comboFood";
-            this.comboFood.Size = new System.Drawing.Size(814, 43);
+            this.comboFood.Size = new System.Drawing.Size(813, 43);
             this.comboFood.TabIndex = 21;
             // 
             // contrastingMedicinePage
@@ -3591,6 +3786,35 @@ namespace ClinicApp.Forms.Examination
             this.dgvContrastingMedicines.TabIndex = 20;
             this.dgvContrastingMedicines.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvContrastingMedicines_CellDoubleClick);
             // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "ملاحظات";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "الدواء المتعارض";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.HeaderText = "id";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn7
+            // 
+            this.dataGridViewImageColumn7.HeaderText = "";
+            this.dataGridViewImageColumn7.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn7.MinimumWidth = 6;
+            this.dataGridViewImageColumn7.Name = "dataGridViewImageColumn7";
+            this.dataGridViewImageColumn7.ReadOnly = true;
+            // 
             // tableLayoutPanel42
             // 
             this.tableLayoutPanel42.ColumnCount = 2;
@@ -3636,7 +3860,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel43.ColumnCount = 3;
             this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.65011F));
             this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.34989F));
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
+            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPanel43.Controls.Add(this.label53, 0, 1);
             this.tableLayoutPanel43.Controls.Add(this.label54, 0, 0);
             this.tableLayoutPanel43.Controls.Add(this.txtContrastingMedicinesNotes, 1, 1);
@@ -3676,9 +3900,9 @@ namespace ClinicApp.Forms.Examination
             // txtContrastingMedicinesNotes
             // 
             this.txtContrastingMedicinesNotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContrastingMedicinesNotes.Location = new System.Drawing.Point(240, 57);
+            this.txtContrastingMedicinesNotes.Location = new System.Drawing.Point(241, 57);
             this.txtContrastingMedicinesNotes.Name = "txtContrastingMedicinesNotes";
-            this.txtContrastingMedicinesNotes.Size = new System.Drawing.Size(814, 42);
+            this.txtContrastingMedicinesNotes.Size = new System.Drawing.Size(813, 42);
             this.txtContrastingMedicinesNotes.TabIndex = 19;
             // 
             // btnAddContrastingMedicines
@@ -3686,7 +3910,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddContrastingMedicines.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddContrastingMedicines.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddContrastingMedicines.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddContrastingMedicines.Location = new System.Drawing.Point(42, 3);
+            this.btnAddContrastingMedicines.Location = new System.Drawing.Point(43, 3);
             this.btnAddContrastingMedicines.Name = "btnAddContrastingMedicines";
             this.btnAddContrastingMedicines.Size = new System.Drawing.Size(153, 48);
             this.btnAddContrastingMedicines.TabIndex = 20;
@@ -3701,9 +3925,9 @@ namespace ClinicApp.Forms.Examination
             this.comboContrastingMedicines.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboContrastingMedicines.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboContrastingMedicines.FormattingEnabled = true;
-            this.comboContrastingMedicines.Location = new System.Drawing.Point(240, 14);
+            this.comboContrastingMedicines.Location = new System.Drawing.Point(241, 5);
             this.comboContrastingMedicines.Name = "comboContrastingMedicines";
-            this.comboContrastingMedicines.Size = new System.Drawing.Size(814, 43);
+            this.comboContrastingMedicines.Size = new System.Drawing.Size(813, 43);
             this.comboContrastingMedicines.TabIndex = 21;
             // 
             // smartAssistantPage
@@ -3725,230 +3949,6 @@ namespace ClinicApp.Forms.Examination
             this.printingPage.TabIndex = 12;
             this.printingPage.Text = "طباعة";
             this.printingPage.UseVisualStyleBackColor = true;
-            // 
-            // notess
-            // 
-            this.notess.HeaderText = "ملاحظات";
-            this.notess.MinimumWidth = 6;
-            this.notess.Name = "notess";
-            this.notess.ReadOnly = true;
-            // 
-            // Disease
-            // 
-            this.Disease.HeaderText = "المرض";
-            this.Disease.MinimumWidth = 6;
-            this.Disease.Name = "Disease";
-            this.Disease.ReadOnly = true;
-            // 
-            // DiseasesID
-            // 
-            this.DiseasesID.HeaderText = "id";
-            this.DiseasesID.MinimumWidth = 6;
-            this.DiseasesID.Name = "DiseasesID";
-            this.DiseasesID.ReadOnly = true;
-            // 
-            // delete
-            // 
-            this.delete.HeaderText = "";
-            this.delete.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.delete.MinimumWidth = 6;
-            this.delete.Name = "delete";
-            this.delete.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "ملاحظات";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "العرض";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "id";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn2.MinimumWidth = 6;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "ملاحظات";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dosage
-            // 
-            this.dosage.HeaderText = "جرعة الدواء";
-            this.dosage.MinimumWidth = 6;
-            this.dosage.Name = "dosage";
-            this.dosage.ReadOnly = true;
-            // 
-            // medicineunit
-            // 
-            this.medicineunit.HeaderText = "وحدة الدواء";
-            this.medicineunit.MinimumWidth = 6;
-            this.medicineunit.Name = "medicineunit";
-            this.medicineunit.ReadOnly = true;
-            // 
-            // timeMedicine
-            // 
-            this.timeMedicine.HeaderText = "عدد مرات اخذ الدواء";
-            this.timeMedicine.MinimumWidth = 6;
-            this.timeMedicine.Name = "timeMedicine";
-            this.timeMedicine.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "اسم الدواء";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // idMedicine
-            // 
-            this.idMedicine.HeaderText = "id";
-            this.idMedicine.MinimumWidth = 6;
-            this.idMedicine.Name = "idMedicine";
-            this.idMedicine.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn3
-            // 
-            this.dataGridViewImageColumn3.HeaderText = "";
-            this.dataGridViewImageColumn3.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn3.MinimumWidth = 6;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "ملاحظات";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "اسم التحليل";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // idAnalysis
-            // 
-            this.idAnalysis.HeaderText = "id";
-            this.idAnalysis.MinimumWidth = 6;
-            this.idAnalysis.Name = "idAnalysis";
-            this.idAnalysis.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn4
-            // 
-            this.dataGridViewImageColumn4.HeaderText = "";
-            this.dataGridViewImageColumn4.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn4.MinimumWidth = 6;
-            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
-            this.dataGridViewImageColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "ملاحظات";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "اسم الاشعة";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // raysId
-            // 
-            this.raysId.HeaderText = "id";
-            this.raysId.MinimumWidth = 6;
-            this.raysId.Name = "raysId";
-            this.raysId.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn5
-            // 
-            this.dataGridViewImageColumn5.HeaderText = "";
-            this.dataGridViewImageColumn5.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn5.MinimumWidth = 6;
-            this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
-            this.dataGridViewImageColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "ملاحظات";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "الاكل";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "id";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn6
-            // 
-            this.dataGridViewImageColumn6.HeaderText = "";
-            this.dataGridViewImageColumn6.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn6.MinimumWidth = 6;
-            this.dataGridViewImageColumn6.Name = "dataGridViewImageColumn6";
-            this.dataGridViewImageColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "ملاحظات";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.HeaderText = "الدواء المتعارض";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.HeaderText = "id";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn7
-            // 
-            this.dataGridViewImageColumn7.HeaderText = "";
-            this.dataGridViewImageColumn7.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn7.MinimumWidth = 6;
-            this.dataGridViewImageColumn7.Name = "dataGridViewImageColumn7";
-            this.dataGridViewImageColumn7.ReadOnly = true;
             // 
             // FormUpdateExamination
             // 
