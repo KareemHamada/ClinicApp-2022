@@ -92,9 +92,9 @@ namespace ClinicApp.Forms.patients
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(64, 64);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnPrint});
-            this.toolStrip1.Location = new System.Drawing.Point(535, 623);
+            this.toolStrip1.Location = new System.Drawing.Point(515, 623);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(82, 80);
+            this.toolStrip1.Size = new System.Drawing.Size(121, 80);
             this.toolStrip1.TabIndex = 26;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -109,6 +109,7 @@ namespace ClinicApp.Forms.patients
             this.btnPrint.Size = new System.Drawing.Size(79, 77);
             this.btnPrint.Text = "طباعة";
             this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // tableLayoutPanel2
             // 

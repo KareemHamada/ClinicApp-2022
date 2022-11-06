@@ -723,6 +723,7 @@
     <EmbeddedResource Include="Forms\Settings\Clinic\FormAddClinic.resx">
       <DependentUpon>FormAddClinic.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportFormPatientPrescription.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowAnalysis.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowAnalysisLoc.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowBookingType.rdlc" />

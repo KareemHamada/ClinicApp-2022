@@ -1,4 +1,6 @@
 ﻿using ClinicApp.Classes;
+using ClinicApp.Tools;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,31 +64,6 @@ namespace ClinicApp.Forms.patients
             // for combo clinics
             Helper.fillComboBox(comboPatient, "Select id,name from patient", "name", "id");
 
-            
-
-            //loadTable("Select " +
-            //    "Drugs.name as medicine," +
-            //    "PrescriptionPatient.timeTakeMedicine," +
-            //    "PrescriptionPatient.medicineUnit," +
-            //    "PrescriptionPatient.dosages," +
-            //    "PrescriptionPatient.notes," +
-            //    "PrescriptionPatient.id," +
-            //    "Clinics.name as clinic," +
-            //    "Doctors.name as doctor," +
-            //    "Reservations.date as dateTime" +
-            //    " from PrescriptionPatient p" +
-            //    " inner join Reservations r on r.id = p.clinicId" +
-            //    " inner join Clinics c on c.id = r.clinicId" +
-            //    " inner join Doctors d on d.id = r.doctorId" +
-            //    " inner join Drugs dr on dr.id = p.medicineId" +
-            //    " inner join Reservations r on " +
-            //    "where p.patientId = '" + comboPatient.SelectedValue + "' " +
-            //    "and p.medicineId = dr.id" +
-            //    "and p.reservationId = r.id " +
-            //    "and r.doctorId = d.id " +
-            //    "and r.clinicId = c.id"
-            //    );
-
         }
 
         private void comboPatient_SelectedIndexChanged(object sender, EventArgs e)
@@ -110,6 +87,53 @@ namespace ClinicApp.Forms.patients
                 "and Reservations.doctorId = Doctors.id " +
                 "and Reservations.clinicId = Clinics.id"
                 );
+            }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            if (dgvLoading.Rows.Count > 0)
+            {
+                dsTools tbl = new dsTools();
+                for (int i = 0; i < dgvLoading.Rows.Count; i++)
+                {
+                    DataRow dro = tbl.Tables["dtShowPatientPrescription"].NewRow();
+                    dro["doctor"] = dgvLoading[0, i].Value;
+                    dro["clinic"] = dgvLoading[1, i].Value;
+                    dro["dateTime"] = dgvLoading[2, i].Value;
+                    dro["notes"] = dgvLoading[3, i].Value;
+                    dro["dosages"] = dgvLoading[4, i].Value;
+                    dro["medicineUnit"] = dgvLoading[5, i].Value;
+                    dro["timeTakeMedicine"] = dgvLoading[6, i].Value;
+                    dro["medicine"] = dgvLoading[7, i].Value;
+
+                    tbl.Tables["dtShowPatientPrescription"].Rows.Add(dro);
+                }
+
+                FormReports rptForm = new FormReports();
+                rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportFormPatientPrescription.rdlc";
+                rptForm.mainReport.LocalReport.DataSources.Clear();
+                rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowPatientPrescription"]));
+
+                if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
+                {
+                    LocalReport report = new LocalReport();
+                    string path = Application.StartupPath + @"\Reports\ReportFormPatientPrescription.rdlc";
+                    report.ReportPath = path;
+                    report.DataSources.Clear();
+                    report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowPatientPrescription"]));
+
+                    PrintersClass.PrintToPrinter(report);
+                }
+                else if (bool.Parse(declarations.systemOptions["showBeforePrint"].ToString()))
+                {
+                    rptForm.ShowDialog();
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("لا يوجد عناصر لعرضها");
             }
         }
     }
