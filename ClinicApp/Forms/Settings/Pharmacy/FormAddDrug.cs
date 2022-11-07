@@ -111,6 +111,8 @@ namespace ClinicApp.Forms.Settings.Pharmacy
             txtCompany.Text = "";
             txtNotes.Text = "";
             id = "";
+
+            this.DialogResult = DialogResult.OK;
         }
     }
 }

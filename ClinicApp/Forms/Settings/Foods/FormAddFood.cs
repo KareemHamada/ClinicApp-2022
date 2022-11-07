@@ -108,6 +108,8 @@ namespace ClinicApp.Forms.Settings.Foods
             txtName.Text = "";
             txtNotes.Text = "";
             id = "";
+
+            this.DialogResult = DialogResult.OK;
         }
     }
 }

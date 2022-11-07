@@ -108,6 +108,7 @@ namespace ClinicApp.Forms.Settings.Symptoms
             txtName.Text = "";
             txtNotes.Text = "";
             id = "";
+            this.DialogResult = DialogResult.OK;
         }
     }
 }
