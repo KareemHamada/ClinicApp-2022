@@ -49,6 +49,7 @@ namespace ClinicApp.Forms
             this.btnShowPatient = new System.Windows.Forms.ToolStripMenuItem();
             this.btnVisitingPatient = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPatientPerception = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnPatientAnalysis = new System.Windows.Forms.ToolStripMenuItem();
             this.الحجوزاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddReservations = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowReservations = new System.Windows.Forms.ToolStripMenuItem();
@@ -125,7 +126,7 @@ namespace ClinicApp.Forms
             this.btnShowGovernment = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPrintingSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnPatientAnalysis = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnPatientRays = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -281,7 +282,8 @@ namespace ClinicApp.Forms
             this.btnShowPatient,
             this.btnVisitingPatient,
             this.btnPatientPerception,
-            this.btnPatientAnalysis});
+            this.btnPatientAnalysis,
+            this.btnPatientRays});
             this.المرضيToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("المرضيToolStripMenuItem.Image")));
             this.المرضيToolStripMenuItem.Name = "المرضيToolStripMenuItem";
             this.المرضيToolStripMenuItem.Size = new System.Drawing.Size(98, 39);
@@ -318,6 +320,14 @@ namespace ClinicApp.Forms
             this.btnPatientPerception.Size = new System.Drawing.Size(303, 40);
             this.btnPatientPerception.Text = "الروشتات العلاجية للمريض";
             this.btnPatientPerception.Click += new System.EventHandler(this.btnPatientPerception_Click);
+            // 
+            // btnPatientAnalysis
+            // 
+            this.btnPatientAnalysis.Image = global::ClinicApp.Properties.Resources.profile1;
+            this.btnPatientAnalysis.Name = "btnPatientAnalysis";
+            this.btnPatientAnalysis.Size = new System.Drawing.Size(303, 40);
+            this.btnPatientAnalysis.Text = "تحاليل المريض";
+            this.btnPatientAnalysis.Click += new System.EventHandler(this.btnPatientAnalysis_Click);
             // 
             // الحجوزاتToolStripMenuItem
             // 
@@ -993,13 +1003,13 @@ namespace ClinicApp.Forms
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // btnPatientAnalysis
+            // btnPatientRays
             // 
-            this.btnPatientAnalysis.Image = global::ClinicApp.Properties.Resources.profile1;
-            this.btnPatientAnalysis.Name = "btnPatientAnalysis";
-            this.btnPatientAnalysis.Size = new System.Drawing.Size(303, 40);
-            this.btnPatientAnalysis.Text = "تحاليل المريض";
-            this.btnPatientAnalysis.Click += new System.EventHandler(this.btnPatientAnalysis_Click);
+            this.btnPatientRays.Image = global::ClinicApp.Properties.Resources.x_rays;
+            this.btnPatientRays.Name = "btnPatientRays";
+            this.btnPatientRays.Size = new System.Drawing.Size(303, 40);
+            this.btnPatientRays.Text = "اشعة المريض";
+            this.btnPatientRays.Click += new System.EventHandler(this.btnPatientRays_Click);
             // 
             // FormMain
             // 
@@ -1123,5 +1133,6 @@ namespace ClinicApp.Forms
         private System.Windows.Forms.ToolStripMenuItem btnVisitingPatient;
         private System.Windows.Forms.ToolStripMenuItem btnPatientPerception;
         private System.Windows.Forms.ToolStripMenuItem btnPatientAnalysis;
+        private System.Windows.Forms.ToolStripMenuItem btnPatientRays;
     }
 }

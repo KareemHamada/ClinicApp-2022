@@ -321,6 +321,12 @@
     <Compile Include="Forms\patients\FormPatientPrescription.Designer.cs">
       <DependentUpon>FormPatientPrescription.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\patients\FormPatientRays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\patients\FormPatientRays.Designer.cs">
+      <DependentUpon>FormPatientRays.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\patients\FormShowPatient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -572,6 +578,9 @@
     <EmbeddedResource Include="Forms\patients\FormPatientPrescription.resx">
       <DependentUpon>FormPatientPrescription.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\patients\FormPatientRays.resx">
+      <DependentUpon>FormPatientRays.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\patients\FormVisitingPatient.resx">
       <DependentUpon>FormVisitingPatient.cs</DependentUpon>
     </EmbeddedResource>
@@ -732,7 +741,9 @@
     <EmbeddedResource Include="Forms\Settings\Clinic\FormAddClinic.resx">
       <DependentUpon>FormAddClinic.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportFormPatientAnalysis.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormPatientPrescription.rdlc" />
+    <EmbeddedResource Include="Reports\ReportFormPatientRays.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowAnalysis.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowAnalysisLoc.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowBookingType.rdlc" />

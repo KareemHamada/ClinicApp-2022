@@ -103,7 +103,7 @@ namespace ClinicApp.Forms.Reservations
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1146, 67);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1260, 67);
             this.tableLayoutPanel1.TabIndex = 27;
             // 
             // label1
@@ -112,10 +112,10 @@ namespace ClinicApp.Forms.Reservations
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(1052, 8);
+            this.label1.Location = new System.Drawing.Point(1157, 8);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(91, 51);
+            this.label1.Size = new System.Drawing.Size(100, 51);
             this.label1.TabIndex = 16;
             this.label1.Text = "التاريخ";
             // 
@@ -125,10 +125,10 @@ namespace ClinicApp.Forms.Reservations
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(715, 8);
+            this.label3.Location = new System.Drawing.Point(786, 8);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(94, 51);
+            this.label3.Size = new System.Drawing.Size(104, 51);
             this.label3.TabIndex = 17;
             this.label3.Text = "العيادة";
             // 
@@ -138,10 +138,10 @@ namespace ClinicApp.Forms.Reservations
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(374, 8);
+            this.label4.Location = new System.Drawing.Point(411, 8);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label4.Size = new System.Drawing.Size(113, 51);
+            this.label4.Size = new System.Drawing.Size(125, 51);
             this.label4.TabIndex = 18;
             this.label4.Text = "الدكتور";
             // 
@@ -151,11 +151,11 @@ namespace ClinicApp.Forms.Reservations
             this.dateOfReservations.CustomFormat = "";
             this.dateOfReservations.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateOfReservations.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateOfReservations.Location = new System.Drawing.Point(815, 13);
+            this.dateOfReservations.Location = new System.Drawing.Point(896, 13);
             this.dateOfReservations.Name = "dateOfReservations";
             this.dateOfReservations.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dateOfReservations.RightToLeftLayout = true;
-            this.dateOfReservations.Size = new System.Drawing.Size(231, 41);
+            this.dateOfReservations.Size = new System.Drawing.Size(255, 41);
             this.dateOfReservations.TabIndex = 50;
             this.dateOfReservations.Value = new System.DateTime(2022, 10, 11, 0, 0, 0, 0);
             this.dateOfReservations.ValueChanged += new System.EventHandler(this.dateOfReservations_ValueChanged);
@@ -167,11 +167,11 @@ namespace ClinicApp.Forms.Reservations
             this.comboClinic.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboClinic.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboClinic.FormattingEnabled = true;
-            this.comboClinic.Location = new System.Drawing.Point(493, 11);
+            this.comboClinic.Location = new System.Drawing.Point(542, 11);
             this.comboClinic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboClinic.Name = "comboClinic";
             this.comboClinic.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboClinic.Size = new System.Drawing.Size(216, 44);
+            this.comboClinic.Size = new System.Drawing.Size(238, 44);
             this.comboClinic.TabIndex = 63;
             // 
             // comboDoctor
@@ -181,11 +181,11 @@ namespace ClinicApp.Forms.Reservations
             this.comboDoctor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboDoctor.FormattingEnabled = true;
-            this.comboDoctor.Location = new System.Drawing.Point(127, 11);
+            this.comboDoctor.Location = new System.Drawing.Point(139, 11);
             this.comboDoctor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboDoctor.Name = "comboDoctor";
             this.comboDoctor.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboDoctor.Size = new System.Drawing.Size(241, 44);
+            this.comboDoctor.Size = new System.Drawing.Size(266, 44);
             this.comboDoctor.TabIndex = 64;
             // 
             // btnSearch
@@ -195,7 +195,7 @@ namespace ClinicApp.Forms.Reservations
             this.btnSearch.Image = global::ClinicApp.Properties.Resources.search;
             this.btnSearch.Location = new System.Drawing.Point(3, 3);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(118, 61);
+            this.btnSearch.Size = new System.Drawing.Size(130, 61);
             this.btnSearch.TabIndex = 65;
             this.btnSearch.Text = "بحث";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -253,7 +253,7 @@ namespace ClinicApp.Forms.Reservations
             this.dgvLoading.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvLoading.RowTemplate.Height = 35;
             this.dgvLoading.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLoading.Size = new System.Drawing.Size(1146, 399);
+            this.dgvLoading.Size = new System.Drawing.Size(1260, 399);
             this.dgvLoading.TabIndex = 19;
             // 
             // user
@@ -381,7 +381,7 @@ namespace ClinicApp.Forms.Reservations
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1146, 56);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1260, 56);
             this.tableLayoutPanel2.TabIndex = 17;
             // 
             // pictureBox1
@@ -389,9 +389,9 @@ namespace ClinicApp.Forms.Reservations
             this.pictureBox1.BackgroundImage = global::ClinicApp.Properties.Resources.company;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(1039, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(1142, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(115, 50);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
@@ -401,7 +401,7 @@ namespace ClinicApp.Forms.Reservations
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(422, 2);
+            this.label2.Location = new System.Drawing.Point(473, 2);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(192, 51);
             this.label2.TabIndex = 15;
@@ -418,9 +418,9 @@ namespace ClinicApp.Forms.Reservations
             this.btnDelete,
             this.btnUpdate,
             this.btnPrint});
-            this.toolStrip1.Location = new System.Drawing.Point(462, 632);
+            this.toolStrip1.Location = new System.Drawing.Point(499, 632);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(228, 71);
+            this.toolStrip1.Size = new System.Drawing.Size(267, 71);
             this.toolStrip1.TabIndex = 26;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -461,6 +461,7 @@ namespace ClinicApp.Forms.Reservations
             this.btnPrint.Size = new System.Drawing.Size(79, 68);
             this.btnPrint.Text = "طباعة";
             this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // pnlParient
             // 
@@ -482,7 +483,7 @@ namespace ClinicApp.Forms.Reservations
             this.pnlParient.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.61024F));
             this.pnlParient.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.pnlParient.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pnlParient.Size = new System.Drawing.Size(1152, 703);
+            this.pnlParient.Size = new System.Drawing.Size(1266, 703);
             this.pnlParient.TabIndex = 4;
             // 
             // tableLayoutPanel3
@@ -499,7 +500,7 @@ namespace ClinicApp.Forms.Reservations
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1146, 86);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1260, 86);
             this.tableLayoutPanel3.TabIndex = 18;
             // 
             // btnReload
@@ -509,7 +510,7 @@ namespace ClinicApp.Forms.Reservations
             this.btnReload.Image = global::ClinicApp.Properties.Resources.loading;
             this.btnReload.Location = new System.Drawing.Point(3, 3);
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(162, 80);
+            this.btnReload.Size = new System.Drawing.Size(178, 80);
             this.btnReload.TabIndex = 66;
             this.btnReload.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnReload.UseVisualStyleBackColor = false;
@@ -520,9 +521,9 @@ namespace ClinicApp.Forms.Reservations
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(1053, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(1157, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(90, 80);
+            this.pictureBox2.Size = new System.Drawing.Size(100, 80);
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
@@ -532,9 +533,9 @@ namespace ClinicApp.Forms.Reservations
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSearch.Location = new System.Drawing.Point(171, 22);
+            this.txtSearch.Location = new System.Drawing.Point(187, 22);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(876, 41);
+            this.txtSearch.Size = new System.Drawing.Size(964, 41);
             this.txtSearch.TabIndex = 19;
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
@@ -543,7 +544,7 @@ namespace ClinicApp.Forms.Reservations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 703);
+            this.ClientSize = new System.Drawing.Size(1266, 703);
             this.Controls.Add(this.pnlParient);
             this.Name = "FormShowReservations";
             this.ShowIcon = false;

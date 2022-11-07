@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace ClinicApp.Forms.patients
 {
-    public partial class FormPatientAnalysis : Form
+    public partial class FormPatientRays : Form
     {
-        public FormPatientAnalysis()
+        public FormPatientRays()
         {
             InitializeComponent();
         }
@@ -44,10 +44,9 @@ namespace ClinicApp.Forms.patients
                             {
                                 row["doctor"],
                                 row["clinic"],
-                                row["dateTime"],
+                                Convert.ToDateTime(row["dateTime"]).ToString("dd/MM/yyyy"),
                                 row["notes"],
-                                "",
-                                row["analysis"],
+                                row["rays"],
                                 row["id"],
 
                             }
@@ -55,7 +54,7 @@ namespace ClinicApp.Forms.patients
                 }
             }
         }
-        private void FormPatientAnalysis_Load(object sender, EventArgs e)
+        private void FormPatientRays_Load(object sender, EventArgs e)
         {
             // for combo clinics
             Helper.fillComboBox(comboPatient, "Select id,name from patient", "name", "id");
@@ -66,16 +65,16 @@ namespace ClinicApp.Forms.patients
             if (comboPatient.Text != "")
             {
                 loadTable("Select " +
-                "Analysis.name as analysis," +
-                "AnalysisPatient.notes," +
-                "AnalysisPatient.id," +
+                "Rays.name as rays," +
+                "RaysPatient.notes," +
+                "RaysPatient.id," +
                 "Clinics.name as clinic," +
                 "Doctors.name as doctor," +
                 "Reservations.date as dateTime " +
-                "from AnalysisPatient,Reservations,Clinics,Doctors,Analysis " +
-                "where AnalysisPatient.patientId = '" + comboPatient.SelectedValue + "' " +
-                "and AnalysisPatient.examinationId = Reservations.id " +
-                "and AnalysisPatient.analysisId = Analysis.id " +
+                "from RaysPatient,Reservations,Clinics,Doctors,Rays " +
+                "where RaysPatient.patientId = '" + comboPatient.SelectedValue + "' " +
+                "and RaysPatient.examinationId = Reservations.id " +
+                "and RaysPatient.raysId = Rays.id " +
                 "and Reservations.doctorId = Doctors.id " +
                 "and Reservations.clinicId = Clinics.id"
                 );
@@ -89,28 +88,28 @@ namespace ClinicApp.Forms.patients
                 dsTools tbl = new dsTools();
                 for (int i = 0; i < dgvLoading.Rows.Count; i++)
                 {
-                    DataRow dro = tbl.Tables["dtShowPatientAnalysis"].NewRow();
+                    DataRow dro = tbl.Tables["dtShowPatientRays"].NewRow();
                     dro["doctor"] = dgvLoading[0, i].Value;
                     dro["clinic"] = dgvLoading[1, i].Value;
                     dro["dateTime"] = dgvLoading[2, i].Value;
                     dro["notes"] = dgvLoading[3, i].Value;
-                    dro["name"] = dgvLoading[5, i].Value;
+                    dro["name"] = dgvLoading[4, i].Value;
 
-                    tbl.Tables["dtShowPatientAnalysis"].Rows.Add(dro);
+                    tbl.Tables["dtShowPatientRays"].Rows.Add(dro);
                 }
 
                 FormReports rptForm = new FormReports();
-                rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportFormPatientAnalysis.rdlc";
+                rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportFormPatientRays.rdlc";
                 rptForm.mainReport.LocalReport.DataSources.Clear();
-                rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowPatientAnalysis"]));
+                rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowPatientRays"]));
 
                 if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
                 {
                     LocalReport report = new LocalReport();
-                    string path = Application.StartupPath + @"\Reports\ReportFormPatientAnalysis.rdlc";
+                    string path = Application.StartupPath + @"\Reports\ReportFormPatientRays.rdlc";
                     report.ReportPath = path;
                     report.DataSources.Clear();
-                    report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowPatientAnalysis"]));
+                    report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowPatientRays"]));
 
                     PrintersClass.PrintToPrinter(report);
                 }

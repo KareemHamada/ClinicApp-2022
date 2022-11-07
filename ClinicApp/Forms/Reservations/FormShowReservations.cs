@@ -405,5 +405,10 @@ namespace ClinicApp.Forms.Reservations
 
             }
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

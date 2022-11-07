@@ -424,5 +424,11 @@ namespace ClinicApp.Forms
             FormPatientAnalysis frm = new FormPatientAnalysis();
             frm.Show();
         }
+
+        private void btnPatientRays_Click(object sender, EventArgs e)
+        {
+            FormPatientRays frm = new FormPatientRays();
+            frm.Show();
+        }
     }
 }

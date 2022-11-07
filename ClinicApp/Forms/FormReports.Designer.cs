@@ -53,8 +53,8 @@ namespace ClinicApp.Forms
             this.ClientSize = new System.Drawing.Size(891, 450);
             this.Controls.Add(this.mainReport);
             this.Name = "FormReports";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormReports";
             this.Load += new System.EventHandler(this.FormReports_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
