@@ -125,6 +125,7 @@ namespace ClinicApp.Forms
             this.btnShowGovernment = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPrintingSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPatientAnalysis = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -279,7 +280,8 @@ namespace ClinicApp.Forms
             this.btnAddPatient,
             this.btnShowPatient,
             this.btnVisitingPatient,
-            this.btnPatientPerception});
+            this.btnPatientPerception,
+            this.btnPatientAnalysis});
             this.المرضيToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("المرضيToolStripMenuItem.Image")));
             this.المرضيToolStripMenuItem.Name = "المرضيToolStripMenuItem";
             this.المرضيToolStripMenuItem.Size = new System.Drawing.Size(98, 39);
@@ -991,6 +993,14 @@ namespace ClinicApp.Forms
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // btnPatientAnalysis
+            // 
+            this.btnPatientAnalysis.Image = global::ClinicApp.Properties.Resources.profile1;
+            this.btnPatientAnalysis.Name = "btnPatientAnalysis";
+            this.btnPatientAnalysis.Size = new System.Drawing.Size(303, 40);
+            this.btnPatientAnalysis.Text = "تحاليل المريض";
+            this.btnPatientAnalysis.Click += new System.EventHandler(this.btnPatientAnalysis_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1112,5 +1122,6 @@ namespace ClinicApp.Forms
         private System.Windows.Forms.ToolStripMenuItem btnPrintingSettings;
         private System.Windows.Forms.ToolStripMenuItem btnVisitingPatient;
         private System.Windows.Forms.ToolStripMenuItem btnPatientPerception;
+        private System.Windows.Forms.ToolStripMenuItem btnPatientAnalysis;
     }
 }

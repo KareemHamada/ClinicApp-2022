@@ -309,6 +309,12 @@
     <Compile Include="Forms\patients\FormPatient.Designer.cs">
       <DependentUpon>FormPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\patients\FormPatientAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\patients\FormPatientAnalysis.Designer.cs">
+      <DependentUpon>FormPatientAnalysis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\patients\FormPatientPrescription.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -559,6 +565,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Expenses\FormShowExpensesTypes.resx">
       <DependentUpon>FormShowExpensesTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\patients\FormPatientAnalysis.resx">
+      <DependentUpon>FormPatientAnalysis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\patients\FormPatientPrescription.resx">
       <DependentUpon>FormPatientPrescription.cs</DependentUpon>
@@ -1014,6 +1023,8 @@
   <ItemGroup>
     <None Include="Resources\information.png" />
     <None Include="Resources\notes3.png" />
+    <None Include="Resources\combo.png" />
+    <None Include="Resources\plus-green.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -1,10 +1,13 @@
 ﻿using ClinicApp.Classes;
+using ClinicApp.Forms.Settings.Analysis;
+using ClinicApp.Forms.Settings.Diseases;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +25,8 @@ namespace ClinicApp.Forms.Examination
         private SqlCommand cmd;
         private string patId; // patient id
         private string newExaminationID; // reservation Id
+        //public byte[] pdfAnalysisContent;
+
         public void loadTable(string query)
         {
             dgvLoading.Rows.Clear();
@@ -644,6 +649,17 @@ namespace ClinicApp.Forms.Examination
                     cmd.Parameters.AddWithValue("@notes", dgvAnalysis[0, i].Value);
                     cmd.Parameters.AddWithValue("@patientId", patId);
                     cmd.Parameters.AddWithValue("@examinationId", newExaminationID);
+
+                    //// kareem
+                    //if (pdfAnalysisContent != null && pdfAnalysisContent.Length > 0)
+                    //{
+                    //    cmd.Parameters.AddWithValue("@pdf", Encoding.ASCII.GetBytes(dgvAnalysis[4, i].Value.ToString()));
+                    //}
+                    //else
+                    //{
+                    //    cmd.Parameters.Add("@pdf", SqlDbType.VarBinary).Value = DBNull.Value;
+                    //}
+
                     cmd.ExecuteNonQuery();
                     cmd.Parameters.Clear();
                 }
@@ -755,6 +771,7 @@ namespace ClinicApp.Forms.Examination
                                 comboAnalysis.Text,
                                 Properties.Resources.delete_24,
                                 comboAnalysis.SelectedValue
+                                //pdfAnalysisContent
                             }
                         );
 
@@ -869,5 +886,42 @@ namespace ClinicApp.Forms.Examination
                 }
             }
         }
+
+        private void btnUploadPdf_Click(object sender, EventArgs e)
+        {
+            //using (OpenFileDialog fileDialog = new OpenFileDialog() { Filter = "PDF Documents(*.pdf)|*.pdf", ValidateNames = true })
+            //{
+            //    if (fileDialog.ShowDialog() == DialogResult.OK)
+            //    {
+            //        DialogResult dialog = MessageBox.Show("هل متاكد من حفظ ذلك الملف ؟", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            //        if (dialog == DialogResult.Yes)
+            //        {
+            //            string filename = fileDialog.FileName;
+            //            pdfAnalysisContent = uploadFile(filename);
+            //        }
+            //    }
+            //}
+        }
+
+        private void btnAddToCombo_Click(object sender, EventArgs e)
+        {
+            FormAddDisease frm = new FormAddDisease();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                // for combo Diseases
+                Helper.fillComboBox(comboDiseases, "Select id,name from Diseases", "name", "id");
+            }    
+        }
+
+        //private byte[] uploadFile(string file)
+        //{
+        //    FileStream fstream = File.OpenRead(file);
+        //    byte[] content = new byte[fstream.Length];
+        //    fstream.Read(content, 0, (int)fstream.Length);
+        //    fstream.Close();
+
+        //    return content;
+        //}
     }
 }

@@ -418,5 +418,11 @@ namespace ClinicApp.Forms
             FormPatientPrescription frm = new FormPatientPrescription();
             frm.Show();
         }
+
+        private void btnPatientAnalysis_Click(object sender, EventArgs e)
+        {
+            FormPatientAnalysis frm = new FormPatientAnalysis();
+            frm.Show();
+        }
     }
 }

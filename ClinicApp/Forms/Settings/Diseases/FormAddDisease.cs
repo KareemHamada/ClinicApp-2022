@@ -1,4 +1,6 @@
 ﻿using ClinicApp.Classes;
+using ClinicApp.Forms.Examination;
+using ClinicApp.Forms.Reservations;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +24,8 @@ namespace ClinicApp.Forms.Settings.Diseases
 
         public string id = "";
         public FormShowDiseases refreshForm;
+
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (id == "")
@@ -57,7 +61,6 @@ namespace ClinicApp.Forms.Settings.Diseases
                 {
                     adoClass.sqlcn.Close();
                 }
-
             }
             else
             {
@@ -108,6 +111,9 @@ namespace ClinicApp.Forms.Settings.Diseases
             txtName.Text = "";
             txtNotes.Text = "";
             id = "";
+
+
+            this.DialogResult = DialogResult.OK;
         }
     }
 }

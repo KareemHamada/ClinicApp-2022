@@ -213,6 +213,16 @@ namespace ClinicApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap combo {
+            get {
+                object obj = ResourceManager.GetObject("combo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap company {
             get {
                 object obj = ResourceManager.GetObject("company", resourceCulture);
@@ -626,6 +636,16 @@ namespace ClinicApp.Properties {
         internal static System.Drawing.Bitmap plus_32 {
             get {
                 object obj = ResourceManager.GetObject("plus-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_green {
+            get {
+                object obj = ResourceManager.GetObject("plus-green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

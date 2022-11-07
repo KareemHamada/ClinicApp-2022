@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,7 @@ namespace ClinicApp.Forms.Examination
         private SqlCommand cmd;
         public string patId; // patient id
         public string reservationId; // reservation Id
-
+        //public byte[] pdfAnalysisContent;
 
         public void loadTable(string query)
         {
@@ -844,6 +845,16 @@ namespace ClinicApp.Forms.Examination
                     cmd.Parameters.AddWithValue("@notes", dgvAnalysis[0, i].Value);
                     cmd.Parameters.AddWithValue("@patientId", patId);
                     cmd.Parameters.AddWithValue("@examinationId", reservationId);
+
+                    //if (pdfAnalysisContent != null && pdfAnalysisContent.Length > 0)
+                    //{
+                    //    cmd.Parameters.AddWithValue("@pdf", pdfAnalysisContent);
+                    //}
+                    //else
+                    //{
+                    //    cmd.Parameters.Add("@pdf", SqlDbType.VarBinary).Value = DBNull.Value;
+                    //}
+
                     cmd.ExecuteNonQuery();
                     cmd.Parameters.Clear();
                 }
@@ -916,5 +927,33 @@ namespace ClinicApp.Forms.Examination
 
             MessageBox.Show("تم التعديل بنجاح");
         }
+
+        private void btnUploadPdf_Click(object sender, EventArgs e)
+        {
+            //using (OpenFileDialog fileDialog = new OpenFileDialog() { Filter = "PDF Documents(*.pdf)|*.pdf", ValidateNames = true })
+            //{
+            //    if (fileDialog.ShowDialog() == DialogResult.OK)
+            //    {
+            //        DialogResult dialog = MessageBox.Show("هل متاكد من حفظ ذلك الملف ؟", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            //        if (dialog == DialogResult.Yes)
+            //        {
+            //            string filename = fileDialog.FileName;
+            //            pdfAnalysisContent = uploadFile(filename);
+            //        }
+            //    }
+            //}
+        }
+
+
+        //private byte[] uploadFile(string file)
+        //{
+            //FileStream fstream = File.OpenRead(file);
+            //byte[] content = new byte[fstream.Length];
+            //fstream.Read(content, 0, (int)fstream.Length);
+            //fstream.Close();
+
+            //return content;
+        //}
     }
 }

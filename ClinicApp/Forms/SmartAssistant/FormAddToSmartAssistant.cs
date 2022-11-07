@@ -242,10 +242,6 @@ namespace ClinicApp.Forms.SmartAssistant
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
-
-
-
             if (id == "")
             {
                 if (txtNameArabic.Text == "" && txtNameEnglish.Text == "")
