@@ -1,4 +1,6 @@
 ﻿using ClinicApp.Classes;
+using ClinicApp.Tools;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,7 +59,7 @@ namespace ClinicApp.Forms.Reservations
                                 row["reservationPerson"],
                                 row["doctor"],
                                 row["clinic"],
-                                row["date"],
+                                Convert.ToDateTime(row["date"]).ToString("dd/MM/yyyy"),
                                 row["reservationNumber"],
                                 row["patient"],
                                 row["id"],
@@ -301,7 +303,38 @@ namespace ClinicApp.Forms.Reservations
 
         private void dateOfReservations_ValueChanged(object sender, EventArgs e)
         {
-            //dateOfReservations.CustomFormat = "dd/MM/yyyy";
+            loadTable("select " +
+                "Reservations.id," +
+                "Reservations.reservationNumber," +
+                "Clinics.name as clinic," +
+                "Doctors.name as doctor," +
+                "patient.name as patient," +
+                "BookingType.name as bookingType," +
+                "Reservations.bookingStatus," +
+                "Reservations.phoneReservationPerson," +
+                "Reservations.reservationPerson," +
+                "Reservations.date," +
+                "VisitingType.name as visitingType," +
+                "Reservations.money," +
+                "Reservations.discount," +
+                "Reservations.moneyAfterDiscount," +
+                "Reservations.notes," +
+                "Users.name as userName" +
+                " from Reservations," +
+                "Clinics," +
+                "Doctors," +
+                "patient," +
+                "BookingType," +
+                "VisitingType," +
+                "Users " +
+                "where " +
+                "Reservations.clinicId = Clinics.id and " +
+                "Reservations.doctorId = Doctors.id and " +
+                "Reservations.patientId = patient.id and " +
+                "Reservations.bookingTypeId = BookingType.id and " +
+                "Reservations.visitTypeId = VisitingType.id and " +
+                "Reservations.userId = Users.id " +
+                "and Reservations.date = '" + dateOfReservations.Value + "' ");
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -408,7 +441,57 @@ namespace ClinicApp.Forms.Reservations
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
+            if (dgvLoading.Rows.Count > 0)
+            {
+                dsTools tbl = new dsTools();
+                for (int i = 0; i < dgvLoading.Rows.Count; i++)
+                {
+                    DataRow dro = tbl.Tables["dtShowReservations"].NewRow();
 
+                    dro["userName"] = dgvLoading[0, i].Value;
+                    dro["notes"] = dgvLoading[1, i].Value;
+                    dro["moneyAfterDiscount"] = dgvLoading[2, i].Value;
+                    dro["discount"] = dgvLoading[3, i].Value;
+                    dro["money"] = dgvLoading[4, i].Value;
+                    dro["bookingStatus"] = dgvLoading[5, i].Value;
+                    dro["bookingType"] = dgvLoading[6, i].Value;
+                    dro["visitingType"] = dgvLoading[7, i].Value;
+                    dro["phoneReservationPerson"] = dgvLoading[8, i].Value;
+                    dro["reservationPerson"] = dgvLoading[9, i].Value;
+                    dro["doctor"] = dgvLoading[10, i].Value;
+                    dro["clinic"] = dgvLoading[11, i].Value;
+                    dro["date"] = dgvLoading[12, i].Value;
+                    dro["reservationNumber"] = dgvLoading[13, i].Value;
+                    dro["patient"] = dgvLoading[14, i].Value;
+
+                    tbl.Tables["dtShowReservations"].Rows.Add(dro);
+                }
+
+                FormReports rptForm = new FormReports();
+                rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportFormShowReservations.rdlc";
+                rptForm.mainReport.LocalReport.DataSources.Clear();
+                rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowReservations"]));
+
+                if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
+                {
+                    LocalReport report = new LocalReport();
+                    string path = Application.StartupPath + @"\Reports\ReportFormShowReservations.rdlc";
+                    report.ReportPath = path;
+                    report.DataSources.Clear();
+                    report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowReservations"]));
+
+                    PrintersClass.PrintToPrinter(report);
+                }
+                else if (bool.Parse(declarations.systemOptions["showBeforePrint"].ToString()))
+                {
+                    rptForm.ShowDialog();
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("لا يوجد عناصر لعرضها");
+            }
         }
     }
 }

@@ -770,6 +770,7 @@
     <EmbeddedResource Include="Reports\ReportFormShowPharmacyLoc.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowRays.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowRaysLoc.rdlc" />
+    <EmbeddedResource Include="Reports\ReportFormShowReservations.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowSpecializations.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowSymptoms.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormVisitingPatient.rdlc" />
