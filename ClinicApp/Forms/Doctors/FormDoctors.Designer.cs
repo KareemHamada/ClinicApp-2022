@@ -61,6 +61,16 @@ namespace ClinicApp.Forms.Doctors
             this.txtName = new System.Windows.Forms.TextBox();
             this.comboClinic = new System.Windows.Forms.ComboBox();
             this.comboSpecialization = new System.Windows.Forms.ComboBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pnlParient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,6 +79,16 @@ namespace ClinicApp.Forms.Doctors
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlParient
@@ -105,9 +125,10 @@ namespace ClinicApp.Forms.Doctors
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1039, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(1042, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(98, 51);
             this.pictureBox1.TabIndex = 16;
@@ -164,7 +185,7 @@ namespace ClinicApp.Forms.Doctors
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 516F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1146, 516);
             this.tableLayoutPanel2.TabIndex = 18;
             // 
@@ -214,9 +235,10 @@ namespace ClinicApp.Forms.Doctors
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.45238F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.54762F));
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.37698F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.95635F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel4.Controls.Add(this.txtEmail, 0, 9);
             this.tableLayoutPanel4.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.label5, 1, 1);
@@ -237,6 +259,16 @@ namespace ClinicApp.Forms.Doctors
             this.tableLayoutPanel4.Controls.Add(this.txtName, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.comboClinic, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.comboSpecialization, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox7, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox6, 2, 2);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox3, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox5, 2, 3);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox4, 2, 4);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox2, 2, 5);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox8, 2, 6);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox9, 2, 7);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox10, 2, 8);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox11, 2, 9);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(257, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -263,7 +295,8 @@ namespace ClinicApp.Forms.Doctors
             this.txtEmail.ForeColor = System.Drawing.Color.DimGray;
             this.txtEmail.Location = new System.Drawing.Point(3, 460);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(689, 41);
+            this.txtEmail.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtEmail.Size = new System.Drawing.Size(573, 41);
             this.txtEmail.TabIndex = 43;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -272,7 +305,7 @@ namespace ClinicApp.Forms.Doctors
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(750, 3);
+            this.label1.Location = new System.Drawing.Point(618, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 44);
             this.label1.TabIndex = 9;
@@ -284,7 +317,7 @@ namespace ClinicApp.Forms.Doctors
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(756, 54);
+            this.label5.Location = new System.Drawing.Point(624, 54);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 44);
             this.label5.TabIndex = 12;
@@ -296,7 +329,7 @@ namespace ClinicApp.Forms.Doctors
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(742, 104);
+            this.label4.Location = new System.Drawing.Point(610, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 44);
             this.label4.TabIndex = 13;
@@ -308,7 +341,7 @@ namespace ClinicApp.Forms.Doctors
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(714, 154);
+            this.label13.Location = new System.Drawing.Point(582, 154);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(152, 44);
             this.label13.TabIndex = 30;
@@ -320,7 +353,7 @@ namespace ClinicApp.Forms.Doctors
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(738, 204);
+            this.label12.Location = new System.Drawing.Point(606, 204);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(105, 44);
             this.label12.TabIndex = 31;
@@ -332,7 +365,7 @@ namespace ClinicApp.Forms.Doctors
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(753, 254);
+            this.label6.Location = new System.Drawing.Point(621, 254);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 44);
             this.label6.TabIndex = 32;
@@ -344,7 +377,7 @@ namespace ClinicApp.Forms.Doctors
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(749, 304);
+            this.label7.Location = new System.Drawing.Point(617, 304);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 44);
             this.label7.TabIndex = 33;
@@ -356,7 +389,7 @@ namespace ClinicApp.Forms.Doctors
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(747, 354);
+            this.label8.Location = new System.Drawing.Point(615, 354);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(87, 44);
             this.label8.TabIndex = 34;
@@ -368,7 +401,7 @@ namespace ClinicApp.Forms.Doctors
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(740, 404);
+            this.label9.Location = new System.Drawing.Point(608, 404);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(100, 44);
             this.label9.TabIndex = 35;
@@ -380,7 +413,7 @@ namespace ClinicApp.Forms.Doctors
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(761, 458);
+            this.label10.Location = new System.Drawing.Point(629, 458);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 44);
             this.label10.TabIndex = 36;
@@ -395,7 +428,8 @@ namespace ClinicApp.Forms.Doctors
             this.txtDes.ForeColor = System.Drawing.Color.DimGray;
             this.txtDes.Location = new System.Drawing.Point(3, 155);
             this.txtDes.Name = "txtDes";
-            this.txtDes.Size = new System.Drawing.Size(689, 41);
+            this.txtDes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtDes.Size = new System.Drawing.Size(573, 41);
             this.txtDes.TabIndex = 37;
             this.txtDes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -407,7 +441,8 @@ namespace ClinicApp.Forms.Doctors
             this.txtNotes.ForeColor = System.Drawing.Color.DimGray;
             this.txtNotes.Location = new System.Drawing.Point(3, 205);
             this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(689, 41);
+            this.txtNotes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtNotes.Size = new System.Drawing.Size(573, 41);
             this.txtNotes.TabIndex = 38;
             this.txtNotes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -419,7 +454,8 @@ namespace ClinicApp.Forms.Doctors
             this.txtAddress.ForeColor = System.Drawing.Color.DimGray;
             this.txtAddress.Location = new System.Drawing.Point(3, 255);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(689, 41);
+            this.txtAddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtAddress.Size = new System.Drawing.Size(573, 41);
             this.txtAddress.TabIndex = 39;
             this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -431,7 +467,8 @@ namespace ClinicApp.Forms.Doctors
             this.txtPhone.ForeColor = System.Drawing.Color.DimGray;
             this.txtPhone.Location = new System.Drawing.Point(3, 305);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(689, 41);
+            this.txtPhone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPhone.Size = new System.Drawing.Size(573, 41);
             this.txtPhone.TabIndex = 40;
             this.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
@@ -444,7 +481,8 @@ namespace ClinicApp.Forms.Doctors
             this.txtFaceBook.ForeColor = System.Drawing.Color.DimGray;
             this.txtFaceBook.Location = new System.Drawing.Point(3, 355);
             this.txtFaceBook.Name = "txtFaceBook";
-            this.txtFaceBook.Size = new System.Drawing.Size(689, 41);
+            this.txtFaceBook.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtFaceBook.Size = new System.Drawing.Size(573, 41);
             this.txtFaceBook.TabIndex = 41;
             this.txtFaceBook.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -456,7 +494,8 @@ namespace ClinicApp.Forms.Doctors
             this.txtWhatsApp.ForeColor = System.Drawing.Color.DimGray;
             this.txtWhatsApp.Location = new System.Drawing.Point(3, 405);
             this.txtWhatsApp.Name = "txtWhatsApp";
-            this.txtWhatsApp.Size = new System.Drawing.Size(689, 41);
+            this.txtWhatsApp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtWhatsApp.Size = new System.Drawing.Size(573, 41);
             this.txtWhatsApp.TabIndex = 42;
             this.txtWhatsApp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -468,7 +507,8 @@ namespace ClinicApp.Forms.Doctors
             this.txtName.ForeColor = System.Drawing.Color.DimGray;
             this.txtName.Location = new System.Drawing.Point(3, 5);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(689, 41);
+            this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtName.Size = new System.Drawing.Size(573, 41);
             this.txtName.TabIndex = 14;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -481,7 +521,7 @@ namespace ClinicApp.Forms.Doctors
             this.comboClinic.Location = new System.Drawing.Point(3, 54);
             this.comboClinic.Name = "comboClinic";
             this.comboClinic.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboClinic.Size = new System.Drawing.Size(689, 44);
+            this.comboClinic.Size = new System.Drawing.Size(573, 44);
             this.comboClinic.TabIndex = 21;
             // 
             // comboSpecialization
@@ -493,19 +533,127 @@ namespace ClinicApp.Forms.Doctors
             this.comboSpecialization.Location = new System.Drawing.Point(3, 104);
             this.comboSpecialization.Name = "comboSpecialization";
             this.comboSpecialization.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboSpecialization.Size = new System.Drawing.Size(689, 44);
+            this.comboSpecialization.Size = new System.Drawing.Size(573, 44);
             this.comboSpecialization.TabIndex = 44;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox7.BackgroundImage = global::ClinicApp.Properties.Resources.doctor;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(763, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(98, 45);
+            this.pictureBox7.TabIndex = 50;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox6.BackgroundImage = global::ClinicApp.Properties.Resources.medical_team1;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Location = new System.Drawing.Point(763, 104);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(98, 44);
+            this.pictureBox6.TabIndex = 49;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox3.BackgroundImage = global::ClinicApp.Properties.Resources.clinic;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(763, 54);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(98, 44);
+            this.pictureBox3.TabIndex = 46;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox5.BackgroundImage = global::ClinicApp.Properties.Resources.immigration;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(763, 154);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(98, 44);
+            this.pictureBox5.TabIndex = 48;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox4.BackgroundImage = global::ClinicApp.Properties.Resources.notes;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(763, 204);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(98, 44);
+            this.pictureBox4.TabIndex = 47;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.BackgroundImage = global::ClinicApp.Properties.Resources.map;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(763, 254);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(98, 44);
+            this.pictureBox2.TabIndex = 45;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox8.BackgroundImage = global::ClinicApp.Properties.Resources.smartphone;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Location = new System.Drawing.Point(763, 304);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(98, 44);
+            this.pictureBox8.TabIndex = 51;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox9.BackgroundImage = global::ClinicApp.Properties.Resources.facebook;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Location = new System.Drawing.Point(763, 354);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(98, 44);
+            this.pictureBox9.TabIndex = 52;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox10.BackgroundImage = global::ClinicApp.Properties.Resources.whatsapp;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Location = new System.Drawing.Point(763, 404);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(98, 44);
+            this.pictureBox10.TabIndex = 53;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox11.BackgroundImage = global::ClinicApp.Properties.Resources.gmail;
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox11.Location = new System.Drawing.Point(763, 455);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(98, 51);
+            this.pictureBox11.TabIndex = 54;
+            this.pictureBox11.TabStop = false;
             // 
             // FormDoctors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1152, 703);
             this.Controls.Add(this.pnlParient);
             this.ForeColor = System.Drawing.Color.Black;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FormDoctors";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -523,6 +671,16 @@ namespace ClinicApp.Forms.Doctors
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -560,5 +718,15 @@ namespace ClinicApp.Forms.Doctors
         public System.Windows.Forms.TextBox txtWhatsApp;
         public System.Windows.Forms.PictureBox picBox;
         public System.Windows.Forms.ComboBox comboSpecialization;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }

@@ -1037,6 +1037,14 @@
     <None Include="Resources\notes3.png" />
     <None Include="Resources\combo.png" />
     <None Include="Resources\plus-green.png" />
+    <None Include="Resources\medical-team1.png" />
+    <None Include="Resources\man.png" />
+    <None Include="Resources\immigration.png" />
+    <None Include="Resources\nurse.png" />
+    <None Include="Resources\unchecklist.png" />
+    <None Include="Resources\age.png" />
+    <None Include="Resources\height.png" />
+    <None Include="Resources\lock.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
