@@ -29,18 +29,19 @@ namespace ClinicApp.Forms.Examination
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddExamination));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -53,15 +54,19 @@ namespace ClinicApp.Forms.Examination
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddExamination));
             this.tlpContainer = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnOpenExamination = new System.Windows.Forms.ToolStripButton();
+            this.btnUpdate = new System.Windows.Forms.ToolStripButton();
+            this.btnSavePatientVisiting = new System.Windows.Forms.ToolStripButton();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.reservationsPage = new System.Windows.Forms.TabPage();
             this.pnlParient = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnReload = new System.Windows.Forms.Button();
             this.dgvLoading = new System.Windows.Forms.DataGridView();
             this.user = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.notes = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,6 +86,7 @@ namespace ClinicApp.Forms.Examination
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patientId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dateOfReservations = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -90,9 +96,11 @@ namespace ClinicApp.Forms.Examination
             this.patientInfoPage = new System.Windows.Forms.TabPage();
             this.pnlPatientParient = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.picBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.txtNotes = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -117,6 +125,7 @@ namespace ClinicApp.Forms.Examination
             this.fastExaminationPage = new System.Windows.Forms.TabPage();
             this.pnlExaminPatient = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
@@ -134,35 +143,51 @@ namespace ClinicApp.Forms.Examination
             this.txtHeartBeats = new System.Windows.Forms.TextBox();
             this.txtExaminationWeight = new System.Windows.Forms.TextBox();
             this.txtBreathing = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.DiseasesPage = new System.Windows.Forms.TabPage();
             this.pnlDiseases = new System.Windows.Forms.TableLayoutPanel();
             this.dgvDiseases = new System.Windows.Forms.DataGridView();
             this.notess = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Disease = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.DiseasesID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label24 = new System.Windows.Forms.Label();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.txtNotesDiseases = new System.Windows.Forms.TextBox();
+            this.btnAddDiseases = new System.Windows.Forms.Button();
             this.comboDiseases = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.btnAddToCombo = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
             this.SymptomsPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvSymptoms = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
             this.txtSymptomsNotes = new System.Windows.Forms.TextBox();
+            this.btnAddSymptoms = new System.Windows.Forms.Button();
             this.ComboSymptoms = new System.Windows.Forms.ComboBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.btnAddToComboSymptoms = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
             this.ExaminationPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label30 = new System.Windows.Forms.Label();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
@@ -173,6 +198,10 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationNotes = new System.Windows.Forms.TextBox();
             this.txtDoctorAdvice = new System.Windows.Forms.TextBox();
             this.txtDoctorExamination = new System.Windows.Forms.TextBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.dateExamination = new System.Windows.Forms.DateTimePicker();
             this.PrescriptionPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
@@ -182,10 +211,16 @@ namespace ClinicApp.Forms.Examination
             this.medicineunit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeMedicine = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.idMedicine = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.label35 = new System.Windows.Forms.Label();
             this.pnlColumsPerseption = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnAddNewPerceptionMedicine = new System.Windows.Forms.Button();
+            this.comboMedicine = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
             this.txtPrescriptionNotes = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
@@ -194,22 +229,33 @@ namespace ClinicApp.Forms.Examination
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
+            this.btnAddPrescription = new System.Windows.Forms.Button();
             this.comboMedicineUnit = new System.Windows.Forms.ComboBox();
             this.comboDosages = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnAddTimeTakeMedicine = new System.Windows.Forms.Button();
+            this.btnAddMedicineUnit = new System.Windows.Forms.Button();
+            this.btnAddDosages = new System.Windows.Forms.Button();
             this.AnalysisPage = new System.Windows.Forms.TabPage();
             this.tlpAnalysis = new System.Windows.Forms.TableLayoutPanel();
             this.dgvAnalysis = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.idAnalysis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.label41 = new System.Windows.Forms.Label();
             this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnUploadPdf = new System.Windows.Forms.Button();
             this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnNewAddAnalysis = new System.Windows.Forms.Button();
             this.label42 = new System.Windows.Forms.Label();
             this.comboAnalysis = new System.Windows.Forms.ComboBox();
+            this.btnAddAnalysis = new System.Windows.Forms.Button();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
             this.txtAnalysisNotes = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
@@ -221,14 +267,21 @@ namespace ClinicApp.Forms.Examination
             this.dgvRays = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.raysId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.label45 = new System.Windows.Forms.Label();
             this.tableLayoutPanel33 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel34 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.tableLayoutPanel35 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnAddNewRays = new System.Windows.Forms.Button();
             this.label46 = new System.Windows.Forms.Label();
             this.comboRays = new System.Windows.Forms.ComboBox();
+            this.btnAddRays = new System.Windows.Forms.Button();
             this.tableLayoutPanel36 = new System.Windows.Forms.TableLayoutPanel();
             this.txtRaysNotes = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
@@ -240,165 +293,61 @@ namespace ClinicApp.Forms.Examination
             this.dgvFood = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel39 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.label49 = new System.Windows.Forms.Label();
             this.tableLayoutPanel40 = new System.Windows.Forms.TableLayoutPanel();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
             this.txtFoodNotes = new System.Windows.Forms.TextBox();
+            this.btnAddFood = new System.Windows.Forms.Button();
             this.comboFood = new System.Windows.Forms.ComboBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.btnAddNewFood = new System.Windows.Forms.Button();
             this.contrastingMedicinePage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvContrastingMedicines = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn7 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.label52 = new System.Windows.Forms.Label();
             this.tableLayoutPanel43 = new System.Windows.Forms.TableLayoutPanel();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
             this.txtContrastingMedicinesNotes = new System.Windows.Forms.TextBox();
+            this.btnAddContrastingMedicines = new System.Windows.Forms.Button();
             this.comboContrastingMedicines = new System.Windows.Forms.ComboBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.btnAddNewMedicicne = new System.Windows.Forms.Button();
             this.smartAssistantPage = new System.Windows.Forms.TabPage();
             this.printingPage = new System.Windows.Forms.TabPage();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn6 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn7 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnOpenExamination = new System.Windows.Forms.ToolStripButton();
-            this.btnUpdate = new System.Windows.Forms.ToolStripButton();
-            this.btnSavePatientVisiting = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnReload = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.btnAddDiseases = new System.Windows.Forms.Button();
-            this.btnAddToCombo = new System.Windows.Forms.Button();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.btnAddSymptoms = new System.Windows.Forms.Button();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.btnAddPrescription = new System.Windows.Forms.Button();
-            this.btnAddTimeTakeMedicine = new System.Windows.Forms.Button();
-            this.btnAddMedicineUnit = new System.Windows.Forms.Button();
-            this.btnAddDosages = new System.Windows.Forms.Button();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnUploadPdf = new System.Windows.Forms.Button();
-            this.btnAddAnalysis = new System.Windows.Forms.Button();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btnAddRays = new System.Windows.Forms.Button();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.btnAddFood = new System.Windows.Forms.Button();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.btnAddContrastingMedicines = new System.Windows.Forms.Button();
-            this.btnAddToComboSymptoms = new System.Windows.Forms.Button();
-            this.btnNewAddAnalysis = new System.Windows.Forms.Button();
-            this.btnAddNewRays = new System.Windows.Forms.Button();
-            this.btnAddNewFood = new System.Windows.Forms.Button();
-            this.btnAddNewMedicicne = new System.Windows.Forms.Button();
-            this.label36 = new System.Windows.Forms.Label();
-            this.comboMedicine = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAddNewPerceptionMedicine = new System.Windows.Forms.Button();
             this.tlpContainer.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.reservationsPage.SuspendLayout();
             this.pnlParient.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoading)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.patientInfoPage.SuspendLayout();
             this.pnlPatientParient.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
             this.fastExaminationPage.SuspendLayout();
             this.pnlExaminPatient.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
-            this.DiseasesPage.SuspendLayout();
-            this.pnlDiseases.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDiseases)).BeginInit();
-            this.tableLayoutPanel10.SuspendLayout();
-            this.tableLayoutPanel12.SuspendLayout();
-            this.SymptomsPage.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSymptoms)).BeginInit();
-            this.tableLayoutPanel14.SuspendLayout();
-            this.tableLayoutPanel15.SuspendLayout();
-            this.ExaminationPage.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel16.SuspendLayout();
-            this.tableLayoutPanel17.SuspendLayout();
-            this.tableLayoutPanel18.SuspendLayout();
-            this.PrescriptionPage.SuspendLayout();
-            this.tableLayoutPanel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).BeginInit();
-            this.tableLayoutPanel20.SuspendLayout();
-            this.pnlColumsPerseption.SuspendLayout();
-            this.tableLayoutPanel21.SuspendLayout();
-            this.tableLayoutPanel23.SuspendLayout();
-            this.tableLayoutPanel24.SuspendLayout();
-            this.AnalysisPage.SuspendLayout();
-            this.tlpAnalysis.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAnalysis)).BeginInit();
-            this.tableLayoutPanel26.SuspendLayout();
-            this.tableLayoutPanel27.SuspendLayout();
-            this.tableLayoutPanel29.SuspendLayout();
-            this.tableLayoutPanel28.SuspendLayout();
-            this.tableLayoutPanel25.SuspendLayout();
-            this.tableLayoutPanel30.SuspendLayout();
-            this.raysPage.SuspendLayout();
-            this.tableLayoutPanel31.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRays)).BeginInit();
-            this.tableLayoutPanel32.SuspendLayout();
-            this.tableLayoutPanel33.SuspendLayout();
-            this.tableLayoutPanel34.SuspendLayout();
-            this.tableLayoutPanel35.SuspendLayout();
-            this.tableLayoutPanel36.SuspendLayout();
-            this.tableLayoutPanel37.SuspendLayout();
-            this.foodPage.SuspendLayout();
-            this.tableLayoutPanel38.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).BeginInit();
-            this.tableLayoutPanel39.SuspendLayout();
-            this.tableLayoutPanel40.SuspendLayout();
-            this.contrastingMedicinePage.SuspendLayout();
-            this.tableLayoutPanel41.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvContrastingMedicines)).BeginInit();
-            this.tableLayoutPanel42.SuspendLayout();
-            this.tableLayoutPanel43.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -406,21 +355,72 @@ namespace ClinicApp.Forms.Examination
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.DiseasesPage.SuspendLayout();
+            this.pnlDiseases.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDiseases)).BeginInit();
+            this.tableLayoutPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.tableLayoutPanel12.SuspendLayout();
+            this.SymptomsPage.SuspendLayout();
+            this.tableLayoutPanel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSymptoms)).BeginInit();
+            this.tableLayoutPanel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.tableLayoutPanel15.SuspendLayout();
+            this.ExaminationPage.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.tableLayoutPanel17.SuspendLayout();
+            this.tableLayoutPanel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            this.PrescriptionPage.SuspendLayout();
+            this.tableLayoutPanel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).BeginInit();
+            this.tableLayoutPanel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            this.pnlColumsPerseption.SuspendLayout();
             this.tableLayoutPanel22.SuspendLayout();
+            this.tableLayoutPanel21.SuspendLayout();
+            this.tableLayoutPanel23.SuspendLayout();
+            this.tableLayoutPanel24.SuspendLayout();
+            this.AnalysisPage.SuspendLayout();
+            this.tlpAnalysis.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAnalysis)).BeginInit();
+            this.tableLayoutPanel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            this.tableLayoutPanel27.SuspendLayout();
+            this.tableLayoutPanel29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            this.tableLayoutPanel28.SuspendLayout();
+            this.tableLayoutPanel25.SuspendLayout();
+            this.tableLayoutPanel30.SuspendLayout();
+            this.raysPage.SuspendLayout();
+            this.tableLayoutPanel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRays)).BeginInit();
+            this.tableLayoutPanel32.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            this.tableLayoutPanel33.SuspendLayout();
+            this.tableLayoutPanel34.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            this.tableLayoutPanel35.SuspendLayout();
+            this.tableLayoutPanel36.SuspendLayout();
+            this.tableLayoutPanel37.SuspendLayout();
+            this.foodPage.SuspendLayout();
+            this.tableLayoutPanel38.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).BeginInit();
+            this.tableLayoutPanel39.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            this.tableLayoutPanel40.SuspendLayout();
+            this.contrastingMedicinePage.SuspendLayout();
+            this.tableLayoutPanel41.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContrastingMedicines)).BeginInit();
+            this.tableLayoutPanel42.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            this.tableLayoutPanel43.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlpContainer
@@ -453,6 +453,43 @@ namespace ClinicApp.Forms.Examination
             this.toolStrip1.Size = new System.Drawing.Size(1337, 109);
             this.toolStrip1.TabIndex = 28;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnOpenExamination
+            // 
+            this.btnOpenExamination.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnOpenExamination.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenExamination.ForeColor = System.Drawing.Color.Black;
+            this.btnOpenExamination.Image = global::ClinicApp.Properties.Resources.advice;
+            this.btnOpenExamination.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnOpenExamination.Name = "btnOpenExamination";
+            this.btnOpenExamination.Size = new System.Drawing.Size(205, 106);
+            this.btnOpenExamination.Text = "فتح كشف للمريض";
+            this.btnOpenExamination.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnOpenExamination.Click += new System.EventHandler(this.btnOpenExamination_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.Red;
+            this.btnUpdate.Image = global::ClinicApp.Properties.Resources.Clear_red;
+            this.btnUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(69, 106);
+            this.btnUpdate.Text = "خروج";
+            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnSavePatientVisiting
+            // 
+            this.btnSavePatientVisiting.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSavePatientVisiting.ForeColor = System.Drawing.Color.Blue;
+            this.btnSavePatientVisiting.Image = global::ClinicApp.Properties.Resources.floppy_disk;
+            this.btnSavePatientVisiting.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSavePatientVisiting.Name = "btnSavePatientVisiting";
+            this.btnSavePatientVisiting.Size = new System.Drawing.Size(205, 106);
+            this.btnSavePatientVisiting.Text = "حفظ زيارة المريض";
+            this.btnSavePatientVisiting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSavePatientVisiting.Click += new System.EventHandler(this.btnSavePatientVisiting_Click);
             // 
             // tabControl
             // 
@@ -541,6 +578,17 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1311, 45);
             this.tableLayoutPanel3.TabIndex = 18;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Location = new System.Drawing.Point(1122, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(186, 39);
+            this.pictureBox2.TabIndex = 67;
+            this.pictureBox2.TabStop = false;
+            // 
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -554,20 +602,33 @@ namespace ClinicApp.Forms.Examination
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
+            // btnReload
+            // 
+            this.btnReload.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReload.Font = new System.Drawing.Font("Arabic Typesetting", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReload.Image = global::ClinicApp.Properties.Resources.loading;
+            this.btnReload.Location = new System.Drawing.Point(3, 3);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(104, 39);
+            this.btnReload.TabIndex = 66;
+            this.btnReload.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnReload.UseVisualStyleBackColor = false;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            // 
             // dgvLoading
             // 
             this.dgvLoading.AllowUserToAddRows = false;
             this.dgvLoading.AllowUserToDeleteRows = false;
             this.dgvLoading.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLoading.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLoading.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLoading.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.dgvLoading.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLoading.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.user,
@@ -592,17 +653,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvLoading.Name = "dgvLoading";
             this.dgvLoading.ReadOnly = true;
             this.dgvLoading.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLoading.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLoading.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.dgvLoading.RowHeadersWidth = 51;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvLoading.RowsDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvLoading.RowsDefaultCellStyle = dataGridViewCellStyle27;
             this.dgvLoading.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvLoading.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvLoading.RowTemplate.Height = 35;
@@ -756,6 +817,20 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1311, 45);
             this.tableLayoutPanel1.TabIndex = 27;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSearch.Font = new System.Drawing.Font("Arabic Typesetting", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Image = global::ClinicApp.Properties.Resources.search;
+            this.btnSearch.Location = new System.Drawing.Point(3, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(105, 39);
+            this.btnSearch.TabIndex = 66;
+            this.btnSearch.Text = "بحث";
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -882,6 +957,17 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1311, 58);
             this.tableLayoutPanel4.TabIndex = 16;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(1188, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(99, 50);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -925,6 +1011,19 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.75309F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(211, 242);
             this.tableLayoutPanel6.TabIndex = 0;
+            // 
+            // picBox
+            // 
+            this.picBox.BackColor = System.Drawing.Color.White;
+            this.picBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picBox.Location = new System.Drawing.Point(3, 2);
+            this.picBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picBox.Name = "picBox";
+            this.picBox.Size = new System.Drawing.Size(205, 190);
+            this.picBox.TabIndex = 39;
+            this.picBox.TabStop = false;
             // 
             // tableLayoutPanel7
             // 
@@ -1256,6 +1355,18 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel8.Size = new System.Drawing.Size(1311, 58);
             this.tableLayoutPanel8.TabIndex = 16;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::ClinicApp.Properties.Resources.health_check;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Location = new System.Drawing.Point(1188, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(120, 54);
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
             // label16
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1287,7 +1398,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.45238F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.54762F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
             this.tableLayoutPanel11.Controls.Add(this.label17, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.label18, 1, 1);
             this.tableLayoutPanel11.Controls.Add(this.label19, 1, 2);
@@ -1332,7 +1443,7 @@ namespace ClinicApp.Forms.Examination
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(985, 11);
+            this.label17.Location = new System.Drawing.Point(982, 11);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(105, 44);
             this.label17.TabIndex = 9;
@@ -1344,7 +1455,7 @@ namespace ClinicApp.Forms.Examination
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(999, 77);
+            this.label18.Location = new System.Drawing.Point(996, 77);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(77, 44);
             this.label18.TabIndex = 12;
@@ -1356,7 +1467,7 @@ namespace ClinicApp.Forms.Examination
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(972, 143);
+            this.label19.Location = new System.Drawing.Point(969, 143);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(131, 44);
             this.label19.TabIndex = 13;
@@ -1368,7 +1479,7 @@ namespace ClinicApp.Forms.Examination
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(977, 209);
+            this.label20.Location = new System.Drawing.Point(974, 209);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(122, 44);
             this.label20.TabIndex = 30;
@@ -1384,7 +1495,7 @@ namespace ClinicApp.Forms.Examination
             this.txtBodyTemperature.Location = new System.Drawing.Point(3, 210);
             this.txtBodyTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBodyTemperature.Name = "txtBodyTemperature";
-            this.txtBodyTemperature.Size = new System.Drawing.Size(907, 41);
+            this.txtBodyTemperature.Size = new System.Drawing.Size(904, 41);
             this.txtBodyTemperature.TabIndex = 37;
             this.txtBodyTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1397,7 +1508,7 @@ namespace ClinicApp.Forms.Examination
             this.txtSugar.Location = new System.Drawing.Point(3, 276);
             this.txtSugar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSugar.Name = "txtSugar";
-            this.txtSugar.Size = new System.Drawing.Size(907, 41);
+            this.txtSugar.Size = new System.Drawing.Size(904, 41);
             this.txtSugar.TabIndex = 38;
             this.txtSugar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1410,7 +1521,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationPreviousOperations.Location = new System.Drawing.Point(3, 409);
             this.txtExaminationPreviousOperations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtExaminationPreviousOperations.Name = "txtExaminationPreviousOperations";
-            this.txtExaminationPreviousOperations.Size = new System.Drawing.Size(907, 41);
+            this.txtExaminationPreviousOperations.Size = new System.Drawing.Size(904, 41);
             this.txtExaminationPreviousOperations.TabIndex = 40;
             this.txtExaminationPreviousOperations.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1423,7 +1534,7 @@ namespace ClinicApp.Forms.Examination
             this.txtBloodPressure.Location = new System.Drawing.Point(3, 12);
             this.txtBloodPressure.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBloodPressure.Name = "txtBloodPressure";
-            this.txtBloodPressure.Size = new System.Drawing.Size(907, 41);
+            this.txtBloodPressure.Size = new System.Drawing.Size(904, 41);
             this.txtBloodPressure.TabIndex = 14;
             this.txtBloodPressure.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1432,7 +1543,7 @@ namespace ClinicApp.Forms.Examination
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(1002, 275);
+            this.label21.Location = new System.Drawing.Point(999, 275);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(72, 44);
             this.label21.TabIndex = 32;
@@ -1444,7 +1555,7 @@ namespace ClinicApp.Forms.Examination
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(1005, 341);
+            this.label22.Location = new System.Drawing.Point(1002, 341);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(65, 44);
             this.label22.TabIndex = 33;
@@ -1456,7 +1567,7 @@ namespace ClinicApp.Forms.Examination
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(968, 408);
+            this.label23.Location = new System.Drawing.Point(965, 408);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(139, 44);
             this.label23.TabIndex = 34;
@@ -1468,7 +1579,7 @@ namespace ClinicApp.Forms.Examination
             this.txtHeartBeats.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHeartBeats.Location = new System.Drawing.Point(3, 144);
             this.txtHeartBeats.Name = "txtHeartBeats";
-            this.txtHeartBeats.Size = new System.Drawing.Size(907, 42);
+            this.txtHeartBeats.Size = new System.Drawing.Size(904, 42);
             this.txtHeartBeats.TabIndex = 50;
             this.txtHeartBeats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1477,7 +1588,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationWeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtExaminationWeight.Location = new System.Drawing.Point(3, 342);
             this.txtExaminationWeight.Name = "txtExaminationWeight";
-            this.txtExaminationWeight.Size = new System.Drawing.Size(907, 42);
+            this.txtExaminationWeight.Size = new System.Drawing.Size(904, 42);
             this.txtExaminationWeight.TabIndex = 51;
             this.txtExaminationWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1486,9 +1597,93 @@ namespace ClinicApp.Forms.Examination
             this.txtBreathing.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBreathing.Location = new System.Drawing.Point(3, 78);
             this.txtBreathing.Name = "txtBreathing";
-            this.txtBreathing.Size = new System.Drawing.Size(907, 42);
+            this.txtBreathing.Size = new System.Drawing.Size(904, 42);
             this.txtBreathing.TabIndex = 52;
             this.txtBreathing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::ClinicApp.Properties.Resources.blood;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Location = new System.Drawing.Point(1163, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox4.TabIndex = 53;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::ClinicApp.Properties.Resources.breathing;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Location = new System.Drawing.Point(1163, 68);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox5.TabIndex = 54;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::ClinicApp.Properties.Resources.pulse;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Location = new System.Drawing.Point(1163, 134);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox6.TabIndex = 55;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::ClinicApp.Properties.Resources.thermometer;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox7.Location = new System.Drawing.Point(1163, 200);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox7.TabIndex = 56;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = global::ClinicApp.Properties.Resources.sugar_cube;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox8.Location = new System.Drawing.Point(1163, 266);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox8.TabIndex = 57;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = global::ClinicApp.Properties.Resources.weight;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox9.Location = new System.Drawing.Point(1163, 332);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox9.TabIndex = 58;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::ClinicApp.Properties.Resources.anesthesia;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox10.Location = new System.Drawing.Point(1163, 398);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(139, 64);
+            this.pictureBox10.TabIndex = 59;
+            this.pictureBox10.TabStop = false;
             // 
             // DiseasesPage
             // 
@@ -1524,14 +1719,14 @@ namespace ClinicApp.Forms.Examination
             this.dgvDiseases.AllowUserToDeleteRows = false;
             this.dgvDiseases.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDiseases.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDiseases.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDiseases.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
             this.dgvDiseases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDiseases.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.notess,
@@ -1543,17 +1738,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvDiseases.Name = "dgvDiseases";
             this.dgvDiseases.ReadOnly = true;
             this.dgvDiseases.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDiseases.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDiseases.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.dgvDiseases.RowHeadersWidth = 51;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvDiseases.RowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvDiseases.RowsDefaultCellStyle = dataGridViewCellStyle30;
             this.dgvDiseases.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvDiseases.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvDiseases.RowTemplate.Height = 35;
@@ -1575,6 +1770,14 @@ namespace ClinicApp.Forms.Examination
             this.Disease.MinimumWidth = 6;
             this.Disease.Name = "Disease";
             this.Disease.ReadOnly = true;
+            // 
+            // delete
+            // 
+            this.delete.HeaderText = "";
+            this.delete.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.delete.MinimumWidth = 6;
+            this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
             // 
             // DiseasesID
             // 
@@ -1601,6 +1804,18 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel10.Size = new System.Drawing.Size(1311, 44);
             this.tableLayoutPanel10.TabIndex = 17;
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::ClinicApp.Properties.Resources.kidney;
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox11.Location = new System.Drawing.Point(1188, 2);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(120, 40);
+            this.pictureBox11.TabIndex = 17;
+            this.pictureBox11.TabStop = false;
+            // 
             // label24
             // 
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1618,7 +1833,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.65011F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.34989F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 245F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 248F));
             this.tableLayoutPanel12.Controls.Add(this.txtNotesDiseases, 2, 1);
             this.tableLayoutPanel12.Controls.Add(this.btnAddDiseases, 3, 0);
             this.tableLayoutPanel12.Controls.Add(this.comboDiseases, 2, 0);
@@ -1634,35 +1849,27 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel12.Size = new System.Drawing.Size(1311, 100);
             this.tableLayoutPanel12.TabIndex = 18;
             // 
-            // label26
-            // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(952, 54);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(123, 46);
-            this.label26.TabIndex = 17;
-            this.label26.Text = "ملاحظات";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(946, 1);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(135, 51);
-            this.label25.TabIndex = 16;
-            this.label25.Text = "اختر المرض";
-            // 
             // txtNotesDiseases
             // 
             this.txtNotesDiseases.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNotesDiseases.Location = new System.Drawing.Point(249, 57);
+            this.txtNotesDiseases.Location = new System.Drawing.Point(252, 57);
             this.txtNotesDiseases.Name = "txtNotesDiseases";
-            this.txtNotesDiseases.Size = new System.Drawing.Size(673, 42);
+            this.txtNotesDiseases.Size = new System.Drawing.Size(671, 42);
             this.txtNotesDiseases.TabIndex = 19;
+            // 
+            // btnAddDiseases
+            // 
+            this.btnAddDiseases.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddDiseases.Image = global::ClinicApp.Properties.Resources.plus_32;
+            this.btnAddDiseases.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddDiseases.Location = new System.Drawing.Point(48, 3);
+            this.btnAddDiseases.Name = "btnAddDiseases";
+            this.btnAddDiseases.Size = new System.Drawing.Size(153, 48);
+            this.btnAddDiseases.TabIndex = 20;
+            this.btnAddDiseases.Text = "اضافة";
+            this.btnAddDiseases.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddDiseases.UseVisualStyleBackColor = true;
+            this.btnAddDiseases.Click += new System.EventHandler(this.btnAddDiseases_Click);
             // 
             // comboDiseases
             // 
@@ -1670,10 +1877,47 @@ namespace ClinicApp.Forms.Examination
             this.comboDiseases.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboDiseases.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboDiseases.FormattingEnabled = true;
-            this.comboDiseases.Location = new System.Drawing.Point(249, 5);
+            this.comboDiseases.Location = new System.Drawing.Point(252, 14);
             this.comboDiseases.Name = "comboDiseases";
-            this.comboDiseases.Size = new System.Drawing.Size(673, 43);
+            this.comboDiseases.Size = new System.Drawing.Size(671, 43);
             this.comboDiseases.TabIndex = 21;
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(947, 1);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(135, 51);
+            this.label25.TabIndex = 16;
+            this.label25.Text = "اختر المرض";
+            // 
+            // btnAddToCombo
+            // 
+            this.btnAddToCombo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddToCombo.FlatAppearance.BorderSize = 0;
+            this.btnAddToCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddToCombo.Image = global::ClinicApp.Properties.Resources.plus_green;
+            this.btnAddToCombo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddToCombo.Location = new System.Drawing.Point(1147, 3);
+            this.btnAddToCombo.Name = "btnAddToCombo";
+            this.btnAddToCombo.Size = new System.Drawing.Size(120, 48);
+            this.btnAddToCombo.TabIndex = 22;
+            this.btnAddToCombo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddToCombo.UseVisualStyleBackColor = true;
+            this.btnAddToCombo.Click += new System.EventHandler(this.btnAddToCombo_Click);
+            // 
+            // label26
+            // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(953, 54);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(123, 46);
+            this.label26.TabIndex = 17;
+            this.label26.Text = "ملاحظات";
             // 
             // SymptomsPage
             // 
@@ -1709,14 +1953,14 @@ namespace ClinicApp.Forms.Examination
             this.dgvSymptoms.AllowUserToDeleteRows = false;
             this.dgvSymptoms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSymptoms.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSymptoms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSymptoms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.dgvSymptoms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSymptoms.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1728,17 +1972,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvSymptoms.Name = "dgvSymptoms";
             this.dgvSymptoms.ReadOnly = true;
             this.dgvSymptoms.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSymptoms.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSymptoms.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.dgvSymptoms.RowHeadersWidth = 51;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvSymptoms.RowsDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvSymptoms.RowsDefaultCellStyle = dataGridViewCellStyle33;
             this.dgvSymptoms.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvSymptoms.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvSymptoms.RowTemplate.Height = 35;
@@ -1760,6 +2004,14 @@ namespace ClinicApp.Forms.Examination
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn2.MinimumWidth = 6;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -1786,6 +2038,18 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel14.Size = new System.Drawing.Size(1311, 44);
             this.tableLayoutPanel14.TabIndex = 17;
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::ClinicApp.Properties.Resources.kidney;
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox12.Location = new System.Drawing.Point(1188, 2);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(120, 40);
+            this.pictureBox12.TabIndex = 17;
+            this.pictureBox12.TabStop = false;
+            // 
             // label27
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1803,7 +2067,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.70843F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.62491F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 245F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 249F));
             this.tableLayoutPanel15.Controls.Add(this.txtSymptomsNotes, 2, 1);
             this.tableLayoutPanel15.Controls.Add(this.btnAddSymptoms, 3, 0);
             this.tableLayoutPanel15.Controls.Add(this.ComboSymptoms, 2, 0);
@@ -1819,36 +2083,28 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel15.Size = new System.Drawing.Size(1311, 100);
             this.tableLayoutPanel15.TabIndex = 18;
             // 
-            // label28
-            // 
-            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(951, 54);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(123, 46);
-            this.label28.TabIndex = 17;
-            this.label28.Text = "ملاحظات";
-            // 
-            // label29
-            // 
-            this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(942, 1);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(141, 51);
-            this.label29.TabIndex = 16;
-            this.label29.Text = "اختر العرض";
-            // 
             // txtSymptomsNotes
             // 
             this.txtSymptomsNotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSymptomsNotes.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSymptomsNotes.Location = new System.Drawing.Point(249, 57);
+            this.txtSymptomsNotes.Location = new System.Drawing.Point(253, 57);
             this.txtSymptomsNotes.Name = "txtSymptomsNotes";
-            this.txtSymptomsNotes.Size = new System.Drawing.Size(672, 42);
+            this.txtSymptomsNotes.Size = new System.Drawing.Size(669, 42);
             this.txtSymptomsNotes.TabIndex = 19;
+            // 
+            // btnAddSymptoms
+            // 
+            this.btnAddSymptoms.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddSymptoms.Image = global::ClinicApp.Properties.Resources.plus_32;
+            this.btnAddSymptoms.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddSymptoms.Location = new System.Drawing.Point(49, 3);
+            this.btnAddSymptoms.Name = "btnAddSymptoms";
+            this.btnAddSymptoms.Size = new System.Drawing.Size(153, 48);
+            this.btnAddSymptoms.TabIndex = 20;
+            this.btnAddSymptoms.Text = "اضافة";
+            this.btnAddSymptoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddSymptoms.UseVisualStyleBackColor = true;
+            this.btnAddSymptoms.Click += new System.EventHandler(this.btnAddSymptoms_Click);
             // 
             // ComboSymptoms
             // 
@@ -1857,10 +2113,47 @@ namespace ClinicApp.Forms.Examination
             this.ComboSymptoms.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.ComboSymptoms.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboSymptoms.FormattingEnabled = true;
-            this.ComboSymptoms.Location = new System.Drawing.Point(249, 5);
+            this.ComboSymptoms.Location = new System.Drawing.Point(253, 5);
             this.ComboSymptoms.Name = "ComboSymptoms";
-            this.ComboSymptoms.Size = new System.Drawing.Size(672, 43);
+            this.ComboSymptoms.Size = new System.Drawing.Size(669, 43);
             this.ComboSymptoms.TabIndex = 21;
+            // 
+            // label28
+            // 
+            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(952, 54);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(123, 46);
+            this.label28.TabIndex = 17;
+            this.label28.Text = "ملاحظات";
+            // 
+            // btnAddToComboSymptoms
+            // 
+            this.btnAddToComboSymptoms.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddToComboSymptoms.FlatAppearance.BorderSize = 0;
+            this.btnAddToComboSymptoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddToComboSymptoms.Image = global::ClinicApp.Properties.Resources.plus_green;
+            this.btnAddToComboSymptoms.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddToComboSymptoms.Location = new System.Drawing.Point(1147, 3);
+            this.btnAddToComboSymptoms.Name = "btnAddToComboSymptoms";
+            this.btnAddToComboSymptoms.Size = new System.Drawing.Size(120, 48);
+            this.btnAddToComboSymptoms.TabIndex = 23;
+            this.btnAddToComboSymptoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddToComboSymptoms.UseVisualStyleBackColor = true;
+            this.btnAddToComboSymptoms.Click += new System.EventHandler(this.btnAddToComboSymptoms_Click);
+            // 
+            // label29
+            // 
+            this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(943, 1);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(141, 51);
+            this.label29.TabIndex = 16;
+            this.label29.Text = "اختر العرض";
             // 
             // ExaminationPage
             // 
@@ -1907,6 +2200,18 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel16.Size = new System.Drawing.Size(1311, 58);
             this.tableLayoutPanel16.TabIndex = 16;
             // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImage = global::ClinicApp.Properties.Resources.exam;
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox13.Location = new System.Drawing.Point(1188, 2);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(120, 54);
+            this.pictureBox13.TabIndex = 17;
+            this.pictureBox13.TabStop = false;
+            // 
             // label30
             // 
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1938,7 +2243,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel18.ColumnCount = 3;
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.45238F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.54762F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
             this.tableLayoutPanel18.Controls.Add(this.label31, 1, 0);
             this.tableLayoutPanel18.Controls.Add(this.label32, 1, 1);
             this.tableLayoutPanel18.Controls.Add(this.label33, 1, 2);
@@ -1971,7 +2276,7 @@ namespace ClinicApp.Forms.Examination
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(973, 2);
+            this.label31.Location = new System.Drawing.Point(970, 2);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(130, 44);
             this.label31.TabIndex = 9;
@@ -1983,7 +2288,7 @@ namespace ClinicApp.Forms.Examination
             this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(958, 118);
+            this.label32.Location = new System.Drawing.Point(955, 118);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(159, 44);
             this.label32.TabIndex = 12;
@@ -1995,7 +2300,7 @@ namespace ClinicApp.Forms.Examination
             this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(972, 267);
+            this.label33.Location = new System.Drawing.Point(969, 267);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(131, 44);
             this.label33.TabIndex = 13;
@@ -2007,7 +2312,7 @@ namespace ClinicApp.Forms.Examination
             this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(949, 383);
+            this.label34.Location = new System.Drawing.Point(946, 383);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(177, 44);
             this.label34.TabIndex = 30;
@@ -2025,7 +2330,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationNotes.Multiline = true;
             this.txtExaminationNotes.Name = "txtExaminationNotes";
             this.txtExaminationNotes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtExaminationNotes.Size = new System.Drawing.Size(907, 78);
+            this.txtExaminationNotes.Size = new System.Drawing.Size(904, 78);
             this.txtExaminationNotes.TabIndex = 37;
             this.txtExaminationNotes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2036,7 +2341,7 @@ namespace ClinicApp.Forms.Examination
             this.txtDoctorAdvice.Multiline = true;
             this.txtDoctorAdvice.Name = "txtDoctorAdvice";
             this.txtDoctorAdvice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtDoctorAdvice.Size = new System.Drawing.Size(907, 88);
+            this.txtDoctorAdvice.Size = new System.Drawing.Size(904, 88);
             this.txtDoctorAdvice.TabIndex = 50;
             this.txtDoctorAdvice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2047,9 +2352,57 @@ namespace ClinicApp.Forms.Examination
             this.txtDoctorExamination.Multiline = true;
             this.txtDoctorExamination.Name = "txtDoctorExamination";
             this.txtDoctorExamination.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtDoctorExamination.Size = new System.Drawing.Size(907, 143);
+            this.txtDoctorExamination.Size = new System.Drawing.Size(904, 143);
             this.txtDoctorExamination.TabIndex = 52;
             this.txtDoctorExamination.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackgroundImage = global::ClinicApp.Properties.Resources.booking1;
+            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox14.Location = new System.Drawing.Point(1163, 2);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(139, 45);
+            this.pictureBox14.TabIndex = 53;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImage = global::ClinicApp.Properties.Resources.profile1;
+            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox15.Location = new System.Drawing.Point(1163, 51);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(139, 178);
+            this.pictureBox15.TabIndex = 54;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackgroundImage = global::ClinicApp.Properties.Resources.advice2;
+            this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox16.Location = new System.Drawing.Point(1163, 233);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(139, 112);
+            this.pictureBox16.TabIndex = 55;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackgroundImage = global::ClinicApp.Properties.Resources.notes2;
+            this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox17.Location = new System.Drawing.Point(1163, 349);
+            this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(139, 113);
+            this.pictureBox17.TabIndex = 56;
+            this.pictureBox17.TabStop = false;
             // 
             // dateExamination
             // 
@@ -2059,7 +2412,7 @@ namespace ClinicApp.Forms.Examination
             this.dateExamination.Name = "dateExamination";
             this.dateExamination.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dateExamination.RightToLeftLayout = true;
-            this.dateExamination.Size = new System.Drawing.Size(907, 42);
+            this.dateExamination.Size = new System.Drawing.Size(904, 42);
             this.dateExamination.TabIndex = 57;
             // 
             // PrescriptionPage
@@ -2096,14 +2449,14 @@ namespace ClinicApp.Forms.Examination
             this.dgvPrescription.AllowUserToDeleteRows = false;
             this.dgvPrescription.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPrescription.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrescription.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrescription.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.dgvPrescription.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPrescription.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn4,
@@ -2118,17 +2471,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvPrescription.Name = "dgvPrescription";
             this.dgvPrescription.ReadOnly = true;
             this.dgvPrescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrescription.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrescription.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.dgvPrescription.RowHeadersWidth = 51;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvPrescription.RowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvPrescription.RowsDefaultCellStyle = dataGridViewCellStyle36;
             this.dgvPrescription.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvPrescription.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvPrescription.RowTemplate.Height = 35;
@@ -2172,6 +2525,14 @@ namespace ClinicApp.Forms.Examination
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn3.MinimumWidth = 6;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.ReadOnly = true;
+            // 
             // idMedicine
             // 
             this.idMedicine.HeaderText = "id";
@@ -2196,6 +2557,18 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel20.Size = new System.Drawing.Size(1311, 50);
             this.tableLayoutPanel20.TabIndex = 17;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackgroundImage = global::ClinicApp.Properties.Resources.test;
+            this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox18.Location = new System.Drawing.Point(1188, 2);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(120, 46);
+            this.pictureBox18.TabIndex = 17;
+            this.pictureBox18.TabStop = false;
             // 
             // label35
             // 
@@ -2227,6 +2600,61 @@ namespace ClinicApp.Forms.Examination
             this.pnlColumsPerseption.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.pnlColumsPerseption.Size = new System.Drawing.Size(1317, 212);
             this.pnlColumsPerseption.TabIndex = 21;
+            // 
+            // tableLayoutPanel22
+            // 
+            this.tableLayoutPanel22.ColumnCount = 3;
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.09822F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.23512F));
+            this.tableLayoutPanel22.Controls.Add(this.btnAddNewPerceptionMedicine, 0, 0);
+            this.tableLayoutPanel22.Controls.Add(this.comboMedicine, 2, 0);
+            this.tableLayoutPanel22.Controls.Add(this.label36, 1, 0);
+            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
+            this.tableLayoutPanel22.RowCount = 1;
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(1317, 53);
+            this.tableLayoutPanel22.TabIndex = 0;
+            // 
+            // btnAddNewPerceptionMedicine
+            // 
+            this.btnAddNewPerceptionMedicine.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddNewPerceptionMedicine.FlatAppearance.BorderSize = 0;
+            this.btnAddNewPerceptionMedicine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewPerceptionMedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewPerceptionMedicine.Image")));
+            this.btnAddNewPerceptionMedicine.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddNewPerceptionMedicine.Location = new System.Drawing.Point(1095, 3);
+            this.btnAddNewPerceptionMedicine.Name = "btnAddNewPerceptionMedicine";
+            this.btnAddNewPerceptionMedicine.Size = new System.Drawing.Size(153, 47);
+            this.btnAddNewPerceptionMedicine.TabIndex = 26;
+            this.btnAddNewPerceptionMedicine.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddNewPerceptionMedicine.UseVisualStyleBackColor = true;
+            this.btnAddNewPerceptionMedicine.Click += new System.EventHandler(this.btnAddNewPerceptionMedicine_Click);
+            // 
+            // comboMedicine
+            // 
+            this.comboMedicine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboMedicine.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboMedicine.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboMedicine.FormattingEnabled = true;
+            this.comboMedicine.Location = new System.Drawing.Point(3, 5);
+            this.comboMedicine.Name = "comboMedicine";
+            this.comboMedicine.Size = new System.Drawing.Size(801, 43);
+            this.comboMedicine.TabIndex = 25;
+            // 
+            // label36
+            // 
+            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Arabic Typesetting", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(865, 6);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(104, 40);
+            this.label36.TabIndex = 16;
+            this.label36.Text = "اختر الدواء";
             // 
             // tableLayoutPanel21
             // 
@@ -2296,7 +2724,7 @@ namespace ClinicApp.Forms.Examination
             this.comboTimeTakeMedicine.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboTimeTakeMedicine.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboTimeTakeMedicine.FormattingEnabled = true;
-            this.comboTimeTakeMedicine.Location = new System.Drawing.Point(946, 5);
+            this.comboTimeTakeMedicine.Location = new System.Drawing.Point(946, 14);
             this.comboTimeTakeMedicine.Name = "comboTimeTakeMedicine";
             this.comboTimeTakeMedicine.Size = new System.Drawing.Size(181, 43);
             this.comboTimeTakeMedicine.TabIndex = 22;
@@ -2334,13 +2762,27 @@ namespace ClinicApp.Forms.Examination
             this.label40.TabIndex = 19;
             this.label40.Text = "الجرعة";
             // 
+            // btnAddPrescription
+            // 
+            this.btnAddPrescription.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddPrescription.Image = global::ClinicApp.Properties.Resources.plus_32;
+            this.btnAddPrescription.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddPrescription.Location = new System.Drawing.Point(19, 3);
+            this.btnAddPrescription.Name = "btnAddPrescription";
+            this.btnAddPrescription.Size = new System.Drawing.Size(153, 47);
+            this.btnAddPrescription.TabIndex = 21;
+            this.btnAddPrescription.Text = "اضافة";
+            this.btnAddPrescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddPrescription.UseVisualStyleBackColor = true;
+            this.btnAddPrescription.Click += new System.EventHandler(this.btnAddPrescription_Click);
+            // 
             // comboMedicineUnit
             // 
             this.comboMedicineUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboMedicineUnit.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboMedicineUnit.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboMedicineUnit.FormattingEnabled = true;
-            this.comboMedicineUnit.Location = new System.Drawing.Point(570, 5);
+            this.comboMedicineUnit.Location = new System.Drawing.Point(570, 14);
             this.comboMedicineUnit.Name = "comboMedicineUnit";
             this.comboMedicineUnit.Size = new System.Drawing.Size(182, 43);
             this.comboMedicineUnit.TabIndex = 23;
@@ -2351,7 +2793,7 @@ namespace ClinicApp.Forms.Examination
             this.comboDosages.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboDosages.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboDosages.FormattingEnabled = true;
-            this.comboDosages.Location = new System.Drawing.Point(194, 5);
+            this.comboDosages.Location = new System.Drawing.Point(194, 14);
             this.comboDosages.Name = "comboDosages";
             this.comboDosages.Size = new System.Drawing.Size(182, 43);
             this.comboDosages.TabIndex = 24;
@@ -2377,6 +2819,51 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel24.Size = new System.Drawing.Size(1317, 53);
             this.tableLayoutPanel24.TabIndex = 3;
+            // 
+            // btnAddTimeTakeMedicine
+            // 
+            this.btnAddTimeTakeMedicine.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddTimeTakeMedicine.FlatAppearance.BorderSize = 0;
+            this.btnAddTimeTakeMedicine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddTimeTakeMedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTimeTakeMedicine.Image")));
+            this.btnAddTimeTakeMedicine.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddTimeTakeMedicine.Location = new System.Drawing.Point(1147, 3);
+            this.btnAddTimeTakeMedicine.Name = "btnAddTimeTakeMedicine";
+            this.btnAddTimeTakeMedicine.Size = new System.Drawing.Size(153, 47);
+            this.btnAddTimeTakeMedicine.TabIndex = 22;
+            this.btnAddTimeTakeMedicine.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddTimeTakeMedicine.UseVisualStyleBackColor = true;
+            this.btnAddTimeTakeMedicine.Click += new System.EventHandler(this.btnAddTimeTakeMedicine_Click);
+            // 
+            // btnAddMedicineUnit
+            // 
+            this.btnAddMedicineUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddMedicineUnit.FlatAppearance.BorderSize = 0;
+            this.btnAddMedicineUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddMedicineUnit.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMedicineUnit.Image")));
+            this.btnAddMedicineUnit.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddMedicineUnit.Location = new System.Drawing.Point(771, 3);
+            this.btnAddMedicineUnit.Name = "btnAddMedicineUnit";
+            this.btnAddMedicineUnit.Size = new System.Drawing.Size(153, 47);
+            this.btnAddMedicineUnit.TabIndex = 23;
+            this.btnAddMedicineUnit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddMedicineUnit.UseVisualStyleBackColor = true;
+            this.btnAddMedicineUnit.Click += new System.EventHandler(this.btnAddMedicineUnit_Click);
+            // 
+            // btnAddDosages
+            // 
+            this.btnAddDosages.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddDosages.FlatAppearance.BorderSize = 0;
+            this.btnAddDosages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddDosages.Image = ((System.Drawing.Image)(resources.GetObject("btnAddDosages.Image")));
+            this.btnAddDosages.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddDosages.Location = new System.Drawing.Point(395, 3);
+            this.btnAddDosages.Name = "btnAddDosages";
+            this.btnAddDosages.Size = new System.Drawing.Size(153, 47);
+            this.btnAddDosages.TabIndex = 24;
+            this.btnAddDosages.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddDosages.UseVisualStyleBackColor = true;
+            this.btnAddDosages.Click += new System.EventHandler(this.btnAddDosages_Click);
             // 
             // AnalysisPage
             // 
@@ -2464,6 +2951,14 @@ namespace ClinicApp.Forms.Examination
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
             // 
+            // dataGridViewImageColumn4
+            // 
+            this.dataGridViewImageColumn4.HeaderText = "";
+            this.dataGridViewImageColumn4.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn4.MinimumWidth = 6;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.ReadOnly = true;
+            // 
             // idAnalysis
             // 
             this.idAnalysis.HeaderText = "id";
@@ -2488,6 +2983,18 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel26.Size = new System.Drawing.Size(1311, 50);
             this.tableLayoutPanel26.TabIndex = 17;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.BackgroundImage = global::ClinicApp.Properties.Resources.test;
+            this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox19.Location = new System.Drawing.Point(1188, 2);
+            this.pictureBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(120, 46);
+            this.pictureBox19.TabIndex = 17;
+            this.pictureBox19.TabStop = false;
             // 
             // label41
             // 
@@ -2539,13 +3046,52 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel29.Size = new System.Drawing.Size(1317, 53);
             this.tableLayoutPanel29.TabIndex = 6;
             // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox20.BackgroundImage = global::ClinicApp.Properties.Resources.pdf;
+            this.pictureBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox20.Location = new System.Drawing.Point(1102, 3);
+            this.pictureBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(102, 46);
+            this.pictureBox20.TabIndex = 26;
+            this.pictureBox20.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.Image = global::ClinicApp.Properties.Resources.plus_32;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.Location = new System.Drawing.Point(89, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 47);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "حذف";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnUploadPdf
+            // 
+            this.btnUploadPdf.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUploadPdf.Image = global::ClinicApp.Properties.Resources.plus_32;
+            this.btnUploadPdf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUploadPdf.Location = new System.Drawing.Point(540, 3);
+            this.btnUploadPdf.Name = "btnUploadPdf";
+            this.btnUploadPdf.Size = new System.Drawing.Size(238, 47);
+            this.btnUploadPdf.TabIndex = 25;
+            this.btnUploadPdf.Text = "اضافة نتيجة تحليل";
+            this.btnUploadPdf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUploadPdf.UseVisualStyleBackColor = true;
+            this.btnUploadPdf.Click += new System.EventHandler(this.btnUploadPdf_Click);
+            // 
             // tableLayoutPanel28
             // 
             this.tableLayoutPanel28.ColumnCount = 4;
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.02383F));
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.41907F));
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.5571F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 221F));
+            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 226F));
             this.tableLayoutPanel28.Controls.Add(this.btnNewAddAnalysis, 0, 0);
             this.tableLayoutPanel28.Controls.Add(this.label42, 0, 0);
             this.tableLayoutPanel28.Controls.Add(this.comboAnalysis, 2, 0);
@@ -2558,6 +3104,21 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel28.Size = new System.Drawing.Size(1317, 53);
             this.tableLayoutPanel28.TabIndex = 0;
+            // 
+            // btnNewAddAnalysis
+            // 
+            this.btnNewAddAnalysis.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnNewAddAnalysis.FlatAppearance.BorderSize = 0;
+            this.btnNewAddAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewAddAnalysis.Image = ((System.Drawing.Image)(resources.GetObject("btnNewAddAnalysis.Image")));
+            this.btnNewAddAnalysis.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNewAddAnalysis.Location = new System.Drawing.Point(890, 3);
+            this.btnNewAddAnalysis.Name = "btnNewAddAnalysis";
+            this.btnNewAddAnalysis.Size = new System.Drawing.Size(153, 47);
+            this.btnNewAddAnalysis.TabIndex = 26;
+            this.btnNewAddAnalysis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewAddAnalysis.UseVisualStyleBackColor = true;
+            this.btnNewAddAnalysis.Click += new System.EventHandler(this.btnNewAddAnalysis_Click);
             // 
             // label42
             // 
@@ -2576,10 +3137,24 @@ namespace ClinicApp.Forms.Examination
             this.comboAnalysis.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboAnalysis.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboAnalysis.FormattingEnabled = true;
-            this.comboAnalysis.Location = new System.Drawing.Point(226, 5);
+            this.comboAnalysis.Location = new System.Drawing.Point(231, 14);
             this.comboAnalysis.Name = "comboAnalysis";
-            this.comboAnalysis.Size = new System.Drawing.Size(635, 43);
+            this.comboAnalysis.Size = new System.Drawing.Size(632, 43);
             this.comboAnalysis.TabIndex = 25;
+            // 
+            // btnAddAnalysis
+            // 
+            this.btnAddAnalysis.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddAnalysis.Image = global::ClinicApp.Properties.Resources.plus_32;
+            this.btnAddAnalysis.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddAnalysis.Location = new System.Drawing.Point(38, 3);
+            this.btnAddAnalysis.Name = "btnAddAnalysis";
+            this.btnAddAnalysis.Size = new System.Drawing.Size(153, 47);
+            this.btnAddAnalysis.TabIndex = 24;
+            this.btnAddAnalysis.Text = "اضافة";
+            this.btnAddAnalysis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddAnalysis.UseVisualStyleBackColor = true;
+            this.btnAddAnalysis.Click += new System.EventHandler(this.btnAddAnalysis_Click);
             // 
             // tableLayoutPanel25
             // 
@@ -2738,6 +3313,14 @@ namespace ClinicApp.Forms.Examination
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
+            // dataGridViewImageColumn5
+            // 
+            this.dataGridViewImageColumn5.HeaderText = "";
+            this.dataGridViewImageColumn5.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn5.MinimumWidth = 6;
+            this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
+            this.dataGridViewImageColumn5.ReadOnly = true;
+            // 
             // raysId
             // 
             this.raysId.HeaderText = "id";
@@ -2762,6 +3345,18 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel32.Size = new System.Drawing.Size(1311, 50);
             this.tableLayoutPanel32.TabIndex = 17;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.BackgroundImage = global::ClinicApp.Properties.Resources.test;
+            this.pictureBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox21.Location = new System.Drawing.Point(1188, 2);
+            this.pictureBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(120, 46);
+            this.pictureBox21.TabIndex = 17;
+            this.pictureBox21.TabStop = false;
             // 
             // label45
             // 
@@ -2813,13 +3408,51 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel34.Size = new System.Drawing.Size(1317, 53);
             this.tableLayoutPanel34.TabIndex = 6;
             // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox22.BackgroundImage = global::ClinicApp.Properties.Resources.pdf;
+            this.pictureBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox22.Location = new System.Drawing.Point(1102, 3);
+            this.pictureBox22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(102, 46);
+            this.pictureBox22.TabIndex = 26;
+            this.pictureBox22.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.Image = global::ClinicApp.Properties.Resources.plus_32;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.Location = new System.Drawing.Point(89, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(153, 47);
+            this.button4.TabIndex = 24;
+            this.button4.Text = "حذف";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.Image = global::ClinicApp.Properties.Resources.plus_32;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.Location = new System.Drawing.Point(540, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(238, 47);
+            this.button5.TabIndex = 25;
+            this.button5.Text = "اضافة نتيجة الاشعة";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // tableLayoutPanel35
             // 
             this.tableLayoutPanel35.ColumnCount = 4;
             this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.02383F));
             this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.41907F));
             this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.5571F));
-            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 221F));
+            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 226F));
             this.tableLayoutPanel35.Controls.Add(this.btnAddNewRays, 0, 0);
             this.tableLayoutPanel35.Controls.Add(this.label46, 0, 0);
             this.tableLayoutPanel35.Controls.Add(this.comboRays, 2, 0);
@@ -2833,12 +3466,27 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel35.Size = new System.Drawing.Size(1317, 53);
             this.tableLayoutPanel35.TabIndex = 0;
             // 
+            // btnAddNewRays
+            // 
+            this.btnAddNewRays.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddNewRays.FlatAppearance.BorderSize = 0;
+            this.btnAddNewRays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewRays.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewRays.Image")));
+            this.btnAddNewRays.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddNewRays.Location = new System.Drawing.Point(890, 3);
+            this.btnAddNewRays.Name = "btnAddNewRays";
+            this.btnAddNewRays.Size = new System.Drawing.Size(153, 47);
+            this.btnAddNewRays.TabIndex = 27;
+            this.btnAddNewRays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddNewRays.UseVisualStyleBackColor = true;
+            this.btnAddNewRays.Click += new System.EventHandler(this.btnAddNewRays_Click);
+            // 
             // label46
             // 
             this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Arabic Typesetting", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(1131, 6);
+            this.label46.Location = new System.Drawing.Point(1132, 6);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(120, 40);
             this.label46.TabIndex = 16;
@@ -2850,10 +3498,24 @@ namespace ClinicApp.Forms.Examination
             this.comboRays.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboRays.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboRays.FormattingEnabled = true;
-            this.comboRays.Location = new System.Drawing.Point(226, 5);
+            this.comboRays.Location = new System.Drawing.Point(231, 14);
             this.comboRays.Name = "comboRays";
-            this.comboRays.Size = new System.Drawing.Size(635, 43);
+            this.comboRays.Size = new System.Drawing.Size(632, 43);
             this.comboRays.TabIndex = 25;
+            // 
+            // btnAddRays
+            // 
+            this.btnAddRays.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddRays.Image = global::ClinicApp.Properties.Resources.plus_32;
+            this.btnAddRays.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddRays.Location = new System.Drawing.Point(38, 3);
+            this.btnAddRays.Name = "btnAddRays";
+            this.btnAddRays.Size = new System.Drawing.Size(153, 47);
+            this.btnAddRays.TabIndex = 24;
+            this.btnAddRays.Text = "اضافة";
+            this.btnAddRays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddRays.UseVisualStyleBackColor = true;
+            this.btnAddRays.Click += new System.EventHandler(this.btnAddRays_Click);
             // 
             // tableLayoutPanel36
             // 
@@ -3012,6 +3674,14 @@ namespace ClinicApp.Forms.Examination
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
             // 
+            // dataGridViewImageColumn6
+            // 
+            this.dataGridViewImageColumn6.HeaderText = "";
+            this.dataGridViewImageColumn6.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn6.MinimumWidth = 6;
+            this.dataGridViewImageColumn6.Name = "dataGridViewImageColumn6";
+            this.dataGridViewImageColumn6.ReadOnly = true;
+            // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.HeaderText = "id";
@@ -3037,6 +3707,18 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel39.Size = new System.Drawing.Size(1311, 44);
             this.tableLayoutPanel39.TabIndex = 17;
             // 
+            // pictureBox23
+            // 
+            this.pictureBox23.BackgroundImage = global::ClinicApp.Properties.Resources.diet;
+            this.pictureBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox23.Location = new System.Drawing.Point(1188, 2);
+            this.pictureBox23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(120, 40);
+            this.pictureBox23.TabIndex = 17;
+            this.pictureBox23.TabStop = false;
+            // 
             // label49
             // 
             this.label49.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -3054,7 +3736,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.70843F));
             this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.62491F));
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 245F));
+            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 249F));
             this.tableLayoutPanel40.Controls.Add(this.txtFoodNotes, 2, 1);
             this.tableLayoutPanel40.Controls.Add(this.btnAddFood, 3, 0);
             this.tableLayoutPanel40.Controls.Add(this.comboFood, 2, 0);
@@ -3070,35 +3752,27 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel40.Size = new System.Drawing.Size(1311, 100);
             this.tableLayoutPanel40.TabIndex = 18;
             // 
-            // label50
-            // 
-            this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(951, 54);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(123, 46);
-            this.label50.TabIndex = 17;
-            this.label50.Text = "ملاحظات";
-            // 
-            // label51
-            // 
-            this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(947, 1);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(132, 51);
-            this.label51.TabIndex = 16;
-            this.label51.Text = "اختر الاكل";
-            // 
             // txtFoodNotes
             // 
             this.txtFoodNotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFoodNotes.Location = new System.Drawing.Point(249, 57);
+            this.txtFoodNotes.Location = new System.Drawing.Point(253, 57);
             this.txtFoodNotes.Name = "txtFoodNotes";
-            this.txtFoodNotes.Size = new System.Drawing.Size(672, 42);
+            this.txtFoodNotes.Size = new System.Drawing.Size(669, 42);
             this.txtFoodNotes.TabIndex = 19;
+            // 
+            // btnAddFood
+            // 
+            this.btnAddFood.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddFood.Image = global::ClinicApp.Properties.Resources.plus_32;
+            this.btnAddFood.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddFood.Location = new System.Drawing.Point(49, 3);
+            this.btnAddFood.Name = "btnAddFood";
+            this.btnAddFood.Size = new System.Drawing.Size(153, 48);
+            this.btnAddFood.TabIndex = 20;
+            this.btnAddFood.Text = "اضافة";
+            this.btnAddFood.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddFood.UseVisualStyleBackColor = true;
+            this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
             // 
             // comboFood
             // 
@@ -3106,10 +3780,47 @@ namespace ClinicApp.Forms.Examination
             this.comboFood.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboFood.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboFood.FormattingEnabled = true;
-            this.comboFood.Location = new System.Drawing.Point(249, 5);
+            this.comboFood.Location = new System.Drawing.Point(253, 14);
             this.comboFood.Name = "comboFood";
-            this.comboFood.Size = new System.Drawing.Size(672, 43);
+            this.comboFood.Size = new System.Drawing.Size(669, 43);
             this.comboFood.TabIndex = 21;
+            // 
+            // label51
+            // 
+            this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(948, 1);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(132, 51);
+            this.label51.TabIndex = 16;
+            this.label51.Text = "اختر الاكل";
+            // 
+            // label50
+            // 
+            this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(952, 54);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(123, 46);
+            this.label50.TabIndex = 17;
+            this.label50.Text = "ملاحظات";
+            // 
+            // btnAddNewFood
+            // 
+            this.btnAddNewFood.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddNewFood.FlatAppearance.BorderSize = 0;
+            this.btnAddNewFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewFood.Image = global::ClinicApp.Properties.Resources.plus_green;
+            this.btnAddNewFood.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddNewFood.Location = new System.Drawing.Point(1147, 3);
+            this.btnAddNewFood.Name = "btnAddNewFood";
+            this.btnAddNewFood.Size = new System.Drawing.Size(120, 48);
+            this.btnAddNewFood.TabIndex = 24;
+            this.btnAddNewFood.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddNewFood.UseVisualStyleBackColor = true;
+            this.btnAddNewFood.Click += new System.EventHandler(this.btnAddNewFood_Click);
             // 
             // contrastingMedicinePage
             // 
@@ -3197,6 +3908,14 @@ namespace ClinicApp.Forms.Examination
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
             this.dataGridViewTextBoxColumn14.ReadOnly = true;
             // 
+            // dataGridViewImageColumn7
+            // 
+            this.dataGridViewImageColumn7.HeaderText = "";
+            this.dataGridViewImageColumn7.Image = global::ClinicApp.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn7.MinimumWidth = 6;
+            this.dataGridViewImageColumn7.Name = "dataGridViewImageColumn7";
+            this.dataGridViewImageColumn7.ReadOnly = true;
+            // 
             // dataGridViewTextBoxColumn15
             // 
             this.dataGridViewTextBoxColumn15.HeaderText = "id";
@@ -3222,6 +3941,18 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel42.Size = new System.Drawing.Size(1311, 44);
             this.tableLayoutPanel42.TabIndex = 17;
             // 
+            // pictureBox24
+            // 
+            this.pictureBox24.BackgroundImage = global::ClinicApp.Properties.Resources.pill;
+            this.pictureBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox24.Location = new System.Drawing.Point(1188, 2);
+            this.pictureBox24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(120, 40);
+            this.pictureBox24.TabIndex = 17;
+            this.pictureBox24.TabStop = false;
+            // 
             // label52
             // 
             this.label52.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -3239,7 +3970,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.70843F));
             this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.62491F));
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 245F));
+            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 249F));
             this.tableLayoutPanel43.Controls.Add(this.txtContrastingMedicinesNotes, 2, 1);
             this.tableLayoutPanel43.Controls.Add(this.btnAddContrastingMedicines, 3, 0);
             this.tableLayoutPanel43.Controls.Add(this.comboContrastingMedicines, 2, 0);
@@ -3255,35 +3986,27 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel43.Size = new System.Drawing.Size(1311, 100);
             this.tableLayoutPanel43.TabIndex = 18;
             // 
-            // label53
-            // 
-            this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(951, 54);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(123, 46);
-            this.label53.TabIndex = 17;
-            this.label53.Text = "ملاحظات";
-            // 
-            // label54
-            // 
-            this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(947, 1);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(131, 51);
-            this.label54.TabIndex = 16;
-            this.label54.Text = "اختر الدواء";
-            // 
             // txtContrastingMedicinesNotes
             // 
             this.txtContrastingMedicinesNotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContrastingMedicinesNotes.Location = new System.Drawing.Point(249, 57);
+            this.txtContrastingMedicinesNotes.Location = new System.Drawing.Point(253, 57);
             this.txtContrastingMedicinesNotes.Name = "txtContrastingMedicinesNotes";
-            this.txtContrastingMedicinesNotes.Size = new System.Drawing.Size(672, 42);
+            this.txtContrastingMedicinesNotes.Size = new System.Drawing.Size(669, 42);
             this.txtContrastingMedicinesNotes.TabIndex = 19;
+            // 
+            // btnAddContrastingMedicines
+            // 
+            this.btnAddContrastingMedicines.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddContrastingMedicines.Image = global::ClinicApp.Properties.Resources.plus_32;
+            this.btnAddContrastingMedicines.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddContrastingMedicines.Location = new System.Drawing.Point(49, 3);
+            this.btnAddContrastingMedicines.Name = "btnAddContrastingMedicines";
+            this.btnAddContrastingMedicines.Size = new System.Drawing.Size(153, 48);
+            this.btnAddContrastingMedicines.TabIndex = 20;
+            this.btnAddContrastingMedicines.Text = "اضافة";
+            this.btnAddContrastingMedicines.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddContrastingMedicines.UseVisualStyleBackColor = true;
+            this.btnAddContrastingMedicines.Click += new System.EventHandler(this.btnAddContrastingMedicines_Click);
             // 
             // comboContrastingMedicines
             // 
@@ -3291,10 +4014,47 @@ namespace ClinicApp.Forms.Examination
             this.comboContrastingMedicines.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboContrastingMedicines.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboContrastingMedicines.FormattingEnabled = true;
-            this.comboContrastingMedicines.Location = new System.Drawing.Point(249, 5);
+            this.comboContrastingMedicines.Location = new System.Drawing.Point(253, 14);
             this.comboContrastingMedicines.Name = "comboContrastingMedicines";
-            this.comboContrastingMedicines.Size = new System.Drawing.Size(672, 43);
+            this.comboContrastingMedicines.Size = new System.Drawing.Size(669, 43);
             this.comboContrastingMedicines.TabIndex = 21;
+            // 
+            // label54
+            // 
+            this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(948, 1);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(131, 51);
+            this.label54.TabIndex = 16;
+            this.label54.Text = "اختر الدواء";
+            // 
+            // label53
+            // 
+            this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(952, 54);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(123, 46);
+            this.label53.TabIndex = 17;
+            this.label53.Text = "ملاحظات";
+            // 
+            // btnAddNewMedicicne
+            // 
+            this.btnAddNewMedicicne.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddNewMedicicne.FlatAppearance.BorderSize = 0;
+            this.btnAddNewMedicicne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewMedicicne.Image = global::ClinicApp.Properties.Resources.plus_green;
+            this.btnAddNewMedicicne.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddNewMedicicne.Location = new System.Drawing.Point(1147, 3);
+            this.btnAddNewMedicicne.Name = "btnAddNewMedicicne";
+            this.btnAddNewMedicicne.Size = new System.Drawing.Size(120, 48);
+            this.btnAddNewMedicicne.TabIndex = 25;
+            this.btnAddNewMedicicne.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddNewMedicicne.UseVisualStyleBackColor = true;
+            this.btnAddNewMedicicne.Click += new System.EventHandler(this.btnAddNewMedicicne_Click);
             // 
             // smartAssistantPage
             // 
@@ -3325,766 +4085,6 @@ namespace ClinicApp.Forms.Examination
             this.dataGridViewImageColumn1.ReadOnly = true;
             this.dataGridViewImageColumn1.Width = 358;
             // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn2.MinimumWidth = 6;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn3
-            // 
-            this.dataGridViewImageColumn3.HeaderText = "";
-            this.dataGridViewImageColumn3.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn3.MinimumWidth = 6;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn4
-            // 
-            this.dataGridViewImageColumn4.HeaderText = "";
-            this.dataGridViewImageColumn4.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn4.MinimumWidth = 6;
-            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
-            this.dataGridViewImageColumn4.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn5
-            // 
-            this.dataGridViewImageColumn5.HeaderText = "";
-            this.dataGridViewImageColumn5.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn5.MinimumWidth = 6;
-            this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
-            this.dataGridViewImageColumn5.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn6
-            // 
-            this.dataGridViewImageColumn6.HeaderText = "";
-            this.dataGridViewImageColumn6.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn6.MinimumWidth = 6;
-            this.dataGridViewImageColumn6.Name = "dataGridViewImageColumn6";
-            this.dataGridViewImageColumn6.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn7
-            // 
-            this.dataGridViewImageColumn7.HeaderText = "";
-            this.dataGridViewImageColumn7.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn7.MinimumWidth = 6;
-            this.dataGridViewImageColumn7.Name = "dataGridViewImageColumn7";
-            this.dataGridViewImageColumn7.ReadOnly = true;
-            // 
-            // btnOpenExamination
-            // 
-            this.btnOpenExamination.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnOpenExamination.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenExamination.ForeColor = System.Drawing.Color.Black;
-            this.btnOpenExamination.Image = global::ClinicApp.Properties.Resources.advice;
-            this.btnOpenExamination.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnOpenExamination.Name = "btnOpenExamination";
-            this.btnOpenExamination.Size = new System.Drawing.Size(205, 106);
-            this.btnOpenExamination.Text = "فتح كشف للمريض";
-            this.btnOpenExamination.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnOpenExamination.Click += new System.EventHandler(this.btnOpenExamination_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.Red;
-            this.btnUpdate.Image = global::ClinicApp.Properties.Resources.Clear_red;
-            this.btnUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(69, 106);
-            this.btnUpdate.Text = "خروج";
-            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnSavePatientVisiting
-            // 
-            this.btnSavePatientVisiting.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSavePatientVisiting.ForeColor = System.Drawing.Color.Blue;
-            this.btnSavePatientVisiting.Image = global::ClinicApp.Properties.Resources.floppy_disk;
-            this.btnSavePatientVisiting.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSavePatientVisiting.Name = "btnSavePatientVisiting";
-            this.btnSavePatientVisiting.Size = new System.Drawing.Size(205, 106);
-            this.btnSavePatientVisiting.Text = "حفظ زيارة المريض";
-            this.btnSavePatientVisiting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSavePatientVisiting.Click += new System.EventHandler(this.btnSavePatientVisiting_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(1122, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(186, 39);
-            this.pictureBox2.TabIndex = 67;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnReload
-            // 
-            this.btnReload.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnReload.Font = new System.Drawing.Font("Arabic Typesetting", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReload.Image = global::ClinicApp.Properties.Resources.loading;
-            this.btnReload.Location = new System.Drawing.Point(3, 3);
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(104, 39);
-            this.btnReload.TabIndex = 66;
-            this.btnReload.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnReload.UseVisualStyleBackColor = false;
-            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSearch.Font = new System.Drawing.Font("Arabic Typesetting", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Image = global::ClinicApp.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(3, 3);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(105, 39);
-            this.btnSearch.TabIndex = 66;
-            this.btnSearch.Text = "بحث";
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1188, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(99, 50);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // picBox
-            // 
-            this.picBox.BackColor = System.Drawing.Color.White;
-            this.picBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picBox.Location = new System.Drawing.Point(3, 2);
-            this.picBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(205, 190);
-            this.picBox.TabIndex = 39;
-            this.picBox.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::ClinicApp.Properties.Resources.health_check;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Location = new System.Drawing.Point(1188, 2);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(120, 54);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::ClinicApp.Properties.Resources.blood;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Location = new System.Drawing.Point(1166, 2);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(136, 62);
-            this.pictureBox4.TabIndex = 53;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::ClinicApp.Properties.Resources.breathing;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Location = new System.Drawing.Point(1166, 68);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(136, 62);
-            this.pictureBox5.TabIndex = 54;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::ClinicApp.Properties.Resources.pulse;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Location = new System.Drawing.Point(1166, 134);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(136, 62);
-            this.pictureBox6.TabIndex = 55;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::ClinicApp.Properties.Resources.thermometer;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Location = new System.Drawing.Point(1166, 200);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(136, 62);
-            this.pictureBox7.TabIndex = 56;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImage = global::ClinicApp.Properties.Resources.sugar_cube;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Location = new System.Drawing.Point(1166, 266);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(136, 62);
-            this.pictureBox8.TabIndex = 57;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = global::ClinicApp.Properties.Resources.weight;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Location = new System.Drawing.Point(1166, 332);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(136, 62);
-            this.pictureBox9.TabIndex = 58;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImage = global::ClinicApp.Properties.Resources.anesthesia;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Location = new System.Drawing.Point(1166, 398);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(136, 64);
-            this.pictureBox10.TabIndex = 59;
-            this.pictureBox10.TabStop = false;
-            // 
-            // delete
-            // 
-            this.delete.HeaderText = "";
-            this.delete.Image = global::ClinicApp.Properties.Resources.delete_24;
-            this.delete.MinimumWidth = 6;
-            this.delete.Name = "delete";
-            this.delete.ReadOnly = true;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImage = global::ClinicApp.Properties.Resources.kidney;
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox11.Location = new System.Drawing.Point(1188, 2);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(120, 40);
-            this.pictureBox11.TabIndex = 17;
-            this.pictureBox11.TabStop = false;
-            // 
-            // btnAddDiseases
-            // 
-            this.btnAddDiseases.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddDiseases.Image = global::ClinicApp.Properties.Resources.plus_32;
-            this.btnAddDiseases.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddDiseases.Location = new System.Drawing.Point(47, 3);
-            this.btnAddDiseases.Name = "btnAddDiseases";
-            this.btnAddDiseases.Size = new System.Drawing.Size(153, 48);
-            this.btnAddDiseases.TabIndex = 20;
-            this.btnAddDiseases.Text = "اضافة";
-            this.btnAddDiseases.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddDiseases.UseVisualStyleBackColor = true;
-            this.btnAddDiseases.Click += new System.EventHandler(this.btnAddDiseases_Click);
-            // 
-            // btnAddToCombo
-            // 
-            this.btnAddToCombo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddToCombo.FlatAppearance.BorderSize = 0;
-            this.btnAddToCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddToCombo.Image = global::ClinicApp.Properties.Resources.plus_green;
-            this.btnAddToCombo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddToCombo.Location = new System.Drawing.Point(1146, 3);
-            this.btnAddToCombo.Name = "btnAddToCombo";
-            this.btnAddToCombo.Size = new System.Drawing.Size(120, 48);
-            this.btnAddToCombo.TabIndex = 22;
-            this.btnAddToCombo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddToCombo.UseVisualStyleBackColor = true;
-            this.btnAddToCombo.Click += new System.EventHandler(this.btnAddToCombo_Click);
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImage = global::ClinicApp.Properties.Resources.kidney;
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox12.Location = new System.Drawing.Point(1188, 2);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(120, 40);
-            this.pictureBox12.TabIndex = 17;
-            this.pictureBox12.TabStop = false;
-            // 
-            // btnAddSymptoms
-            // 
-            this.btnAddSymptoms.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddSymptoms.Image = global::ClinicApp.Properties.Resources.plus_32;
-            this.btnAddSymptoms.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddSymptoms.Location = new System.Drawing.Point(47, 3);
-            this.btnAddSymptoms.Name = "btnAddSymptoms";
-            this.btnAddSymptoms.Size = new System.Drawing.Size(153, 48);
-            this.btnAddSymptoms.TabIndex = 20;
-            this.btnAddSymptoms.Text = "اضافة";
-            this.btnAddSymptoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddSymptoms.UseVisualStyleBackColor = true;
-            this.btnAddSymptoms.Click += new System.EventHandler(this.btnAddSymptoms_Click);
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackgroundImage = global::ClinicApp.Properties.Resources.exam;
-            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox13.Location = new System.Drawing.Point(1188, 2);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(120, 54);
-            this.pictureBox13.TabIndex = 17;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackgroundImage = global::ClinicApp.Properties.Resources.booking1;
-            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox14.Location = new System.Drawing.Point(1166, 2);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(136, 45);
-            this.pictureBox14.TabIndex = 53;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackgroundImage = global::ClinicApp.Properties.Resources.profile1;
-            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox15.Location = new System.Drawing.Point(1166, 51);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(136, 178);
-            this.pictureBox15.TabIndex = 54;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackgroundImage = global::ClinicApp.Properties.Resources.advice2;
-            this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox16.Location = new System.Drawing.Point(1166, 233);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(136, 112);
-            this.pictureBox16.TabIndex = 55;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.BackgroundImage = global::ClinicApp.Properties.Resources.notes2;
-            this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox17.Location = new System.Drawing.Point(1166, 349);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(136, 113);
-            this.pictureBox17.TabIndex = 56;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.BackgroundImage = global::ClinicApp.Properties.Resources.test;
-            this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox18.Location = new System.Drawing.Point(1188, 2);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(120, 46);
-            this.pictureBox18.TabIndex = 17;
-            this.pictureBox18.TabStop = false;
-            // 
-            // btnAddPrescription
-            // 
-            this.btnAddPrescription.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddPrescription.Image = global::ClinicApp.Properties.Resources.plus_32;
-            this.btnAddPrescription.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddPrescription.Location = new System.Drawing.Point(19, 3);
-            this.btnAddPrescription.Name = "btnAddPrescription";
-            this.btnAddPrescription.Size = new System.Drawing.Size(153, 47);
-            this.btnAddPrescription.TabIndex = 21;
-            this.btnAddPrescription.Text = "اضافة";
-            this.btnAddPrescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddPrescription.UseVisualStyleBackColor = true;
-            this.btnAddPrescription.Click += new System.EventHandler(this.btnAddPrescription_Click);
-            // 
-            // btnAddTimeTakeMedicine
-            // 
-            this.btnAddTimeTakeMedicine.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddTimeTakeMedicine.FlatAppearance.BorderSize = 0;
-            this.btnAddTimeTakeMedicine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddTimeTakeMedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTimeTakeMedicine.Image")));
-            this.btnAddTimeTakeMedicine.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddTimeTakeMedicine.Location = new System.Drawing.Point(1147, 3);
-            this.btnAddTimeTakeMedicine.Name = "btnAddTimeTakeMedicine";
-            this.btnAddTimeTakeMedicine.Size = new System.Drawing.Size(153, 47);
-            this.btnAddTimeTakeMedicine.TabIndex = 22;
-            this.btnAddTimeTakeMedicine.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddTimeTakeMedicine.UseVisualStyleBackColor = true;
-            this.btnAddTimeTakeMedicine.Click += new System.EventHandler(this.btnAddTimeTakeMedicine_Click);
-            // 
-            // btnAddMedicineUnit
-            // 
-            this.btnAddMedicineUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddMedicineUnit.FlatAppearance.BorderSize = 0;
-            this.btnAddMedicineUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddMedicineUnit.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMedicineUnit.Image")));
-            this.btnAddMedicineUnit.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddMedicineUnit.Location = new System.Drawing.Point(771, 3);
-            this.btnAddMedicineUnit.Name = "btnAddMedicineUnit";
-            this.btnAddMedicineUnit.Size = new System.Drawing.Size(153, 47);
-            this.btnAddMedicineUnit.TabIndex = 23;
-            this.btnAddMedicineUnit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddMedicineUnit.UseVisualStyleBackColor = true;
-            this.btnAddMedicineUnit.Click += new System.EventHandler(this.btnAddMedicineUnit_Click);
-            // 
-            // btnAddDosages
-            // 
-            this.btnAddDosages.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddDosages.FlatAppearance.BorderSize = 0;
-            this.btnAddDosages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddDosages.Image = ((System.Drawing.Image)(resources.GetObject("btnAddDosages.Image")));
-            this.btnAddDosages.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddDosages.Location = new System.Drawing.Point(395, 3);
-            this.btnAddDosages.Name = "btnAddDosages";
-            this.btnAddDosages.Size = new System.Drawing.Size(153, 47);
-            this.btnAddDosages.TabIndex = 24;
-            this.btnAddDosages.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddDosages.UseVisualStyleBackColor = true;
-            this.btnAddDosages.Click += new System.EventHandler(this.btnAddDosages_Click);
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.BackgroundImage = global::ClinicApp.Properties.Resources.test;
-            this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox19.Location = new System.Drawing.Point(1188, 2);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(120, 46);
-            this.pictureBox19.TabIndex = 17;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox20.BackgroundImage = global::ClinicApp.Properties.Resources.pdf;
-            this.pictureBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox20.Location = new System.Drawing.Point(1102, 3);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(102, 46);
-            this.pictureBox20.TabIndex = 26;
-            this.pictureBox20.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Image = global::ClinicApp.Properties.Resources.plus_32;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(89, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 47);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "حذف";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnUploadPdf
-            // 
-            this.btnUploadPdf.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUploadPdf.Image = global::ClinicApp.Properties.Resources.plus_32;
-            this.btnUploadPdf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUploadPdf.Location = new System.Drawing.Point(540, 3);
-            this.btnUploadPdf.Name = "btnUploadPdf";
-            this.btnUploadPdf.Size = new System.Drawing.Size(238, 47);
-            this.btnUploadPdf.TabIndex = 25;
-            this.btnUploadPdf.Text = "اضافة نتيجة تحليل";
-            this.btnUploadPdf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUploadPdf.UseVisualStyleBackColor = true;
-            this.btnUploadPdf.Click += new System.EventHandler(this.btnUploadPdf_Click);
-            // 
-            // btnAddAnalysis
-            // 
-            this.btnAddAnalysis.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddAnalysis.Image = global::ClinicApp.Properties.Resources.plus_32;
-            this.btnAddAnalysis.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddAnalysis.Location = new System.Drawing.Point(35, 3);
-            this.btnAddAnalysis.Name = "btnAddAnalysis";
-            this.btnAddAnalysis.Size = new System.Drawing.Size(153, 47);
-            this.btnAddAnalysis.TabIndex = 24;
-            this.btnAddAnalysis.Text = "اضافة";
-            this.btnAddAnalysis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddAnalysis.UseVisualStyleBackColor = true;
-            this.btnAddAnalysis.Click += new System.EventHandler(this.btnAddAnalysis_Click);
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.BackgroundImage = global::ClinicApp.Properties.Resources.test;
-            this.pictureBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox21.Location = new System.Drawing.Point(1188, 2);
-            this.pictureBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(120, 46);
-            this.pictureBox21.TabIndex = 17;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox22.BackgroundImage = global::ClinicApp.Properties.Resources.pdf;
-            this.pictureBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox22.Location = new System.Drawing.Point(1102, 3);
-            this.pictureBox22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(102, 46);
-            this.pictureBox22.TabIndex = 26;
-            this.pictureBox22.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.Image = global::ClinicApp.Properties.Resources.plus_32;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.Location = new System.Drawing.Point(89, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(153, 47);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "حذف";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.Image = global::ClinicApp.Properties.Resources.plus_32;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(540, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(238, 47);
-            this.button5.TabIndex = 25;
-            this.button5.Text = "اضافة نتيجة الاشعة";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // btnAddRays
-            // 
-            this.btnAddRays.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddRays.Image = global::ClinicApp.Properties.Resources.plus_32;
-            this.btnAddRays.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddRays.Location = new System.Drawing.Point(35, 3);
-            this.btnAddRays.Name = "btnAddRays";
-            this.btnAddRays.Size = new System.Drawing.Size(153, 47);
-            this.btnAddRays.TabIndex = 24;
-            this.btnAddRays.Text = "اضافة";
-            this.btnAddRays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddRays.UseVisualStyleBackColor = true;
-            this.btnAddRays.Click += new System.EventHandler(this.btnAddRays_Click);
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.BackgroundImage = global::ClinicApp.Properties.Resources.diet;
-            this.pictureBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox23.Location = new System.Drawing.Point(1188, 2);
-            this.pictureBox23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(120, 40);
-            this.pictureBox23.TabIndex = 17;
-            this.pictureBox23.TabStop = false;
-            // 
-            // btnAddFood
-            // 
-            this.btnAddFood.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddFood.Image = global::ClinicApp.Properties.Resources.plus_32;
-            this.btnAddFood.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddFood.Location = new System.Drawing.Point(47, 3);
-            this.btnAddFood.Name = "btnAddFood";
-            this.btnAddFood.Size = new System.Drawing.Size(153, 48);
-            this.btnAddFood.TabIndex = 20;
-            this.btnAddFood.Text = "اضافة";
-            this.btnAddFood.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddFood.UseVisualStyleBackColor = true;
-            this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.BackgroundImage = global::ClinicApp.Properties.Resources.pill;
-            this.pictureBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox24.Location = new System.Drawing.Point(1188, 2);
-            this.pictureBox24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(120, 40);
-            this.pictureBox24.TabIndex = 17;
-            this.pictureBox24.TabStop = false;
-            // 
-            // btnAddContrastingMedicines
-            // 
-            this.btnAddContrastingMedicines.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddContrastingMedicines.Image = global::ClinicApp.Properties.Resources.plus_32;
-            this.btnAddContrastingMedicines.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddContrastingMedicines.Location = new System.Drawing.Point(47, 3);
-            this.btnAddContrastingMedicines.Name = "btnAddContrastingMedicines";
-            this.btnAddContrastingMedicines.Size = new System.Drawing.Size(153, 48);
-            this.btnAddContrastingMedicines.TabIndex = 20;
-            this.btnAddContrastingMedicines.Text = "اضافة";
-            this.btnAddContrastingMedicines.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddContrastingMedicines.UseVisualStyleBackColor = true;
-            this.btnAddContrastingMedicines.Click += new System.EventHandler(this.btnAddContrastingMedicines_Click);
-            // 
-            // btnAddToComboSymptoms
-            // 
-            this.btnAddToComboSymptoms.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddToComboSymptoms.FlatAppearance.BorderSize = 0;
-            this.btnAddToComboSymptoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddToComboSymptoms.Image = global::ClinicApp.Properties.Resources.plus_green;
-            this.btnAddToComboSymptoms.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddToComboSymptoms.Location = new System.Drawing.Point(1146, 3);
-            this.btnAddToComboSymptoms.Name = "btnAddToComboSymptoms";
-            this.btnAddToComboSymptoms.Size = new System.Drawing.Size(120, 48);
-            this.btnAddToComboSymptoms.TabIndex = 23;
-            this.btnAddToComboSymptoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddToComboSymptoms.UseVisualStyleBackColor = true;
-            this.btnAddToComboSymptoms.Click += new System.EventHandler(this.btnAddToComboSymptoms_Click);
-            // 
-            // btnNewAddAnalysis
-            // 
-            this.btnNewAddAnalysis.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnNewAddAnalysis.FlatAppearance.BorderSize = 0;
-            this.btnNewAddAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewAddAnalysis.Image = ((System.Drawing.Image)(resources.GetObject("btnNewAddAnalysis.Image")));
-            this.btnNewAddAnalysis.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnNewAddAnalysis.Location = new System.Drawing.Point(888, 3);
-            this.btnNewAddAnalysis.Name = "btnNewAddAnalysis";
-            this.btnNewAddAnalysis.Size = new System.Drawing.Size(153, 47);
-            this.btnNewAddAnalysis.TabIndex = 26;
-            this.btnNewAddAnalysis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewAddAnalysis.UseVisualStyleBackColor = true;
-            this.btnNewAddAnalysis.Click += new System.EventHandler(this.btnNewAddAnalysis_Click);
-            // 
-            // btnAddNewRays
-            // 
-            this.btnAddNewRays.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddNewRays.FlatAppearance.BorderSize = 0;
-            this.btnAddNewRays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNewRays.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewRays.Image")));
-            this.btnAddNewRays.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddNewRays.Location = new System.Drawing.Point(888, 3);
-            this.btnAddNewRays.Name = "btnAddNewRays";
-            this.btnAddNewRays.Size = new System.Drawing.Size(153, 47);
-            this.btnAddNewRays.TabIndex = 27;
-            this.btnAddNewRays.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNewRays.UseVisualStyleBackColor = true;
-            this.btnAddNewRays.Click += new System.EventHandler(this.btnAddNewRays_Click);
-            // 
-            // btnAddNewFood
-            // 
-            this.btnAddNewFood.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddNewFood.FlatAppearance.BorderSize = 0;
-            this.btnAddNewFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNewFood.Image = global::ClinicApp.Properties.Resources.plus_green;
-            this.btnAddNewFood.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddNewFood.Location = new System.Drawing.Point(1146, 3);
-            this.btnAddNewFood.Name = "btnAddNewFood";
-            this.btnAddNewFood.Size = new System.Drawing.Size(120, 48);
-            this.btnAddNewFood.TabIndex = 24;
-            this.btnAddNewFood.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNewFood.UseVisualStyleBackColor = true;
-            this.btnAddNewFood.Click += new System.EventHandler(this.btnAddNewFood_Click);
-            // 
-            // btnAddNewMedicicne
-            // 
-            this.btnAddNewMedicicne.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddNewMedicicne.FlatAppearance.BorderSize = 0;
-            this.btnAddNewMedicicne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNewMedicicne.Image = global::ClinicApp.Properties.Resources.plus_green;
-            this.btnAddNewMedicicne.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddNewMedicicne.Location = new System.Drawing.Point(1146, 3);
-            this.btnAddNewMedicicne.Name = "btnAddNewMedicicne";
-            this.btnAddNewMedicicne.Size = new System.Drawing.Size(120, 48);
-            this.btnAddNewMedicicne.TabIndex = 25;
-            this.btnAddNewMedicicne.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNewMedicicne.UseVisualStyleBackColor = true;
-            this.btnAddNewMedicicne.Click += new System.EventHandler(this.btnAddNewMedicicne_Click);
-            // 
-            // label36
-            // 
-            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Arabic Typesetting", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(865, 6);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(104, 40);
-            this.label36.TabIndex = 16;
-            this.label36.Text = "اختر الدواء";
-            // 
-            // comboMedicine
-            // 
-            this.comboMedicine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboMedicine.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboMedicine.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboMedicine.FormattingEnabled = true;
-            this.comboMedicine.Location = new System.Drawing.Point(3, 14);
-            this.comboMedicine.Name = "comboMedicine";
-            this.comboMedicine.Size = new System.Drawing.Size(801, 43);
-            this.comboMedicine.TabIndex = 25;
-            // 
-            // tableLayoutPanel22
-            // 
-            this.tableLayoutPanel22.ColumnCount = 3;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.09822F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.23512F));
-            this.tableLayoutPanel22.Controls.Add(this.btnAddNewPerceptionMedicine, 0, 0);
-            this.tableLayoutPanel22.Controls.Add(this.comboMedicine, 2, 0);
-            this.tableLayoutPanel22.Controls.Add(this.label36, 1, 0);
-            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
-            this.tableLayoutPanel22.RowCount = 1;
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(1317, 53);
-            this.tableLayoutPanel22.TabIndex = 0;
-            // 
-            // btnAddNewPerceptionMedicine
-            // 
-            this.btnAddNewPerceptionMedicine.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddNewPerceptionMedicine.FlatAppearance.BorderSize = 0;
-            this.btnAddNewPerceptionMedicine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddNewPerceptionMedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewPerceptionMedicine.Image")));
-            this.btnAddNewPerceptionMedicine.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddNewPerceptionMedicine.Location = new System.Drawing.Point(1095, 3);
-            this.btnAddNewPerceptionMedicine.Name = "btnAddNewPerceptionMedicine";
-            this.btnAddNewPerceptionMedicine.Size = new System.Drawing.Size(153, 47);
-            this.btnAddNewPerceptionMedicine.TabIndex = 26;
-            this.btnAddNewPerceptionMedicine.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNewPerceptionMedicine.UseVisualStyleBackColor = true;
-            this.btnAddNewPerceptionMedicine.Click += new System.EventHandler(this.btnAddNewPerceptionMedicine_Click);
-            // 
             // FormAddExamination
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -4094,6 +4094,7 @@ namespace ClinicApp.Forms.Examination
             this.Name = "FormAddExamination";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormAddExamination_Load);
             this.tlpContainer.ResumeLayout(false);
             this.tlpContainer.PerformLayout();
@@ -4105,6 +4106,7 @@ namespace ClinicApp.Forms.Examination
             this.pnlParient.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoading)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -4112,22 +4114,33 @@ namespace ClinicApp.Forms.Examination
             this.pnlPatientParient.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             this.fastExaminationPage.ResumeLayout(false);
             this.pnlExaminPatient.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.DiseasesPage.ResumeLayout(false);
             this.pnlDiseases.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiseases)).EndInit();
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
             this.SymptomsPage.ResumeLayout(false);
@@ -4135,21 +4148,30 @@ namespace ClinicApp.Forms.Examination
             ((System.ComponentModel.ISupportInitialize)(this.dgvSymptoms)).EndInit();
             this.tableLayoutPanel14.ResumeLayout(false);
             this.tableLayoutPanel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.tableLayoutPanel15.ResumeLayout(false);
             this.tableLayoutPanel15.PerformLayout();
             this.ExaminationPage.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.tableLayoutPanel17.ResumeLayout(false);
             this.tableLayoutPanel18.ResumeLayout(false);
             this.tableLayoutPanel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.PrescriptionPage.ResumeLayout(false);
             this.tableLayoutPanel19.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).EndInit();
             this.tableLayoutPanel20.ResumeLayout(false);
             this.tableLayoutPanel20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.pnlColumsPerseption.ResumeLayout(false);
+            this.tableLayoutPanel22.ResumeLayout(false);
+            this.tableLayoutPanel22.PerformLayout();
             this.tableLayoutPanel21.ResumeLayout(false);
             this.tableLayoutPanel21.PerformLayout();
             this.tableLayoutPanel23.ResumeLayout(false);
@@ -4160,8 +4182,10 @@ namespace ClinicApp.Forms.Examination
             ((System.ComponentModel.ISupportInitialize)(this.dgvAnalysis)).EndInit();
             this.tableLayoutPanel26.ResumeLayout(false);
             this.tableLayoutPanel26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             this.tableLayoutPanel27.ResumeLayout(false);
             this.tableLayoutPanel29.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.tableLayoutPanel28.ResumeLayout(false);
             this.tableLayoutPanel28.PerformLayout();
             this.tableLayoutPanel25.ResumeLayout(false);
@@ -4173,8 +4197,10 @@ namespace ClinicApp.Forms.Examination
             ((System.ComponentModel.ISupportInitialize)(this.dgvRays)).EndInit();
             this.tableLayoutPanel32.ResumeLayout(false);
             this.tableLayoutPanel32.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             this.tableLayoutPanel33.ResumeLayout(false);
             this.tableLayoutPanel34.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.tableLayoutPanel35.ResumeLayout(false);
             this.tableLayoutPanel35.PerformLayout();
             this.tableLayoutPanel36.ResumeLayout(false);
@@ -4186,6 +4212,7 @@ namespace ClinicApp.Forms.Examination
             ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).EndInit();
             this.tableLayoutPanel39.ResumeLayout(false);
             this.tableLayoutPanel39.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             this.tableLayoutPanel40.ResumeLayout(false);
             this.tableLayoutPanel40.PerformLayout();
             this.contrastingMedicinePage.ResumeLayout(false);
@@ -4193,35 +4220,9 @@ namespace ClinicApp.Forms.Examination
             ((System.ComponentModel.ISupportInitialize)(this.dgvContrastingMedicines)).EndInit();
             this.tableLayoutPanel42.ResumeLayout(false);
             this.tableLayoutPanel42.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             this.tableLayoutPanel43.ResumeLayout(false);
             this.tableLayoutPanel43.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            this.tableLayoutPanel22.ResumeLayout(false);
-            this.tableLayoutPanel22.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -96,6 +96,9 @@ namespace ClinicApp.Forms.Examination
 
         private void FormAddExamination_Load(object sender, EventArgs e)
         {
+            // hide btn save and show after open new examination
+            btnSavePatientVisiting.Visible = false;
+
             // remove tabs
             tabControl.TabPages.Remove(patientInfoPage);
             tabControl.TabPages.Remove(fastExaminationPage);
@@ -172,7 +175,10 @@ namespace ClinicApp.Forms.Examination
 
         private void btnOpenExamination_Click(object sender, EventArgs e)
         {
-            
+            // show btn save 
+            btnSavePatientVisiting.Visible = true;
+
+
             if (dgvLoading.Rows.Count > 0)
             {
                 tabControl.TabPages.Remove(reservationsPage);

@@ -825,7 +825,7 @@ namespace ClinicApp.Forms.Reservations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1182, 753);
             this.Controls.Add(this.pnlParient);
             this.Name = "FormAddReservations";

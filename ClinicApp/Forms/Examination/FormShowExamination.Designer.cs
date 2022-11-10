@@ -207,12 +207,14 @@ namespace ClinicApp.Forms.Examination
             // 
             // btnReload
             // 
-            this.btnReload.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReload.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnReload.BackgroundImage = global::ClinicApp.Properties.Resources.loading;
+            this.btnReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnReload.FlatAppearance.BorderSize = 0;
             this.btnReload.Font = new System.Drawing.Font("Arabic Typesetting", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReload.Image = global::ClinicApp.Properties.Resources.loading;
-            this.btnReload.Location = new System.Drawing.Point(3, 3);
+            this.btnReload.Location = new System.Drawing.Point(3, 12);
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(162, 80);
+            this.btnReload.Size = new System.Drawing.Size(162, 61);
             this.btnReload.TabIndex = 66;
             this.btnReload.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnReload.UseVisualStyleBackColor = false;
@@ -427,7 +429,6 @@ namespace ClinicApp.Forms.Examination
             this.comboClinic.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboClinic.Size = new System.Drawing.Size(216, 44);
             this.comboClinic.TabIndex = 63;
-          
             // 
             // comboDoctor
             // 
@@ -445,14 +446,15 @@ namespace ClinicApp.Forms.Examination
             // 
             // btnSearch
             // 
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSearch.BackgroundImage = global::ClinicApp.Properties.Resources.search;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.Font = new System.Drawing.Font("Arabic Typesetting", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Image = global::ClinicApp.Properties.Resources.search;
             this.btnSearch.Location = new System.Drawing.Point(3, 3);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(118, 61);
             this.btnSearch.TabIndex = 65;
-            this.btnSearch.Text = "بحث";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSearch.UseVisualStyleBackColor = false;
             // 

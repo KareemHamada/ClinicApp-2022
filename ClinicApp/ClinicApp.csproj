@@ -1045,6 +1045,7 @@
     <None Include="Resources\age.png" />
     <None Include="Resources\height.png" />
     <None Include="Resources\lock.png" />
+    <None Include="Resources\online-payment1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
