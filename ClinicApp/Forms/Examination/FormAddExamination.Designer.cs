@@ -30,30 +30,30 @@ namespace ClinicApp.Forms.Examination
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddExamination));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tlpContainer = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnOpenExamination = new System.Windows.Forms.ToolStripButton();
@@ -621,14 +621,14 @@ namespace ClinicApp.Forms.Examination
             this.dgvLoading.AllowUserToDeleteRows = false;
             this.dgvLoading.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLoading.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLoading.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLoading.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvLoading.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLoading.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.user,
@@ -653,17 +653,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvLoading.Name = "dgvLoading";
             this.dgvLoading.ReadOnly = true;
             this.dgvLoading.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLoading.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLoading.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvLoading.RowHeadersWidth = 51;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvLoading.RowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvLoading.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvLoading.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvLoading.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvLoading.RowTemplate.Height = 35;
@@ -914,6 +914,7 @@ namespace ClinicApp.Forms.Examination
             // 
             // patientInfoPage
             // 
+            this.patientInfoPage.BackColor = System.Drawing.SystemColors.Control;
             this.patientInfoPage.Controls.Add(this.pnlPatientParient);
             this.patientInfoPage.Location = new System.Drawing.Point(4, 44);
             this.patientInfoPage.Name = "patientInfoPage";
@@ -921,7 +922,6 @@ namespace ClinicApp.Forms.Examination
             this.patientInfoPage.Size = new System.Drawing.Size(1323, 540);
             this.patientInfoPage.TabIndex = 1;
             this.patientInfoPage.Text = "بيانات المريض";
-            this.patientInfoPage.UseVisualStyleBackColor = true;
             // 
             // pnlPatientParient
             // 
@@ -1323,6 +1323,7 @@ namespace ClinicApp.Forms.Examination
             // 
             // pnlExaminPatient
             // 
+            this.pnlExaminPatient.BackColor = System.Drawing.SystemColors.Control;
             this.pnlExaminPatient.ColumnCount = 1;
             this.pnlExaminPatient.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlExaminPatient.Controls.Add(this.tableLayoutPanel8, 0, 0);
@@ -1398,7 +1399,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.45238F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.54762F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
             this.tableLayoutPanel11.Controls.Add(this.label17, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.label18, 1, 1);
             this.tableLayoutPanel11.Controls.Add(this.label19, 1, 2);
@@ -1443,7 +1444,7 @@ namespace ClinicApp.Forms.Examination
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(982, 11);
+            this.label17.Location = new System.Drawing.Point(980, 11);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(105, 44);
             this.label17.TabIndex = 9;
@@ -1455,7 +1456,7 @@ namespace ClinicApp.Forms.Examination
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(996, 77);
+            this.label18.Location = new System.Drawing.Point(994, 77);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(77, 44);
             this.label18.TabIndex = 12;
@@ -1467,7 +1468,7 @@ namespace ClinicApp.Forms.Examination
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(969, 143);
+            this.label19.Location = new System.Drawing.Point(967, 143);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(131, 44);
             this.label19.TabIndex = 13;
@@ -1479,7 +1480,7 @@ namespace ClinicApp.Forms.Examination
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(974, 209);
+            this.label20.Location = new System.Drawing.Point(971, 209);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(122, 44);
             this.label20.TabIndex = 30;
@@ -1495,7 +1496,7 @@ namespace ClinicApp.Forms.Examination
             this.txtBodyTemperature.Location = new System.Drawing.Point(3, 210);
             this.txtBodyTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBodyTemperature.Name = "txtBodyTemperature";
-            this.txtBodyTemperature.Size = new System.Drawing.Size(904, 41);
+            this.txtBodyTemperature.Size = new System.Drawing.Size(902, 41);
             this.txtBodyTemperature.TabIndex = 37;
             this.txtBodyTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1508,7 +1509,7 @@ namespace ClinicApp.Forms.Examination
             this.txtSugar.Location = new System.Drawing.Point(3, 276);
             this.txtSugar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSugar.Name = "txtSugar";
-            this.txtSugar.Size = new System.Drawing.Size(904, 41);
+            this.txtSugar.Size = new System.Drawing.Size(902, 41);
             this.txtSugar.TabIndex = 38;
             this.txtSugar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1521,7 +1522,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationPreviousOperations.Location = new System.Drawing.Point(3, 409);
             this.txtExaminationPreviousOperations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtExaminationPreviousOperations.Name = "txtExaminationPreviousOperations";
-            this.txtExaminationPreviousOperations.Size = new System.Drawing.Size(904, 41);
+            this.txtExaminationPreviousOperations.Size = new System.Drawing.Size(902, 41);
             this.txtExaminationPreviousOperations.TabIndex = 40;
             this.txtExaminationPreviousOperations.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1534,7 +1535,7 @@ namespace ClinicApp.Forms.Examination
             this.txtBloodPressure.Location = new System.Drawing.Point(3, 12);
             this.txtBloodPressure.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBloodPressure.Name = "txtBloodPressure";
-            this.txtBloodPressure.Size = new System.Drawing.Size(904, 41);
+            this.txtBloodPressure.Size = new System.Drawing.Size(902, 41);
             this.txtBloodPressure.TabIndex = 14;
             this.txtBloodPressure.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1543,7 +1544,7 @@ namespace ClinicApp.Forms.Examination
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(999, 275);
+            this.label21.Location = new System.Drawing.Point(996, 275);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(72, 44);
             this.label21.TabIndex = 32;
@@ -1555,7 +1556,7 @@ namespace ClinicApp.Forms.Examination
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(1002, 341);
+            this.label22.Location = new System.Drawing.Point(1000, 341);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(65, 44);
             this.label22.TabIndex = 33;
@@ -1567,7 +1568,7 @@ namespace ClinicApp.Forms.Examination
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(965, 408);
+            this.label23.Location = new System.Drawing.Point(963, 408);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(139, 44);
             this.label23.TabIndex = 34;
@@ -1579,7 +1580,7 @@ namespace ClinicApp.Forms.Examination
             this.txtHeartBeats.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHeartBeats.Location = new System.Drawing.Point(3, 144);
             this.txtHeartBeats.Name = "txtHeartBeats";
-            this.txtHeartBeats.Size = new System.Drawing.Size(904, 42);
+            this.txtHeartBeats.Size = new System.Drawing.Size(902, 42);
             this.txtHeartBeats.TabIndex = 50;
             this.txtHeartBeats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1588,7 +1589,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationWeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtExaminationWeight.Location = new System.Drawing.Point(3, 342);
             this.txtExaminationWeight.Name = "txtExaminationWeight";
-            this.txtExaminationWeight.Size = new System.Drawing.Size(904, 42);
+            this.txtExaminationWeight.Size = new System.Drawing.Size(902, 42);
             this.txtExaminationWeight.TabIndex = 51;
             this.txtExaminationWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1597,7 +1598,7 @@ namespace ClinicApp.Forms.Examination
             this.txtBreathing.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBreathing.Location = new System.Drawing.Point(3, 78);
             this.txtBreathing.Name = "txtBreathing";
-            this.txtBreathing.Size = new System.Drawing.Size(904, 42);
+            this.txtBreathing.Size = new System.Drawing.Size(902, 42);
             this.txtBreathing.TabIndex = 52;
             this.txtBreathing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1606,10 +1607,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox4.BackgroundImage = global::ClinicApp.Properties.Resources.blood;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Location = new System.Drawing.Point(1163, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(1160, 2);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox4.Size = new System.Drawing.Size(142, 62);
             this.pictureBox4.TabIndex = 53;
             this.pictureBox4.TabStop = false;
             // 
@@ -1618,10 +1619,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox5.BackgroundImage = global::ClinicApp.Properties.Resources.breathing;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Location = new System.Drawing.Point(1163, 68);
+            this.pictureBox5.Location = new System.Drawing.Point(1160, 68);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox5.Size = new System.Drawing.Size(142, 62);
             this.pictureBox5.TabIndex = 54;
             this.pictureBox5.TabStop = false;
             // 
@@ -1630,10 +1631,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox6.BackgroundImage = global::ClinicApp.Properties.Resources.pulse;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Location = new System.Drawing.Point(1163, 134);
+            this.pictureBox6.Location = new System.Drawing.Point(1160, 134);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox6.Size = new System.Drawing.Size(142, 62);
             this.pictureBox6.TabIndex = 55;
             this.pictureBox6.TabStop = false;
             // 
@@ -1642,10 +1643,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox7.BackgroundImage = global::ClinicApp.Properties.Resources.thermometer;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Location = new System.Drawing.Point(1163, 200);
+            this.pictureBox7.Location = new System.Drawing.Point(1160, 200);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox7.Size = new System.Drawing.Size(142, 62);
             this.pictureBox7.TabIndex = 56;
             this.pictureBox7.TabStop = false;
             // 
@@ -1654,10 +1655,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox8.BackgroundImage = global::ClinicApp.Properties.Resources.sugar_cube;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Location = new System.Drawing.Point(1163, 266);
+            this.pictureBox8.Location = new System.Drawing.Point(1160, 266);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox8.Size = new System.Drawing.Size(142, 62);
             this.pictureBox8.TabIndex = 57;
             this.pictureBox8.TabStop = false;
             // 
@@ -1666,10 +1667,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox9.BackgroundImage = global::ClinicApp.Properties.Resources.weight;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Location = new System.Drawing.Point(1163, 332);
+            this.pictureBox9.Location = new System.Drawing.Point(1160, 332);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(139, 62);
+            this.pictureBox9.Size = new System.Drawing.Size(142, 62);
             this.pictureBox9.TabIndex = 58;
             this.pictureBox9.TabStop = false;
             // 
@@ -1678,10 +1679,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox10.BackgroundImage = global::ClinicApp.Properties.Resources.anesthesia;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Location = new System.Drawing.Point(1163, 398);
+            this.pictureBox10.Location = new System.Drawing.Point(1160, 398);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(139, 64);
+            this.pictureBox10.Size = new System.Drawing.Size(142, 64);
             this.pictureBox10.TabIndex = 59;
             this.pictureBox10.TabStop = false;
             // 
@@ -1719,14 +1720,14 @@ namespace ClinicApp.Forms.Examination
             this.dgvDiseases.AllowUserToDeleteRows = false;
             this.dgvDiseases.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDiseases.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDiseases.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDiseases.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvDiseases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDiseases.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.notess,
@@ -1738,17 +1739,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvDiseases.Name = "dgvDiseases";
             this.dgvDiseases.ReadOnly = true;
             this.dgvDiseases.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDiseases.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDiseases.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvDiseases.RowHeadersWidth = 51;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvDiseases.RowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvDiseases.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvDiseases.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvDiseases.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvDiseases.RowTemplate.Height = 35;
@@ -1833,7 +1834,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.65011F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.34989F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 248F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 251F));
             this.tableLayoutPanel12.Controls.Add(this.txtNotesDiseases, 2, 1);
             this.tableLayoutPanel12.Controls.Add(this.btnAddDiseases, 3, 0);
             this.tableLayoutPanel12.Controls.Add(this.comboDiseases, 2, 0);
@@ -1852,9 +1853,9 @@ namespace ClinicApp.Forms.Examination
             // txtNotesDiseases
             // 
             this.txtNotesDiseases.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNotesDiseases.Location = new System.Drawing.Point(252, 57);
+            this.txtNotesDiseases.Location = new System.Drawing.Point(255, 57);
             this.txtNotesDiseases.Name = "txtNotesDiseases";
-            this.txtNotesDiseases.Size = new System.Drawing.Size(671, 42);
+            this.txtNotesDiseases.Size = new System.Drawing.Size(668, 42);
             this.txtNotesDiseases.TabIndex = 19;
             // 
             // btnAddDiseases
@@ -1862,7 +1863,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddDiseases.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddDiseases.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddDiseases.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddDiseases.Location = new System.Drawing.Point(48, 3);
+            this.btnAddDiseases.Location = new System.Drawing.Point(50, 3);
             this.btnAddDiseases.Name = "btnAddDiseases";
             this.btnAddDiseases.Size = new System.Drawing.Size(153, 48);
             this.btnAddDiseases.TabIndex = 20;
@@ -1877,9 +1878,9 @@ namespace ClinicApp.Forms.Examination
             this.comboDiseases.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboDiseases.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboDiseases.FormattingEnabled = true;
-            this.comboDiseases.Location = new System.Drawing.Point(252, 14);
+            this.comboDiseases.Location = new System.Drawing.Point(255, 5);
             this.comboDiseases.Name = "comboDiseases";
-            this.comboDiseases.Size = new System.Drawing.Size(671, 43);
+            this.comboDiseases.Size = new System.Drawing.Size(668, 43);
             this.comboDiseases.TabIndex = 21;
             // 
             // label25
@@ -1953,14 +1954,14 @@ namespace ClinicApp.Forms.Examination
             this.dgvSymptoms.AllowUserToDeleteRows = false;
             this.dgvSymptoms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSymptoms.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSymptoms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSymptoms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvSymptoms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSymptoms.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1972,17 +1973,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvSymptoms.Name = "dgvSymptoms";
             this.dgvSymptoms.ReadOnly = true;
             this.dgvSymptoms.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSymptoms.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSymptoms.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvSymptoms.RowHeadersWidth = 51;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvSymptoms.RowsDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvSymptoms.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvSymptoms.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvSymptoms.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvSymptoms.RowTemplate.Height = 35;
@@ -2067,7 +2068,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.70843F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.62491F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 249F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253F));
             this.tableLayoutPanel15.Controls.Add(this.txtSymptomsNotes, 2, 1);
             this.tableLayoutPanel15.Controls.Add(this.btnAddSymptoms, 3, 0);
             this.tableLayoutPanel15.Controls.Add(this.ComboSymptoms, 2, 0);
@@ -2087,9 +2088,9 @@ namespace ClinicApp.Forms.Examination
             // 
             this.txtSymptomsNotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSymptomsNotes.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSymptomsNotes.Location = new System.Drawing.Point(253, 57);
+            this.txtSymptomsNotes.Location = new System.Drawing.Point(257, 57);
             this.txtSymptomsNotes.Name = "txtSymptomsNotes";
-            this.txtSymptomsNotes.Size = new System.Drawing.Size(669, 42);
+            this.txtSymptomsNotes.Size = new System.Drawing.Size(667, 42);
             this.txtSymptomsNotes.TabIndex = 19;
             // 
             // btnAddSymptoms
@@ -2097,7 +2098,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddSymptoms.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddSymptoms.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddSymptoms.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddSymptoms.Location = new System.Drawing.Point(49, 3);
+            this.btnAddSymptoms.Location = new System.Drawing.Point(51, 3);
             this.btnAddSymptoms.Name = "btnAddSymptoms";
             this.btnAddSymptoms.Size = new System.Drawing.Size(153, 48);
             this.btnAddSymptoms.TabIndex = 20;
@@ -2113,9 +2114,9 @@ namespace ClinicApp.Forms.Examination
             this.ComboSymptoms.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.ComboSymptoms.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboSymptoms.FormattingEnabled = true;
-            this.ComboSymptoms.Location = new System.Drawing.Point(253, 5);
+            this.ComboSymptoms.Location = new System.Drawing.Point(257, 5);
             this.ComboSymptoms.Name = "ComboSymptoms";
-            this.ComboSymptoms.Size = new System.Drawing.Size(669, 43);
+            this.ComboSymptoms.Size = new System.Drawing.Size(667, 43);
             this.ComboSymptoms.TabIndex = 21;
             // 
             // label28
@@ -2123,7 +2124,7 @@ namespace ClinicApp.Forms.Examination
             this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(952, 54);
+            this.label28.Location = new System.Drawing.Point(954, 54);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(123, 46);
             this.label28.TabIndex = 17;
@@ -2149,7 +2150,7 @@ namespace ClinicApp.Forms.Examination
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(943, 1);
+            this.label29.Location = new System.Drawing.Point(945, 1);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(141, 51);
             this.label29.TabIndex = 16;
@@ -2157,6 +2158,7 @@ namespace ClinicApp.Forms.Examination
             // 
             // ExaminationPage
             // 
+            this.ExaminationPage.BackColor = System.Drawing.SystemColors.Control;
             this.ExaminationPage.Controls.Add(this.tableLayoutPanel2);
             this.ExaminationPage.Location = new System.Drawing.Point(4, 44);
             this.ExaminationPage.Name = "ExaminationPage";
@@ -2164,7 +2166,6 @@ namespace ClinicApp.Forms.Examination
             this.ExaminationPage.Size = new System.Drawing.Size(1323, 540);
             this.ExaminationPage.TabIndex = 5;
             this.ExaminationPage.Text = "التشخيص";
-            this.ExaminationPage.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
@@ -2243,7 +2244,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel18.ColumnCount = 3;
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.45238F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.54762F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
             this.tableLayoutPanel18.Controls.Add(this.label31, 1, 0);
             this.tableLayoutPanel18.Controls.Add(this.label32, 1, 1);
             this.tableLayoutPanel18.Controls.Add(this.label33, 1, 2);
@@ -2276,7 +2277,7 @@ namespace ClinicApp.Forms.Examination
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(970, 2);
+            this.label31.Location = new System.Drawing.Point(967, 2);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(130, 44);
             this.label31.TabIndex = 9;
@@ -2288,7 +2289,7 @@ namespace ClinicApp.Forms.Examination
             this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(955, 118);
+            this.label32.Location = new System.Drawing.Point(953, 118);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(159, 44);
             this.label32.TabIndex = 12;
@@ -2300,7 +2301,7 @@ namespace ClinicApp.Forms.Examination
             this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(969, 267);
+            this.label33.Location = new System.Drawing.Point(967, 267);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(131, 44);
             this.label33.TabIndex = 13;
@@ -2312,7 +2313,7 @@ namespace ClinicApp.Forms.Examination
             this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(946, 383);
+            this.label34.Location = new System.Drawing.Point(944, 383);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(177, 44);
             this.label34.TabIndex = 30;
@@ -2330,7 +2331,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationNotes.Multiline = true;
             this.txtExaminationNotes.Name = "txtExaminationNotes";
             this.txtExaminationNotes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtExaminationNotes.Size = new System.Drawing.Size(904, 78);
+            this.txtExaminationNotes.Size = new System.Drawing.Size(902, 78);
             this.txtExaminationNotes.TabIndex = 37;
             this.txtExaminationNotes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2341,7 +2342,7 @@ namespace ClinicApp.Forms.Examination
             this.txtDoctorAdvice.Multiline = true;
             this.txtDoctorAdvice.Name = "txtDoctorAdvice";
             this.txtDoctorAdvice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtDoctorAdvice.Size = new System.Drawing.Size(904, 88);
+            this.txtDoctorAdvice.Size = new System.Drawing.Size(902, 88);
             this.txtDoctorAdvice.TabIndex = 50;
             this.txtDoctorAdvice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2352,7 +2353,7 @@ namespace ClinicApp.Forms.Examination
             this.txtDoctorExamination.Multiline = true;
             this.txtDoctorExamination.Name = "txtDoctorExamination";
             this.txtDoctorExamination.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtDoctorExamination.Size = new System.Drawing.Size(904, 143);
+            this.txtDoctorExamination.Size = new System.Drawing.Size(902, 143);
             this.txtDoctorExamination.TabIndex = 52;
             this.txtDoctorExamination.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2361,10 +2362,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox14.BackgroundImage = global::ClinicApp.Properties.Resources.booking1;
             this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox14.Location = new System.Drawing.Point(1163, 2);
+            this.pictureBox14.Location = new System.Drawing.Point(1160, 2);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(139, 45);
+            this.pictureBox14.Size = new System.Drawing.Size(142, 45);
             this.pictureBox14.TabIndex = 53;
             this.pictureBox14.TabStop = false;
             // 
@@ -2373,10 +2374,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox15.BackgroundImage = global::ClinicApp.Properties.Resources.profile1;
             this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox15.Location = new System.Drawing.Point(1163, 51);
+            this.pictureBox15.Location = new System.Drawing.Point(1160, 51);
             this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(139, 178);
+            this.pictureBox15.Size = new System.Drawing.Size(142, 178);
             this.pictureBox15.TabIndex = 54;
             this.pictureBox15.TabStop = false;
             // 
@@ -2385,10 +2386,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox16.BackgroundImage = global::ClinicApp.Properties.Resources.advice2;
             this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox16.Location = new System.Drawing.Point(1163, 233);
+            this.pictureBox16.Location = new System.Drawing.Point(1160, 233);
             this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(139, 112);
+            this.pictureBox16.Size = new System.Drawing.Size(142, 112);
             this.pictureBox16.TabIndex = 55;
             this.pictureBox16.TabStop = false;
             // 
@@ -2397,10 +2398,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox17.BackgroundImage = global::ClinicApp.Properties.Resources.notes2;
             this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox17.Location = new System.Drawing.Point(1163, 349);
+            this.pictureBox17.Location = new System.Drawing.Point(1160, 349);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(139, 113);
+            this.pictureBox17.Size = new System.Drawing.Size(142, 113);
             this.pictureBox17.TabIndex = 56;
             this.pictureBox17.TabStop = false;
             // 
@@ -2412,7 +2413,7 @@ namespace ClinicApp.Forms.Examination
             this.dateExamination.Name = "dateExamination";
             this.dateExamination.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dateExamination.RightToLeftLayout = true;
-            this.dateExamination.Size = new System.Drawing.Size(904, 42);
+            this.dateExamination.Size = new System.Drawing.Size(902, 42);
             this.dateExamination.TabIndex = 57;
             // 
             // PrescriptionPage
@@ -2449,14 +2450,14 @@ namespace ClinicApp.Forms.Examination
             this.dgvPrescription.AllowUserToDeleteRows = false;
             this.dgvPrescription.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPrescription.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrescription.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrescription.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvPrescription.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPrescription.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn4,
@@ -2471,17 +2472,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvPrescription.Name = "dgvPrescription";
             this.dgvPrescription.ReadOnly = true;
             this.dgvPrescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrescription.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrescription.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvPrescription.RowHeadersWidth = 51;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvPrescription.RowsDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvPrescription.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvPrescription.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvPrescription.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvPrescription.RowTemplate.Height = 35;
@@ -2640,7 +2641,7 @@ namespace ClinicApp.Forms.Examination
             this.comboMedicine.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboMedicine.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboMedicine.FormattingEnabled = true;
-            this.comboMedicine.Location = new System.Drawing.Point(3, 5);
+            this.comboMedicine.Location = new System.Drawing.Point(3, 14);
             this.comboMedicine.Name = "comboMedicine";
             this.comboMedicine.Size = new System.Drawing.Size(801, 43);
             this.comboMedicine.TabIndex = 25;
@@ -2724,7 +2725,7 @@ namespace ClinicApp.Forms.Examination
             this.comboTimeTakeMedicine.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboTimeTakeMedicine.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboTimeTakeMedicine.FormattingEnabled = true;
-            this.comboTimeTakeMedicine.Location = new System.Drawing.Point(946, 14);
+            this.comboTimeTakeMedicine.Location = new System.Drawing.Point(946, 5);
             this.comboTimeTakeMedicine.Name = "comboTimeTakeMedicine";
             this.comboTimeTakeMedicine.Size = new System.Drawing.Size(181, 43);
             this.comboTimeTakeMedicine.TabIndex = 22;
@@ -2782,7 +2783,7 @@ namespace ClinicApp.Forms.Examination
             this.comboMedicineUnit.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboMedicineUnit.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboMedicineUnit.FormattingEnabled = true;
-            this.comboMedicineUnit.Location = new System.Drawing.Point(570, 14);
+            this.comboMedicineUnit.Location = new System.Drawing.Point(570, 5);
             this.comboMedicineUnit.Name = "comboMedicineUnit";
             this.comboMedicineUnit.Size = new System.Drawing.Size(182, 43);
             this.comboMedicineUnit.TabIndex = 23;
@@ -2793,7 +2794,7 @@ namespace ClinicApp.Forms.Examination
             this.comboDosages.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboDosages.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboDosages.FormattingEnabled = true;
-            this.comboDosages.Location = new System.Drawing.Point(194, 14);
+            this.comboDosages.Location = new System.Drawing.Point(194, 5);
             this.comboDosages.Name = "comboDosages";
             this.comboDosages.Size = new System.Drawing.Size(182, 43);
             this.comboDosages.TabIndex = 24;
@@ -2899,14 +2900,14 @@ namespace ClinicApp.Forms.Examination
             this.dgvAnalysis.AllowUserToDeleteRows = false;
             this.dgvAnalysis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAnalysis.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAnalysis.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAnalysis.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvAnalysis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAnalysis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn6,
@@ -2918,17 +2919,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvAnalysis.Name = "dgvAnalysis";
             this.dgvAnalysis.ReadOnly = true;
             this.dgvAnalysis.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAnalysis.RowHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAnalysis.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvAnalysis.RowHeadersWidth = 51;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvAnalysis.RowsDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvAnalysis.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dgvAnalysis.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvAnalysis.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvAnalysis.RowTemplate.Height = 35;
@@ -3091,7 +3092,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.02383F));
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.41907F));
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.5571F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 226F));
+            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
             this.tableLayoutPanel28.Controls.Add(this.btnNewAddAnalysis, 0, 0);
             this.tableLayoutPanel28.Controls.Add(this.label42, 0, 0);
             this.tableLayoutPanel28.Controls.Add(this.comboAnalysis, 2, 0);
@@ -3112,7 +3113,7 @@ namespace ClinicApp.Forms.Examination
             this.btnNewAddAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewAddAnalysis.Image = ((System.Drawing.Image)(resources.GetObject("btnNewAddAnalysis.Image")));
             this.btnNewAddAnalysis.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnNewAddAnalysis.Location = new System.Drawing.Point(890, 3);
+            this.btnNewAddAnalysis.Location = new System.Drawing.Point(891, 3);
             this.btnNewAddAnalysis.Name = "btnNewAddAnalysis";
             this.btnNewAddAnalysis.Size = new System.Drawing.Size(153, 47);
             this.btnNewAddAnalysis.TabIndex = 26;
@@ -3125,7 +3126,7 @@ namespace ClinicApp.Forms.Examination
             this.label42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Arabic Typesetting", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(1133, 6);
+            this.label42.Location = new System.Drawing.Point(1134, 6);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(117, 40);
             this.label42.TabIndex = 16;
@@ -3137,9 +3138,9 @@ namespace ClinicApp.Forms.Examination
             this.comboAnalysis.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboAnalysis.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboAnalysis.FormattingEnabled = true;
-            this.comboAnalysis.Location = new System.Drawing.Point(231, 14);
+            this.comboAnalysis.Location = new System.Drawing.Point(235, 5);
             this.comboAnalysis.Name = "comboAnalysis";
-            this.comboAnalysis.Size = new System.Drawing.Size(632, 43);
+            this.comboAnalysis.Size = new System.Drawing.Size(629, 43);
             this.comboAnalysis.TabIndex = 25;
             // 
             // btnAddAnalysis
@@ -3147,7 +3148,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddAnalysis.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddAnalysis.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddAnalysis.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddAnalysis.Location = new System.Drawing.Point(38, 3);
+            this.btnAddAnalysis.Location = new System.Drawing.Point(40, 3);
             this.btnAddAnalysis.Name = "btnAddAnalysis";
             this.btnAddAnalysis.Size = new System.Drawing.Size(153, 47);
             this.btnAddAnalysis.TabIndex = 24;
@@ -3261,14 +3262,14 @@ namespace ClinicApp.Forms.Examination
             this.dgvRays.AllowUserToDeleteRows = false;
             this.dgvRays.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRays.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRays.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRays.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvRays.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRays.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn7,
@@ -3280,17 +3281,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvRays.Name = "dgvRays";
             this.dgvRays.ReadOnly = true;
             this.dgvRays.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRays.RowHeadersDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRays.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dgvRays.RowHeadersWidth = 51;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvRays.RowsDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvRays.RowsDefaultCellStyle = dataGridViewCellStyle18;
             this.dgvRays.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvRays.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvRays.RowTemplate.Height = 35;
@@ -3452,7 +3453,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.02383F));
             this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.41907F));
             this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.5571F));
-            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 226F));
+            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
             this.tableLayoutPanel35.Controls.Add(this.btnAddNewRays, 0, 0);
             this.tableLayoutPanel35.Controls.Add(this.label46, 0, 0);
             this.tableLayoutPanel35.Controls.Add(this.comboRays, 2, 0);
@@ -3473,7 +3474,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddNewRays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewRays.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewRays.Image")));
             this.btnAddNewRays.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddNewRays.Location = new System.Drawing.Point(890, 3);
+            this.btnAddNewRays.Location = new System.Drawing.Point(891, 3);
             this.btnAddNewRays.Name = "btnAddNewRays";
             this.btnAddNewRays.Size = new System.Drawing.Size(153, 47);
             this.btnAddNewRays.TabIndex = 27;
@@ -3498,9 +3499,9 @@ namespace ClinicApp.Forms.Examination
             this.comboRays.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboRays.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboRays.FormattingEnabled = true;
-            this.comboRays.Location = new System.Drawing.Point(231, 14);
+            this.comboRays.Location = new System.Drawing.Point(235, 5);
             this.comboRays.Name = "comboRays";
-            this.comboRays.Size = new System.Drawing.Size(632, 43);
+            this.comboRays.Size = new System.Drawing.Size(629, 43);
             this.comboRays.TabIndex = 25;
             // 
             // btnAddRays
@@ -3508,7 +3509,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddRays.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddRays.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddRays.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddRays.Location = new System.Drawing.Point(38, 3);
+            this.btnAddRays.Location = new System.Drawing.Point(40, 3);
             this.btnAddRays.Name = "btnAddRays";
             this.btnAddRays.Size = new System.Drawing.Size(153, 47);
             this.btnAddRays.TabIndex = 24;
@@ -3622,14 +3623,14 @@ namespace ClinicApp.Forms.Examination
             this.dgvFood.AllowUserToDeleteRows = false;
             this.dgvFood.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFood.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFood.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFood.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.dgvFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFood.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn9,
@@ -3641,17 +3642,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvFood.Name = "dgvFood";
             this.dgvFood.ReadOnly = true;
             this.dgvFood.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFood.RowHeadersDefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFood.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvFood.RowHeadersWidth = 51;
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvFood.RowsDefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvFood.RowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dgvFood.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvFood.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvFood.RowTemplate.Height = 35;
@@ -3736,7 +3737,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.70843F));
             this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.62491F));
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 249F));
+            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253F));
             this.tableLayoutPanel40.Controls.Add(this.txtFoodNotes, 2, 1);
             this.tableLayoutPanel40.Controls.Add(this.btnAddFood, 3, 0);
             this.tableLayoutPanel40.Controls.Add(this.comboFood, 2, 0);
@@ -3755,9 +3756,9 @@ namespace ClinicApp.Forms.Examination
             // txtFoodNotes
             // 
             this.txtFoodNotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFoodNotes.Location = new System.Drawing.Point(253, 57);
+            this.txtFoodNotes.Location = new System.Drawing.Point(257, 57);
             this.txtFoodNotes.Name = "txtFoodNotes";
-            this.txtFoodNotes.Size = new System.Drawing.Size(669, 42);
+            this.txtFoodNotes.Size = new System.Drawing.Size(667, 42);
             this.txtFoodNotes.TabIndex = 19;
             // 
             // btnAddFood
@@ -3765,7 +3766,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddFood.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddFood.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddFood.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddFood.Location = new System.Drawing.Point(49, 3);
+            this.btnAddFood.Location = new System.Drawing.Point(51, 3);
             this.btnAddFood.Name = "btnAddFood";
             this.btnAddFood.Size = new System.Drawing.Size(153, 48);
             this.btnAddFood.TabIndex = 20;
@@ -3780,9 +3781,9 @@ namespace ClinicApp.Forms.Examination
             this.comboFood.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboFood.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboFood.FormattingEnabled = true;
-            this.comboFood.Location = new System.Drawing.Point(253, 14);
+            this.comboFood.Location = new System.Drawing.Point(257, 5);
             this.comboFood.Name = "comboFood";
-            this.comboFood.Size = new System.Drawing.Size(669, 43);
+            this.comboFood.Size = new System.Drawing.Size(667, 43);
             this.comboFood.TabIndex = 21;
             // 
             // label51
@@ -3790,7 +3791,7 @@ namespace ClinicApp.Forms.Examination
             this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(948, 1);
+            this.label51.Location = new System.Drawing.Point(949, 1);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(132, 51);
             this.label51.TabIndex = 16;
@@ -3801,7 +3802,7 @@ namespace ClinicApp.Forms.Examination
             this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(952, 54);
+            this.label50.Location = new System.Drawing.Point(954, 54);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(123, 46);
             this.label50.TabIndex = 17;
@@ -3856,14 +3857,14 @@ namespace ClinicApp.Forms.Examination
             this.dgvContrastingMedicines.AllowUserToDeleteRows = false;
             this.dgvContrastingMedicines.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvContrastingMedicines.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvContrastingMedicines.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvContrastingMedicines.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dgvContrastingMedicines.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvContrastingMedicines.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn13,
@@ -3875,17 +3876,17 @@ namespace ClinicApp.Forms.Examination
             this.dgvContrastingMedicines.Name = "dgvContrastingMedicines";
             this.dgvContrastingMedicines.ReadOnly = true;
             this.dgvContrastingMedicines.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvContrastingMedicines.RowHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvContrastingMedicines.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dgvContrastingMedicines.RowHeadersWidth = 51;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvContrastingMedicines.RowsDefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvContrastingMedicines.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.dgvContrastingMedicines.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvContrastingMedicines.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvContrastingMedicines.RowTemplate.Height = 35;
@@ -3970,7 +3971,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.70843F));
             this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.62491F));
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 249F));
+            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253F));
             this.tableLayoutPanel43.Controls.Add(this.txtContrastingMedicinesNotes, 2, 1);
             this.tableLayoutPanel43.Controls.Add(this.btnAddContrastingMedicines, 3, 0);
             this.tableLayoutPanel43.Controls.Add(this.comboContrastingMedicines, 2, 0);
@@ -3989,9 +3990,9 @@ namespace ClinicApp.Forms.Examination
             // txtContrastingMedicinesNotes
             // 
             this.txtContrastingMedicinesNotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContrastingMedicinesNotes.Location = new System.Drawing.Point(253, 57);
+            this.txtContrastingMedicinesNotes.Location = new System.Drawing.Point(257, 57);
             this.txtContrastingMedicinesNotes.Name = "txtContrastingMedicinesNotes";
-            this.txtContrastingMedicinesNotes.Size = new System.Drawing.Size(669, 42);
+            this.txtContrastingMedicinesNotes.Size = new System.Drawing.Size(667, 42);
             this.txtContrastingMedicinesNotes.TabIndex = 19;
             // 
             // btnAddContrastingMedicines
@@ -3999,7 +4000,7 @@ namespace ClinicApp.Forms.Examination
             this.btnAddContrastingMedicines.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAddContrastingMedicines.Image = global::ClinicApp.Properties.Resources.plus_32;
             this.btnAddContrastingMedicines.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddContrastingMedicines.Location = new System.Drawing.Point(49, 3);
+            this.btnAddContrastingMedicines.Location = new System.Drawing.Point(51, 3);
             this.btnAddContrastingMedicines.Name = "btnAddContrastingMedicines";
             this.btnAddContrastingMedicines.Size = new System.Drawing.Size(153, 48);
             this.btnAddContrastingMedicines.TabIndex = 20;
@@ -4014,9 +4015,9 @@ namespace ClinicApp.Forms.Examination
             this.comboContrastingMedicines.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboContrastingMedicines.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboContrastingMedicines.FormattingEnabled = true;
-            this.comboContrastingMedicines.Location = new System.Drawing.Point(253, 14);
+            this.comboContrastingMedicines.Location = new System.Drawing.Point(257, 5);
             this.comboContrastingMedicines.Name = "comboContrastingMedicines";
-            this.comboContrastingMedicines.Size = new System.Drawing.Size(669, 43);
+            this.comboContrastingMedicines.Size = new System.Drawing.Size(667, 43);
             this.comboContrastingMedicines.TabIndex = 21;
             // 
             // label54
@@ -4024,7 +4025,7 @@ namespace ClinicApp.Forms.Examination
             this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(948, 1);
+            this.label54.Location = new System.Drawing.Point(950, 1);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(131, 51);
             this.label54.TabIndex = 16;
@@ -4035,7 +4036,7 @@ namespace ClinicApp.Forms.Examination
             this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(952, 54);
+            this.label53.Location = new System.Drawing.Point(954, 54);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(123, 46);
             this.label53.TabIndex = 17;
