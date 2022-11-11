@@ -49,14 +49,14 @@ namespace ClinicApp.Forms.Users
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanelParient = new System.Windows.Forms.FlowLayoutPanel();
             this.gbDoctors = new System.Windows.Forms.GroupBox();
-            this.chbHomeDoctor = new System.Windows.Forms.CheckBox();
             this.tlpParentGroupBox = new System.Windows.Forms.TableLayoutPanel();
-            this.chbAddDoctor = new System.Windows.Forms.CheckBox();
-            this.chbShowDoctor = new System.Windows.Forms.CheckBox();
-            this.chbUpdateDoctor = new System.Windows.Forms.CheckBox();
             this.chbDeleteDoctor = new System.Windows.Forms.CheckBox();
+            this.chbUpdateDoctor = new System.Windows.Forms.CheckBox();
+            this.chbShowDoctor = new System.Windows.Forms.CheckBox();
+            this.chbAddDoctor = new System.Windows.Forms.CheckBox();
+            this.chbHomeDoctor = new System.Windows.Forms.CheckBox();
             this.gbEmployees = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.chbDeleteEmployee = new System.Windows.Forms.CheckBox();
@@ -106,6 +106,34 @@ namespace ClinicApp.Forms.Users
             this.chbShowIncome = new System.Windows.Forms.CheckBox();
             this.chbAddIncome = new System.Windows.Forms.CheckBox();
             this.chbHomeIncome = new System.Windows.Forms.CheckBox();
+            this.gbCompanies = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.chbDeleteCompany = new System.Windows.Forms.CheckBox();
+            this.chbUpdateCompany = new System.Windows.Forms.CheckBox();
+            this.chbShowCompany = new System.Windows.Forms.CheckBox();
+            this.chbAddCompany = new System.Windows.Forms.CheckBox();
+            this.chbHomeCompany = new System.Windows.Forms.CheckBox();
+            this.gbSmartAssistant = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.chbDeleteSmartAssistant = new System.Windows.Forms.CheckBox();
+            this.chbUpdateSmartAssistant = new System.Windows.Forms.CheckBox();
+            this.chbShowSmartAssistant = new System.Windows.Forms.CheckBox();
+            this.chbAddSmartAssistant = new System.Windows.Forms.CheckBox();
+            this.chbHomeSmartAssistant = new System.Windows.Forms.CheckBox();
+            this.gbAllLocations = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.chbDeleteLoc = new System.Windows.Forms.CheckBox();
+            this.chbUpdateLoc = new System.Windows.Forms.CheckBox();
+            this.chbShowLoc = new System.Windows.Forms.CheckBox();
+            this.chbAddLoc = new System.Windows.Forms.CheckBox();
+            this.chbHomeLoc = new System.Windows.Forms.CheckBox();
+            this.gbSettings = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.chbDeleteSetting = new System.Windows.Forms.CheckBox();
+            this.chbUpdateSetting = new System.Windows.Forms.CheckBox();
+            this.chbShowSetting = new System.Windows.Forms.CheckBox();
+            this.chbAddSetting = new System.Windows.Forms.CheckBox();
+            this.chbHomeSetting = new System.Windows.Forms.CheckBox();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -115,7 +143,7 @@ namespace ClinicApp.Forms.Users
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanelParient.SuspendLayout();
             this.gbDoctors.SuspendLayout();
             this.tlpParentGroupBox.SuspendLayout();
             this.gbEmployees.SuspendLayout();
@@ -132,6 +160,14 @@ namespace ClinicApp.Forms.Users
             this.tableLayoutPanel8.SuspendLayout();
             this.gbIncomes.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
+            this.gbCompanies.SuspendLayout();
+            this.tableLayoutPanel10.SuspendLayout();
+            this.gbSmartAssistant.SuspendLayout();
+            this.tableLayoutPanel11.SuspendLayout();
+            this.gbAllLocations.SuspendLayout();
+            this.tableLayoutPanel12.SuspendLayout();
+            this.gbSettings.SuspendLayout();
+            this.tableLayoutPanel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -206,7 +242,7 @@ namespace ClinicApp.Forms.Users
             this.pnlParient.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.pnlParient.Controls.Add(this.toolStrip1, 0, 3);
             this.pnlParient.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.pnlParient.Controls.Add(this.flowLayoutPanel1, 0, 2);
+            this.pnlParient.Controls.Add(this.flowLayoutPanelParient, 0, 2);
             this.pnlParient.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlParient.Location = new System.Drawing.Point(0, 0);
             this.pnlParient.Name = "pnlParient";
@@ -311,6 +347,7 @@ namespace ClinicApp.Forms.Users
             this.comboPriv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboPriv.Size = new System.Drawing.Size(708, 44);
             this.comboPriv.TabIndex = 35;
+
             // 
             // label4
             // 
@@ -393,24 +430,28 @@ namespace ClinicApp.Forms.Users
             this.pictureBox5.TabIndex = 40;
             this.pictureBox5.TabStop = false;
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanelParient
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.gbDoctors);
-            this.flowLayoutPanel1.Controls.Add(this.gbEmployees);
-            this.flowLayoutPanel1.Controls.Add(this.gbUsers);
-            this.flowLayoutPanel1.Controls.Add(this.gbPatient);
-            this.flowLayoutPanel1.Controls.Add(this.gbReservation);
-            this.flowLayoutPanel1.Controls.Add(this.gbExam);
-            this.flowLayoutPanel1.Controls.Add(this.gbExpenses);
-            this.flowLayoutPanel1.Controls.Add(this.gbIncomes);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 304);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1146, 364);
-            this.flowLayoutPanel1.TabIndex = 19;
+            this.flowLayoutPanelParient.AutoScroll = true;
+            this.flowLayoutPanelParient.Controls.Add(this.gbDoctors);
+            this.flowLayoutPanelParient.Controls.Add(this.gbEmployees);
+            this.flowLayoutPanelParient.Controls.Add(this.gbUsers);
+            this.flowLayoutPanelParient.Controls.Add(this.gbPatient);
+            this.flowLayoutPanelParient.Controls.Add(this.gbReservation);
+            this.flowLayoutPanelParient.Controls.Add(this.gbExam);
+            this.flowLayoutPanelParient.Controls.Add(this.gbExpenses);
+            this.flowLayoutPanelParient.Controls.Add(this.gbIncomes);
+            this.flowLayoutPanelParient.Controls.Add(this.gbCompanies);
+            this.flowLayoutPanelParient.Controls.Add(this.gbSmartAssistant);
+            this.flowLayoutPanelParient.Controls.Add(this.gbAllLocations);
+            this.flowLayoutPanelParient.Controls.Add(this.gbSettings);
+            this.flowLayoutPanelParient.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanelParient.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flowLayoutPanelParient.Location = new System.Drawing.Point(3, 304);
+            this.flowLayoutPanelParient.Name = "flowLayoutPanelParient";
+            this.flowLayoutPanelParient.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.flowLayoutPanelParient.Size = new System.Drawing.Size(1146, 364);
+            this.flowLayoutPanelParient.TabIndex = 19;
             // 
             // gbDoctors
             // 
@@ -423,17 +464,6 @@ namespace ClinicApp.Forms.Users
             this.gbDoctors.TabIndex = 0;
             this.gbDoctors.TabStop = false;
             this.gbDoctors.Text = "الاطباء";
-            // 
-            // chbHomeDoctor
-            // 
-            this.chbHomeDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.chbHomeDoctor.AutoSize = true;
-            this.chbHomeDoctor.Location = new System.Drawing.Point(3, 4);
-            this.chbHomeDoctor.Name = "chbHomeDoctor";
-            this.chbHomeDoctor.Size = new System.Drawing.Size(230, 28);
-            this.chbHomeDoctor.TabIndex = 0;
-            this.chbHomeDoctor.Text = "القائمة الرئيسية";
-            this.chbHomeDoctor.UseVisualStyleBackColor = true;
             // 
             // tlpParentGroupBox
             // 
@@ -459,27 +489,16 @@ namespace ClinicApp.Forms.Users
             this.tlpParentGroupBox.Size = new System.Drawing.Size(236, 180);
             this.tlpParentGroupBox.TabIndex = 0;
             // 
-            // chbAddDoctor
+            // chbDeleteDoctor
             // 
-            this.chbAddDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.chbAddDoctor.AutoSize = true;
-            this.chbAddDoctor.Location = new System.Drawing.Point(3, 40);
-            this.chbAddDoctor.Name = "chbAddDoctor";
-            this.chbAddDoctor.Size = new System.Drawing.Size(230, 28);
-            this.chbAddDoctor.TabIndex = 1;
-            this.chbAddDoctor.Text = "صلاحية الاضافة";
-            this.chbAddDoctor.UseVisualStyleBackColor = true;
-            // 
-            // chbShowDoctor
-            // 
-            this.chbShowDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.chbShowDoctor.AutoSize = true;
-            this.chbShowDoctor.Location = new System.Drawing.Point(3, 76);
-            this.chbShowDoctor.Name = "chbShowDoctor";
-            this.chbShowDoctor.Size = new System.Drawing.Size(230, 28);
-            this.chbShowDoctor.TabIndex = 2;
-            this.chbShowDoctor.Text = "صلاحية العرض";
-            this.chbShowDoctor.UseVisualStyleBackColor = true;
+            this.chbDeleteDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbDeleteDoctor.AutoSize = true;
+            this.chbDeleteDoctor.Location = new System.Drawing.Point(3, 148);
+            this.chbDeleteDoctor.Name = "chbDeleteDoctor";
+            this.chbDeleteDoctor.Size = new System.Drawing.Size(230, 28);
+            this.chbDeleteDoctor.TabIndex = 4;
+            this.chbDeleteDoctor.Text = "صلاحية الحذف";
+            this.chbDeleteDoctor.UseVisualStyleBackColor = true;
             // 
             // chbUpdateDoctor
             // 
@@ -492,16 +511,38 @@ namespace ClinicApp.Forms.Users
             this.chbUpdateDoctor.Text = "صلاحية التعديل";
             this.chbUpdateDoctor.UseVisualStyleBackColor = true;
             // 
-            // chbDeleteDoctor
+            // chbShowDoctor
             // 
-            this.chbDeleteDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.chbDeleteDoctor.AutoSize = true;
-            this.chbDeleteDoctor.Location = new System.Drawing.Point(3, 148);
-            this.chbDeleteDoctor.Name = "chbDeleteDoctor";
-            this.chbDeleteDoctor.Size = new System.Drawing.Size(230, 28);
-            this.chbDeleteDoctor.TabIndex = 4;
-            this.chbDeleteDoctor.Text = "صلاحية الحذف";
-            this.chbDeleteDoctor.UseVisualStyleBackColor = true;
+            this.chbShowDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbShowDoctor.AutoSize = true;
+            this.chbShowDoctor.Location = new System.Drawing.Point(3, 76);
+            this.chbShowDoctor.Name = "chbShowDoctor";
+            this.chbShowDoctor.Size = new System.Drawing.Size(230, 28);
+            this.chbShowDoctor.TabIndex = 2;
+            this.chbShowDoctor.Text = "صلاحية العرض";
+            this.chbShowDoctor.UseVisualStyleBackColor = true;
+            // 
+            // chbAddDoctor
+            // 
+            this.chbAddDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbAddDoctor.AutoSize = true;
+            this.chbAddDoctor.Location = new System.Drawing.Point(3, 40);
+            this.chbAddDoctor.Name = "chbAddDoctor";
+            this.chbAddDoctor.Size = new System.Drawing.Size(230, 28);
+            this.chbAddDoctor.TabIndex = 1;
+            this.chbAddDoctor.Text = "صلاحية الاضافة";
+            this.chbAddDoctor.UseVisualStyleBackColor = true;
+            // 
+            // chbHomeDoctor
+            // 
+            this.chbHomeDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbHomeDoctor.AutoSize = true;
+            this.chbHomeDoctor.Location = new System.Drawing.Point(3, 4);
+            this.chbHomeDoctor.Name = "chbHomeDoctor";
+            this.chbHomeDoctor.Size = new System.Drawing.Size(230, 28);
+            this.chbHomeDoctor.TabIndex = 0;
+            this.chbHomeDoctor.Text = "القائمة الرئيسية";
+            this.chbHomeDoctor.UseVisualStyleBackColor = true;
             // 
             // gbEmployees
             // 
@@ -1140,6 +1181,370 @@ namespace ClinicApp.Forms.Users
             this.chbHomeIncome.Text = "القائمة الرئيسية";
             this.chbHomeIncome.UseVisualStyleBackColor = true;
             // 
+            // gbCompanies
+            // 
+            this.gbCompanies.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbCompanies.Controls.Add(this.tableLayoutPanel10);
+            this.gbCompanies.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbCompanies.Location = new System.Drawing.Point(880, 445);
+            this.gbCompanies.Name = "gbCompanies";
+            this.gbCompanies.Size = new System.Drawing.Size(242, 215);
+            this.gbCompanies.TabIndex = 8;
+            this.gbCompanies.TabStop = false;
+            this.gbCompanies.Text = "الشركات";
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 1;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel10.Controls.Add(this.chbDeleteCompany, 0, 4);
+            this.tableLayoutPanel10.Controls.Add(this.chbUpdateCompany, 0, 3);
+            this.tableLayoutPanel10.Controls.Add(this.chbShowCompany, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.chbAddCompany, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.chbHomeCompany, 0, 0);
+            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 32);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 5;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(236, 180);
+            this.tableLayoutPanel10.TabIndex = 0;
+            // 
+            // chbDeleteCompany
+            // 
+            this.chbDeleteCompany.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbDeleteCompany.AutoSize = true;
+            this.chbDeleteCompany.Location = new System.Drawing.Point(3, 148);
+            this.chbDeleteCompany.Name = "chbDeleteCompany";
+            this.chbDeleteCompany.Size = new System.Drawing.Size(230, 28);
+            this.chbDeleteCompany.TabIndex = 4;
+            this.chbDeleteCompany.Text = "صلاحية الحذف";
+            this.chbDeleteCompany.UseVisualStyleBackColor = true;
+            // 
+            // chbUpdateCompany
+            // 
+            this.chbUpdateCompany.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbUpdateCompany.AutoSize = true;
+            this.chbUpdateCompany.Location = new System.Drawing.Point(3, 112);
+            this.chbUpdateCompany.Name = "chbUpdateCompany";
+            this.chbUpdateCompany.Size = new System.Drawing.Size(230, 28);
+            this.chbUpdateCompany.TabIndex = 3;
+            this.chbUpdateCompany.Text = "صلاحية التعديل";
+            this.chbUpdateCompany.UseVisualStyleBackColor = true;
+            // 
+            // chbShowCompany
+            // 
+            this.chbShowCompany.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbShowCompany.AutoSize = true;
+            this.chbShowCompany.Location = new System.Drawing.Point(3, 76);
+            this.chbShowCompany.Name = "chbShowCompany";
+            this.chbShowCompany.Size = new System.Drawing.Size(230, 28);
+            this.chbShowCompany.TabIndex = 2;
+            this.chbShowCompany.Text = "صلاحية العرض";
+            this.chbShowCompany.UseVisualStyleBackColor = true;
+            // 
+            // chbAddCompany
+            // 
+            this.chbAddCompany.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbAddCompany.AutoSize = true;
+            this.chbAddCompany.Location = new System.Drawing.Point(3, 40);
+            this.chbAddCompany.Name = "chbAddCompany";
+            this.chbAddCompany.Size = new System.Drawing.Size(230, 28);
+            this.chbAddCompany.TabIndex = 1;
+            this.chbAddCompany.Text = "صلاحية الاضافة";
+            this.chbAddCompany.UseVisualStyleBackColor = true;
+            // 
+            // chbHomeCompany
+            // 
+            this.chbHomeCompany.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbHomeCompany.AutoSize = true;
+            this.chbHomeCompany.Location = new System.Drawing.Point(3, 4);
+            this.chbHomeCompany.Name = "chbHomeCompany";
+            this.chbHomeCompany.Size = new System.Drawing.Size(230, 28);
+            this.chbHomeCompany.TabIndex = 0;
+            this.chbHomeCompany.Text = "القائمة الرئيسية";
+            this.chbHomeCompany.UseVisualStyleBackColor = true;
+            // 
+            // gbSmartAssistant
+            // 
+            this.gbSmartAssistant.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbSmartAssistant.Controls.Add(this.tableLayoutPanel11);
+            this.gbSmartAssistant.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbSmartAssistant.Location = new System.Drawing.Point(632, 445);
+            this.gbSmartAssistant.Name = "gbSmartAssistant";
+            this.gbSmartAssistant.Size = new System.Drawing.Size(242, 215);
+            this.gbSmartAssistant.TabIndex = 9;
+            this.gbSmartAssistant.TabStop = false;
+            this.gbSmartAssistant.Text = "المساعد الذكي";
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.ColumnCount = 1;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel11.Controls.Add(this.chbDeleteSmartAssistant, 0, 4);
+            this.tableLayoutPanel11.Controls.Add(this.chbUpdateSmartAssistant, 0, 3);
+            this.tableLayoutPanel11.Controls.Add(this.chbShowSmartAssistant, 0, 2);
+            this.tableLayoutPanel11.Controls.Add(this.chbAddSmartAssistant, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.chbHomeSmartAssistant, 0, 0);
+            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 32);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 5;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(236, 180);
+            this.tableLayoutPanel11.TabIndex = 0;
+            // 
+            // chbDeleteSmartAssistant
+            // 
+            this.chbDeleteSmartAssistant.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbDeleteSmartAssistant.AutoSize = true;
+            this.chbDeleteSmartAssistant.Location = new System.Drawing.Point(3, 148);
+            this.chbDeleteSmartAssistant.Name = "chbDeleteSmartAssistant";
+            this.chbDeleteSmartAssistant.Size = new System.Drawing.Size(230, 28);
+            this.chbDeleteSmartAssistant.TabIndex = 4;
+            this.chbDeleteSmartAssistant.Text = "صلاحية الحذف";
+            this.chbDeleteSmartAssistant.UseVisualStyleBackColor = true;
+            // 
+            // chbUpdateSmartAssistant
+            // 
+            this.chbUpdateSmartAssistant.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbUpdateSmartAssistant.AutoSize = true;
+            this.chbUpdateSmartAssistant.Location = new System.Drawing.Point(3, 112);
+            this.chbUpdateSmartAssistant.Name = "chbUpdateSmartAssistant";
+            this.chbUpdateSmartAssistant.Size = new System.Drawing.Size(230, 28);
+            this.chbUpdateSmartAssistant.TabIndex = 3;
+            this.chbUpdateSmartAssistant.Text = "صلاحية التعديل";
+            this.chbUpdateSmartAssistant.UseVisualStyleBackColor = true;
+            // 
+            // chbShowSmartAssistant
+            // 
+            this.chbShowSmartAssistant.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbShowSmartAssistant.AutoSize = true;
+            this.chbShowSmartAssistant.Location = new System.Drawing.Point(3, 76);
+            this.chbShowSmartAssistant.Name = "chbShowSmartAssistant";
+            this.chbShowSmartAssistant.Size = new System.Drawing.Size(230, 28);
+            this.chbShowSmartAssistant.TabIndex = 2;
+            this.chbShowSmartAssistant.Text = "صلاحية العرض";
+            this.chbShowSmartAssistant.UseVisualStyleBackColor = true;
+            // 
+            // chbAddSmartAssistant
+            // 
+            this.chbAddSmartAssistant.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbAddSmartAssistant.AutoSize = true;
+            this.chbAddSmartAssistant.Location = new System.Drawing.Point(3, 40);
+            this.chbAddSmartAssistant.Name = "chbAddSmartAssistant";
+            this.chbAddSmartAssistant.Size = new System.Drawing.Size(230, 28);
+            this.chbAddSmartAssistant.TabIndex = 1;
+            this.chbAddSmartAssistant.Text = "صلاحية الاضافة";
+            this.chbAddSmartAssistant.UseVisualStyleBackColor = true;
+            // 
+            // chbHomeSmartAssistant
+            // 
+            this.chbHomeSmartAssistant.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbHomeSmartAssistant.AutoSize = true;
+            this.chbHomeSmartAssistant.Location = new System.Drawing.Point(3, 4);
+            this.chbHomeSmartAssistant.Name = "chbHomeSmartAssistant";
+            this.chbHomeSmartAssistant.Size = new System.Drawing.Size(230, 28);
+            this.chbHomeSmartAssistant.TabIndex = 0;
+            this.chbHomeSmartAssistant.Text = "القائمة الرئيسية";
+            this.chbHomeSmartAssistant.UseVisualStyleBackColor = true;
+            // 
+            // gbAllLocations
+            // 
+            this.gbAllLocations.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbAllLocations.Controls.Add(this.tableLayoutPanel12);
+            this.gbAllLocations.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbAllLocations.Location = new System.Drawing.Point(384, 445);
+            this.gbAllLocations.Name = "gbAllLocations";
+            this.gbAllLocations.Size = new System.Drawing.Size(242, 215);
+            this.gbAllLocations.TabIndex = 10;
+            this.gbAllLocations.TabStop = false;
+            this.gbAllLocations.Text = "الدليل الشامل";
+            // 
+            // tableLayoutPanel12
+            // 
+            this.tableLayoutPanel12.ColumnCount = 1;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel12.Controls.Add(this.chbDeleteLoc, 0, 4);
+            this.tableLayoutPanel12.Controls.Add(this.chbUpdateLoc, 0, 3);
+            this.tableLayoutPanel12.Controls.Add(this.chbShowLoc, 0, 2);
+            this.tableLayoutPanel12.Controls.Add(this.chbAddLoc, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.chbHomeLoc, 0, 0);
+            this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 32);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 5;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(236, 180);
+            this.tableLayoutPanel12.TabIndex = 0;
+            // 
+            // chbDeleteLoc
+            // 
+            this.chbDeleteLoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbDeleteLoc.AutoSize = true;
+            this.chbDeleteLoc.Location = new System.Drawing.Point(3, 148);
+            this.chbDeleteLoc.Name = "chbDeleteLoc";
+            this.chbDeleteLoc.Size = new System.Drawing.Size(230, 28);
+            this.chbDeleteLoc.TabIndex = 4;
+            this.chbDeleteLoc.Text = "صلاحية الحذف";
+            this.chbDeleteLoc.UseVisualStyleBackColor = true;
+            // 
+            // chbUpdateLoc
+            // 
+            this.chbUpdateLoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbUpdateLoc.AutoSize = true;
+            this.chbUpdateLoc.Location = new System.Drawing.Point(3, 112);
+            this.chbUpdateLoc.Name = "chbUpdateLoc";
+            this.chbUpdateLoc.Size = new System.Drawing.Size(230, 28);
+            this.chbUpdateLoc.TabIndex = 3;
+            this.chbUpdateLoc.Text = "صلاحية التعديل";
+            this.chbUpdateLoc.UseVisualStyleBackColor = true;
+            // 
+            // chbShowLoc
+            // 
+            this.chbShowLoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbShowLoc.AutoSize = true;
+            this.chbShowLoc.Location = new System.Drawing.Point(3, 76);
+            this.chbShowLoc.Name = "chbShowLoc";
+            this.chbShowLoc.Size = new System.Drawing.Size(230, 28);
+            this.chbShowLoc.TabIndex = 2;
+            this.chbShowLoc.Text = "صلاحية العرض";
+            this.chbShowLoc.UseVisualStyleBackColor = true;
+            // 
+            // chbAddLoc
+            // 
+            this.chbAddLoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbAddLoc.AutoSize = true;
+            this.chbAddLoc.Location = new System.Drawing.Point(3, 40);
+            this.chbAddLoc.Name = "chbAddLoc";
+            this.chbAddLoc.Size = new System.Drawing.Size(230, 28);
+            this.chbAddLoc.TabIndex = 1;
+            this.chbAddLoc.Text = "صلاحية الاضافة";
+            this.chbAddLoc.UseVisualStyleBackColor = true;
+            // 
+            // chbHomeLoc
+            // 
+            this.chbHomeLoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbHomeLoc.AutoSize = true;
+            this.chbHomeLoc.Location = new System.Drawing.Point(3, 4);
+            this.chbHomeLoc.Name = "chbHomeLoc";
+            this.chbHomeLoc.Size = new System.Drawing.Size(230, 28);
+            this.chbHomeLoc.TabIndex = 0;
+            this.chbHomeLoc.Text = "القائمة الرئيسية";
+            this.chbHomeLoc.UseVisualStyleBackColor = true;
+            // 
+            // gbSettings
+            // 
+            this.gbSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbSettings.Controls.Add(this.tableLayoutPanel13);
+            this.gbSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbSettings.Location = new System.Drawing.Point(136, 445);
+            this.gbSettings.Name = "gbSettings";
+            this.gbSettings.Size = new System.Drawing.Size(242, 215);
+            this.gbSettings.TabIndex = 11;
+            this.gbSettings.TabStop = false;
+            this.gbSettings.Text = "الاعدادات";
+            // 
+            // tableLayoutPanel13
+            // 
+            this.tableLayoutPanel13.ColumnCount = 1;
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel13.Controls.Add(this.chbDeleteSetting, 0, 4);
+            this.tableLayoutPanel13.Controls.Add(this.chbUpdateSetting, 0, 3);
+            this.tableLayoutPanel13.Controls.Add(this.chbShowSetting, 0, 2);
+            this.tableLayoutPanel13.Controls.Add(this.chbAddSetting, 0, 1);
+            this.tableLayoutPanel13.Controls.Add(this.chbHomeSetting, 0, 0);
+            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 32);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
+            this.tableLayoutPanel13.RowCount = 5;
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(236, 180);
+            this.tableLayoutPanel13.TabIndex = 0;
+            // 
+            // chbDeleteSetting
+            // 
+            this.chbDeleteSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbDeleteSetting.AutoSize = true;
+            this.chbDeleteSetting.Location = new System.Drawing.Point(3, 148);
+            this.chbDeleteSetting.Name = "chbDeleteSetting";
+            this.chbDeleteSetting.Size = new System.Drawing.Size(230, 28);
+            this.chbDeleteSetting.TabIndex = 4;
+            this.chbDeleteSetting.Text = "صلاحية الحذف";
+            this.chbDeleteSetting.UseVisualStyleBackColor = true;
+            // 
+            // chbUpdateSetting
+            // 
+            this.chbUpdateSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbUpdateSetting.AutoSize = true;
+            this.chbUpdateSetting.Location = new System.Drawing.Point(3, 112);
+            this.chbUpdateSetting.Name = "chbUpdateSetting";
+            this.chbUpdateSetting.Size = new System.Drawing.Size(230, 28);
+            this.chbUpdateSetting.TabIndex = 3;
+            this.chbUpdateSetting.Text = "صلاحية التعديل";
+            this.chbUpdateSetting.UseVisualStyleBackColor = true;
+            // 
+            // chbShowSetting
+            // 
+            this.chbShowSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbShowSetting.AutoSize = true;
+            this.chbShowSetting.Location = new System.Drawing.Point(3, 76);
+            this.chbShowSetting.Name = "chbShowSetting";
+            this.chbShowSetting.Size = new System.Drawing.Size(230, 28);
+            this.chbShowSetting.TabIndex = 2;
+            this.chbShowSetting.Text = "صلاحية العرض";
+            this.chbShowSetting.UseVisualStyleBackColor = true;
+            // 
+            // chbAddSetting
+            // 
+            this.chbAddSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbAddSetting.AutoSize = true;
+            this.chbAddSetting.Location = new System.Drawing.Point(3, 40);
+            this.chbAddSetting.Name = "chbAddSetting";
+            this.chbAddSetting.Size = new System.Drawing.Size(230, 28);
+            this.chbAddSetting.TabIndex = 1;
+            this.chbAddSetting.Text = "صلاحية الاضافة";
+            this.chbAddSetting.UseVisualStyleBackColor = true;
+            // 
+            // chbHomeSetting
+            // 
+            this.chbHomeSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbHomeSetting.AutoSize = true;
+            this.chbHomeSetting.Location = new System.Drawing.Point(3, 4);
+            this.chbHomeSetting.Name = "chbHomeSetting";
+            this.chbHomeSetting.Size = new System.Drawing.Size(230, 28);
+            this.chbHomeSetting.TabIndex = 0;
+            this.chbHomeSetting.Text = "القائمة الرئيسية";
+            this.chbHomeSetting.UseVisualStyleBackColor = true;
+            // 
             // FormUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1164,7 +1569,7 @@ namespace ClinicApp.Forms.Users
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanelParient.ResumeLayout(false);
             this.gbDoctors.ResumeLayout(false);
             this.tlpParentGroupBox.ResumeLayout(false);
             this.tlpParentGroupBox.PerformLayout();
@@ -1189,6 +1594,18 @@ namespace ClinicApp.Forms.Users
             this.gbIncomes.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
+            this.gbCompanies.ResumeLayout(false);
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
+            this.gbSmartAssistant.ResumeLayout(false);
+            this.tableLayoutPanel11.ResumeLayout(false);
+            this.tableLayoutPanel11.PerformLayout();
+            this.gbAllLocations.ResumeLayout(false);
+            this.tableLayoutPanel12.ResumeLayout(false);
+            this.tableLayoutPanel12.PerformLayout();
+            this.gbSettings.ResumeLayout(false);
+            this.tableLayoutPanel13.ResumeLayout(false);
+            this.tableLayoutPanel13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1214,7 +1631,7 @@ namespace ClinicApp.Forms.Users
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelParient;
         private System.Windows.Forms.GroupBox gbDoctors;
         private System.Windows.Forms.TableLayoutPanel tlpParentGroupBox;
         private System.Windows.Forms.CheckBox chbDeleteDoctor;
@@ -1271,5 +1688,33 @@ namespace ClinicApp.Forms.Users
         private System.Windows.Forms.CheckBox chbShowIncome;
         private System.Windows.Forms.CheckBox chbAddIncome;
         private System.Windows.Forms.CheckBox chbHomeIncome;
+        private System.Windows.Forms.GroupBox gbCompanies;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.CheckBox chbDeleteCompany;
+        private System.Windows.Forms.CheckBox chbUpdateCompany;
+        private System.Windows.Forms.CheckBox chbShowCompany;
+        private System.Windows.Forms.CheckBox chbAddCompany;
+        private System.Windows.Forms.CheckBox chbHomeCompany;
+        private System.Windows.Forms.GroupBox gbSmartAssistant;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.CheckBox chbDeleteSmartAssistant;
+        private System.Windows.Forms.CheckBox chbUpdateSmartAssistant;
+        private System.Windows.Forms.CheckBox chbShowSmartAssistant;
+        private System.Windows.Forms.CheckBox chbAddSmartAssistant;
+        private System.Windows.Forms.CheckBox chbHomeSmartAssistant;
+        private System.Windows.Forms.GroupBox gbAllLocations;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
+        private System.Windows.Forms.CheckBox chbDeleteLoc;
+        private System.Windows.Forms.CheckBox chbUpdateLoc;
+        private System.Windows.Forms.CheckBox chbShowLoc;
+        private System.Windows.Forms.CheckBox chbAddLoc;
+        private System.Windows.Forms.CheckBox chbHomeLoc;
+        private System.Windows.Forms.GroupBox gbSettings;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
+        private System.Windows.Forms.CheckBox chbDeleteSetting;
+        private System.Windows.Forms.CheckBox chbUpdateSetting;
+        private System.Windows.Forms.CheckBox chbShowSetting;
+        private System.Windows.Forms.CheckBox chbAddSetting;
+        private System.Windows.Forms.CheckBox chbHomeSetting;
     }
 }

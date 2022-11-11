@@ -62,7 +62,12 @@ namespace ClinicApp.Forms.Users
                         "patientAdd,patientDelete,patientUpdate,patientShow,patientHome," +
                         "resAdd,resDelete,resUpdate,resShow,resHome," +
                         "examAdd,examDelete,examUpdate,examShow,examHome," +
-                        "expenseAdd,expenseDelete,expenseUpdate,expenseShow,expenseHome" +
+                        "expenseAdd,expenseDelete,expenseUpdate,expenseShow,expenseHome," +
+                        "incomeAdd,incomeDelete,incomeUpdate,incomeShow,incomeHome," +
+                        "companyAdd,companyDelete,companyUpdate,companyShow,companyHome," +
+                        "smartAdd,smartDelete,smartUpdate,smartShow,smartHome," +
+                        "locationAdd,locationDelete,locationUpdate,locationShow,locationHome," +
+                        "settingAdd,settingDelete,settingUpdate,settingShow,settingHome" +
                         ") values (@name,@privilege,@password,@notes," +
                         "@doctorAdd,@doctorDelete,@doctorUpdate,@doctorShow,@doctorHome," +
                     "@employeeAdd,@employeeDelete,@employeeUpdate,@employeeShow,@employeeHome," +
@@ -70,7 +75,12 @@ namespace ClinicApp.Forms.Users
                         "@patientAdd,@patientDelete,@patientUpdate,@patientShow,@patientHome," +
                         "@resAdd,@resDelete,@resUpdate,@resShow,@resHome," +
                         "@examAdd,@examDelete,@examUpdate,@examShow,@examHome," +
-                        "@expenseAdd,@expenseDelete,@expenseUpdate,@expenseShow,@expenseHome" +
+                        "@expenseAdd,@expenseDelete,@expenseUpdate,@expenseShow,@expenseHome," +
+                        "@incomeAdd,@incomeDelete,@incomeUpdate,@incomeShow,@incomeHome," +
+                        "@companyAdd,@companyDelete,@companyUpdate,@companyShow,@companyHome," +
+                        "@smartAdd,@smartDelete,@smartUpdate,@smartShow,@smartHome," +
+                        "@locationAdd,@locationDelete,@locationUpdate,@locationShow,@locationHome," +
+                        "@settingAdd,@settingDelete,@settingUpdate,@settingShow,@settingHome" +
                         ")", adoClass.sqlcn);
 
 
@@ -124,7 +134,6 @@ namespace ClinicApp.Forms.Users
                     cmd.Parameters.AddWithValue("@examHome", chbHomeExam.Checked.ToString());
 
 
-                    // expenseAdd,expenseDelete,expenseUpdate,expenseShow,expenseHome
                     // expenses priviledge
                     cmd.Parameters.AddWithValue("@expenseAdd", chbAddExpense.Checked.ToString());
                     cmd.Parameters.AddWithValue("@expenseDelete", chbDeleteExpense.Checked.ToString());
@@ -132,6 +141,46 @@ namespace ClinicApp.Forms.Users
                     cmd.Parameters.AddWithValue("@expenseShow", chbShowExpense.Checked.ToString());
                     cmd.Parameters.AddWithValue("@expenseHome", chbHomeExpense.Checked.ToString());
 
+
+                    // income priviledge
+                    cmd.Parameters.AddWithValue("@incomeAdd", chbAddIncome.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@incomeDelete", chbDeleteIncome.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@incomeUpdate", chbUpdateIncome.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@incomeShow", chbShowIncome.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@incomeHome", chbHomeIncome.Checked.ToString());
+
+                    // company priviledge
+                    cmd.Parameters.AddWithValue("@companyAdd", chbAddCompany.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@companyDelete", chbDeleteCompany.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@companyUpdate", chbUpdateCompany.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@companyShow", chbShowCompany.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@companyHome", chbHomeCompany.Checked.ToString());
+
+                    // smartAdd,smartDelete,smartUpdate,smartShow,smartHome
+                    // smart assistant priviledge
+                    cmd.Parameters.AddWithValue("@smartAdd", chbAddSmartAssistant.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@smartDelete", chbDeleteSmartAssistant.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@smartUpdate", chbUpdateSmartAssistant.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@smartShow", chbShowSmartAssistant.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@smartHome", chbHomeSmartAssistant.Checked.ToString());
+
+                    // locationAdd,locationDelete,locationUpdate,locationShow,locationHome
+                    // locations priviledge
+                    cmd.Parameters.AddWithValue("@locationAdd", chbAddLoc.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@locationDelete", chbDeleteLoc.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@locationUpdate", chbUpdateLoc.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@locationShow", chbShowLoc.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@locationHome", chbHomeLoc.Checked.ToString());
+
+
+
+                    // settingAdd,settingDelete,settingUpdate,settingShow,settingHome
+                    // settings priviledge
+                    cmd.Parameters.AddWithValue("@settingAdd", chbAddSetting.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@settingDelete", chbDeleteSetting.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@settingUpdate", chbUpdateSetting.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@settingShow", chbShowSetting.Checked.ToString());
+                    cmd.Parameters.AddWithValue("@settingHome", chbHomeSetting.Checked.ToString());
 
                     if (adoClass.sqlcn.State != ConnectionState.Open)
                     {
@@ -217,11 +266,23 @@ namespace ClinicApp.Forms.Users
             txtNotes.Text = "";
 
             id = "";
+
+
+            //foreach (CheckBox tb in this.Controls.OfType<CheckBox>())
+            //{
+            //    tb.Checked = false;
+            //}
+
+            //foreach (Control cBox in Controls)
+            //{
+            //    if (cBox is CheckBox)
+            //    {
+            //        ((CheckBox)cBox).Checked = false;
+            //    }
+            //}
         }
 
-
-
-        
+ 
     }
 }
 
