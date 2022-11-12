@@ -63,6 +63,31 @@ namespace ClinicApp.Forms.Expenses
 
             txtHidden = new TextBox();
             txtHidden.Visible = false;
+
+
+            // hide and show buttons
+            DataTable dt = new DataTable();
+
+            if (adoClass.sqlcn.State != ConnectionState.Open)
+            {
+                adoClass.sqlcn.Open();
+            }
+            cmd = new SqlCommand("select expenseDelete,expenseUpdate from Users where id = '" + declarations.userId + "'", adoClass.sqlcn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            adoClass.sqlcn.Close();
+            if (dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                if (row["expenseDelete"].ToString() == "False")
+                {
+                    btnDelete.Visible = false;
+                }
+                if (row["expenseUpdate"].ToString() == "False")
+                {
+                    btnUpdate.Visible = false;
+                }
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

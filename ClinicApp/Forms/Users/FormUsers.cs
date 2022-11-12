@@ -173,7 +173,7 @@ namespace ClinicApp.Forms.Users
 
 
 
-                    // settingAdd,settingDelete,settingUpdate,settingShow,settingHome
+                    
                     // settings priviledge
                     cmd.Parameters.AddWithValue("@settingAdd", chbAddSetting.Checked.ToString());
                     cmd.Parameters.AddWithValue("@settingDelete", chbDeleteSetting.Checked.ToString());

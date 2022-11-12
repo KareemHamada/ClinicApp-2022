@@ -207,6 +207,32 @@ namespace ClinicApp.Forms.Employees
 
             txtHidden = new TextBox();
             txtHidden.Visible = false;
+
+
+            // hide and show buttons
+            DataTable dt = new DataTable();
+
+            if (adoClass.sqlcn.State != ConnectionState.Open)
+            {
+                adoClass.sqlcn.Open();
+            }
+            cmd = new SqlCommand("select employeeDelete,employeeUpdate from Users where id = '" + declarations.userId + "'", adoClass.sqlcn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            adoClass.sqlcn.Close();
+            if (dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                // for doctor
+                if (row["employeeDelete"].ToString() == "False")
+                {
+                    btnDelete.Visible = false;
+                }
+                if (row["employeeUpdate"].ToString() == "False")
+                {
+                    btnUpdate.Visible = false;
+                }
+            }
         }
     }
 }

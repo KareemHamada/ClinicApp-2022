@@ -646,19 +646,6 @@ namespace ClinicApp.Forms
                     btnShowBookingType.Visible = false;
                     btnShowGovernment.Visible = false;
                 }
-                //foreach (DataRow row in dt.Rows)
-                //{
-                //    dgvLoading.Rows.Add
-                //        (new object[]
-                //            {
-                //                row["notes"],
-                //                row["privilege"],
-                //                row["password"],
-                //                row["name"],
-                //                row["id"],
-                //            }
-                //        ); ;
-                //}
             }
         
     }

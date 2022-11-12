@@ -56,9 +56,29 @@ namespace ClinicApp.Forms.SmartAssistant
             txtHidden.Visible = false;
 
 
-            //dgvLoading.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            // hide and show buttons
+            DataTable dt = new DataTable();
 
-            
+            if (adoClass.sqlcn.State != ConnectionState.Open)
+            {
+                adoClass.sqlcn.Open();
+            }
+            cmd = new SqlCommand("select smartDelete,smartUpdate from Users where id = '" + declarations.userId + "'", adoClass.sqlcn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            adoClass.sqlcn.Close();
+            if (dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                if (row["smartDelete"].ToString() == "False")
+                {
+                    btnDelete.Visible = false;
+                }
+                if (row["smartUpdate"].ToString() == "False")
+                {
+                    btnUpdate.Visible = false;
+                }
+            }
 
 
         }
