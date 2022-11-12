@@ -33,42 +33,43 @@ namespace ClinicApp.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.btnDoctors = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnِAddDoctor = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomeDoctors = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddDoctor = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowDoctors = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddDoctorTime = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDoctorsTime = new System.Windows.Forms.ToolStripMenuItem();
-            this.الموظفينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomeEmployees = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddEmployee = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowEmployees = new System.Windows.Forms.ToolStripMenuItem();
-            this.المستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomeUsers = new System.Windows.Forms.ToolStripMenuItem();
             this.btnUsers = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowUsers = new System.Windows.Forms.ToolStripMenuItem();
-            this.المرضيToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomePatients = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddPatient = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowPatient = new System.Windows.Forms.ToolStripMenuItem();
             this.btnVisitingPatient = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPatientPerception = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPatientAnalysis = new System.Windows.Forms.ToolStripMenuItem();
-            this.الحجوزاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnPatientRays = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomeReservations = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddReservations = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowReservations = new System.Windows.Forms.ToolStripMenuItem();
-            this.الكشوفاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomeExamination = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddExamination = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowExamination = new System.Windows.Forms.ToolStripMenuItem();
-            this.المصروفاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomeExpenses = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddExpenses = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowExpenses = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddExpensesType = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowExpensesTypes = new System.Windows.Forms.ToolStripMenuItem();
-            this.الايراداتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.الشركاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomeIncomes = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomeCompany = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCompany = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowCompanies = new System.Windows.Forms.ToolStripMenuItem();
-            this.المساعدالذكيToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomeSmartAssistant = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddToSmartAssistant = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowSmartAssistant = new System.Windows.Forms.ToolStripMenuItem();
-            this.الدليلالشاملToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomeLocations = new System.Windows.Forms.ToolStripMenuItem();
             this.دليلالاطباءToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddDoctorToLoc = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowDoctorsLoc = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,7 +85,7 @@ namespace ClinicApp.Forms
             this.دليلمراكزالاشعةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddRaysLoc = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowRaysLoc = new System.Windows.Forms.ToolStripMenuItem();
-            this.الاعداداتالعامةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHomeSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClinic = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddClinic = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowClinics = new System.Windows.Forms.ToolStripMenuItem();
@@ -126,7 +127,6 @@ namespace ClinicApp.Forms
             this.btnShowGovernment = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPrintingSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnPatientRays = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -159,18 +159,18 @@ namespace ClinicApp.Forms
             this.menuStrip1.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Bold);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnDoctors,
-            this.الموظفينToolStripMenuItem,
-            this.المستخدمينToolStripMenuItem,
-            this.المرضيToolStripMenuItem,
-            this.الحجوزاتToolStripMenuItem,
-            this.الكشوفاتToolStripMenuItem,
-            this.المصروفاتToolStripMenuItem,
-            this.الايراداتToolStripMenuItem,
-            this.الشركاتToolStripMenuItem,
-            this.المساعدالذكيToolStripMenuItem,
-            this.الدليلالشاملToolStripMenuItem,
-            this.الاعداداتالعامةToolStripMenuItem});
+            this.btnHomeDoctors,
+            this.btnHomeEmployees,
+            this.btnHomeUsers,
+            this.btnHomePatients,
+            this.btnHomeReservations,
+            this.btnHomeExamination,
+            this.btnHomeExpenses,
+            this.btnHomeIncomes,
+            this.btnHomeCompany,
+            this.btnHomeSmartAssistant,
+            this.btnHomeLocations,
+            this.btnHomeSettings});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -179,25 +179,25 @@ namespace ClinicApp.Forms
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnDoctors
+            // btnHomeDoctors
             // 
-            this.btnDoctors.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnِAddDoctor,
+            this.btnHomeDoctors.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnAddDoctor,
             this.btnShowDoctors,
             this.btnAddDoctorTime,
             this.btnDoctorsTime});
-            this.btnDoctors.Image = ((System.Drawing.Image)(resources.GetObject("btnDoctors.Image")));
-            this.btnDoctors.Name = "btnDoctors";
-            this.btnDoctors.Size = new System.Drawing.Size(103, 39);
-            this.btnDoctors.Text = "الاطباء";
+            this.btnHomeDoctors.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeDoctors.Image")));
+            this.btnHomeDoctors.Name = "btnHomeDoctors";
+            this.btnHomeDoctors.Size = new System.Drawing.Size(103, 39);
+            this.btnHomeDoctors.Text = "الاطباء";
             // 
-            // btnِAddDoctor
+            // btnAddDoctor
             // 
-            this.btnِAddDoctor.Image = ((System.Drawing.Image)(resources.GetObject("btnِAddDoctor.Image")));
-            this.btnِAddDoctor.Name = "btnِAddDoctor";
-            this.btnِAddDoctor.Size = new System.Drawing.Size(233, 40);
-            this.btnِAddDoctor.Text = "اضافة طبيب";
-            this.btnِAddDoctor.Click += new System.EventHandler(this.btnِAddDoctor_Click);
+            this.btnAddDoctor.Image = ((System.Drawing.Image)(resources.GetObject("btnAddDoctor.Image")));
+            this.btnAddDoctor.Name = "btnAddDoctor";
+            this.btnAddDoctor.Size = new System.Drawing.Size(233, 40);
+            this.btnAddDoctor.Text = "اضافة طبيب";
+            this.btnAddDoctor.Click += new System.EventHandler(this.btnAddDoctor_Click);
             // 
             // btnShowDoctors
             // 
@@ -223,15 +223,15 @@ namespace ClinicApp.Forms
             this.btnDoctorsTime.Text = "مواعيد الاطباء";
             this.btnDoctorsTime.Click += new System.EventHandler(this.btnDoctorsTime_Click);
             // 
-            // الموظفينToolStripMenuItem
+            // btnHomeEmployees
             // 
-            this.الموظفينToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnHomeEmployees.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnAddEmployee,
             this.btnShowEmployees});
-            this.الموظفينToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("الموظفينToolStripMenuItem.Image")));
-            this.الموظفينToolStripMenuItem.Name = "الموظفينToolStripMenuItem";
-            this.الموظفينToolStripMenuItem.Size = new System.Drawing.Size(106, 39);
-            this.الموظفينToolStripMenuItem.Text = "الموظفين";
+            this.btnHomeEmployees.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeEmployees.Image")));
+            this.btnHomeEmployees.Name = "btnHomeEmployees";
+            this.btnHomeEmployees.Size = new System.Drawing.Size(106, 39);
+            this.btnHomeEmployees.Text = "الموظفين";
             // 
             // btnAddEmployee
             // 
@@ -249,15 +249,15 @@ namespace ClinicApp.Forms
             this.btnShowEmployees.Text = "عرض الموظفين";
             this.btnShowEmployees.Click += new System.EventHandler(this.btnShowEmployees_Click);
             // 
-            // المستخدمينToolStripMenuItem
+            // btnHomeUsers
             // 
-            this.المستخدمينToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnHomeUsers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnUsers,
             this.btnShowUsers});
-            this.المستخدمينToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("المستخدمينToolStripMenuItem.Image")));
-            this.المستخدمينToolStripMenuItem.Name = "المستخدمينToolStripMenuItem";
-            this.المستخدمينToolStripMenuItem.Size = new System.Drawing.Size(130, 39);
-            this.المستخدمينToolStripMenuItem.Text = "المستخدمين";
+            this.btnHomeUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeUsers.Image")));
+            this.btnHomeUsers.Name = "btnHomeUsers";
+            this.btnHomeUsers.Size = new System.Drawing.Size(130, 39);
+            this.btnHomeUsers.Text = "المستخدمين";
             // 
             // btnUsers
             // 
@@ -275,19 +275,19 @@ namespace ClinicApp.Forms
             this.btnShowUsers.Text = "عرض المستخدمبن";
             this.btnShowUsers.Click += new System.EventHandler(this.btnShowUsers_Click);
             // 
-            // المرضيToolStripMenuItem
+            // btnHomePatients
             // 
-            this.المرضيToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnHomePatients.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnAddPatient,
             this.btnShowPatient,
             this.btnVisitingPatient,
             this.btnPatientPerception,
             this.btnPatientAnalysis,
             this.btnPatientRays});
-            this.المرضيToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("المرضيToolStripMenuItem.Image")));
-            this.المرضيToolStripMenuItem.Name = "المرضيToolStripMenuItem";
-            this.المرضيToolStripMenuItem.Size = new System.Drawing.Size(98, 39);
-            this.المرضيToolStripMenuItem.Text = "المرضي";
+            this.btnHomePatients.Image = ((System.Drawing.Image)(resources.GetObject("btnHomePatients.Image")));
+            this.btnHomePatients.Name = "btnHomePatients";
+            this.btnHomePatients.Size = new System.Drawing.Size(98, 39);
+            this.btnHomePatients.Text = "المرضي";
             // 
             // btnAddPatient
             // 
@@ -329,15 +329,23 @@ namespace ClinicApp.Forms
             this.btnPatientAnalysis.Text = "تحاليل المريض";
             this.btnPatientAnalysis.Click += new System.EventHandler(this.btnPatientAnalysis_Click);
             // 
-            // الحجوزاتToolStripMenuItem
+            // btnPatientRays
             // 
-            this.الحجوزاتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnPatientRays.Image = global::ClinicApp.Properties.Resources.x_rays;
+            this.btnPatientRays.Name = "btnPatientRays";
+            this.btnPatientRays.Size = new System.Drawing.Size(303, 40);
+            this.btnPatientRays.Text = "اشعة المريض";
+            this.btnPatientRays.Click += new System.EventHandler(this.btnPatientRays_Click);
+            // 
+            // btnHomeReservations
+            // 
+            this.btnHomeReservations.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnAddReservations,
             this.btnShowReservations});
-            this.الحجوزاتToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.booking;
-            this.الحجوزاتToolStripMenuItem.Name = "الحجوزاتToolStripMenuItem";
-            this.الحجوزاتToolStripMenuItem.Size = new System.Drawing.Size(120, 39);
-            this.الحجوزاتToolStripMenuItem.Text = "الحجوزات";
+            this.btnHomeReservations.Image = global::ClinicApp.Properties.Resources.booking;
+            this.btnHomeReservations.Name = "btnHomeReservations";
+            this.btnHomeReservations.Size = new System.Drawing.Size(120, 39);
+            this.btnHomeReservations.Text = "الحجوزات";
             // 
             // btnAddReservations
             // 
@@ -355,15 +363,15 @@ namespace ClinicApp.Forms
             this.btnShowReservations.Text = "عرض الحجوزات";
             this.btnShowReservations.Click += new System.EventHandler(this.btnShowReservations_Click);
             // 
-            // الكشوفاتToolStripMenuItem
+            // btnHomeExamination
             // 
-            this.الكشوفاتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnHomeExamination.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnAddExamination,
             this.btnShowExamination});
-            this.الكشوفاتToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.advice3;
-            this.الكشوفاتToolStripMenuItem.Name = "الكشوفاتToolStripMenuItem";
-            this.الكشوفاتToolStripMenuItem.Size = new System.Drawing.Size(121, 39);
-            this.الكشوفاتToolStripMenuItem.Text = "الكشوفات";
+            this.btnHomeExamination.Image = global::ClinicApp.Properties.Resources.advice3;
+            this.btnHomeExamination.Name = "btnHomeExamination";
+            this.btnHomeExamination.Size = new System.Drawing.Size(121, 39);
+            this.btnHomeExamination.Text = "الكشوفات";
             // 
             // btnAddExamination
             // 
@@ -381,17 +389,17 @@ namespace ClinicApp.Forms
             this.btnShowExamination.Text = "جميع الكشوفات";
             this.btnShowExamination.Click += new System.EventHandler(this.btnShowExamination_Click);
             // 
-            // المصروفاتToolStripMenuItem
+            // btnHomeExpenses
             // 
-            this.المصروفاتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnHomeExpenses.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnAddExpenses,
             this.btnShowExpenses,
             this.btnAddExpensesType,
             this.btnShowExpensesTypes});
-            this.المصروفاتToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.money;
-            this.المصروفاتToolStripMenuItem.Name = "المصروفاتToolStripMenuItem";
-            this.المصروفاتToolStripMenuItem.Size = new System.Drawing.Size(125, 39);
-            this.المصروفاتToolStripMenuItem.Text = "المصروفات";
+            this.btnHomeExpenses.Image = global::ClinicApp.Properties.Resources.money;
+            this.btnHomeExpenses.Name = "btnHomeExpenses";
+            this.btnHomeExpenses.Size = new System.Drawing.Size(125, 39);
+            this.btnHomeExpenses.Text = "المصروفات";
             // 
             // btnAddExpenses
             // 
@@ -425,21 +433,21 @@ namespace ClinicApp.Forms
             this.btnShowExpensesTypes.Text = "عرض انواع المصروفات";
             this.btnShowExpensesTypes.Click += new System.EventHandler(this.btnShowExpensesTypes_Click);
             // 
-            // الايراداتToolStripMenuItem
+            // btnHomeIncomes
             // 
-            this.الايراداتToolStripMenuItem.Name = "الايراداتToolStripMenuItem";
-            this.الايراداتToolStripMenuItem.Size = new System.Drawing.Size(99, 39);
-            this.الايراداتToolStripMenuItem.Text = "الايرادات";
+            this.btnHomeIncomes.Name = "btnHomeIncomes";
+            this.btnHomeIncomes.Size = new System.Drawing.Size(99, 39);
+            this.btnHomeIncomes.Text = "الايرادات";
             // 
-            // الشركاتToolStripMenuItem
+            // btnHomeCompany
             // 
-            this.الشركاتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnHomeCompany.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnCompany,
             this.btnShowCompanies});
-            this.الشركاتToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.company;
-            this.الشركاتToolStripMenuItem.Name = "الشركاتToolStripMenuItem";
-            this.الشركاتToolStripMenuItem.Size = new System.Drawing.Size(107, 39);
-            this.الشركاتToolStripMenuItem.Text = "الشركات";
+            this.btnHomeCompany.Image = global::ClinicApp.Properties.Resources.company;
+            this.btnHomeCompany.Name = "btnHomeCompany";
+            this.btnHomeCompany.Size = new System.Drawing.Size(107, 39);
+            this.btnHomeCompany.Text = "الشركات";
             // 
             // btnCompany
             // 
@@ -457,15 +465,15 @@ namespace ClinicApp.Forms
             this.btnShowCompanies.Text = "عرض الشركات";
             this.btnShowCompanies.Click += new System.EventHandler(this.btnShowCompanies_Click);
             // 
-            // المساعدالذكيToolStripMenuItem
+            // btnHomeSmartAssistant
             // 
-            this.المساعدالذكيToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnHomeSmartAssistant.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnAddToSmartAssistant,
             this.btnShowSmartAssistant});
-            this.المساعدالذكيToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.web_cam;
-            this.المساعدالذكيToolStripMenuItem.Name = "المساعدالذكيToolStripMenuItem";
-            this.المساعدالذكيToolStripMenuItem.Size = new System.Drawing.Size(141, 39);
-            this.المساعدالذكيToolStripMenuItem.Text = "المساعد الذكي";
+            this.btnHomeSmartAssistant.Image = global::ClinicApp.Properties.Resources.web_cam;
+            this.btnHomeSmartAssistant.Name = "btnHomeSmartAssistant";
+            this.btnHomeSmartAssistant.Size = new System.Drawing.Size(141, 39);
+            this.btnHomeSmartAssistant.Text = "المساعد الذكي";
             // 
             // btnAddToSmartAssistant
             // 
@@ -483,18 +491,18 @@ namespace ClinicApp.Forms
             this.btnShowSmartAssistant.Text = "عرض معلومات المساعد الذكي";
             this.btnShowSmartAssistant.Click += new System.EventHandler(this.btnShowSmartAssistant_Click);
             // 
-            // الدليلالشاملToolStripMenuItem
+            // btnHomeLocations
             // 
-            this.الدليلالشاملToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnHomeLocations.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.دليلالاطباءToolStripMenuItem,
             this.دليلالمستشفاتToolStripMenuItem,
             this.دليلالصيدلياتToolStripMenuItem,
             this.دليلمراكزالتحاليلToolStripMenuItem,
             this.دليلمراكزالاشعةToolStripMenuItem});
-            this.الدليلالشاملToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.placeholder;
-            this.الدليلالشاملToolStripMenuItem.Name = "الدليلالشاملToolStripMenuItem";
-            this.الدليلالشاملToolStripMenuItem.Size = new System.Drawing.Size(149, 39);
-            this.الدليلالشاملToolStripMenuItem.Text = "الدليل الشامل";
+            this.btnHomeLocations.Image = global::ClinicApp.Properties.Resources.placeholder;
+            this.btnHomeLocations.Name = "btnHomeLocations";
+            this.btnHomeLocations.Size = new System.Drawing.Size(149, 39);
+            this.btnHomeLocations.Text = "الدليل الشامل";
             // 
             // دليلالاطباءToolStripMenuItem
             // 
@@ -626,9 +634,9 @@ namespace ClinicApp.Forms
             this.btnShowRaysLoc.Text = "عرض دليل مراكز التحاليل";
             this.btnShowRaysLoc.Click += new System.EventHandler(this.btnShowRaysLoc_Click);
             // 
-            // الاعداداتالعامةToolStripMenuItem
+            // btnHomeSettings
             // 
-            this.الاعداداتالعامةToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnHomeSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnClinic,
             this.تخصصاتالاطباءToolStripMenuItem,
             this.الصيدليةToolStripMenuItem,
@@ -640,10 +648,10 @@ namespace ClinicApp.Forms
             this.نوعالحجزToolStripMenuItem,
             this.المحافظاتToolStripMenuItem,
             this.btnPrintingSettings});
-            this.الاعداداتالعامةToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("الاعداداتالعامةToolStripMenuItem.Image")));
-            this.الاعداداتالعامةToolStripMenuItem.Name = "الاعداداتالعامةToolStripMenuItem";
-            this.الاعداداتالعامةToolStripMenuItem.Size = new System.Drawing.Size(171, 39);
-            this.الاعداداتالعامةToolStripMenuItem.Text = "الاعدادات العامة";
+            this.btnHomeSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeSettings.Image")));
+            this.btnHomeSettings.Name = "btnHomeSettings";
+            this.btnHomeSettings.Size = new System.Drawing.Size(171, 39);
+            this.btnHomeSettings.Text = "الاعدادات العامة";
             // 
             // btnClinic
             // 
@@ -1003,14 +1011,6 @@ namespace ClinicApp.Forms
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // btnPatientRays
-            // 
-            this.btnPatientRays.Image = global::ClinicApp.Properties.Resources.x_rays;
-            this.btnPatientRays.Name = "btnPatientRays";
-            this.btnPatientRays.Size = new System.Drawing.Size(303, 40);
-            this.btnPatientRays.Text = "اشعة المريض";
-            this.btnPatientRays.Click += new System.EventHandler(this.btnPatientRays_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1025,6 +1025,7 @@ namespace ClinicApp.Forms
             this.Name = "FormMain";
             this.ShowIcon = false;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -1040,21 +1041,21 @@ namespace ClinicApp.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem btnDoctors;
-        private System.Windows.Forms.ToolStripMenuItem btnِAddDoctor;
+        private System.Windows.Forms.ToolStripMenuItem btnHomeDoctors;
+        private System.Windows.Forms.ToolStripMenuItem btnAddDoctor;
         private System.Windows.Forms.ToolStripMenuItem btnShowDoctors;
         private System.Windows.Forms.ToolStripMenuItem btnDoctorsTime;
-        private System.Windows.Forms.ToolStripMenuItem الموظفينToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem المستخدمينToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem المرضيToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem الحجوزاتToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem الكشوفاتToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem المصروفاتToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem الايراداتToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem الشركاتToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem المساعدالذكيToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem الدليلالشاملToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem الاعداداتالعامةToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnHomeEmployees;
+        private System.Windows.Forms.ToolStripMenuItem btnHomeUsers;
+        private System.Windows.Forms.ToolStripMenuItem btnHomePatients;
+        private System.Windows.Forms.ToolStripMenuItem btnHomeReservations;
+        private System.Windows.Forms.ToolStripMenuItem btnHomeExamination;
+        private System.Windows.Forms.ToolStripMenuItem btnHomeExpenses;
+        private System.Windows.Forms.ToolStripMenuItem btnHomeIncomes;
+        private System.Windows.Forms.ToolStripMenuItem btnHomeCompany;
+        private System.Windows.Forms.ToolStripMenuItem btnHomeSmartAssistant;
+        private System.Windows.Forms.ToolStripMenuItem btnHomeLocations;
+        private System.Windows.Forms.ToolStripMenuItem btnHomeSettings;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem btnAddDoctorTime;
         private System.Windows.Forms.ToolStripMenuItem btnAddEmployee;

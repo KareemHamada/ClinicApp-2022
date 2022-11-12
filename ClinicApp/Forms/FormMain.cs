@@ -1,4 +1,5 @@
-﻿using ClinicApp.Forms.Companies;
+﻿using ClinicApp.Classes;
+using ClinicApp.Forms.Companies;
 using ClinicApp.Forms.Doctors;
 using ClinicApp.Forms.Employees;
 using ClinicApp.Forms.Examination;
@@ -28,6 +29,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -42,6 +44,7 @@ namespace ClinicApp.Forms
         {
             InitializeComponent();
         }
+        private SqlCommand cmd;
 
         //private void btnSettings_Click(object sender, EventArgs e)
         //{
@@ -49,7 +52,7 @@ namespace ClinicApp.Forms
         //    frm.Show();
         //}
 
-      
+
 
         //private void btnEmployee_Click(object sender, EventArgs e)
         //{
@@ -63,11 +66,7 @@ namespace ClinicApp.Forms
         //    //frm.Show();
         //}
 
-        private void btnِAddDoctor_Click(object sender, EventArgs e)
-        {
-            FormDoctors frm = new FormDoctors();
-            frm.Show();
-        }
+   
 
         private void btnShowDoctors_Click(object sender, EventArgs e)
         {
@@ -428,6 +427,245 @@ namespace ClinicApp.Forms
         private void btnPatientRays_Click(object sender, EventArgs e)
         {
             FormPatientRays frm = new FormPatientRays();
+            frm.Show();
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+
+            if (adoClass.sqlcn.State != ConnectionState.Open)
+            {
+                adoClass.sqlcn.Open();
+            }
+            cmd = new SqlCommand("select * from Users where id = '" + declarations.userId  + "'", adoClass.sqlcn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            adoClass.sqlcn.Close();
+            if (dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                // for doctor
+                if(row["doctorHome"].ToString() == "False")
+                {
+                    btnHomeDoctors.Visible = false;
+                }
+                if (row["doctorAdd"].ToString() == "False")
+                {
+                    btnAddDoctor.Visible = false;
+                    btnAddDoctorTime.Visible = false;
+                }
+                if (row["doctorShow"].ToString() == "False")
+                {
+                    btnShowDoctors.Visible = false;
+                    btnDoctorsTime.Visible = false;
+                }
+
+                // for employee
+                if (row["employeeHome"].ToString() == "False")
+                {
+                    btnHomeEmployees.Visible = false;
+                }
+                if (row["employeeAdd"].ToString() == "False")
+                {
+                    btnAddEmployee.Visible = false;
+                }
+                if (row["employeeShow"].ToString() == "False")
+                {
+                    btnShowEmployees.Visible = false;
+                }
+                // for Users
+                if (row["userHome"].ToString() == "False")
+                {
+                    btnHomeUsers.Visible = false;
+                }
+                if (row["userAdd"].ToString() == "False")
+                {
+                    btnUsers.Visible = false;
+                }
+                if (row["userShow"].ToString() == "False")
+                {
+                    btnShowUsers.Visible = false;
+                }
+                // for patient
+                if (row["patientHome"].ToString() == "False")
+                {
+                    btnHomePatients.Visible = false;
+                }
+                if (row["patientAdd"].ToString() == "False")
+                {
+                    btnAddPatient.Visible = false;
+                }
+                if (row["patientShow"].ToString() == "False")
+                {
+                    btnShowPatient.Visible = false;
+                    btnVisitingPatient.Visible = false;
+                    btnPatientPerception.Visible = false;
+                    btnPatientAnalysis.Visible = false;
+                    btnPatientRays.Visible = false;
+                }
+
+
+                // for reservation
+                if (row["resHome"].ToString() == "False")
+                {
+                    btnHomeReservations.Visible = false;
+                }
+                if (row["resAdd"].ToString() == "False")
+                {
+                    btnAddReservations.Visible = false;
+                }
+                if (row["resShow"].ToString() == "False")
+                {
+                    btnShowReservations.Visible = false;
+                }
+
+                // for examination
+                if (row["examHome"].ToString() == "False")
+                {
+                    btnHomeExamination.Visible = false;
+                }
+                if (row["examAdd"].ToString() == "False")
+                {
+                    btnAddExamination.Visible = false;
+                }
+                if (row["examShow"].ToString() == "False")
+                {
+                    btnShowExamination.Visible = false;
+                }
+
+                // for expense
+                if (row["expenseHome"].ToString() == "False")
+                {
+                    btnHomeExpenses.Visible = false;
+                }
+                if (row["expenseAdd"].ToString() == "False")
+                {
+                    btnAddExpenses.Visible = false;
+                    btnAddExpensesType.Visible = false;
+                }
+                if (row["expenseShow"].ToString() == "False")
+                {
+                    btnShowExpenses.Visible = false;
+                    btnShowExpensesTypes.Visible = false;
+                }
+
+                // for income
+                if (row["incomeHome"].ToString() == "False")
+                {
+                    btnHomeIncomes.Visible = false;
+                }
+                //if (row["incomeAdd"].ToString() == "False")
+                //{
+                //    btnHomeIncomes.Visible = false;
+                //}
+                //if (row["incomeShow"].ToString() == "False")
+                //{
+                //    btnHomeIncomes.Visible = false;
+                //}
+                // for company
+                if (row["companyHome"].ToString() == "False")
+                {
+                    btnHomeCompany.Visible = false;
+                }
+                if (row["companyAdd"].ToString() == "False")
+                {
+                    btnCompany.Visible = false;
+                }
+                if (row["companyShow"].ToString() == "False")
+                {
+                    btnShowCompanies.Visible = false;
+                }
+                // for smart assistant
+                if (row["smartHome"].ToString() == "False")
+                {
+                    btnHomeSmartAssistant.Visible = false;
+                }
+                if (row["smartAdd"].ToString() == "False")
+                {
+                    btnAddToSmartAssistant.Visible = false;
+                }
+                if (row["smartShow"].ToString() == "False")
+                {
+                    btnShowSmartAssistant.Visible = false;
+                }
+                // for locations
+                if (row["locationHome"].ToString() == "False")
+                {
+                    btnHomeLocations.Visible = false;
+                }
+                if (row["locationAdd"].ToString() == "False")
+                {
+                    btnAddDoctorToLoc.Visible = false;
+                    btnAddHospitalsLoc.Visible = false;
+                    btnAddPharmacyLoc.Visible = false;
+                    btnAddAnalysisLoc.Visible = false;
+                    btnAddRaysLoc.Visible = false;
+                }
+                if (row["locationShow"].ToString() == "False")
+                {
+                    btnShowDoctorsLoc.Visible = false;
+                    btnShowHospitalsLoc.Visible = false;
+                    btnShowPharmacyLoc.Visible = false;
+                    btnShowAnalysisLoc.Visible = false;
+                    btnShowRaysLoc.Visible = false;
+                }
+
+                if (row["settingHome"].ToString() == "False")
+                {
+                    btnHomeSettings.Visible = false;
+                }
+                if (row["settingAdd"].ToString() == "False")
+                {
+                    btnAddClinic.Visible = false;
+                    btnAddSpecialization.Visible = false;
+                    btnAddDrug.Visible = false;
+                    btnAddMedicineUnit.Visible = false;
+                    btnAddDosage.Visible = false;
+                    btnAddDisease.Visible = false;
+                    btnAddSymptom.Visible = false;
+                    btnAddAnalysis.Visible = false;
+                    btnAddRay.Visible = false;
+                    btnAddFood.Visible = false;
+                    btnAddBookingType.Visible = false;
+                    btnAddGovernment.Visible = false;
+                    btnPrintingSettings.Visible = false;
+                }
+                if (row["settingShow"].ToString() == "False")
+                {
+                    btnShowClinics.Visible = false;
+                    btnShowSpecializations.Visible = false;
+                    btnShowDrugs.Visible = false;
+                    btnShowMedicineUnits.Visible = false;
+                    btnShowDosages.Visible = false;
+                    btnShowDiseases.Visible = false;
+                    btnShowSymptom.Visible = false;
+                    btnShowAnalysis.Visible = false;
+                    btnShowRays.Visible = false;
+                    btnShowFood.Visible = false;
+                    btnShowBookingType.Visible = false;
+                    btnShowGovernment.Visible = false;
+                }
+                //foreach (DataRow row in dt.Rows)
+                //{
+                //    dgvLoading.Rows.Add
+                //        (new object[]
+                //            {
+                //                row["notes"],
+                //                row["privilege"],
+                //                row["password"],
+                //                row["name"],
+                //                row["id"],
+                //            }
+                //        ); ;
+                //}
+            }
+        
+    }
+
+        private void btnAddDoctor_Click(object sender, EventArgs e)
+        {
+            FormDoctors frm = new FormDoctors();
             frm.Show();
         }
     }

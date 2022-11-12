@@ -156,7 +156,6 @@ namespace ClinicApp.Forms.Users
                     cmd.Parameters.AddWithValue("@companyShow", chbShowCompany.Checked.ToString());
                     cmd.Parameters.AddWithValue("@companyHome", chbHomeCompany.Checked.ToString());
 
-                    // smartAdd,smartDelete,smartUpdate,smartShow,smartHome
                     // smart assistant priviledge
                     cmd.Parameters.AddWithValue("@smartAdd", chbAddSmartAssistant.Checked.ToString());
                     cmd.Parameters.AddWithValue("@smartDelete", chbDeleteSmartAssistant.Checked.ToString());
@@ -164,7 +163,7 @@ namespace ClinicApp.Forms.Users
                     cmd.Parameters.AddWithValue("@smartShow", chbShowSmartAssistant.Checked.ToString());
                     cmd.Parameters.AddWithValue("@smartHome", chbHomeSmartAssistant.Checked.ToString());
 
-                    // locationAdd,locationDelete,locationUpdate,locationShow,locationHome
+                    
                     // locations priviledge
                     cmd.Parameters.AddWithValue("@locationAdd", chbAddLoc.Checked.ToString());
                     cmd.Parameters.AddWithValue("@locationDelete", chbDeleteLoc.Checked.ToString());
