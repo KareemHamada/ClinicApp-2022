@@ -243,6 +243,30 @@
     <Compile Include="Forms\Governments\FormShowGovernments.Designer.cs">
       <DependentUpon>FormShowGovernments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Income\FormAddIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Income\FormAddIncome.Designer.cs">
+      <DependentUpon>FormAddIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Income\FormAddIncomeType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Income\FormAddIncomeType.Designer.cs">
+      <DependentUpon>FormAddIncomeType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Income\FormShowIncomes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Income\FormShowIncomes.Designer.cs">
+      <DependentUpon>FormShowIncomes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Income\FormShowIncomesTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Income\FormShowIncomesTypes.Designer.cs">
+      <DependentUpon>FormShowIncomesTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Locations\Analysis\FormAddAnalysisLoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -572,6 +596,18 @@
     <EmbeddedResource Include="Forms\Expenses\FormShowExpensesTypes.resx">
       <DependentUpon>FormShowExpensesTypes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Income\FormAddIncome.resx">
+      <DependentUpon>FormAddIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Income\FormAddIncomeType.resx">
+      <DependentUpon>FormAddIncomeType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Income\FormShowIncomes.resx">
+      <DependentUpon>FormShowIncomes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Income\FormShowIncomesTypes.resx">
+      <DependentUpon>FormShowIncomesTypes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\patients\FormPatientAnalysis.resx">
       <DependentUpon>FormPatientAnalysis.cs</DependentUpon>
     </EmbeddedResource>
@@ -765,6 +801,7 @@
     <EmbeddedResource Include="Reports\ReportFormShowFoods.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowGovernments.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowHospitalsLoc.rdlc" />
+    <EmbeddedResource Include="Reports\ReportFormShowIncomesTypes.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowMedicineUnits.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowPatient.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowPharmacyLoc.rdlc" />

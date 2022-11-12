@@ -127,6 +127,10 @@ namespace ClinicApp.Forms
             this.btnShowGovernment = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPrintingSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.اضافةايرادجديدToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.عرضالايراداتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddIncomeType = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnShowIncomeTypes = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -435,6 +439,11 @@ namespace ClinicApp.Forms
             // 
             // btnHomeIncomes
             // 
+            this.btnHomeIncomes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.اضافةايرادجديدToolStripMenuItem,
+            this.عرضالايراداتToolStripMenuItem,
+            this.btnAddIncomeType,
+            this.btnShowIncomeTypes});
             this.btnHomeIncomes.Name = "btnHomeIncomes";
             this.btnHomeIncomes.Size = new System.Drawing.Size(99, 39);
             this.btnHomeIncomes.Text = "الايرادات";
@@ -1011,6 +1020,34 @@ namespace ClinicApp.Forms
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // اضافةايرادجديدToolStripMenuItem
+            // 
+            this.اضافةايرادجديدToolStripMenuItem.Name = "اضافةايرادجديدToolStripMenuItem";
+            this.اضافةايرادجديدToolStripMenuItem.Size = new System.Drawing.Size(263, 40);
+            this.اضافةايرادجديدToolStripMenuItem.Text = "اضافة ايراد جديد";
+            // 
+            // عرضالايراداتToolStripMenuItem
+            // 
+            this.عرضالايراداتToolStripMenuItem.Name = "عرضالايراداتToolStripMenuItem";
+            this.عرضالايراداتToolStripMenuItem.Size = new System.Drawing.Size(263, 40);
+            this.عرضالايراداتToolStripMenuItem.Text = "عرض الايرادات";
+            // 
+            // btnAddIncomeType
+            // 
+            this.btnAddIncomeType.Image = global::ClinicApp.Properties.Resources.plus;
+            this.btnAddIncomeType.Name = "btnAddIncomeType";
+            this.btnAddIncomeType.Size = new System.Drawing.Size(263, 40);
+            this.btnAddIncomeType.Text = "اضافة نوع ايراد جديد";
+            this.btnAddIncomeType.Click += new System.EventHandler(this.btnAddIncomeType_Click);
+            // 
+            // btnShowIncomeTypes
+            // 
+            this.btnShowIncomeTypes.Image = global::ClinicApp.Properties.Resources.online_payment;
+            this.btnShowIncomeTypes.Name = "btnShowIncomeTypes";
+            this.btnShowIncomeTypes.Size = new System.Drawing.Size(263, 40);
+            this.btnShowIncomeTypes.Text = "عرض انواع الايرادات";
+            this.btnShowIncomeTypes.Click += new System.EventHandler(this.btnShowIncomeTypes_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1135,5 +1172,9 @@ namespace ClinicApp.Forms
         private System.Windows.Forms.ToolStripMenuItem btnPatientPerception;
         private System.Windows.Forms.ToolStripMenuItem btnPatientAnalysis;
         private System.Windows.Forms.ToolStripMenuItem btnPatientRays;
+        private System.Windows.Forms.ToolStripMenuItem اضافةايرادجديدToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem عرضالايراداتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnAddIncomeType;
+        private System.Windows.Forms.ToolStripMenuItem btnShowIncomeTypes;
     }
 }

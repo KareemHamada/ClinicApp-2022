@@ -1,7 +1,7 @@
 ﻿
-namespace ClinicApp.Forms.Expenses
+namespace ClinicApp.Forms.Income
 {
-    partial class FormAddExpensesType
+    partial class FormAddIncomeType
     {
         /// <summary>
         /// Required designer variable.
@@ -29,25 +29,25 @@ namespace ClinicApp.Forms.Expenses
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddExpensesType));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddIncomeType));
             this.pnlParient = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnAdd = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNotes = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAdd = new System.Windows.Forms.ToolStripButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnlParient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +67,7 @@ namespace ClinicApp.Forms.Expenses
             this.pnlParient.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.92625F));
             this.pnlParient.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 102F));
             this.pnlParient.Size = new System.Drawing.Size(732, 348);
-            this.pnlParient.TabIndex = 13;
+            this.pnlParient.TabIndex = 14;
             // 
             // tableLayoutPanel1
             // 
@@ -84,16 +84,27 @@ namespace ClinicApp.Forms.Expenses
             this.tableLayoutPanel1.Size = new System.Drawing.Size(726, 55);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(659, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 49);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(186, 2);
+            this.label2.Location = new System.Drawing.Point(207, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(284, 51);
+            this.label2.Size = new System.Drawing.Size(242, 51);
             this.label2.TabIndex = 15;
-            this.label2.Text = "اضافة نوع مصروف جديد";
+            this.label2.Text = "اضافة نوع ايراد جديد";
             // 
             // toolStrip1
             // 
@@ -110,12 +121,25 @@ namespace ClinicApp.Forms.Expenses
             this.toolStrip1.TabIndex = 17;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnAdd.Font = new System.Drawing.Font("Arabic Typesetting", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(68, 100);
+            this.btnAdd.Text = "حفظ";
+            this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.78185F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.21815F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtName, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 1, 1);
@@ -136,11 +160,11 @@ namespace ClinicApp.Forms.Expenses
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(506, 27);
+            this.label1.Location = new System.Drawing.Point(516, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 35);
+            this.label1.Size = new System.Drawing.Size(82, 35);
             this.label1.TabIndex = 9;
-            this.label1.Text = "نوع المصروف";
+            this.label1.Text = "نوع الايراد";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtName
@@ -151,7 +175,7 @@ namespace ClinicApp.Forms.Expenses
             this.txtName.ForeColor = System.Drawing.Color.DimGray;
             this.txtName.Location = new System.Drawing.Point(3, 24);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(470, 41);
+            this.txtName.Size = new System.Drawing.Size(471, 41);
             this.txtName.TabIndex = 33;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -160,7 +184,7 @@ namespace ClinicApp.Forms.Expenses
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(514, 116);
+            this.label4.Location = new System.Drawing.Point(515, 116);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 35);
             this.label4.TabIndex = 35;
@@ -175,42 +199,18 @@ namespace ClinicApp.Forms.Expenses
             this.txtNotes.ForeColor = System.Drawing.Color.DimGray;
             this.txtNotes.Location = new System.Drawing.Point(3, 113);
             this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(470, 41);
+            this.txtNotes.Size = new System.Drawing.Size(471, 41);
             this.txtNotes.TabIndex = 37;
             this.txtNotes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(659, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 49);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnAdd.Font = new System.Drawing.Font("Arabic Typesetting", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(68, 100);
-            this.btnAdd.Text = "حفظ";
-            this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::ClinicApp.Properties.Resources.online_payment;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(639, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(640, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(84, 83);
+            this.pictureBox2.Size = new System.Drawing.Size(83, 83);
             this.pictureBox2.TabIndex = 38;
             this.pictureBox2.TabStop = false;
             // 
@@ -219,30 +219,30 @@ namespace ClinicApp.Forms.Expenses
             this.pictureBox3.BackgroundImage = global::ClinicApp.Properties.Resources.notes;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Location = new System.Drawing.Point(639, 92);
+            this.pictureBox3.Location = new System.Drawing.Point(640, 92);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(84, 83);
+            this.pictureBox3.Size = new System.Drawing.Size(83, 83);
             this.pictureBox3.TabIndex = 39;
             this.pictureBox3.TabStop = false;
             // 
-            // FormAddExpensesType
+            // FormAddIncomeType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 348);
             this.Controls.Add(this.pnlParient);
-            this.Name = "FormAddExpensesType";
+            this.Name = "FormAddIncomeType";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnlParient.ResumeLayout(false);
             this.pnlParient.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);

@@ -5,6 +5,7 @@ using ClinicApp.Forms.Employees;
 using ClinicApp.Forms.Examination;
 using ClinicApp.Forms.Expenses;
 using ClinicApp.Forms.Governments;
+using ClinicApp.Forms.Income;
 using ClinicApp.Forms.Locations.Analysis;
 using ClinicApp.Forms.Locations.Doctors;
 using ClinicApp.Forms.Locations.Hospitals;
@@ -653,6 +654,18 @@ namespace ClinicApp.Forms
         private void btnAddDoctor_Click(object sender, EventArgs e)
         {
             FormDoctors frm = new FormDoctors();
+            frm.Show();
+        }
+
+        private void btnAddIncomeType_Click(object sender, EventArgs e)
+        {
+            FormAddIncomeType frm = new FormAddIncomeType();
+            frm.Show();
+        }
+
+        private void btnShowIncomeTypes_Click(object sender, EventArgs e)
+        {
+            FormShowIncomesTypes frm = new FormShowIncomesTypes();
             frm.Show();
         }
     }
