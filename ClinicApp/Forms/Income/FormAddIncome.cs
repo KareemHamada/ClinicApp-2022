@@ -23,7 +23,7 @@ namespace ClinicApp.Forms.Income
         public string id = "";
         public string comboIncomeTypeText = "";
 
-        public FormShowIncomes refreshForm;
+        //public FormShowIncomes refreshForm;
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (id == "")
@@ -126,7 +126,7 @@ namespace ClinicApp.Forms.Income
                 }
 
                 this.Close();
-                refreshForm.loadTable("select Income.id,patient.name as patient,Income.dateTime,Income.money,Income.notes,Users.name as userName,VisitingType.name as visitingType from Income,Users,VisitingType,patient where Income.VisitingTypeId = VisitingType.id and Income.userId = Users.id and and Income.patient.id = patient.id");
+                //refreshForm.loadTable("select Income.id,patient.name as patient,Income.dateTime,Income.money,Income.notes,Users.name as userName,VisitingType.name as visitingType from Income,Users,VisitingType,patient where Income.VisitingTypeId = VisitingType.id and Income.userId = Users.id and and Income.patient.id = patient.id");
             }
 
 
@@ -140,12 +140,12 @@ namespace ClinicApp.Forms.Income
 
         private void FormAddIncome_Load(object sender, EventArgs e)
         {
-            // for combo ExpensesType
-            Helper.fillComboBox(comboExpensesType, "Select id,name from ExpensesTypes", "name", "id");
-            dtpDateTime.Value = DateTime.Now;
+            //// for combo ExpensesType
+            //Helper.fillComboBox(comboExpensesType, "Select id,name from ExpensesTypes", "name", "id");
+            //dtpDateTime.Value = DateTime.Now;
 
 
-            comboExpensesType.Text = comboExpensesTypeText;
+            //comboExpensesType.Text = comboExpensesTypeText;
         }
 
         private void txtMoney_KeyPress(object sender, KeyPressEventArgs e)

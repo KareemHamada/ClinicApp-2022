@@ -255,12 +255,6 @@
     <Compile Include="Forms\Income\FormAddIncomeType.Designer.cs">
       <DependentUpon>FormAddIncomeType.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Income\FormShowIncomes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Income\FormShowIncomes.Designer.cs">
-      <DependentUpon>FormShowIncomes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Income\FormShowIncomesTypes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -601,9 +595,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Income\FormAddIncomeType.resx">
       <DependentUpon>FormAddIncomeType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Income\FormShowIncomes.resx">
-      <DependentUpon>FormShowIncomes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Income\FormShowIncomesTypes.resx">
       <DependentUpon>FormShowIncomesTypes.cs</DependentUpon>

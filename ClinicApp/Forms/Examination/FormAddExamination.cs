@@ -110,7 +110,7 @@ namespace ClinicApp.Forms.Examination
             tabControl.TabPages.Remove(raysPage);
             tabControl.TabPages.Remove(foodPage);
             tabControl.TabPages.Remove(contrastingMedicinePage);
-            tabControl.TabPages.Remove(smartAssistantPage);
+            //tabControl.TabPages.Remove(smartAssistantPage);
             tabControl.TabPages.Remove(printingPage);
 
 
@@ -192,7 +192,7 @@ namespace ClinicApp.Forms.Examination
                 tabControl.TabPages.Add(raysPage);
                 tabControl.TabPages.Add(foodPage);
                 tabControl.TabPages.Add(contrastingMedicinePage);
-                tabControl.TabPages.Add(smartAssistantPage);
+                //tabControl.TabPages.Add(smartAssistantPage);
                 tabControl.TabPages.Add(printingPage);
 
                 btnOpenExamination.Visible = false;
@@ -991,7 +991,7 @@ namespace ClinicApp.Forms.Examination
 
         private void btnAddNewMedicicne_Click(object sender, EventArgs e)
         {
-            // for combo Food
+            // for combo Contrasting Medicines
             FormAddDrug frm = new FormAddDrug();
             if (frm.ShowDialog() == DialogResult.OK)
             {
@@ -1001,11 +1001,11 @@ namespace ClinicApp.Forms.Examination
 
         private void btnAddNewPerceptionMedicine_Click(object sender, EventArgs e)
         {
-            // for combo Food
+            // for combo Drug
             FormAddDrug frm = new FormAddDrug();
             if (frm.ShowDialog() == DialogResult.OK)
             {
-                Helper.fillComboBox(comboContrastingMedicines, "Select id,name from Drugs", "name", "id");
+                Helper.fillComboBox(comboMedicine, "Select id,name from Drugs", "name", "id");
             }
         }
 

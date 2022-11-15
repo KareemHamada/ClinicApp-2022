@@ -319,11 +319,7 @@ namespace ClinicApp.Forms.Reservations
                 "and Clinics.name ='" + comboClinic.Text + "' " +
                 "and Doctors.name  ='" + comboDoctor.Text + "' " +
                 "and Reservations.date = '" + dateOfReservations.Value + "' ");
-            
-            
-            
-            /*"' " +*/
-            //"and Reservations.dateTime = '" + dateOfReservations.Text
+
 
         }
 

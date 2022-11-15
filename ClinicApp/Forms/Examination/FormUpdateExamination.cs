@@ -1,4 +1,10 @@
 ﻿using ClinicApp.Classes;
+using ClinicApp.Forms.Settings.Analysis;
+using ClinicApp.Forms.Settings.Diseases;
+using ClinicApp.Forms.Settings.Foods;
+using ClinicApp.Forms.Settings.Pharmacy;
+using ClinicApp.Forms.Settings.Rays;
+using ClinicApp.Forms.Settings.Symptoms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -468,6 +474,7 @@ namespace ClinicApp.Forms.Examination
             Close();
         }
 
+        // kareem
         private void btnAddDiseases_Click(object sender, EventArgs e)
         {
             if (comboDiseases.Text != "")
@@ -945,15 +952,110 @@ namespace ClinicApp.Forms.Examination
             //}
         }
 
+        private void btnAddToCombo_Click(object sender, EventArgs e)
+        {
+            FormAddDisease frm = new FormAddDisease();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                // for combo Diseases
+                Helper.fillComboBox(comboDiseases, "Select id,name from Diseases", "name", "id");
+            }
+        }
+
+        private void btnAddToComboSymptoms_Click(object sender, EventArgs e)
+        {
+            FormAddSymptom frm = new FormAddSymptom();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                // for combo Symptoms
+                Helper.fillComboBox(ComboSymptoms, "Select id,name from Symptoms", "name", "id");
+            }
+        }
+
+        private void btnAddNewPerceptionMedicine_Click(object sender, EventArgs e)
+        {
+            // for combo Drug
+            FormAddDrug frm = new FormAddDrug();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                Helper.fillComboBox(comboMedicine, "Select id,name from Drugs", "name", "id");
+            }
+        }
+
+        private void btnAddTimeTakeMedicine_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddMedicineUnit_Click(object sender, EventArgs e)
+        {
+            // for combo medicineUnit
+            FormAddMedicineUnit frm = new FormAddMedicineUnit();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                Helper.fillComboBox(comboMedicineUnit, "Select id,name from medicineUnit", "name", "id");
+            }
+        }
+
+        private void btnAddDosages_Click(object sender, EventArgs e)
+        {
+            // for combo Dosages
+            FormAddDosage frm = new FormAddDosage();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                Helper.fillComboBox(comboDosages, "Select id,name from Dosages", "name", "id");
+            }
+        }
+
+        private void btnNewAddAnalysis_Click(object sender, EventArgs e)
+        {
+            // for combo Analysis
+            FormAddAnalysis frm = new FormAddAnalysis();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                Helper.fillComboBox(comboAnalysis, "Select id,name from Analysis", "name", "id");
+            }
+        }
+
+        private void btnAddNewRays_Click(object sender, EventArgs e)
+        {
+            // for combo rays
+            FormAddRay frm = new FormAddRay();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                Helper.fillComboBox(comboRays, "Select id,name from Rays", "name", "id");
+            }
+        }
+
+        private void btnAddNewFood_Click(object sender, EventArgs e)
+        {
+            // for combo Food
+            FormAddFood frm = new FormAddFood();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                Helper.fillComboBox(comboFood, "Select id,name from Food", "name", "id");
+            }
+        }
+
+        private void btnAddNewMedicicne_Click(object sender, EventArgs e)
+        {
+            // for combo Contrasting Medicines
+            FormAddDrug frm = new FormAddDrug();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                Helper.fillComboBox(comboContrastingMedicines, "Select id,name from Drugs", "name", "id");
+            }
+        }
+
 
         //private byte[] uploadFile(string file)
         //{
-            //FileStream fstream = File.OpenRead(file);
-            //byte[] content = new byte[fstream.Length];
-            //fstream.Read(content, 0, (int)fstream.Length);
-            //fstream.Close();
+        //FileStream fstream = File.OpenRead(file);
+        //byte[] content = new byte[fstream.Length];
+        //fstream.Read(content, 0, (int)fstream.Length);
+        //fstream.Close();
 
-            //return content;
+        //return content;
         //}
     }
 }
