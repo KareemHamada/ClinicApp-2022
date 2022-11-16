@@ -242,11 +242,11 @@ namespace ClinicApp.Forms.Examination
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
             this.btnPrint = new System.Windows.Forms.Button();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chbPrintContrastingMedicines = new System.Windows.Forms.CheckBox();
+            this.chbPrintFoods = new System.Windows.Forms.CheckBox();
+            this.chbPrintRays = new System.Windows.Forms.CheckBox();
+            this.chbPrintAnalysis = new System.Windows.Forms.CheckBox();
+            this.chbPrintPerception = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tlpContainer.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -2807,11 +2807,11 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel44.Controls.Add(this.btnPrint, 0, 6);
-            this.tableLayoutPanel44.Controls.Add(this.checkBox6, 0, 5);
-            this.tableLayoutPanel44.Controls.Add(this.checkBox5, 0, 4);
-            this.tableLayoutPanel44.Controls.Add(this.checkBox4, 0, 3);
-            this.tableLayoutPanel44.Controls.Add(this.checkBox3, 0, 2);
-            this.tableLayoutPanel44.Controls.Add(this.checkBox2, 0, 1);
+            this.tableLayoutPanel44.Controls.Add(this.chbPrintContrastingMedicines, 0, 5);
+            this.tableLayoutPanel44.Controls.Add(this.chbPrintFoods, 0, 4);
+            this.tableLayoutPanel44.Controls.Add(this.chbPrintRays, 0, 3);
+            this.tableLayoutPanel44.Controls.Add(this.chbPrintAnalysis, 0, 2);
+            this.tableLayoutPanel44.Controls.Add(this.chbPrintPerception, 0, 1);
             this.tableLayoutPanel44.Controls.Add(this.checkBox1, 0, 0);
             this.tableLayoutPanel44.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel44.Location = new System.Drawing.Point(3, 38);
@@ -2842,60 +2842,60 @@ namespace ClinicApp.Forms.Examination
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
-            // checkBox6
+            // chbPrintContrastingMedicines
             // 
-            this.checkBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(3, 316);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(608, 39);
-            this.checkBox6.TabIndex = 6;
-            this.checkBox6.Text = "طباعة الادوية المتعارضة";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.chbPrintContrastingMedicines.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbPrintContrastingMedicines.AutoSize = true;
+            this.chbPrintContrastingMedicines.Location = new System.Drawing.Point(3, 316);
+            this.chbPrintContrastingMedicines.Name = "chbPrintContrastingMedicines";
+            this.chbPrintContrastingMedicines.Size = new System.Drawing.Size(608, 39);
+            this.chbPrintContrastingMedicines.TabIndex = 6;
+            this.chbPrintContrastingMedicines.Text = "طباعة الادوية المتعارضة";
+            this.chbPrintContrastingMedicines.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // chbPrintFoods
             // 
-            this.checkBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(3, 255);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(608, 39);
-            this.checkBox5.TabIndex = 5;
-            this.checkBox5.Text = "طباعة الاكل";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.chbPrintFoods.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbPrintFoods.AutoSize = true;
+            this.chbPrintFoods.Location = new System.Drawing.Point(3, 255);
+            this.chbPrintFoods.Name = "chbPrintFoods";
+            this.chbPrintFoods.Size = new System.Drawing.Size(608, 39);
+            this.chbPrintFoods.TabIndex = 5;
+            this.chbPrintFoods.Text = "طباعة الاكل";
+            this.chbPrintFoods.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chbPrintRays
             // 
-            this.checkBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(3, 194);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(608, 39);
-            this.checkBox4.TabIndex = 4;
-            this.checkBox4.Text = "طباعة الاشعة";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chbPrintRays.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbPrintRays.AutoSize = true;
+            this.chbPrintRays.Location = new System.Drawing.Point(3, 194);
+            this.chbPrintRays.Name = "chbPrintRays";
+            this.chbPrintRays.Size = new System.Drawing.Size(608, 39);
+            this.chbPrintRays.TabIndex = 4;
+            this.chbPrintRays.Text = "طباعة الاشعة";
+            this.chbPrintRays.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chbPrintAnalysis
             // 
-            this.checkBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(3, 133);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(608, 39);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "طباعة التحاليل";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chbPrintAnalysis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbPrintAnalysis.AutoSize = true;
+            this.chbPrintAnalysis.Location = new System.Drawing.Point(3, 133);
+            this.chbPrintAnalysis.Name = "chbPrintAnalysis";
+            this.chbPrintAnalysis.Size = new System.Drawing.Size(608, 39);
+            this.chbPrintAnalysis.TabIndex = 3;
+            this.chbPrintAnalysis.Text = "طباعة التحاليل";
+            this.chbPrintAnalysis.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chbPrintPerception
             // 
-            this.checkBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(3, 72);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(608, 39);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "طباعة الروشتة العلاجية";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chbPrintPerception.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chbPrintPerception.AutoSize = true;
+            this.chbPrintPerception.Location = new System.Drawing.Point(3, 72);
+            this.chbPrintPerception.Name = "chbPrintPerception";
+            this.chbPrintPerception.Size = new System.Drawing.Size(608, 39);
+            this.chbPrintPerception.TabIndex = 2;
+            this.chbPrintPerception.Text = "طباعة الروشتة العلاجية";
+            this.chbPrintPerception.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
@@ -3215,11 +3215,11 @@ namespace ClinicApp.Forms.Examination
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel44;
         private System.Windows.Forms.Button btnPrint;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chbPrintContrastingMedicines;
+        private System.Windows.Forms.CheckBox chbPrintFoods;
+        private System.Windows.Forms.CheckBox chbPrintRays;
+        private System.Windows.Forms.CheckBox chbPrintAnalysis;
+        private System.Windows.Forms.CheckBox chbPrintPerception;
         private System.Windows.Forms.CheckBox checkBox1;
     }
 }

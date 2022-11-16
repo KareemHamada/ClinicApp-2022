@@ -319,6 +319,17 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="dtShowPerceptionMedicine" msprop:Generator_TableClassName="dtShowPerceptionMedicineDataTable" msprop:Generator_TableVarName="tabledtShowPerceptionMedicine" msprop:Generator_TablePropName="dtShowPerceptionMedicine" msprop:Generator_RowDeletingName="dtShowPerceptionMedicineRowDeleting" msprop:Generator_RowChangingName="dtShowPerceptionMedicineRowChanging" msprop:Generator_RowEvHandlerName="dtShowPerceptionMedicineRowChangeEventHandler" msprop:Generator_RowDeletedName="dtShowPerceptionMedicineRowDeleted" msprop:Generator_UserTableName="dtShowPerceptionMedicine" msprop:Generator_RowChangedName="dtShowPerceptionMedicineRowChanged" msprop:Generator_RowEvArgName="dtShowPerceptionMedicineRowChangeEvent" msprop:Generator_RowClassName="dtShowPerceptionMedicineRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="medicine" msprop:Generator_ColumnVarNameInTable="columnmedicine" msprop:Generator_ColumnPropNameInRow="medicine" msprop:Generator_ColumnPropNameInTable="medicineColumn" msprop:Generator_UserColumnName="medicine" type="xs:string" minOccurs="0" />
+              <xs:element name="timesTakeMedicine" msprop:Generator_ColumnVarNameInTable="columntimesTakeMedicine" msprop:Generator_ColumnPropNameInRow="timesTakeMedicine" msprop:Generator_ColumnPropNameInTable="timesTakeMedicineColumn" msprop:Generator_UserColumnName="timesTakeMedicine" type="xs:string" minOccurs="0" />
+              <xs:element name="unit" msprop:Generator_ColumnVarNameInTable="columnunit" msprop:Generator_ColumnPropNameInRow="unit" msprop:Generator_ColumnPropNameInTable="unitColumn" msprop:Generator_UserColumnName="unit" type="xs:string" minOccurs="0" />
+              <xs:element name="dosage" msprop:Generator_ColumnVarNameInTable="columndosage" msprop:Generator_ColumnPropNameInRow="dosage" msprop:Generator_ColumnPropNameInTable="dosageColumn" msprop:Generator_UserColumnName="dosage" type="xs:string" minOccurs="0" />
+              <xs:element name="notes" msprop:Generator_ColumnVarNameInTable="columnnotes" msprop:Generator_ColumnPropNameInRow="notes" msprop:Generator_ColumnPropNameInTable="notesColumn" msprop:Generator_UserColumnName="notes" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>
