@@ -5,6 +5,8 @@ using ClinicApp.Forms.Settings.Foods;
 using ClinicApp.Forms.Settings.Pharmacy;
 using ClinicApp.Forms.Settings.Rays;
 using ClinicApp.Forms.Settings.Symptoms;
+using ClinicApp.Tools;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -1007,6 +1009,11 @@ namespace ClinicApp.Forms.Examination
             {
                 Helper.fillComboBox(comboMedicine, "Select id,name from Drugs", "name", "id");
             }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            
         }
 
         //private byte[] uploadFile(string file)

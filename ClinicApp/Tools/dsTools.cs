@@ -4,6 +4,10 @@
 
     partial class dsTools
     {
+        partial class dtExaminationAnalysisDataTable
+        {
+        }
+
         partial class dtShowDosagesDataTable
         {
         }

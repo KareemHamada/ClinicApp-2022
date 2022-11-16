@@ -802,6 +802,7 @@
     <EmbeddedResource Include="Reports\ReportFormShowSpecializations.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowSymptoms.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormVisitingPatient.rdlc" />
+    <EmbeddedResource Include="Reports\ReportShowExamination.rdlc" />
     <None Include="ClinicApp_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

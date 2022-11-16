@@ -239,6 +239,15 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.label52 = new System.Windows.Forms.Label();
             this.printingPage = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tlpContainer.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -321,6 +330,9 @@ namespace ClinicApp.Forms.Examination
             ((System.ComponentModel.ISupportInitialize)(this.dgvContrastingMedicines)).BeginInit();
             this.tableLayoutPanel42.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            this.printingPage.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tableLayoutPanel44.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlpContainer
@@ -1220,7 +1232,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.45238F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.54762F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
             this.tableLayoutPanel11.Controls.Add(this.label17, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.label18, 1, 1);
             this.tableLayoutPanel11.Controls.Add(this.label19, 1, 2);
@@ -1265,7 +1277,7 @@ namespace ClinicApp.Forms.Examination
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(990, 11);
+            this.label17.Location = new System.Drawing.Point(988, 11);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(105, 44);
             this.label17.TabIndex = 9;
@@ -1277,7 +1289,7 @@ namespace ClinicApp.Forms.Examination
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(1004, 77);
+            this.label18.Location = new System.Drawing.Point(1002, 77);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(77, 44);
             this.label18.TabIndex = 12;
@@ -1289,7 +1301,7 @@ namespace ClinicApp.Forms.Examination
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(977, 143);
+            this.label19.Location = new System.Drawing.Point(975, 143);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(131, 44);
             this.label19.TabIndex = 13;
@@ -1301,7 +1313,7 @@ namespace ClinicApp.Forms.Examination
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(981, 209);
+            this.label20.Location = new System.Drawing.Point(979, 209);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(122, 44);
             this.label20.TabIndex = 30;
@@ -1317,7 +1329,7 @@ namespace ClinicApp.Forms.Examination
             this.txtBodyTemperature.Location = new System.Drawing.Point(3, 210);
             this.txtBodyTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBodyTemperature.Name = "txtBodyTemperature";
-            this.txtBodyTemperature.Size = new System.Drawing.Size(911, 41);
+            this.txtBodyTemperature.Size = new System.Drawing.Size(909, 41);
             this.txtBodyTemperature.TabIndex = 37;
             this.txtBodyTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1330,7 +1342,7 @@ namespace ClinicApp.Forms.Examination
             this.txtSugar.Location = new System.Drawing.Point(3, 276);
             this.txtSugar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSugar.Name = "txtSugar";
-            this.txtSugar.Size = new System.Drawing.Size(911, 41);
+            this.txtSugar.Size = new System.Drawing.Size(909, 41);
             this.txtSugar.TabIndex = 38;
             this.txtSugar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1343,7 +1355,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationPreviousOperations.Location = new System.Drawing.Point(3, 409);
             this.txtExaminationPreviousOperations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtExaminationPreviousOperations.Name = "txtExaminationPreviousOperations";
-            this.txtExaminationPreviousOperations.Size = new System.Drawing.Size(911, 41);
+            this.txtExaminationPreviousOperations.Size = new System.Drawing.Size(909, 41);
             this.txtExaminationPreviousOperations.TabIndex = 40;
             this.txtExaminationPreviousOperations.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1356,7 +1368,7 @@ namespace ClinicApp.Forms.Examination
             this.txtBloodPressure.Location = new System.Drawing.Point(3, 12);
             this.txtBloodPressure.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBloodPressure.Name = "txtBloodPressure";
-            this.txtBloodPressure.Size = new System.Drawing.Size(911, 41);
+            this.txtBloodPressure.Size = new System.Drawing.Size(909, 41);
             this.txtBloodPressure.TabIndex = 14;
             this.txtBloodPressure.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1365,7 +1377,7 @@ namespace ClinicApp.Forms.Examination
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(1006, 275);
+            this.label21.Location = new System.Drawing.Point(1004, 275);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(72, 44);
             this.label21.TabIndex = 32;
@@ -1377,7 +1389,7 @@ namespace ClinicApp.Forms.Examination
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(1010, 341);
+            this.label22.Location = new System.Drawing.Point(1008, 341);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(65, 44);
             this.label22.TabIndex = 33;
@@ -1389,7 +1401,7 @@ namespace ClinicApp.Forms.Examination
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(973, 408);
+            this.label23.Location = new System.Drawing.Point(971, 408);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(139, 44);
             this.label23.TabIndex = 34;
@@ -1401,7 +1413,7 @@ namespace ClinicApp.Forms.Examination
             this.txtHeartBeats.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHeartBeats.Location = new System.Drawing.Point(3, 144);
             this.txtHeartBeats.Name = "txtHeartBeats";
-            this.txtHeartBeats.Size = new System.Drawing.Size(911, 42);
+            this.txtHeartBeats.Size = new System.Drawing.Size(909, 42);
             this.txtHeartBeats.TabIndex = 50;
             this.txtHeartBeats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1410,7 +1422,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationWeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtExaminationWeight.Location = new System.Drawing.Point(3, 342);
             this.txtExaminationWeight.Name = "txtExaminationWeight";
-            this.txtExaminationWeight.Size = new System.Drawing.Size(911, 42);
+            this.txtExaminationWeight.Size = new System.Drawing.Size(909, 42);
             this.txtExaminationWeight.TabIndex = 51;
             this.txtExaminationWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1419,7 +1431,7 @@ namespace ClinicApp.Forms.Examination
             this.txtBreathing.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBreathing.Location = new System.Drawing.Point(3, 78);
             this.txtBreathing.Name = "txtBreathing";
-            this.txtBreathing.Size = new System.Drawing.Size(911, 42);
+            this.txtBreathing.Size = new System.Drawing.Size(909, 42);
             this.txtBreathing.TabIndex = 52;
             this.txtBreathing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1428,10 +1440,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox4.BackgroundImage = global::ClinicApp.Properties.Resources.blood;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Location = new System.Drawing.Point(1171, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(1169, 2);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(131, 62);
+            this.pictureBox4.Size = new System.Drawing.Size(133, 62);
             this.pictureBox4.TabIndex = 53;
             this.pictureBox4.TabStop = false;
             // 
@@ -1440,10 +1452,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox5.BackgroundImage = global::ClinicApp.Properties.Resources.breathing;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Location = new System.Drawing.Point(1171, 68);
+            this.pictureBox5.Location = new System.Drawing.Point(1169, 68);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(131, 62);
+            this.pictureBox5.Size = new System.Drawing.Size(133, 62);
             this.pictureBox5.TabIndex = 54;
             this.pictureBox5.TabStop = false;
             // 
@@ -1452,10 +1464,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox6.BackgroundImage = global::ClinicApp.Properties.Resources.pulse;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Location = new System.Drawing.Point(1171, 134);
+            this.pictureBox6.Location = new System.Drawing.Point(1169, 134);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(131, 62);
+            this.pictureBox6.Size = new System.Drawing.Size(133, 62);
             this.pictureBox6.TabIndex = 55;
             this.pictureBox6.TabStop = false;
             // 
@@ -1464,10 +1476,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox7.BackgroundImage = global::ClinicApp.Properties.Resources.thermometer;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Location = new System.Drawing.Point(1171, 200);
+            this.pictureBox7.Location = new System.Drawing.Point(1169, 200);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(131, 62);
+            this.pictureBox7.Size = new System.Drawing.Size(133, 62);
             this.pictureBox7.TabIndex = 56;
             this.pictureBox7.TabStop = false;
             // 
@@ -1476,10 +1488,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox8.BackgroundImage = global::ClinicApp.Properties.Resources.sugar_cube;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Location = new System.Drawing.Point(1171, 266);
+            this.pictureBox8.Location = new System.Drawing.Point(1169, 266);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(131, 62);
+            this.pictureBox8.Size = new System.Drawing.Size(133, 62);
             this.pictureBox8.TabIndex = 57;
             this.pictureBox8.TabStop = false;
             // 
@@ -1488,10 +1500,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox9.BackgroundImage = global::ClinicApp.Properties.Resources.weight;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Location = new System.Drawing.Point(1171, 332);
+            this.pictureBox9.Location = new System.Drawing.Point(1169, 332);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(131, 62);
+            this.pictureBox9.Size = new System.Drawing.Size(133, 62);
             this.pictureBox9.TabIndex = 58;
             this.pictureBox9.TabStop = false;
             // 
@@ -1500,10 +1512,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox10.BackgroundImage = global::ClinicApp.Properties.Resources.anesthesia;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Location = new System.Drawing.Point(1171, 398);
+            this.pictureBox10.Location = new System.Drawing.Point(1169, 398);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(131, 64);
+            this.pictureBox10.Size = new System.Drawing.Size(133, 64);
             this.pictureBox10.TabIndex = 59;
             this.pictureBox10.TabStop = false;
             // 
@@ -1875,7 +1887,7 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel18.ColumnCount = 3;
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.45238F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.54762F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
             this.tableLayoutPanel18.Controls.Add(this.label31, 1, 0);
             this.tableLayoutPanel18.Controls.Add(this.label32, 1, 1);
             this.tableLayoutPanel18.Controls.Add(this.label33, 1, 2);
@@ -1908,7 +1920,7 @@ namespace ClinicApp.Forms.Examination
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(977, 2);
+            this.label31.Location = new System.Drawing.Point(975, 2);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(130, 44);
             this.label31.TabIndex = 9;
@@ -1920,7 +1932,7 @@ namespace ClinicApp.Forms.Examination
             this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(963, 118);
+            this.label32.Location = new System.Drawing.Point(961, 118);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(159, 44);
             this.label32.TabIndex = 12;
@@ -1932,7 +1944,7 @@ namespace ClinicApp.Forms.Examination
             this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(977, 267);
+            this.label33.Location = new System.Drawing.Point(975, 267);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(131, 44);
             this.label33.TabIndex = 13;
@@ -1944,7 +1956,7 @@ namespace ClinicApp.Forms.Examination
             this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Arabic Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(954, 383);
+            this.label34.Location = new System.Drawing.Point(952, 383);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(177, 44);
             this.label34.TabIndex = 30;
@@ -1962,7 +1974,7 @@ namespace ClinicApp.Forms.Examination
             this.txtExaminationNotes.Multiline = true;
             this.txtExaminationNotes.Name = "txtExaminationNotes";
             this.txtExaminationNotes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtExaminationNotes.Size = new System.Drawing.Size(911, 78);
+            this.txtExaminationNotes.Size = new System.Drawing.Size(909, 78);
             this.txtExaminationNotes.TabIndex = 37;
             this.txtExaminationNotes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1973,7 +1985,7 @@ namespace ClinicApp.Forms.Examination
             this.txtDoctorAdvice.Multiline = true;
             this.txtDoctorAdvice.Name = "txtDoctorAdvice";
             this.txtDoctorAdvice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtDoctorAdvice.Size = new System.Drawing.Size(911, 88);
+            this.txtDoctorAdvice.Size = new System.Drawing.Size(909, 88);
             this.txtDoctorAdvice.TabIndex = 50;
             this.txtDoctorAdvice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1984,7 +1996,7 @@ namespace ClinicApp.Forms.Examination
             this.txtDoctorExamination.Multiline = true;
             this.txtDoctorExamination.Name = "txtDoctorExamination";
             this.txtDoctorExamination.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtDoctorExamination.Size = new System.Drawing.Size(911, 143);
+            this.txtDoctorExamination.Size = new System.Drawing.Size(909, 143);
             this.txtDoctorExamination.TabIndex = 52;
             this.txtDoctorExamination.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1993,10 +2005,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox14.BackgroundImage = global::ClinicApp.Properties.Resources.booking1;
             this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox14.Location = new System.Drawing.Point(1171, 2);
+            this.pictureBox14.Location = new System.Drawing.Point(1169, 2);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(131, 45);
+            this.pictureBox14.Size = new System.Drawing.Size(133, 45);
             this.pictureBox14.TabIndex = 53;
             this.pictureBox14.TabStop = false;
             // 
@@ -2005,10 +2017,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox15.BackgroundImage = global::ClinicApp.Properties.Resources.profile1;
             this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox15.Location = new System.Drawing.Point(1171, 51);
+            this.pictureBox15.Location = new System.Drawing.Point(1169, 51);
             this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(131, 178);
+            this.pictureBox15.Size = new System.Drawing.Size(133, 178);
             this.pictureBox15.TabIndex = 54;
             this.pictureBox15.TabStop = false;
             // 
@@ -2017,10 +2029,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox16.BackgroundImage = global::ClinicApp.Properties.Resources.advice2;
             this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox16.Location = new System.Drawing.Point(1171, 233);
+            this.pictureBox16.Location = new System.Drawing.Point(1169, 233);
             this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(131, 112);
+            this.pictureBox16.Size = new System.Drawing.Size(133, 112);
             this.pictureBox16.TabIndex = 55;
             this.pictureBox16.TabStop = false;
             // 
@@ -2029,10 +2041,10 @@ namespace ClinicApp.Forms.Examination
             this.pictureBox17.BackgroundImage = global::ClinicApp.Properties.Resources.notes2;
             this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox17.Location = new System.Drawing.Point(1171, 349);
+            this.pictureBox17.Location = new System.Drawing.Point(1169, 349);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(131, 113);
+            this.pictureBox17.Size = new System.Drawing.Size(133, 113);
             this.pictureBox17.TabIndex = 56;
             this.pictureBox17.TabStop = false;
             // 
@@ -2044,7 +2056,7 @@ namespace ClinicApp.Forms.Examination
             this.dateExamination.Name = "dateExamination";
             this.dateExamination.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dateExamination.RightToLeftLayout = true;
-            this.dateExamination.Size = new System.Drawing.Size(911, 42);
+            this.dateExamination.Size = new System.Drawing.Size(909, 42);
             this.dateExamination.TabIndex = 57;
             // 
             // PrescriptionPage
@@ -2769,6 +2781,7 @@ namespace ClinicApp.Forms.Examination
             // 
             // printingPage
             // 
+            this.printingPage.Controls.Add(this.groupBox1);
             this.printingPage.Location = new System.Drawing.Point(4, 44);
             this.printingPage.Name = "printingPage";
             this.printingPage.Padding = new System.Windows.Forms.Padding(3);
@@ -2776,6 +2789,124 @@ namespace ClinicApp.Forms.Examination
             this.printingPage.TabIndex = 12;
             this.printingPage.Text = "طباعة";
             this.printingPage.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.tableLayoutPanel44);
+            this.groupBox1.Location = new System.Drawing.Point(686, 25);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(620, 473);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "الطباعة";
+            // 
+            // tableLayoutPanel44
+            // 
+            this.tableLayoutPanel44.ColumnCount = 1;
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel44.Controls.Add(this.btnPrint, 0, 6);
+            this.tableLayoutPanel44.Controls.Add(this.checkBox6, 0, 5);
+            this.tableLayoutPanel44.Controls.Add(this.checkBox5, 0, 4);
+            this.tableLayoutPanel44.Controls.Add(this.checkBox4, 0, 3);
+            this.tableLayoutPanel44.Controls.Add(this.checkBox3, 0, 2);
+            this.tableLayoutPanel44.Controls.Add(this.checkBox2, 0, 1);
+            this.tableLayoutPanel44.Controls.Add(this.checkBox1, 0, 0);
+            this.tableLayoutPanel44.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel44.Location = new System.Drawing.Point(3, 38);
+            this.tableLayoutPanel44.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel44.Name = "tableLayoutPanel44";
+            this.tableLayoutPanel44.RowCount = 7;
+            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel44.Size = new System.Drawing.Size(614, 432);
+            this.tableLayoutPanel44.TabIndex = 0;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPrint.Image = global::ClinicApp.Properties.Resources.printer;
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPrint.Location = new System.Drawing.Point(200, 369);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(215, 60);
+            this.btnPrint.TabIndex = 22;
+            this.btnPrint.Text = "طباعة";
+            this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(3, 316);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(608, 39);
+            this.checkBox6.TabIndex = 6;
+            this.checkBox6.Text = "طباعة الادوية المتعارضة";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(3, 255);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(608, 39);
+            this.checkBox5.TabIndex = 5;
+            this.checkBox5.Text = "طباعة الاكل";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(3, 194);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(608, 39);
+            this.checkBox4.TabIndex = 4;
+            this.checkBox4.Text = "طباعة الاشعة";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(3, 133);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(608, 39);
+            this.checkBox3.TabIndex = 3;
+            this.checkBox3.Text = "طباعة التحاليل";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(3, 72);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(608, 39);
+            this.checkBox2.TabIndex = 2;
+            this.checkBox2.Text = "طباعة الروشتة العلاجية";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(3, 11);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(608, 39);
+            this.checkBox1.TabIndex = 1;
+            this.checkBox1.Text = "طباعة الكل";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // FormShowExaminationDetails
             // 
@@ -2886,6 +3017,10 @@ namespace ClinicApp.Forms.Examination
             this.tableLayoutPanel42.ResumeLayout(false);
             this.tableLayoutPanel42.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            this.printingPage.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.tableLayoutPanel44.ResumeLayout(false);
+            this.tableLayoutPanel44.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3077,5 +3212,14 @@ namespace ClinicApp.Forms.Examination
         private System.Windows.Forms.PictureBox pictureBox34;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         public System.Windows.Forms.PictureBox picBox;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel44;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

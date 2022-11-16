@@ -144,6 +144,7 @@ namespace ClinicApp.Forms.Doctors
                 rptForm.mainReport.LocalReport.DataSources.Clear();
                 rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowDoctors"]));
 
+
                 if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
                 {
                     LocalReport report = new LocalReport();
