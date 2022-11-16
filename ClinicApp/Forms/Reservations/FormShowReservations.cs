@@ -439,9 +439,11 @@ namespace ClinicApp.Forms.Reservations
 
                 FormAddReservations frm = new FormAddReservations();
                 txtHidden.Text = dgvLoading.CurrentRow.Cells[15].Value.ToString();
+                MessageBox.Show(dgvLoading.CurrentRow.Cells[12].Value.ToString());
                 frm.patientText = dgvLoading.CurrentRow.Cells[14].Value.ToString();
                 frm.txtReservationNumber.Text = dgvLoading.CurrentRow.Cells[13].Value.ToString();
-                frm.dateOfReservations.Text = dgvLoading.CurrentRow.Cells[12].Value.ToString();
+                //frm.dateOfReservations.Text = dgvLoading.CurrentRow.Cells[12].Value.ToString();
+                frm.dateOfReservations.Value = DateTime.ParseExact(dgvLoading.CurrentRow.Cells[12].Value.ToString(), "dd/MM/yyyy", null);
                 frm.clinicText = dgvLoading.CurrentRow.Cells[11].Value.ToString();
                 frm.doctorText = dgvLoading.CurrentRow.Cells[10].Value.ToString();
                 frm.txtBookingPersonName.Text = dgvLoading.CurrentRow.Cells[9].Value.ToString();

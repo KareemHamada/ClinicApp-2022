@@ -48,7 +48,7 @@ namespace ClinicApp.Forms.Examination
 
                                 row["doctor"],
                                 row["clinic"],
-                                row["dateTime"],
+                                Convert.ToDateTime(row["dateTime"]).ToString("dd/MM/yyyy"),
                                 row["phone"],
                                 row["patient"],
                                 row["id"],
@@ -135,6 +135,131 @@ namespace ClinicApp.Forms.Examination
             }
         }
 
-        
+        private void dateOfReservations_ValueChanged(object sender, EventArgs e)
+        {
+            loadTable("select " +
+                "Reservations.id," +
+                "Clinics.name as clinic," +
+                "Doctors.name as doctor," +
+                "patient.name as patient," +
+                "patient.id as pId," +
+                "patient.phone as phone," +
+                "DoctorExaminationPatient.dateTime as dateTime" +
+                " from Reservations," +
+                "Clinics," +
+                "Doctors," +
+                "patient," +
+                "DoctorExaminationPatient " +
+                "where " +
+                "Reservations.clinicId = Clinics.id and " +
+                "Reservations.doctorId = Doctors.id and " +
+                "Reservations.patientId = patient.id and " +
+                "Reservations.id = DoctorExaminationPatient.examinationId " +
+                "and DoctorExaminationPatient.dateTime = '" + dateOfReservations.Value + "' ");
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            search(txtSearch.Text);
+        }
+
+
+
+        void search(string text = null)
+        {
+            if (string.IsNullOrEmpty(text))
+            {
+                loadTable("select " +
+                "Reservations.id," +
+                "Clinics.name as clinic," +
+                "Doctors.name as doctor," +
+                "patient.name as patient," +
+                "patient.id as pId," +
+                "patient.phone as phone," +
+                "DoctorExaminationPatient.dateTime as dateTime" +
+                " from Reservations," +
+                "Clinics," +
+                "Doctors," +
+                "patient," +
+                "DoctorExaminationPatient " +
+                "where " +
+                "Reservations.clinicId = Clinics.id and " +
+                "Reservations.doctorId = Doctors.id and " +
+                "Reservations.patientId = patient.id and " +
+                "Reservations.id = DoctorExaminationPatient.examinationId");
+            }
+            else
+            {
+                loadTable("select " +
+                "Reservations.id," +
+                "Clinics.name as clinic," +
+                "Doctors.name as doctor," +
+                "patient.name as patient," +
+                "patient.id as pId," +
+                "patient.phone as phone," +
+                "DoctorExaminationPatient.dateTime as dateTime" +
+                " from Reservations," +
+                "Clinics," +
+                "Doctors," +
+                "patient," +
+                "DoctorExaminationPatient " +
+                "where " +
+                "Reservations.clinicId = Clinics.id and " +
+                "Reservations.doctorId = Doctors.id and " +
+                "Reservations.patientId = patient.id and " +
+                "Reservations.id = DoctorExaminationPatient.examinationId and " +
+                "(Clinics.name like '%" + text + "%' " +
+                "or patient.name like '%" + text + "%' " +
+                "or patient.phone like '%" + text + "%' " +
+                "or Doctors.name like '%" + text + "%')");
+            }
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            loadTable("select " +
+                "Reservations.id," +
+                "Clinics.name as clinic," +
+                "Doctors.name as doctor," +
+                "patient.name as patient," +
+                "patient.id as pId," +
+                "patient.phone as phone," +
+                "DoctorExaminationPatient.dateTime as dateTime" +
+                " from Reservations," +
+                "Clinics," +
+                "Doctors," +
+                "patient," +
+                "DoctorExaminationPatient " +
+                "where " +
+                "Reservations.clinicId = Clinics.id and " +
+                "Reservations.doctorId = Doctors.id and " +
+                "Reservations.patientId = patient.id and " +
+                "Reservations.id = DoctorExaminationPatient.examinationId");
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            loadTable("select " +
+                "Reservations.id," +
+                "Clinics.name as clinic," +
+                "Doctors.name as doctor," +
+                "patient.name as patient," +
+                "patient.id as pId," +
+                "patient.phone as phone," +
+                "DoctorExaminationPatient.dateTime as dateTime" +
+                " from Reservations," +
+                "Clinics," +
+                "Doctors," +
+                "patient," +
+                "DoctorExaminationPatient " +
+                "where " +
+                "Reservations.clinicId = Clinics.id and " +
+                "Reservations.doctorId = Doctors.id and " +
+                "Reservations.patientId = patient.id and " +
+                "Reservations.id = DoctorExaminationPatient.examinationId " +
+                "and Clinics.name = '" + comboClinic.Text + "' " +
+                "and Doctors.name = '" + comboDoctor.Text + "' " +
+                "and DoctorExaminationPatient.dateTime = '" + dateOfReservations.Value + "' ");
+        }
     }
 }

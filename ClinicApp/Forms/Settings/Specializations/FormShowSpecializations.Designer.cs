@@ -89,9 +89,9 @@ namespace ClinicApp.Forms.Settings.Specializations
             this.btnDelete,
             this.btnUpdate,
             this.btnPrint});
-            this.toolStrip1.Location = new System.Drawing.Point(442, 615);
+            this.toolStrip1.Location = new System.Drawing.Point(462, 615);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(267, 88);
+            this.toolStrip1.Size = new System.Drawing.Size(228, 88);
             this.toolStrip1.TabIndex = 26;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -202,9 +202,10 @@ namespace ClinicApp.Forms.Settings.Specializations
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(1039, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(1042, 13);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(98, 33);
             this.pictureBox2.TabIndex = 17;

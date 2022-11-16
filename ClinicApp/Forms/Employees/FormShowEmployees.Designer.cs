@@ -85,7 +85,7 @@ namespace ClinicApp.Forms.Employees
             this.pnlParient.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.04747F));
             this.pnlParient.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.25115F));
             this.pnlParient.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.pnlParient.Size = new System.Drawing.Size(1152, 703);
+            this.pnlParient.Size = new System.Drawing.Size(1282, 753);
             this.pnlParient.TabIndex = 2;
             // 
             // toolStrip1
@@ -99,9 +99,9 @@ namespace ClinicApp.Forms.Employees
             this.btnDelete,
             this.btnUpdate,
             this.btnPrint});
-            this.toolStrip1.Location = new System.Drawing.Point(462, 615);
+            this.toolStrip1.Location = new System.Drawing.Point(527, 659);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(228, 88);
+            this.toolStrip1.Size = new System.Drawing.Size(228, 94);
             this.toolStrip1.TabIndex = 26;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -113,7 +113,7 @@ namespace ClinicApp.Forms.Employees
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(69, 85);
+            this.btnDelete.Size = new System.Drawing.Size(69, 91);
             this.btnDelete.Text = "حذف";
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -126,7 +126,7 @@ namespace ClinicApp.Forms.Employees
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(77, 85);
+            this.btnUpdate.Size = new System.Drawing.Size(77, 91);
             this.btnUpdate.Text = "تعديل";
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -139,7 +139,7 @@ namespace ClinicApp.Forms.Employees
             this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
             this.btnPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(79, 85);
+            this.btnPrint.Size = new System.Drawing.Size(79, 91);
             this.btnPrint.Text = "طباعة";
             this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
@@ -157,14 +157,14 @@ namespace ClinicApp.Forms.Employees
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1146, 48);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1276, 52);
             this.tableLayoutPanel2.TabIndex = 17;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1039, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(1156, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(98, 39);
             this.pictureBox1.TabIndex = 16;
@@ -176,9 +176,9 @@ namespace ClinicApp.Forms.Employees
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arabic Typesetting", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(466, 0);
+            this.label2.Location = new System.Drawing.Point(524, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 48);
+            this.label2.Size = new System.Drawing.Size(104, 51);
             this.label2.TabIndex = 15;
             this.label2.Text = "الموظفين";
             // 
@@ -190,11 +190,11 @@ namespace ClinicApp.Forms.Employees
             this.tableLayoutPanel3.Controls.Add(this.txtSearch, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.pictureBox2, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 57);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 61);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1146, 42);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1276, 45);
             this.tableLayoutPanel3.TabIndex = 18;
             // 
             // txtSearch
@@ -205,7 +205,7 @@ namespace ClinicApp.Forms.Employees
             this.txtSearch.ForeColor = System.Drawing.Color.DimGray;
             this.txtSearch.Location = new System.Drawing.Point(3, 3);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(1030, 41);
+            this.txtSearch.Size = new System.Drawing.Size(1147, 41);
             this.txtSearch.TabIndex = 18;
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
@@ -214,7 +214,7 @@ namespace ClinicApp.Forms.Employees
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(1039, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(1156, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(98, 33);
             this.pictureBox2.TabIndex = 17;
@@ -249,7 +249,7 @@ namespace ClinicApp.Forms.Employees
             this.name,
             this.id});
             this.dgvLoading.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLoading.Location = new System.Drawing.Point(3, 105);
+            this.dgvLoading.Location = new System.Drawing.Point(3, 112);
             this.dgvLoading.Name = "dgvLoading";
             this.dgvLoading.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -266,7 +266,7 @@ namespace ClinicApp.Forms.Employees
             this.dgvLoading.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvLoading.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvLoading.RowTemplate.Height = 35;
-            this.dgvLoading.Size = new System.Drawing.Size(1146, 507);
+            this.dgvLoading.Size = new System.Drawing.Size(1276, 544);
             this.dgvLoading.TabIndex = 19;
             // 
             // pic
@@ -360,7 +360,7 @@ namespace ClinicApp.Forms.Employees
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1152, 703);
+            this.ClientSize = new System.Drawing.Size(1282, 753);
             this.Controls.Add(this.pnlParient);
             this.Name = "FormShowEmployees";
             this.ShowIcon = false;
