@@ -459,7 +459,7 @@ namespace ClinicApp.Forms.Examination
                     reportParameters[0] = new ReportParameter("doctor", dgvLoading[10, 0].Value.ToString());
                     reportParameters[1] = new ReportParameter("specialization", dgvLoading[11, 0].Value.ToString());
                     reportParameters[2] = new ReportParameter("patient", dgvLoading[14, 0].Value.ToString());
-                    reportParameters[3] = new ReportParameter("examinationDate", dateOfBirth.Value.ToString());
+                    reportParameters[3] = new ReportParameter("examinationDate", dateExamination.Value.ToString());
                     reportParameters[4] = new ReportParameter("notes", txtExaminationNotes.Text);
                     reportParameters[5] = new ReportParameter("examination", txtDoctorExamination.Text);
                     reportParameters[6] = new ReportParameter("advise", txtDoctorAdvice.Text);
@@ -514,7 +514,7 @@ namespace ClinicApp.Forms.Examination
                     reportParameters[0] = new ReportParameter("doctor", dgvLoading[10, 0].Value.ToString());
                     reportParameters[1] = new ReportParameter("specialization", dgvLoading[11, 0].Value.ToString());
                     reportParameters[2] = new ReportParameter("patient", dgvLoading[14, 0].Value.ToString());
-                    reportParameters[3] = new ReportParameter("examinationDate", dateOfBirth.Value.ToString());
+                    reportParameters[3] = new ReportParameter("examinationDate", dateExamination.Value.ToString());
                     reportParameters[4] = new ReportParameter("notes", txtExaminationNotes.Text);
                     reportParameters[5] = new ReportParameter("examination", txtDoctorExamination.Text);
                     reportParameters[6] = new ReportParameter("advise", txtDoctorAdvice.Text);
@@ -532,6 +532,61 @@ namespace ClinicApp.Forms.Examination
                         report.ReportPath = path;
                         report.DataSources.Clear();
                         report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowAnalysis"]));
+                        report.SetParameters(reportParameters);
+                        PrintersClass.PrintToPrinter(report);
+                    }
+                    else if (bool.Parse(declarations.systemOptions["showBeforePrint"].ToString()))
+                    {
+                        rptForm.mainReport.LocalReport.SetParameters(reportParameters);
+                        rptForm.ShowDialog();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("لا يوجد عناصر لعرضها");
+                }
+            }
+            if (chbPrintRays.Checked)
+            {
+                if (dgvRays.Rows.Count > 0)
+                {
+                    dsTools tbl = new dsTools();
+                    for (int i = 0; i < dgvRays.Rows.Count; i++)
+                    {
+                        DataRow dro = tbl.Tables["dtShowRays"].NewRow();
+                        dro["name"] = dgvRays[1, i].Value;
+                        dro["notes"] = dgvRays[0, i].Value;
+                        tbl.Tables["dtShowRays"].Rows.Add(dro);
+                    }
+
+                    FormReports rptForm = new FormReports();
+                    rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportShowExaminationRays.rdlc";
+                    rptForm.mainReport.LocalReport.DataSources.Clear();
+                    rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowRays"]));
+
+                    ReportParameter[] reportParameters = new ReportParameter[13];
+                    reportParameters[0] = new ReportParameter("doctor", dgvLoading[10, 0].Value.ToString());
+                    reportParameters[1] = new ReportParameter("specialization", dgvLoading[11, 0].Value.ToString());
+                    reportParameters[2] = new ReportParameter("patient", dgvLoading[14, 0].Value.ToString());
+                    reportParameters[3] = new ReportParameter("examinationDate", dateExamination.Value.ToString());
+                    reportParameters[4] = new ReportParameter("notes", txtExaminationNotes.Text);
+                    reportParameters[5] = new ReportParameter("examination", txtDoctorExamination.Text);
+                    reportParameters[6] = new ReportParameter("advise", txtDoctorAdvice.Text);
+                    reportParameters[7] = new ReportParameter("address", declarations.systemOptions["address"].ToString());
+                    reportParameters[8] = new ReportParameter("phone", declarations.systemOptions["phone"].ToString());
+                    reportParameters[9] = new ReportParameter("whatsApp", declarations.systemOptions["whatsApp"].ToString());
+                    reportParameters[10] = new ReportParameter("gmail", declarations.systemOptions["email"].ToString());
+                    reportParameters[11] = new ReportParameter("facebook", declarations.systemOptions["facebook"].ToString());
+                    reportParameters[12] = new ReportParameter("user", declarations.name);
+
+                    if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
+                    {
+                        LocalReport report = new LocalReport();
+                        string path = Application.StartupPath + @"\Reports\ReportShowExaminationRays.rdlc";
+                        report.ReportPath = path;
+                        report.DataSources.Clear();
+                        report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowRays"]));
                         report.SetParameters(reportParameters);
                         PrintersClass.PrintToPrinter(report);
                     }
