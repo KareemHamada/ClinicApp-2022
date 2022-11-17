@@ -130,6 +130,9 @@ namespace ClinicApp.Forms
             this.btnAddGovernment = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowGovernment = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPrintingSettings = new System.Windows.Forms.ToolStripMenuItem();
+            this.النسخالاحتياطيوالاسترجاعToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnCreateNewCopy = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnRestoreCopy = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -645,7 +648,8 @@ namespace ClinicApp.Forms
             this.نوعالحجزToolStripMenuItem,
             this.btnVisitingType,
             this.المحافظاتToolStripMenuItem,
-            this.btnPrintingSettings});
+            this.btnPrintingSettings,
+            this.النسخالاحتياطيوالاسترجاعToolStripMenuItem});
             this.btnHomeSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeSettings.Image")));
             this.btnHomeSettings.Name = "btnHomeSettings";
             this.btnHomeSettings.Size = new System.Drawing.Size(171, 39);
@@ -658,7 +662,7 @@ namespace ClinicApp.Forms
             this.btnShowClinics});
             this.btnClinic.Image = ((System.Drawing.Image)(resources.GetObject("btnClinic.Image")));
             this.btnClinic.Name = "btnClinic";
-            this.btnClinic.Size = new System.Drawing.Size(230, 40);
+            this.btnClinic.Size = new System.Drawing.Size(326, 40);
             this.btnClinic.Text = "العيادات";
             // 
             // btnAddClinic
@@ -684,7 +688,7 @@ namespace ClinicApp.Forms
             this.btnShowSpecializations});
             this.تخصصاتالاطباءToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("تخصصاتالاطباءToolStripMenuItem.Image")));
             this.تخصصاتالاطباءToolStripMenuItem.Name = "تخصصاتالاطباءToolStripMenuItem";
-            this.تخصصاتالاطباءToolStripMenuItem.Size = new System.Drawing.Size(230, 40);
+            this.تخصصاتالاطباءToolStripMenuItem.Size = new System.Drawing.Size(326, 40);
             this.تخصصاتالاطباءToolStripMenuItem.Text = "تخصصات الاطباء";
             // 
             // btnAddSpecialization
@@ -712,7 +716,7 @@ namespace ClinicApp.Forms
             this.الوقتToolStripMenuItem});
             this.الصيدليةToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("الصيدليةToolStripMenuItem.Image")));
             this.الصيدليةToolStripMenuItem.Name = "الصيدليةToolStripMenuItem";
-            this.الصيدليةToolStripMenuItem.Size = new System.Drawing.Size(230, 40);
+            this.الصيدليةToolStripMenuItem.Size = new System.Drawing.Size(326, 40);
             this.الصيدليةToolStripMenuItem.Text = "الصيدلية";
             // 
             // الادويةToolStripMenuItem
@@ -834,7 +838,7 @@ namespace ClinicApp.Forms
             this.btnShowDiseases});
             this.الامراضToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.heart_attack;
             this.الامراضToolStripMenuItem.Name = "الامراضToolStripMenuItem";
-            this.الامراضToolStripMenuItem.Size = new System.Drawing.Size(230, 40);
+            this.الامراضToolStripMenuItem.Size = new System.Drawing.Size(326, 40);
             this.الامراضToolStripMenuItem.Text = "الامراض";
             // 
             // btnAddDisease
@@ -860,7 +864,7 @@ namespace ClinicApp.Forms
             this.btnShowSymptom});
             this.الاعراضToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.fever;
             this.الاعراضToolStripMenuItem.Name = "الاعراضToolStripMenuItem";
-            this.الاعراضToolStripMenuItem.Size = new System.Drawing.Size(230, 40);
+            this.الاعراضToolStripMenuItem.Size = new System.Drawing.Size(326, 40);
             this.الاعراضToolStripMenuItem.Text = "الاعراض";
             // 
             // btnAddSymptom
@@ -886,7 +890,7 @@ namespace ClinicApp.Forms
             this.btnShowAnalysis});
             this.التحاليلToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.profile1;
             this.التحاليلToolStripMenuItem.Name = "التحاليلToolStripMenuItem";
-            this.التحاليلToolStripMenuItem.Size = new System.Drawing.Size(230, 40);
+            this.التحاليلToolStripMenuItem.Size = new System.Drawing.Size(326, 40);
             this.التحاليلToolStripMenuItem.Text = "التحاليل";
             // 
             // btnAddAnalysis
@@ -912,7 +916,7 @@ namespace ClinicApp.Forms
             this.btnShowRays});
             this.الاشعةToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.x_rays;
             this.الاشعةToolStripMenuItem.Name = "الاشعةToolStripMenuItem";
-            this.الاشعةToolStripMenuItem.Size = new System.Drawing.Size(230, 40);
+            this.الاشعةToolStripMenuItem.Size = new System.Drawing.Size(326, 40);
             this.الاشعةToolStripMenuItem.Text = "الاشعة";
             // 
             // btnAddRay
@@ -938,7 +942,7 @@ namespace ClinicApp.Forms
             this.btnShowFood});
             this.الطعامToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.diet;
             this.الطعامToolStripMenuItem.Name = "الطعامToolStripMenuItem";
-            this.الطعامToolStripMenuItem.Size = new System.Drawing.Size(230, 40);
+            this.الطعامToolStripMenuItem.Size = new System.Drawing.Size(326, 40);
             this.الطعامToolStripMenuItem.Text = "الطعام";
             // 
             // btnAddFood
@@ -964,7 +968,7 @@ namespace ClinicApp.Forms
             this.btnShowBookingType});
             this.نوعالحجزToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.choice;
             this.نوعالحجزToolStripMenuItem.Name = "نوعالحجزToolStripMenuItem";
-            this.نوعالحجزToolStripMenuItem.Size = new System.Drawing.Size(230, 40);
+            this.نوعالحجزToolStripMenuItem.Size = new System.Drawing.Size(326, 40);
             this.نوعالحجزToolStripMenuItem.Text = "نوع الحجز";
             // 
             // btnAddBookingType
@@ -990,7 +994,7 @@ namespace ClinicApp.Forms
             this.btnShowVisitingType});
             this.btnVisitingType.Image = global::ClinicApp.Properties.Resources.advice;
             this.btnVisitingType.Name = "btnVisitingType";
-            this.btnVisitingType.Size = new System.Drawing.Size(230, 40);
+            this.btnVisitingType.Size = new System.Drawing.Size(326, 40);
             this.btnVisitingType.Text = "نوع الزيارة";
             // 
             // btnAddVisitingType
@@ -1016,7 +1020,7 @@ namespace ClinicApp.Forms
             this.btnShowGovernment});
             this.المحافظاتToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.government;
             this.المحافظاتToolStripMenuItem.Name = "المحافظاتToolStripMenuItem";
-            this.المحافظاتToolStripMenuItem.Size = new System.Drawing.Size(230, 40);
+            this.المحافظاتToolStripMenuItem.Size = new System.Drawing.Size(326, 40);
             this.المحافظاتToolStripMenuItem.Text = "المحافظات";
             // 
             // btnAddGovernment
@@ -1039,9 +1043,35 @@ namespace ClinicApp.Forms
             // 
             this.btnPrintingSettings.Image = global::ClinicApp.Properties.Resources.printer;
             this.btnPrintingSettings.Name = "btnPrintingSettings";
-            this.btnPrintingSettings.Size = new System.Drawing.Size(230, 40);
+            this.btnPrintingSettings.Size = new System.Drawing.Size(326, 40);
             this.btnPrintingSettings.Text = "اعدادات الطباعة";
             this.btnPrintingSettings.Click += new System.EventHandler(this.btnPrintingSettings_Click);
+            // 
+            // النسخالاحتياطيوالاسترجاعToolStripMenuItem
+            // 
+            this.النسخالاحتياطيوالاسترجاعToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnCreateNewCopy,
+            this.btnRestoreCopy});
+            this.النسخالاحتياطيوالاسترجاعToolStripMenuItem.Image = global::ClinicApp.Properties.Resources.backup;
+            this.النسخالاحتياطيوالاسترجاعToolStripMenuItem.Name = "النسخالاحتياطيوالاسترجاعToolStripMenuItem";
+            this.النسخالاحتياطيوالاسترجاعToolStripMenuItem.Size = new System.Drawing.Size(326, 40);
+            this.النسخالاحتياطيوالاسترجاعToolStripMenuItem.Text = "النسخ الاحتياطي و الاسترجاع";
+            // 
+            // btnCreateNewCopy
+            // 
+            this.btnCreateNewCopy.Image = global::ClinicApp.Properties.Resources.plus;
+            this.btnCreateNewCopy.Name = "btnCreateNewCopy";
+            this.btnCreateNewCopy.Size = new System.Drawing.Size(309, 40);
+            this.btnCreateNewCopy.Text = "انشاء نسخة احتياطية جديدة";
+            this.btnCreateNewCopy.Click += new System.EventHandler(this.btnCreateNewCopy_Click);
+            // 
+            // btnRestoreCopy
+            // 
+            this.btnRestoreCopy.Image = global::ClinicApp.Properties.Resources.backup;
+            this.btnRestoreCopy.Name = "btnRestoreCopy";
+            this.btnRestoreCopy.Size = new System.Drawing.Size(309, 40);
+            this.btnRestoreCopy.Text = "استرجاع نسخة احتياطية";
+            this.btnRestoreCopy.Click += new System.EventHandler(this.btnRestoreCopy_Click);
             // 
             // pictureBox1
             // 
@@ -1183,5 +1213,8 @@ namespace ClinicApp.Forms
         private System.Windows.Forms.ToolStripMenuItem btnShowVisitingType;
         private System.Windows.Forms.ToolStripMenuItem btnAddTimes;
         private System.Windows.Forms.ToolStripMenuItem btnShowTimes;
+        private System.Windows.Forms.ToolStripMenuItem النسخالاحتياطيوالاسترجاعToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnCreateNewCopy;
+        private System.Windows.Forms.ToolStripMenuItem btnRestoreCopy;
     }
 }

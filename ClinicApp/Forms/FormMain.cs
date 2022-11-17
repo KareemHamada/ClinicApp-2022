@@ -17,6 +17,7 @@ using ClinicApp.Forms.Settings;
 using ClinicApp.Forms.Settings.Analysis;
 using ClinicApp.Forms.Settings.BookingType;
 using ClinicApp.Forms.Settings.Clinic;
+using ClinicApp.Forms.Settings.Database;
 using ClinicApp.Forms.Settings.Diseases;
 using ClinicApp.Forms.Settings.Foods;
 using ClinicApp.Forms.Settings.Pharmacy;
@@ -620,6 +621,8 @@ namespace ClinicApp.Forms
                     btnPrintingSettings.Visible = false;
                     btnAddVisitingType.Visible = false;
                     btnAddTimes.Visible = false;
+                    btnCreateNewCopy.Visible = false;
+                    btnRestoreCopy.Visible = false;
                 }
                 if (row["settingShow"].ToString() == "False")
                 {
@@ -671,6 +674,18 @@ namespace ClinicApp.Forms
         private void btnShowTimes_Click(object sender, EventArgs e)
         {
             FormShowTimes frm = new FormShowTimes();
+            frm.Show();
+        }
+
+        private void btnCreateNewCopy_Click(object sender, EventArgs e)
+        {
+            FormCreateNewCopy frm = new FormCreateNewCopy();
+            frm.Show();
+        }
+
+        private void btnRestoreCopy_Click(object sender, EventArgs e)
+        {
+            FormRestoreCopy frm = new FormRestoreCopy();
             frm.Show();
         }
     }

@@ -31,7 +31,6 @@ namespace ClinicApp
                 Application.Run(new FormEnterSerialNumber());
 
             }
-
             else
             {
                 adoClass.setConnection();
@@ -68,7 +67,6 @@ namespace ClinicApp
                         MessageBox.Show("خطا في تشغيل البرنامج الرجاء الاتصال علي الشركة");
                         Application.Exit();
                     }
-
                 }
                 catch (Exception ex)
                 {

@@ -399,6 +399,18 @@
     <Compile Include="Forms\Settings\Clinic\FormShowClinic.Designer.cs">
       <DependentUpon>FormShowClinic.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Settings\Database\FormCreateNewCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\Database\FormCreateNewCopy.Designer.cs">
+      <DependentUpon>FormCreateNewCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\Database\FormRestoreCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\Database\FormRestoreCopy.Designer.cs">
+      <DependentUpon>FormRestoreCopy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Settings\Diseases\FormAddDisease.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -622,6 +634,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\patients\FormVisitingPatient.resx">
       <DependentUpon>FormVisitingPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\Database\FormCreateNewCopy.resx">
+      <DependentUpon>FormCreateNewCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\Database\FormRestoreCopy.resx">
+      <DependentUpon>FormRestoreCopy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Settings\Pharmacy\FormAddTime.resx">
       <DependentUpon>FormAddTime.cs</DependentUpon>
@@ -1101,6 +1119,8 @@
     <None Include="Resources\floppy-disk1.png" />
     <None Include="Resources\advice4.png" />
     <None Include="Resources\digital-clock1.png" />
+    <None Include="Resources\backup.png" />
+    <None Include="Resources\undo %281%29.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

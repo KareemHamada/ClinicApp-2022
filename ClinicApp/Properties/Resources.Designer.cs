@@ -143,6 +143,16 @@ namespace ClinicApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backup {
+            get {
+                object obj = ResourceManager.GetObject("backup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blood {
             get {
                 object obj = ResourceManager.GetObject("blood", resourceCulture);
@@ -926,6 +936,16 @@ namespace ClinicApp.Properties {
         internal static System.Drawing.Bitmap unchecklist {
             get {
                 object obj = ResourceManager.GetObject("unchecklist", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undo__1_ {
+            get {
+                object obj = ResourceManager.GetObject("undo (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
