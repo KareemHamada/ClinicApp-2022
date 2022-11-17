@@ -46,10 +46,10 @@ namespace ClinicApp.Forms.SmartAssistant
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dgvLoading = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.nameEng = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.pnlParient.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -93,9 +93,9 @@ namespace ClinicApp.Forms.SmartAssistant
             this.btnDelete,
             this.btnUpdate,
             this.btnPrint});
-            this.toolStrip1.Location = new System.Drawing.Point(406, 616);
+            this.toolStrip1.Location = new System.Drawing.Point(425, 616);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(340, 87);
+            this.toolStrip1.Size = new System.Drawing.Size(301, 87);
             this.toolStrip1.TabIndex = 26;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -270,16 +270,25 @@ namespace ClinicApp.Forms.SmartAssistant
             this.dgvLoading.Size = new System.Drawing.Size(1146, 491);
             this.dgvLoading.TabIndex = 19;
             // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::ClinicApp.Properties.Resources.pdf_file;
+            this.dataGridViewImageColumn1.MinimumWidth = 6;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.Width = 109;
+            // 
             // nameEng
             // 
-            this.nameEng.HeaderText = "الاسم بالانجليزي";
+            this.nameEng.HeaderText = "اسم المرض بالانجليزي";
             this.nameEng.MinimumWidth = 6;
             this.nameEng.Name = "nameEng";
             this.nameEng.ReadOnly = true;
             // 
             // name
             // 
-            this.name.HeaderText = "الاسم بالعربي";
+            this.name.HeaderText = "اسم المرض بالعربي";
             this.name.MinimumWidth = 6;
             this.name.Name = "name";
             this.name.ReadOnly = true;
@@ -290,15 +299,6 @@ namespace ClinicApp.Forms.SmartAssistant
             this.id.MinimumWidth = 6;
             this.id.Name = "id";
             this.id.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::ClinicApp.Properties.Resources.pdf_file;
-            this.dataGridViewImageColumn1.MinimumWidth = 6;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn1.Width = 109;
             // 
             // FormShowSmartAssistant
             // 
@@ -340,9 +340,9 @@ namespace ClinicApp.Forms.SmartAssistant
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView dgvLoading;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.ToolStripButton btnShow;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameEng;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.ToolStripButton btnShow;
     }
 }

@@ -148,6 +148,7 @@ namespace ClinicApp.Forms.Examination
             this.btnPrint.Size = new System.Drawing.Size(79, 68);
             this.btnPrint.Text = "طباعة";
             this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // tableLayoutPanel2
             // 
