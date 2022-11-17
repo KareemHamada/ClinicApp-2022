@@ -374,8 +374,8 @@ namespace ClinicApp.Forms
             this.btnShowExamination});
             this.btnHomeExamination.Image = global::ClinicApp.Properties.Resources.advice3;
             this.btnHomeExamination.Name = "btnHomeExamination";
-            this.btnHomeExamination.Size = new System.Drawing.Size(121, 39);
-            this.btnHomeExamination.Text = "الكشوفات";
+            this.btnHomeExamination.Size = new System.Drawing.Size(109, 39);
+            this.btnHomeExamination.Text = "الزيارات";
             // 
             // btnAddExamination
             // 

@@ -5,6 +5,8 @@ using ClinicApp.Forms.Settings.Foods;
 using ClinicApp.Forms.Settings.Pharmacy;
 using ClinicApp.Forms.Settings.Rays;
 using ClinicApp.Forms.Settings.Symptoms;
+using ClinicApp.Tools;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -1044,6 +1046,288 @@ namespace ClinicApp.Forms.Examination
             if (frm.ShowDialog() == DialogResult.OK)
             {
                 Helper.fillComboBox(comboContrastingMedicines, "Select id,name from Drugs", "name", "id");
+            }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            if (chbPrintPerception.Checked)
+            {
+                if (dgvPrescription.Rows.Count > 0)
+                {
+                    dsTools tbl = new dsTools();
+                    for (int i = 0; i < dgvPrescription.Rows.Count; i++)
+                    {
+                        DataRow dro = tbl.Tables["dtShowPerceptionMedicine"].NewRow();
+                        dro["medicine"] = dgvPrescription[4, i].Value;
+                        dro["timesTakeMedicine"] = dgvPrescription[3, i].Value;
+                        dro["unit"] = dgvPrescription[2, i].Value;
+                        dro["dosage"] = dgvPrescription[1, i].Value;
+                        dro["notes"] = dgvPrescription[0, i].Value;
+                        tbl.Tables["dtShowPerceptionMedicine"].Rows.Add(dro);
+                    }
+
+                    FormReports rptForm = new FormReports();
+                    rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportShowExaminationPerception.rdlc";
+                    rptForm.mainReport.LocalReport.DataSources.Clear();
+                    rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowPerceptionMedicine"]));
+
+                    ReportParameter[] reportParameters = new ReportParameter[13];
+                    reportParameters[0] = new ReportParameter("doctor", dgvLoading[10, 0].Value.ToString());
+                    reportParameters[1] = new ReportParameter("specialization", dgvLoading[11, 0].Value.ToString());
+                    reportParameters[2] = new ReportParameter("patient", dgvLoading[14, 0].Value.ToString());
+                    reportParameters[3] = new ReportParameter("examinationDate", dateExamination.Value.ToString());
+                    reportParameters[4] = new ReportParameter("notes", txtExaminationNotes.Text);
+                    reportParameters[5] = new ReportParameter("examination", txtDoctorExamination.Text);
+                    reportParameters[6] = new ReportParameter("advise", txtDoctorAdvice.Text);
+                    reportParameters[7] = new ReportParameter("address", declarations.systemOptions["address"].ToString());
+                    reportParameters[8] = new ReportParameter("phone", declarations.systemOptions["phone"].ToString());
+                    reportParameters[9] = new ReportParameter("whatsApp", declarations.systemOptions["whatsApp"].ToString());
+                    reportParameters[10] = new ReportParameter("gmail", declarations.systemOptions["email"].ToString());
+                    reportParameters[11] = new ReportParameter("facebook", declarations.systemOptions["facebook"].ToString());
+                    reportParameters[12] = new ReportParameter("user", declarations.name);
+
+                    if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
+                    {
+                        LocalReport report = new LocalReport();
+                        string path = Application.StartupPath + @"\Reports\ReportShowExaminationPerception.rdlc";
+                        report.ReportPath = path;
+                        report.DataSources.Clear();
+                        report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowPerceptionMedicine"]));
+                        report.SetParameters(reportParameters);
+                        PrintersClass.PrintToPrinter(report);
+                    }
+                    else if (bool.Parse(declarations.systemOptions["showBeforePrint"].ToString()))
+                    {
+                        rptForm.mainReport.LocalReport.SetParameters(reportParameters);
+                        rptForm.ShowDialog();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("لا يوجد عناصر لطباعتها في الروشتة العلاجية");
+                }
+            }
+            if (chbPrintAnalysis.Checked)
+            {
+                if (dgvAnalysis.Rows.Count > 0)
+                {
+                    dsTools tbl = new dsTools();
+                    for (int i = 0; i < dgvAnalysis.Rows.Count; i++)
+                    {
+                        DataRow dro = tbl.Tables["dtShowAnalysis"].NewRow();
+                        dro["name"] = dgvAnalysis[1, i].Value;
+                        dro["notes"] = dgvAnalysis[0, i].Value;
+                        tbl.Tables["dtShowAnalysis"].Rows.Add(dro);
+                    }
+
+                    FormReports rptForm = new FormReports();
+                    rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportShowExamination.rdlc";
+                    rptForm.mainReport.LocalReport.DataSources.Clear();
+                    rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowAnalysis"]));
+
+                    ReportParameter[] reportParameters = new ReportParameter[13];
+                    reportParameters[0] = new ReportParameter("doctor", dgvLoading[10, 0].Value.ToString());
+                    reportParameters[1] = new ReportParameter("specialization", dgvLoading[11, 0].Value.ToString());
+                    reportParameters[2] = new ReportParameter("patient", dgvLoading[14, 0].Value.ToString());
+                    reportParameters[3] = new ReportParameter("examinationDate", dateExamination.Value.ToString());
+                    reportParameters[4] = new ReportParameter("notes", txtExaminationNotes.Text);
+                    reportParameters[5] = new ReportParameter("examination", txtDoctorExamination.Text);
+                    reportParameters[6] = new ReportParameter("advise", txtDoctorAdvice.Text);
+                    reportParameters[7] = new ReportParameter("address", declarations.systemOptions["address"].ToString());
+                    reportParameters[8] = new ReportParameter("phone", declarations.systemOptions["phone"].ToString());
+                    reportParameters[9] = new ReportParameter("whatsApp", declarations.systemOptions["whatsApp"].ToString());
+                    reportParameters[10] = new ReportParameter("gmail", declarations.systemOptions["email"].ToString());
+                    reportParameters[11] = new ReportParameter("facebook", declarations.systemOptions["facebook"].ToString());
+                    reportParameters[12] = new ReportParameter("user", declarations.name);
+
+                    if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
+                    {
+                        LocalReport report = new LocalReport();
+                        string path = Application.StartupPath + @"\Reports\ReportShowExamination.rdlc";
+                        report.ReportPath = path;
+                        report.DataSources.Clear();
+                        report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowAnalysis"]));
+                        report.SetParameters(reportParameters);
+                        PrintersClass.PrintToPrinter(report);
+                    }
+                    else if (bool.Parse(declarations.systemOptions["showBeforePrint"].ToString()))
+                    {
+                        rptForm.mainReport.LocalReport.SetParameters(reportParameters);
+                        rptForm.ShowDialog();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("لا يوجد عناصر لطباعتها في التحاليل");
+                }
+            }
+            if (chbPrintRays.Checked)
+            {
+                if (dgvRays.Rows.Count > 0)
+                {
+                    dsTools tbl = new dsTools();
+                    for (int i = 0; i < dgvRays.Rows.Count; i++)
+                    {
+                        DataRow dro = tbl.Tables["dtShowRays"].NewRow();
+                        dro["name"] = dgvRays[1, i].Value;
+                        dro["notes"] = dgvRays[0, i].Value;
+                        tbl.Tables["dtShowRays"].Rows.Add(dro);
+                    }
+
+                    FormReports rptForm = new FormReports();
+                    rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportShowExaminationRays.rdlc";
+                    rptForm.mainReport.LocalReport.DataSources.Clear();
+                    rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowRays"]));
+
+                    ReportParameter[] reportParameters = new ReportParameter[13];
+                    reportParameters[0] = new ReportParameter("doctor", dgvLoading[10, 0].Value.ToString());
+                    reportParameters[1] = new ReportParameter("specialization", dgvLoading[11, 0].Value.ToString());
+                    reportParameters[2] = new ReportParameter("patient", dgvLoading[14, 0].Value.ToString());
+                    reportParameters[3] = new ReportParameter("examinationDate", dateExamination.Value.ToString());
+                    reportParameters[4] = new ReportParameter("notes", txtExaminationNotes.Text);
+                    reportParameters[5] = new ReportParameter("examination", txtDoctorExamination.Text);
+                    reportParameters[6] = new ReportParameter("advise", txtDoctorAdvice.Text);
+                    reportParameters[7] = new ReportParameter("address", declarations.systemOptions["address"].ToString());
+                    reportParameters[8] = new ReportParameter("phone", declarations.systemOptions["phone"].ToString());
+                    reportParameters[9] = new ReportParameter("whatsApp", declarations.systemOptions["whatsApp"].ToString());
+                    reportParameters[10] = new ReportParameter("gmail", declarations.systemOptions["email"].ToString());
+                    reportParameters[11] = new ReportParameter("facebook", declarations.systemOptions["facebook"].ToString());
+                    reportParameters[12] = new ReportParameter("user", declarations.name);
+
+                    if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
+                    {
+                        LocalReport report = new LocalReport();
+                        string path = Application.StartupPath + @"\Reports\ReportShowExaminationRays.rdlc";
+                        report.ReportPath = path;
+                        report.DataSources.Clear();
+                        report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowRays"]));
+                        report.SetParameters(reportParameters);
+                        PrintersClass.PrintToPrinter(report);
+                    }
+                    else if (bool.Parse(declarations.systemOptions["showBeforePrint"].ToString()))
+                    {
+                        rptForm.mainReport.LocalReport.SetParameters(reportParameters);
+                        rptForm.ShowDialog();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("لا يوجد عناصر لطباعتها في الاشعة");
+                }
+            }
+            if (chbPrintFoods.Checked)
+            {
+                if (dgvFood.Rows.Count > 0)
+                {
+                    dsTools tbl = new dsTools();
+                    for (int i = 0; i < dgvFood.Rows.Count; i++)
+                    {
+                        DataRow dro = tbl.Tables["dtShowFoods"].NewRow();
+                        dro["name"] = dgvFood[1, i].Value;
+                        dro["notes"] = dgvFood[0, i].Value;
+                        tbl.Tables["dtShowFoods"].Rows.Add(dro);
+                    }
+
+                    FormReports rptForm = new FormReports();
+                    rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportShowExaminationFoods.rdlc";
+                    rptForm.mainReport.LocalReport.DataSources.Clear();
+                    rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowFoods"]));
+
+                    ReportParameter[] reportParameters = new ReportParameter[13];
+                    reportParameters[0] = new ReportParameter("doctor", dgvLoading[10, 0].Value.ToString());
+                    reportParameters[1] = new ReportParameter("specialization", dgvLoading[11, 0].Value.ToString());
+                    reportParameters[2] = new ReportParameter("patient", dgvLoading[14, 0].Value.ToString());
+                    reportParameters[3] = new ReportParameter("examinationDate", dateExamination.Value.ToString());
+                    reportParameters[4] = new ReportParameter("notes", txtExaminationNotes.Text);
+                    reportParameters[5] = new ReportParameter("examination", txtDoctorExamination.Text);
+                    reportParameters[6] = new ReportParameter("advise", txtDoctorAdvice.Text);
+                    reportParameters[7] = new ReportParameter("address", declarations.systemOptions["address"].ToString());
+                    reportParameters[8] = new ReportParameter("phone", declarations.systemOptions["phone"].ToString());
+                    reportParameters[9] = new ReportParameter("whatsApp", declarations.systemOptions["whatsApp"].ToString());
+                    reportParameters[10] = new ReportParameter("gmail", declarations.systemOptions["email"].ToString());
+                    reportParameters[11] = new ReportParameter("facebook", declarations.systemOptions["facebook"].ToString());
+                    reportParameters[12] = new ReportParameter("user", declarations.name);
+
+                    if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
+                    {
+                        LocalReport report = new LocalReport();
+                        string path = Application.StartupPath + @"\Reports\ReportShowExaminationFoods.rdlc";
+                        report.ReportPath = path;
+                        report.DataSources.Clear();
+                        report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowFoods"]));
+                        report.SetParameters(reportParameters);
+                        PrintersClass.PrintToPrinter(report);
+                    }
+                    else if (bool.Parse(declarations.systemOptions["showBeforePrint"].ToString()))
+                    {
+                        rptForm.mainReport.LocalReport.SetParameters(reportParameters);
+                        rptForm.ShowDialog();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("لا يوجد عناصر لطباعتها في الاكل الممنوع");
+                }
+            }
+            if (chbPrintContrastingMedicines.Checked)
+            {
+                if (dgvContrastingMedicines.Rows.Count > 0)
+                {
+                    dsTools tbl = new dsTools();
+                    for (int i = 0; i < dgvContrastingMedicines.Rows.Count; i++)
+                    {
+                        DataRow dro = tbl.Tables["dtShowDrugs"].NewRow();
+                        dro["name"] = dgvContrastingMedicines[1, i].Value;
+                        dro["notes"] = dgvContrastingMedicines[0, i].Value;
+                        tbl.Tables["dtShowDrugs"].Rows.Add(dro);
+                    }
+
+                    FormReports rptForm = new FormReports();
+                    rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportShowExaminationMedicine.rdlc";
+                    rptForm.mainReport.LocalReport.DataSources.Clear();
+                    rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowDrugs"]));
+
+                    ReportParameter[] reportParameters = new ReportParameter[13];
+                    reportParameters[0] = new ReportParameter("doctor", dgvLoading[10, 0].Value.ToString());
+                    reportParameters[1] = new ReportParameter("specialization", dgvLoading[11, 0].Value.ToString());
+                    reportParameters[2] = new ReportParameter("patient", dgvLoading[14, 0].Value.ToString());
+                    reportParameters[3] = new ReportParameter("examinationDate", dateExamination.Value.ToString());
+                    reportParameters[4] = new ReportParameter("notes", txtExaminationNotes.Text);
+                    reportParameters[5] = new ReportParameter("examination", txtDoctorExamination.Text);
+                    reportParameters[6] = new ReportParameter("advise", txtDoctorAdvice.Text);
+                    reportParameters[7] = new ReportParameter("address", declarations.systemOptions["address"].ToString());
+                    reportParameters[8] = new ReportParameter("phone", declarations.systemOptions["phone"].ToString());
+                    reportParameters[9] = new ReportParameter("whatsApp", declarations.systemOptions["whatsApp"].ToString());
+                    reportParameters[10] = new ReportParameter("gmail", declarations.systemOptions["email"].ToString());
+                    reportParameters[11] = new ReportParameter("facebook", declarations.systemOptions["facebook"].ToString());
+                    reportParameters[12] = new ReportParameter("user", declarations.name);
+
+                    if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
+                    {
+                        LocalReport report = new LocalReport();
+                        string path = Application.StartupPath + @"\Reports\ReportShowExaminationMedicine.rdlc";
+                        report.ReportPath = path;
+                        report.DataSources.Clear();
+                        report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowDrugs"]));
+                        report.SetParameters(reportParameters);
+                        PrintersClass.PrintToPrinter(report);
+                    }
+                    else if (bool.Parse(declarations.systemOptions["showBeforePrint"].ToString()))
+                    {
+                        rptForm.mainReport.LocalReport.SetParameters(reportParameters);
+                        rptForm.ShowDialog();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("لا يوجد عناصر لطباعتها في الادوية المتعارضة");
+                }
             }
         }
 
