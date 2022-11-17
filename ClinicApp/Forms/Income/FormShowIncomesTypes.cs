@@ -65,18 +65,18 @@ namespace ClinicApp.Forms.Income
             {
                 adoClass.sqlcn.Open();
             }
-            cmd = new SqlCommand("select incomeDelete,incomeUpdate from Users where id = '" + declarations.userId + "'", adoClass.sqlcn);
+            cmd = new SqlCommand("select settingDelete,settingUpdate from Users where id = '" + declarations.userId + "'", adoClass.sqlcn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
             adoClass.sqlcn.Close();
             if (dt.Rows.Count > 0)
             {
                 DataRow row = dt.Rows[0];
-                if (row["incomeDelete"].ToString() == "False")
+                if (row["settingDelete"].ToString() == "False")
                 {
                     btnDelete.Visible = false;
                 }
-                if (row["incomeUpdate"].ToString() == "False")
+                if (row["settingUpdate"].ToString() == "False")
                 {
                     btnUpdate.Visible = false;
                 }

@@ -62,11 +62,6 @@ namespace ClinicApp.Forms
             this.btnShowExpenses = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddExpensesType = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowExpensesTypes = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnHomeIncomes = new System.Windows.Forms.ToolStripMenuItem();
-            this.اضافةايرادجديدToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.عرضالايراداتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAddIncomeType = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnShowIncomeTypes = new System.Windows.Forms.ToolStripMenuItem();
             this.btnHomeCompany = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCompany = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowCompanies = new System.Windows.Forms.ToolStripMenuItem();
@@ -130,6 +125,9 @@ namespace ClinicApp.Forms
             this.btnAddGovernment = new System.Windows.Forms.ToolStripMenuItem();
             this.btnShowGovernment = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPrintingSettings = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnVisitingType = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddVisitingType = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnShowVisitingType = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -170,7 +168,6 @@ namespace ClinicApp.Forms
             this.btnHomeReservations,
             this.btnHomeExamination,
             this.btnHomeExpenses,
-            this.btnHomeIncomes,
             this.btnHomeCompany,
             this.btnHomeSmartAssistant,
             this.btnHomeLocations,
@@ -437,45 +434,6 @@ namespace ClinicApp.Forms
             this.btnShowExpensesTypes.Text = "عرض انواع المصروفات";
             this.btnShowExpensesTypes.Click += new System.EventHandler(this.btnShowExpensesTypes_Click);
             // 
-            // btnHomeIncomes
-            // 
-            this.btnHomeIncomes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.اضافةايرادجديدToolStripMenuItem,
-            this.عرضالايراداتToolStripMenuItem,
-            this.btnAddIncomeType,
-            this.btnShowIncomeTypes});
-            this.btnHomeIncomes.Name = "btnHomeIncomes";
-            this.btnHomeIncomes.Size = new System.Drawing.Size(99, 39);
-            this.btnHomeIncomes.Text = "الايرادات";
-            // 
-            // اضافةايرادجديدToolStripMenuItem
-            // 
-            this.اضافةايرادجديدToolStripMenuItem.Name = "اضافةايرادجديدToolStripMenuItem";
-            this.اضافةايرادجديدToolStripMenuItem.Size = new System.Drawing.Size(263, 40);
-            this.اضافةايرادجديدToolStripMenuItem.Text = "اضافة ايراد جديد";
-            // 
-            // عرضالايراداتToolStripMenuItem
-            // 
-            this.عرضالايراداتToolStripMenuItem.Name = "عرضالايراداتToolStripMenuItem";
-            this.عرضالايراداتToolStripMenuItem.Size = new System.Drawing.Size(263, 40);
-            this.عرضالايراداتToolStripMenuItem.Text = "عرض الايرادات";
-            // 
-            // btnAddIncomeType
-            // 
-            this.btnAddIncomeType.Image = global::ClinicApp.Properties.Resources.plus;
-            this.btnAddIncomeType.Name = "btnAddIncomeType";
-            this.btnAddIncomeType.Size = new System.Drawing.Size(263, 40);
-            this.btnAddIncomeType.Text = "اضافة نوع ايراد جديد";
-            this.btnAddIncomeType.Click += new System.EventHandler(this.btnAddIncomeType_Click);
-            // 
-            // btnShowIncomeTypes
-            // 
-            this.btnShowIncomeTypes.Image = global::ClinicApp.Properties.Resources.online_payment;
-            this.btnShowIncomeTypes.Name = "btnShowIncomeTypes";
-            this.btnShowIncomeTypes.Size = new System.Drawing.Size(263, 40);
-            this.btnShowIncomeTypes.Text = "عرض انواع الايرادات";
-            this.btnShowIncomeTypes.Click += new System.EventHandler(this.btnShowIncomeTypes_Click);
-            // 
             // btnHomeCompany
             // 
             this.btnHomeCompany.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -683,6 +641,7 @@ namespace ClinicApp.Forms
             this.الاشعةToolStripMenuItem,
             this.الطعامToolStripMenuItem,
             this.نوعالحجزToolStripMenuItem,
+            this.btnVisitingType,
             this.المحافظاتToolStripMenuItem,
             this.btnPrintingSettings});
             this.btnHomeSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeSettings.Image")));
@@ -1036,6 +995,32 @@ namespace ClinicApp.Forms
             this.btnPrintingSettings.Text = "اعدادات الطباعة";
             this.btnPrintingSettings.Click += new System.EventHandler(this.btnPrintingSettings_Click);
             // 
+            // btnVisitingType
+            // 
+            this.btnVisitingType.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnAddVisitingType,
+            this.btnShowVisitingType});
+            this.btnVisitingType.Image = global::ClinicApp.Properties.Resources.advice;
+            this.btnVisitingType.Name = "btnVisitingType";
+            this.btnVisitingType.Size = new System.Drawing.Size(230, 40);
+            this.btnVisitingType.Text = "نوع الزيارة";
+            // 
+            // btnAddVisitingType
+            // 
+            this.btnAddVisitingType.Image = global::ClinicApp.Properties.Resources.plus;
+            this.btnAddVisitingType.Name = "btnAddVisitingType";
+            this.btnAddVisitingType.Size = new System.Drawing.Size(260, 40);
+            this.btnAddVisitingType.Text = "اضافة نوع زيارة جديد";
+            this.btnAddVisitingType.Click += new System.EventHandler(this.btnAddVisitingType_Click);
+            // 
+            // btnShowVisitingType
+            // 
+            this.btnShowVisitingType.Image = global::ClinicApp.Properties.Resources.advice;
+            this.btnShowVisitingType.Name = "btnShowVisitingType";
+            this.btnShowVisitingType.Size = new System.Drawing.Size(260, 40);
+            this.btnShowVisitingType.Text = "عرض الزيارات";
+            this.btnShowVisitingType.Click += new System.EventHandler(this.btnShowVisitingType_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
@@ -1088,7 +1073,6 @@ namespace ClinicApp.Forms
         private System.Windows.Forms.ToolStripMenuItem btnHomeReservations;
         private System.Windows.Forms.ToolStripMenuItem btnHomeExamination;
         private System.Windows.Forms.ToolStripMenuItem btnHomeExpenses;
-        private System.Windows.Forms.ToolStripMenuItem btnHomeIncomes;
         private System.Windows.Forms.ToolStripMenuItem btnHomeCompany;
         private System.Windows.Forms.ToolStripMenuItem btnHomeSmartAssistant;
         private System.Windows.Forms.ToolStripMenuItem btnHomeLocations;
@@ -1172,9 +1156,8 @@ namespace ClinicApp.Forms
         private System.Windows.Forms.ToolStripMenuItem btnPatientPerception;
         private System.Windows.Forms.ToolStripMenuItem btnPatientAnalysis;
         private System.Windows.Forms.ToolStripMenuItem btnPatientRays;
-        private System.Windows.Forms.ToolStripMenuItem اضافةايرادجديدToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem عرضالايراداتToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem btnAddIncomeType;
-        private System.Windows.Forms.ToolStripMenuItem btnShowIncomeTypes;
+        private System.Windows.Forms.ToolStripMenuItem btnVisitingType;
+        private System.Windows.Forms.ToolStripMenuItem btnAddVisitingType;
+        private System.Windows.Forms.ToolStripMenuItem btnShowVisitingType;
     }
 }

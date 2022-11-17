@@ -551,19 +551,6 @@ namespace ClinicApp.Forms
                     btnShowExpensesTypes.Visible = false;
                 }
 
-                // for income
-                if (row["incomeHome"].ToString() == "False")
-                {
-                    btnHomeIncomes.Visible = false;
-                }
-                //if (row["incomeAdd"].ToString() == "False")
-                //{
-                //    btnHomeIncomes.Visible = false;
-                //}
-                //if (row["incomeShow"].ToString() == "False")
-                //{
-                //    btnHomeIncomes.Visible = false;
-                //}
                 // for company
                 if (row["companyHome"].ToString() == "False")
                 {
@@ -631,6 +618,7 @@ namespace ClinicApp.Forms
                     btnAddBookingType.Visible = false;
                     btnAddGovernment.Visible = false;
                     btnPrintingSettings.Visible = false;
+                    btnAddVisitingType.Visible = false;
                 }
                 if (row["settingShow"].ToString() == "False")
                 {
@@ -646,6 +634,7 @@ namespace ClinicApp.Forms
                     btnShowFood.Visible = false;
                     btnShowBookingType.Visible = false;
                     btnShowGovernment.Visible = false;
+                    btnShowVisitingType.Visible = false;
                 }
             }
         
@@ -657,14 +646,16 @@ namespace ClinicApp.Forms
             frm.Show();
         }
 
-        private void btnAddIncomeType_Click(object sender, EventArgs e)
+
+        private void btnAddVisitingType_Click(object sender, EventArgs e)
         {
             FormAddIncomeType frm = new FormAddIncomeType();
             frm.Show();
         }
 
-        private void btnShowIncomeTypes_Click(object sender, EventArgs e)
+        private void btnShowVisitingType_Click(object sender, EventArgs e)
         {
+
             FormShowIncomesTypes frm = new FormShowIncomesTypes();
             frm.Show();
         }
