@@ -447,6 +447,12 @@
     <Compile Include="Forms\Settings\Pharmacy\FormAddMedicineUnit.Designer.cs">
       <DependentUpon>FormAddMedicineUnit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Settings\Pharmacy\FormAddTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\Pharmacy\FormAddTime.Designer.cs">
+      <DependentUpon>FormAddTime.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Settings\Pharmacy\FormShowDosages.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -464,6 +470,12 @@
     </Compile>
     <Compile Include="Forms\Settings\Pharmacy\FormShowMedicineUnits.Designer.cs">
       <DependentUpon>FormShowMedicineUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\Pharmacy\FormShowTimes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\Pharmacy\FormShowTimes.Designer.cs">
+      <DependentUpon>FormShowTimes.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Settings\Rays\FormAddRay.cs">
       <SubType>Form</SubType>
@@ -610,6 +622,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\patients\FormVisitingPatient.resx">
       <DependentUpon>FormVisitingPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\Pharmacy\FormAddTime.resx">
+      <DependentUpon>FormAddTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\Pharmacy\FormShowTimes.resx">
+      <DependentUpon>FormShowTimes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportExpensesTypes.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -801,6 +819,7 @@
     <EmbeddedResource Include="Reports\ReportFormShowReservations.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowSpecializations.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormShowSymptoms.rdlc" />
+    <EmbeddedResource Include="Reports\ReportFormShowTimes.rdlc" />
     <EmbeddedResource Include="Reports\ReportFormVisitingPatient.rdlc" />
     <EmbeddedResource Include="Reports\ReportShowExamination.rdlc" />
     <EmbeddedResource Include="Reports\ReportShowExaminationFoods.rdlc" />
@@ -1081,6 +1100,7 @@
     <None Include="Resources\online-payment1.png" />
     <None Include="Resources\floppy-disk1.png" />
     <None Include="Resources\advice4.png" />
+    <None Include="Resources\digital-clock1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

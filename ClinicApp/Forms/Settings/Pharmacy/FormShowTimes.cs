@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace ClinicApp.Forms.Settings.Pharmacy
 {
-    public partial class FormShowDosages : Form
+    public partial class FormShowTimes : Form
     {
-        public FormShowDosages()
+        public FormShowTimes()
         {
             InitializeComponent();
         }
@@ -50,9 +50,9 @@ namespace ClinicApp.Forms.Settings.Pharmacy
                 }
             }
         }
-        private void FormShowDosages_Load(object sender, EventArgs e)
+        private void FormShowTimes_Load(object sender, EventArgs e)
         {
-            loadTable("select * from Dosages");
+            loadTable("select * from timesTakeMedication");
 
             txtHidden = new TextBox();
             txtHidden.Visible = false;
@@ -90,13 +90,14 @@ namespace ClinicApp.Forms.Settings.Pharmacy
         {
             if (string.IsNullOrEmpty(text))
             {
-                loadTable("select * from Dosages");
+                loadTable("select * from timesTakeMedication");
             }
             else
             {
-                loadTable("select * from Dosages where name like '%" + text + "%'");
+                loadTable("select * from timesTakeMedication where name like '%" + text + "%'");
             }
         }
+
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dgvLoading.Rows.Count > 0)
@@ -106,13 +107,13 @@ namespace ClinicApp.Forms.Settings.Pharmacy
                     string id = dgvLoading.CurrentRow.Cells[2].Value.ToString();
                     if (id == "")
                     {
-                        MessageBox.Show("حدد الجرعة المراد حذفها");
+                        MessageBox.Show("حدد العدد المراد حذفه");
                         return;
                     }
                     try
                     {
 
-                        cmd = new SqlCommand("delete from Dosages Where id = '" + id + "'", adoClass.sqlcn);
+                        cmd = new SqlCommand("delete from timesTakeMedication Where id = '" + id + "'", adoClass.sqlcn);
 
                         if (adoClass.sqlcn.State != ConnectionState.Open)
                         {
@@ -133,7 +134,7 @@ namespace ClinicApp.Forms.Settings.Pharmacy
                         adoClass.sqlcn.Close();
                     }
 
-                    loadTable("select * from Dosages");
+                    loadTable("select * from timesTakeMedication");
 
                 }
             }
@@ -143,7 +144,7 @@ namespace ClinicApp.Forms.Settings.Pharmacy
         {
             if (dgvLoading.Rows.Count > 0)
             {
-                FormAddDosage frm = new FormAddDosage();
+                FormAddTime frm = new FormAddTime();
                 txtHidden.Text = dgvLoading.CurrentRow.Cells[2].Value.ToString();
                 frm.txtName.Text = dgvLoading.CurrentRow.Cells[1].Value.ToString();
                 frm.txtNotes.Text = dgvLoading.CurrentRow.Cells[0].Value.ToString();
@@ -160,25 +161,25 @@ namespace ClinicApp.Forms.Settings.Pharmacy
                 dsTools tbl = new dsTools();
                 for (int i = 0; i < dgvLoading.Rows.Count; i++)
                 {
-                    DataRow dro = tbl.Tables["dtShowDosages"].NewRow();
+                    DataRow dro = tbl.Tables["dtShowTimes"].NewRow();
                     dro["name"] = dgvLoading[1, i].Value;
                     dro["notes"] = dgvLoading[0, i].Value;
 
-                    tbl.Tables["dtShowDosages"].Rows.Add(dro);
+                    tbl.Tables["dtShowTimes"].Rows.Add(dro);
                 }
 
                 FormReports rptForm = new FormReports();
-                rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportFormShowDosages.rdlc";
+                rptForm.mainReport.LocalReport.ReportEmbeddedResource = "ClinicApp.Reports.ReportFormShowTimes.rdlc";
                 rptForm.mainReport.LocalReport.DataSources.Clear();
-                rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowDosages"]));
+                rptForm.mainReport.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowTimes"]));
 
                 if (bool.Parse(declarations.systemOptions["directPrint"].ToString()))
                 {
                     LocalReport report = new LocalReport();
-                    string path = Application.StartupPath + @"\Reports\ReportFormShowDosages.rdlc";
+                    string path = Application.StartupPath + @"\Reports\ReportFormShowTimes.rdlc";
                     report.ReportPath = path;
                     report.DataSources.Clear();
-                    report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowDosages"]));
+                    report.DataSources.Add(new ReportDataSource("DataSet1", tbl.Tables["dtShowTimes"]));
 
                     PrintersClass.PrintToPrinter(report);
                 }

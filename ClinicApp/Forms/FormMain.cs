@@ -619,6 +619,7 @@ namespace ClinicApp.Forms
                     btnAddGovernment.Visible = false;
                     btnPrintingSettings.Visible = false;
                     btnAddVisitingType.Visible = false;
+                    btnAddTimes.Visible = false;
                 }
                 if (row["settingShow"].ToString() == "False")
                 {
@@ -635,6 +636,7 @@ namespace ClinicApp.Forms
                     btnShowBookingType.Visible = false;
                     btnShowGovernment.Visible = false;
                     btnShowVisitingType.Visible = false;
+                    btnShowTimes.Visible = false;
                 }
             }
         
@@ -657,6 +659,18 @@ namespace ClinicApp.Forms
         {
 
             FormShowIncomesTypes frm = new FormShowIncomesTypes();
+            frm.Show();
+        }
+
+        private void btnAddTimes_Click(object sender, EventArgs e)
+        {
+            FormAddTime frm = new FormAddTime();
+            frm.Show();
+        }
+
+        private void btnShowTimes_Click(object sender, EventArgs e)
+        {
+            FormShowTimes frm = new FormShowTimes();
             frm.Show();
         }
     }
